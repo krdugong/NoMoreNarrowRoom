@@ -9,7 +9,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "OTA 객실정보+호텔업데이트 FAQ"
+    "verification": "OTA 객실정보+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705211&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진 쇼핑 동선이 편한 클래식한 호텔",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705211&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "croom_hakata",
@@ -21,7 +25,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "천연온천 대욕장·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705327&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역·버스터미널 가까움, 기차 소음 후기는 확인",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705327&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "croom_gion",
@@ -33,7 +41,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=105845907&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "캐널시티 오가기 편하고 대욕장도 만족 후기",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=105845907&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "gate",
@@ -45,7 +57,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "OTA 객실정보+호텔업데이트 FAQ"
+    "verification": "OTA 객실정보+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=123756775&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "지하철 연결은 편리, 로비 경유 동선은 체크",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=123756775&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "royalcanvas",
@@ -57,7 +73,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=103101862&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "나카스 중심 동선과 대욕장을 함께 챙기기 좋음",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=103101862&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "basics",
@@ -69,7 +89,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조"
+    "verification": "공식+OTA 보조",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47758200&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "서가 로비가 인상적, 역까지는 조금 걸어야 함",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47758200&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "blossom",
@@ -81,7 +105,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=38934428&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "캐널시티·하카타역 사이, 관광 후 대욕장으로",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=38934428&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "toyo",
@@ -93,7 +121,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "공용 대욕장 확인 안 됨",
     "verifiedAt": "2026-10-12",
-    "verification": "OTA 시설정보"
+    "verification": "OTA 시설정보",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705185&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타역 가까이서 편하게 이동하기 좋은 편",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705185&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "rich_nishi",
@@ -105,7 +137,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25797449&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진 쇼핑은 편리, 큰 캐리어 두 개는 빠듯",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25797449&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "rich_tenjin",
@@ -117,7 +153,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705215&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진 지하상가 오가기 편해 중간 휴식에 좋음",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705215&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "mitsui_gion",
@@ -129,7 +169,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=29772917&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "캐널시티·조식이 장점, 청결 평가는 엇갈림",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=29772917&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "mitsui_nakasu",
@@ -141,7 +185,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=56699615&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "나카스 동선과 대욕장이 장점, 청결 후기는 확인",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=56699615&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "miyako",
@@ -154,7 +202,10 @@ window.NMNR_HOTELS = [
     "bathLabel": "천연온천 스파",
     "verifiedAt": "2026-10-12",
     "verification": "공식",
-    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775"
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타역 바로 앞, 넓은 객실을 찾을 때",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "sutton",
@@ -166,7 +217,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705180&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역·편의점 접근이 편하고 직원 응대도 호평",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705180&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "solaria",
@@ -178,7 +233,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705248&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "쇼핑하다 짐 두고 쉬러 오기 좋은 텐진 중심",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705248&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "yaoji",
@@ -190,7 +249,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "천연온천·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705508&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타 이동과 온천을 함께 챙기기 좋은 편",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705508&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "oriental_hakata",
@@ -202,7 +265,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장/스파 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25098057&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역 바로 옆이라 이동 편리, 조식도 만족 후기",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25098057&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "zonk_nakasu",
@@ -214,7 +281,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "공용 대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식 시설목록"
+    "verification": "공식 시설목록",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47123115&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "나카스 위치는 편리, 청소·체크인 후기는 확인",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47123115&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "zonk_hakata",
@@ -226,7 +297,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "공용 대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식 시설목록"
+    "verification": "공식 시설목록",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=77695624&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "음료 서비스는 호평, 방음은 아쉽다는 후기",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=77695624&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "candeo",
@@ -238,7 +313,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "스카이스파·노천·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=2649556&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진 쇼핑과 대욕장, 시설 연식은 감안",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=2649556&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "comfort",
@@ -250,7 +329,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=1921500&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역 앞 이동 편리, 조식 평가는 취향 따라",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=1921500&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "quintcomic",
@@ -262,7 +345,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조"
+    "verification": "공식+OTA 보조",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=67572095&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진역·쇼핑 접근은 좋고 둘이 쓰면 아담",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=67572095&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "cross_tenjin",
@@ -274,7 +361,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=96263095&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "조용한 골목과 대욕장에 만족한 후기",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=96263095&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "greenannex",
@@ -286,7 +377,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705515&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역 주변 이동 편리, 편의점 이용도 수월",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705515&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "nikko",
@@ -298,7 +393,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조"
+    "verification": "공식+OTA 보조",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=993535&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타역 가까움, 직원 응대·객실 관리에 호평",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=993535&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "monte",
@@ -310,7 +409,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=6505478&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "근처 마트·편의점은 편리, 텐진 중심까지는 도보",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=6505478&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "lasoeur",
@@ -322,7 +425,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ"
+    "verification": "공식+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705244&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진 쇼핑·식사 동선이 편하고 응대도 호평",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705244&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "monterey",
@@ -334,7 +441,11 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "사우나 포함 온욕시설",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=49507812&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "객실 여유와 대욕장을 함께 원한다면",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=49507812&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "oriental_tenjin",
@@ -346,7 +457,11 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "브랜드자료+호텔업데이트 FAQ"
+    "verification": "브랜드자료+호텔업데이트 FAQ",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=71965416&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "텐진역·쇼핑 접근은 편리, 욕실 평가는 엇갈림",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=71965416&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   },
   {
     "id": "hokke",
@@ -358,6 +473,10 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705206&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "역에서 조금 걷지만 조식과 응대에 만족 후기",
+    "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705206&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
+    "reviewCheckedAt": "2026-10-12"
   }
 ];
