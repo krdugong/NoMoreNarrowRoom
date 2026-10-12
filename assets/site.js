@@ -1,19 +1,58 @@
-let roomMin=0;let activeArea='all';let bathMode='all';let sortMode='rank';
-const hotels=window.NMNR_HOTELS||[];
-function sqm(n){return Number.isInteger(n)?String(n):String(n).replace(/0+$/,'').replace(/\.$/,'');}
-function roomFeel(m){if(m<=15)return '캐리어 펴면 길이 막힐 수 있음';if(m<20)return '캐리어 2개 펴면 옆으로 지나갈 수도';if(m<25)return '캐리어 2개 펴도 이동은 비교적 수월';if(m<30)return '일본 도심호텔 기준 꽤 넓은 편';return '둘이 짐 풀어도 확실히 여유';}
-function current(){let list=hotels.filter(h=>(activeArea==='all'||h.area===activeArea)&&h.minRoom2Pax>=roomMin&&(bathMode==='all'||(bathMode==='yes'&&h.bath)||(bathMode==='no'&&!h.bath)));if(sortMode==='room')list.sort((a,b)=>b.minRoom2Pax-a.minRoom2Pax||a.rank-b.rank);else if(sortMode==='bath')list.sort((a,b)=>Number(b.bath)-Number(a.bath)||b.minRoom2Pax-a.minRoom2Pax||a.rank-b.rank);else list.sort((a,b)=>a.rank-b.rank);return list;}
-function render(){const list=current();document.querySelector('#count').textContent=list.length+'개 호텔';document.querySelector('#activeAreaLabel').textContent=activeArea!=='all'?`후쿠오카 · ${activeArea}만 보는 중`:'';const box=document.querySelector('#results');box.innerHTML=list.length?list.map(h=>`<article class="hotel"><div class="meta">${h.area}</div><h3>${h.name}</h3><div class="badges"><span class="badge">2인 최소 ${sqm(h.minRoom2Pax)}㎡</span>${h.bath?`<span class="badge good">♨ ${h.bathLabel}</span>`:`<span class="badge no">대욕장 없음</span>`}</div><div class="roomfeel"><b>${roomFeel(h.minRoom2Pax)}</b><span>2인 예약 가능한 기본 객실 중 확인된 최소 ${sqm(h.minRoom2Pax)}㎡ · ${h.roomType}</span></div><div class="facts"><div class="fact"><b>${sqm(h.minRoom2Pax)}㎡</b><span>2인 기준 최소 객실</span></div><div class="fact"><b>${h.bath?'있음':'없음'}</b><span>대욕장/온욕시설</span></div><div class="fact"><b>${h.roomType}</b><span>확인 객실 타입</span></div><div class="fact"><b>${h.verifiedAt}</b><span>정보 확인일</span></div></div><div class="foot"><span class="price">${h.verification} 기준 확인</span><span class="verified">확인됨</span></div></article>`).join(''):`<div class="empty">조건에 맞는 호텔이 없습니다. 객실 크기나 대욕장 조건을 조금 넓혀보세요.</div>`;}
-function sync(){document.querySelectorAll('[data-room]').forEach(x=>x.classList.toggle('active',Number(x.dataset.room)===roomMin));document.querySelectorAll('[data-area],[data-area-map]').forEach(x=>x.classList.toggle('active',(x.dataset.area||x.dataset.areaMap)===activeArea));document.querySelectorAll('[data-bath]').forEach(x=>x.classList.toggle('active',x.dataset.bath===bathMode));const heroBath=document.querySelector('#heroBath');if(heroBath)heroBath.value=bathMode;const sort=document.querySelector('#sort');if(sort)sort.value=sortMode;}
-function goFinder(){bathMode=document.querySelector('#heroBath').value;sync();render();document.querySelector('#finder').scrollIntoView({behavior:'smooth'});}
-function setCity(city){if(city!=='후쿠오카')return;activeArea='all';sync();render();document.querySelector('#areaExplorer').scrollIntoView({behavior:'smooth'});}
-function setArea(area){activeArea=area;sync();render();document.querySelector('#finder').scrollIntoView({behavior:'smooth'});}
-function selectRoom(n){roomMin=n;sync();render();document.querySelector('#finder').scrollIntoView({behavior:'smooth'});}
-function setBath(mode){bathMode=mode;sync();render();}
-function quickPreset(kind){roomMin=0;activeArea='all';bathMode='all';if(kind==='bath')bathMode='yes';if(kind==='room20')roomMin=20;if(kind==='room25')roomMin=25;if(kind==='bath20'){bathMode='yes';roomMin=20;}sync();render();document.querySelector('#finder').scrollIntoView({behavior:'smooth'});}
-function resetAll(){roomMin=0;activeArea='all';bathMode='all';sortMode='rank';sync();render();}
-document.querySelectorAll('[data-room]').forEach(b=>b.addEventListener('click',()=>selectRoom(Number(b.dataset.room))));
-document.querySelectorAll('[data-area]').forEach(b=>b.addEventListener('click',()=>setArea(b.dataset.area)));
-document.querySelectorAll('[data-bath]').forEach(b=>b.addEventListener('click',()=>setBath(b.dataset.bath)));
-document.querySelector('#sort').addEventListener('change',e=>{sortMode=e.target.value;render();});
-sync();render();
+'use strict';
+const hotels = window.NMNR_HOTELS || [];
+const state = {room: 0, area: 'all', bath: 'all', sort: 'name', query: ''};
+const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
+function roomFeel(m) {
+  if (m <= 15) return '캐리어 펴면 길 막힘';
+  if (m < 20) return '둘이 쓰면 조금 타이트';
+  if (m < 25) return '캐리어 2개도 비교적 여유';
+  return '일본 도심호텔 기준 넓은 편';
+}
+function bathStatus(h) { return h.bath ? 'yes' : /확인 안 됨/.test(h.bathLabel) ? 'unknown' : 'no'; }
+function current() {
+  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && h.minRoom2Pax >= state.room && (state.bath === 'all' || bathStatus(h) === state.bath) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
+  const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
+  list.sort((a, b) => {
+    if (state.sort === 'room') return b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
+    if (state.sort === 'small') return a.minRoom2Pax - b.minRoom2Pax || byName(a,b);
+    if (state.sort === 'bath') return Number(b.bath) - Number(a.bath) || b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
+    return byName(a,b);
+  });
+  return list;
+}
+function render() {
+  const list = current();
+  document.querySelector('#count').textContent = `${list.length}곳 / 전체 ${hotels.length}곳`;
+  document.querySelector('#results').innerHTML = list.length ? list.map(h => {
+    const status = bathStatus(h);
+    const label = status === 'yes' ? '♨ 있음' : status === 'unknown' ? '확인 필요' : '없음';
+    return `<details class="hotel"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small>${escapeHTML(h.roomType)}</small></span><span class="size"><strong>${h.minRoom2Pax}<small>㎡</small></strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>2인 기본 객실 최소 ${h.minRoom2Pax}㎡. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p></div></details>`;
+  }).join('') : '<div class="empty">조건에 맞는 호텔이 없습니다.<br>방 크기나 지역 조건을 조금 넓혀보세요.<button id="emptyReset">조건 초기화</button></div>';
+  document.querySelector('#emptyReset')?.addEventListener('click', resetAll);
+}
+function sync() {
+  for (const key of ['room', 'area', 'bath']) {
+    document.querySelectorAll(`[data-${key}]`).forEach(button => {
+      const active = String(state[key]) === button.dataset[key];
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+  }
+  document.querySelector('#sort').value = state.sort;
+  document.querySelector('#search').value = state.query;
+}
+function resetAll() {
+  Object.assign(state, {room: 0, area: 'all', bath: 'all', sort: 'name', query: ''});
+  sync(); render();
+}
+for (const key of ['room', 'area', 'bath']) {
+  document.querySelectorAll(`[data-${key}]`).forEach(button => button.addEventListener('click', () => {
+    state[key] = key === 'room' ? Number(button.dataset[key]) : button.dataset[key];
+    sync(); render();
+  }));
+}
+document.querySelector('#sort').addEventListener('change', event => { state.sort = event.target.value; render(); });
+document.querySelector('#search').addEventListener('input', event => { state.query = event.target.value; render(); });
+document.querySelector('#reset').addEventListener('click', resetAll);
+document.querySelector('#total').textContent = `${hotels.length}곳`;
+sync(); render();
