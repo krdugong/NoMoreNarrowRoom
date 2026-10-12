@@ -26,7 +26,7 @@ function render() {
   document.querySelector('#results').innerHTML = list.length ? list.map(h => {
     const status = bathStatus(h);
     const label = status === 'yes' ? '♨ 있음' : status === 'unknown' ? '확인 필요' : '없음';
-    return `<details class="hotel"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small>${escapeHTML(h.roomType)}</small></span><span class="size"><strong>${h.minRoom2Pax}<small>㎡</small></strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>2인 기본 객실 최소 ${h.minRoom2Pax}㎡. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p></div></details>`;
+    return `<details class="hotel"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small>${escapeHTML(h.roomType)}</small></span><span class="size"><strong>${h.minRoom2Pax}<small>㎡</small></strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>기본 객실 면적 ${h.minRoom2Pax}㎡ · 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p></div></details>`;
   }).join('') : '<div class="empty">조건에 맞는 호텔이 없습니다.<br>방 크기나 지역 조건을 조금 넓혀보세요.<button id="emptyReset">조건 초기화</button></div>';
   document.querySelector('#emptyReset')?.addEventListener('click', resetAll);
 }
@@ -54,5 +54,8 @@ for (const key of ['room', 'area', 'bath']) {
 document.querySelector('#sort').addEventListener('change', event => { state.sort = event.target.value; render(); });
 document.querySelector('#search').addEventListener('input', event => { state.query = event.target.value; render(); });
 document.querySelector('#reset').addEventListener('click', resetAll);
+document.querySelectorAll('[data-area-count]').forEach(label => {
+  label.textContent = `${hotels.filter(h => h.area === label.dataset.areaCount).length}곳`;
+});
 document.querySelector('#total').textContent = `${hotels.length}곳`;
 sync(); render();
