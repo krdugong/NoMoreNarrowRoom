@@ -153,7 +153,8 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "천연온천 스파",
     "verifiedAt": "2026-10-12",
-    "verification": "공식"
+    "verification": "공식",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775"
   },
   {
     "id": "sutton",
