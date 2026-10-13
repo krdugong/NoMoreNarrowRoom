@@ -8,3 +8,25 @@
 .review-note{line-height:1.55}.review-note>span{font-size:9px;margin-right:3px;color:#7b8086}.review-source a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}.hotelname small.review-note{font-size:11px}@media(max-width:640px){.hotelname small.review-note{font-size:10px}}
 
 nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400}.tokyo-map{min-height:360px}.tokyo-map .maparea{min-width:0;padding:5px 7px}.tokyo-map .maparea strong{font-size:10px}.tokyo-map .maparea small{font-size:9px}.tokyo-map svg{height:100%}.size .unknown-size{font-size:13px}.detail a.source-link{text-decoration:underline;color:var(--accent)}
+
+/* Tokyo needs a full-width geographical map; Fukuoka keeps its compact layout. */
+.tokyo-page .filterlayout{display:flex;flex-direction:column;gap:24px}
+.tokyo-page .filterlayout .filters{padding:16px 20px}
+.tokyo-region-map{order:0;padding:16px 0 0}
+.tokyo-region-map .maphead{margin-bottom:12px;align-items:center}
+.tokyo-region-map .maphead h2{font-size:16px}
+.tokyo-region-map .maphead p{font-size:12px;color:var(--muted);margin:4px 0 0}
+.tokyo-region-map .maphead button{padding:8px 12px;border:1px solid var(--line);background:#fff;border-radius:3px;white-space:nowrap}
+#tokyoMap{height:540px;width:100%;background:#f1f3f4;z-index:0;font-family:inherit}
+#mapLoadMessage{position:absolute;z-index:500;left:12px;bottom:35px;padding:8px 12px;background:#fff;max-width:85%;font-size:12px;box-shadow:0 1px 5px #0002}
+#mapLoadMessage[hidden]{display:none}
+.area-pin-wrap{background:none;border:0}
+.area-pin{display:grid;place-items:center;width:32px;height:32px;border:0;background:transparent;padding:0;cursor:pointer}
+.area-pin>span{display:block;width:13px;height:13px;border:2px solid #fff;border-radius:50%;background:#315e70;box-shadow:0 0 0 1px #315e70,0 1px 4px #0005}
+.area-pin.selected>span{width:19px;height:19px;background:#202124;box-shadow:0 0 0 3px #ffffffa0,0 0 0 5px #202124}
+.area-map-label{font-family:inherit;color:#202124;font-size:12px;font-weight:650;border:1px solid #d4d7da;border-radius:3px;box-shadow:0 1px 3px #0002;padding:5px 8px}
+.area-map-label span{font-size:10px;color:#686b70;font-weight:400;margin-left:4px}
+.tokyo-region-map #mapSelection{font-size:12px;color:#202124;margin:12px 0 4px}
+.tokyo-region-map .map-basis{font-size:11px;margin:0 0 14px}
+#tokyoMap .leaflet-control-attribution{font-size:10px}
+@media(max-width:640px){.tokyo-page .filterlayout{gap:18px}.tokyo-page .filterlayout .filters{padding:13px 12px}.tokyo-region-map .maphead h2{font-size:14px}.tokyo-region-map .maphead p{font-size:11px}#tokyoMap{height:440px}.tokyo-region-map #mapSelection{font-size:11px}.tokyo-region-map .map-basis{font-size:10px}.area-map-label{font-size:11px;padding:4px 6px}}
