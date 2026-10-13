@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>NoMoreNarrowRoom | 후쿠오카 호텔 방 크기·대욕장 비교</title>
   <meta name="description" content="후쿠오카 호텔 30곳의 기본 객실 면적과 대욕장을 비교하세요. 지역, 방 크기, 대욕장 조건으로 빠르게 찾습니다.">
-  <link rel="stylesheet" href="assets/site.css?v=20261013popular">
-  <script src="data/hotels.js?v=20261013popular" defer></script>
-  <script src="assets/site.js?v=20261013popular" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <link rel="stylesheet" href="assets/site.css?v=20261013hoteldots">
+  <script src="data/hotels.js?v=20261013hoteldots" defer></script>
+  <script src="assets/site.js?v=20261013hoteldots" defer></script>
+  <script src="assets/hotel-map.js?v=20261013hoteldots" defer></script>
 </head>
-<body>
+<body class="fukuoka-page">
   <a class="skip" href="#finder">호텔 비교로 바로가기</a>
   <header class="top"><div class="wrap topin">
     <a class="brand" href="./index.html">NoMoreNarrowRoom<span>일본 호텔 · 방 크기와 대욕장</span></a>
@@ -28,20 +31,11 @@
       <fieldset><legend>대욕장</legend><div class="choices"><button data-bath="all">전체</button><button data-bath="yes">있음</button><button data-bath="no">없음</button></div></fieldset>
       <div class="filterend"><label class="search" for="search">호텔명 검색<input id="search" type="search" placeholder="호텔 이름" autocomplete="off"></label><button id="reset" class="reset">조건 초기화</button></div>
     </section>
-    <section class="region-map" aria-labelledby="mapTitle">
-      <div class="maphead"><h2 id="mapTitle">지역 지도</h2><button data-area="all">전체 보기</button></div>
-      <div class="mapcanvas">
-        <svg viewBox="0 0 420 210" preserveAspectRatio="none" aria-hidden="true">
-          <rect width="420" height="210" fill="#f5f6f7"/>
-          <path d="M0 45H420M0 130H420M75 0V210M325 0V210" fill="none" stroke="#e3e5e7" stroke-width="12"/>
-          <path d="M207 -10C237 35 173 70 209 109S236 168 209 220" fill="none" stroke="#d4e2e8" stroke-width="28"/>
-          <path d="M28 86H360L390 167" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4 4"/>
-        </svg>
-        <button class="maparea tenjin" data-area="텐진" aria-label="텐진 지역 호텔 보기"><strong>텐진</strong><small data-area-count="텐진"></small></button>
-        <button class="maparea nakasu" data-area="나카스" aria-label="나카스 지역 호텔 보기"><strong>나카스</strong><small data-area-count="나카스"></small></button>
-        <button class="maparea hakata" data-area="하카타" aria-label="하카타 지역 호텔 보기"><strong>하카타</strong><small data-area-count="하카타"></small></button>
-      </div>
-      <p>지역을 누르면 해당 호텔만 볼 수 있습니다.<span>지역 위치를 이해하기 위한 개념도 · 실제 거리·호텔 위치와 다릅니다.</span></p>
+    <section class="region-map fukuoka-region-map hotel-region-map" aria-labelledby="mapTitle">
+      <div class="maphead"><div><h2 id="mapTitle">후쿠오카 숙박 지역 지도</h2><p>지역을 고르면 호텔의 실제 위치를 볼 수 있습니다.</p></div><div class="map-actions"><button type="button" id="mapDetail" aria-pressed="false">도로 자세히</button><button type="button" id="mapOverview">후쿠오카 전체 보기</button></div></div>
+      <div id="fukuokaMap" class="geographic-map" data-city="fukuoka" data-tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png" aria-label="확대와 이동이 가능한 후쿠오카 숙박 지역 지도"><p id="mapLoadMessage">지도를 불러오는 중입니다. 위의 지역 필터로도 호텔을 찾을 수 있습니다.</p></div>
+      <p id="mapSelection" role="status" aria-live="polite">지역 핀을 누르면 아래 호텔 목록이 바뀝니다.</p>
+      <p class="map-basis">큰 지역명은 대표 역·장소, 호텔 점은 실제 호텔 위치입니다. 호텔 좌표는 트립닷컴 지도 정보를 기준으로 확인했습니다. 겹친 점은 연결선으로 실제 위치를 표시합니다.</p>
     </section>
     </div>
     <p class="affiliate-note"><b>제휴 안내</b> · 일부 예약 링크는 제휴 링크입니다. 해당 링크를 통해 예약이 이루어지면 운영자에게 수수료가 지급됩니다.</p>
