@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>NoMoreNarrowRoom | 도쿄 호텔 방 크기·대욕장 비교</title>
   <meta name="description" content="도쿄 호텔 51곳의 기본 객실 면적과 대욕장을 비교하세요. 지역, 방 크기, 대욕장 조건으로 빠르게 찾습니다.">
-  <link rel="stylesheet" href="assets/site.css?v=20261013tokyo">
-  <script src="data/tokyo-hotels.js?v=20261013tokyo" defer></script>
-  <script src="assets/site.js?v=20261013tokyo" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <link rel="stylesheet" href="assets/site.css?v=20261013map">
+  <script src="data/tokyo-hotels.js?v=20261013map" defer></script>
+  <script src="assets/site.js?v=20261013map" defer></script>
+  <script src="assets/tokyo-map.js?v=20261013map" defer></script>
 </head>
-<body>
+<body class="tokyo-page">
   <a class="skip" href="#finder">호텔 비교로 바로가기</a>
   <header class="top"><div class="wrap topin">
     <a class="brand" href="./index.html">NoMoreNarrowRoom<span>일본 호텔 · 방 크기와 대욕장</span></a>
@@ -28,10 +31,11 @@
       <fieldset><legend>대욕장</legend><div class="choices"><button data-bath="all">전체</button><button data-bath="yes">있음</button><button data-bath="no">없음</button><button data-bath="unknown">확인 필요</button></div></fieldset>
       <div class="filterend"><label class="search" for="search">호텔명 검색<input id="search" type="search" placeholder="호텔 이름" autocomplete="off"></label><button id="reset" class="reset">조건 초기화</button></div>
     </section>
-    <section class="region-map" aria-labelledby="mapTitle">
-      <div class="maphead"><h2 id="mapTitle">지역 지도</h2><button data-area="all">전체 보기</button></div>
-      <div class="mapcanvas tokyo-map"><svg viewBox="0 0 420 420" aria-hidden="true"><rect width="420" height="420" fill="#f5f6f7"/><path d="M86 24C24 95 40 286 145 330S288 240 245 80Z" fill="none" stroke="#d7dadd" stroke-width="14"/><path d="M330 0V420" stroke="#d4e2e8" stroke-width="18"/></svg><button class="maparea" style="left:8%;top:54.99%" data-area="고탄다" aria-label="고탄다 지역 호텔 보기"><strong>고탄다</strong><small data-area-count="고탄다"></small></button><button class="maparea" style="left:72%;top:33.16%" data-area="긴시초" aria-label="긴시초 지역 호텔 보기"><strong>긴시초</strong><small data-area-count="긴시초"></small></button><button class="maparea" style="left:47%;top:62.27%" data-area="긴자" aria-label="긴자 지역 호텔 보기"><strong>긴자</strong><small data-area-count="긴자"></small></button><button class="maparea" style="left:47%;top:4.04%" data-area="닛포리" aria-label="닛포리 지역 호텔 보기"><strong>닛포리</strong><small data-area-count="닛포리"></small></button><button class="maparea" style="left:47%;top:47.71%" data-area="도쿄역" aria-label="도쿄역 지역 호텔 보기"><strong>도쿄역</strong><small data-area-count="도쿄역"></small></button><button class="maparea" style="left:27%;top:54.99%" data-area="롯폰기" aria-label="롯폰기 지역 호텔 보기"><strong>롯폰기</strong><small data-area-count="롯폰기"></small></button><button class="maparea" style="left:8%;top:84.1%" data-area="시나가와" aria-label="시나가와 지역 호텔 보기"><strong>시나가와</strong><small data-area-count="시나가와"></small></button><button class="maparea" style="left:27%;top:84.1%" data-area="시바·다이몬" aria-label="시바·다이몬 지역 호텔 보기"><strong>시바·다이몬</strong><small data-area-count="시바·다이몬"></small></button><button class="maparea" style="left:8%;top:69.55%" data-area="시바공원" aria-label="시바공원 지역 호텔 보기"><strong>시바공원</strong><small data-area-count="시바공원"></small></button><button class="maparea" style="left:8%;top:41.24%" data-area="시부야" aria-label="시부야 지역 호텔 보기"><strong>시부야</strong><small data-area-count="시부야"></small></button><button class="maparea" style="left:72%;top:47.71%" data-area="시오도메" aria-label="시오도메 지역 호텔 보기"><strong>시오도메</strong><small data-area-count="시오도메"></small></button><button class="maparea" style="left:72%;top:62.27%" data-area="시오미" aria-label="시오미 지역 호텔 보기"><strong>시오미</strong><small data-area-count="시오미"></small></button><button class="maparea" style="left:47%;top:76.02%" data-area="신바시" aria-label="신바시 지역 호텔 보기"><strong>신바시</strong><small data-area-count="신바시"></small></button><button class="maparea" style="left:8%;top:22.64%" data-area="신주쿠" aria-label="신주쿠 지역 호텔 보기"><strong>신주쿠</strong><small data-area-count="신주쿠"></small></button><button class="maparea" style="left:72%;top:18.6%" data-area="아사쿠사" aria-label="아사쿠사 지역 호텔 보기"><strong>아사쿠사</strong><small data-area-count="아사쿠사"></small></button><button class="maparea" style="left:47%;top:33.16%" data-area="아키하바라" aria-label="아키하바라 지역 호텔 보기"><strong>아키하바라</strong><small data-area-count="아키하바라"></small></button><button class="maparea" style="left:72%;top:4.04%" data-area="오시아게" aria-label="오시아게 지역 호텔 보기"><strong>오시아게</strong><small data-area-count="오시아게"></small></button><button class="maparea" style="left:72%;top:84.1%" data-area="오이마치" aria-label="오이마치 지역 호텔 보기"><strong>오이마치</strong><small data-area-count="오이마치"></small></button><button class="maparea" style="left:47%;top:18.6%" data-area="우에노" aria-label="우에노 지역 호텔 보기"><strong>우에노</strong><small data-area-count="우에노"></small></button><button class="maparea" style="left:8%;top:4.04%" data-area="이케부쿠로" aria-label="이케부쿠로 지역 호텔 보기"><strong>이케부쿠로</strong><small data-area-count="이케부쿠로"></small></button><button class="maparea" style="left:27%;top:69.55%" data-area="히비야" aria-label="히비야 지역 호텔 보기"><strong>히비야</strong><small data-area-count="히비야"></small></button></div>
-      <p>지역을 누르면 해당 호텔만 볼 수 있습니다.<span>지역 위치를 이해하기 위한 개념도 · 실제 거리·호텔 위치와 다릅니다.</span></p>
+    <section class="region-map tokyo-region-map" aria-labelledby="mapTitle">
+      <div class="maphead"><div><h2 id="mapTitle">도쿄 숙박 지역 지도</h2><p>역과 주변 동선을 보면서 지역을 골라보세요.</p></div><button type="button" id="mapOverview">도쿄 전체 보기</button></div>
+      <div id="tokyoMap" data-tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png" aria-label="확대와 이동이 가능한 도쿄 숙박 지역 지도"><p id="mapLoadMessage">지도를 불러오는 중입니다. 위의 지역 필터로도 호텔을 찾을 수 있습니다.</p></div>
+      <p id="mapSelection" role="status" aria-live="polite">지역 핀을 누르면 아래 호텔 목록이 바뀝니다.</p>
+      <p class="map-basis">핀은 지역별 대표 역·장소를 표시합니다. 개별 호텔의 정확한 위치는 예약 페이지에서 확인하세요.</p>
     </section>
     </div>
     <p class="affiliate-note"><b>제휴 안내</b> · 일부 예약 링크는 제휴 링크입니다. 해당 링크를 통해 예약이 이루어지면 운영자에게 수수료가 지급됩니다.</p>
