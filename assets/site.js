@@ -3,6 +3,7 @@ const hotels = window.NMNR_HOTELS || [];
 const state = {room: 0, area: 'all', bath: 'all', sort: 'name', query: ''};
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
 function roomFeel(m) {
+  if (!Number.isFinite(m)) return '공식 면적 확인 중';
   if (m <= 15) return '캐리어 펴면 길 막힘';
   if (m < 20) return '둘이 쓰면 조금 타이트';
   if (m < 25) return '캐리어 2개도 비교적 여유';
@@ -10,9 +11,13 @@ function roomFeel(m) {
 }
 function bathStatus(h) { return h.bath ? 'yes' : /확인 안 됨/.test(h.bathLabel) ? 'unknown' : 'no'; }
 function current() {
-  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && h.minRoom2Pax >= state.room && (state.bath === 'all' || bathStatus(h) === state.bath) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
+  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && (state.room === 0 || (Number.isFinite(h.minRoom2Pax) && h.minRoom2Pax >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
   const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
   list.sort((a, b) => {
+    if (['room', 'small', 'bath'].includes(state.sort) && (a.minRoom2Pax == null || b.minRoom2Pax == null)) {
+      if (a.minRoom2Pax == null && b.minRoom2Pax == null) return byName(a,b);
+      return a.minRoom2Pax == null ? 1 : -1;
+    }
     if (state.sort === 'room') return b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
     if (state.sort === 'small') return a.minRoom2Pax - b.minRoom2Pax || byName(a,b);
     if (state.sort === 'bath') return Number(b.bath) - Number(a.bath) || b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
@@ -26,7 +31,7 @@ function render() {
   document.querySelector('#results').innerHTML = list.length ? list.map(h => {
     const status = bathStatus(h);
     const label = status === 'yes' ? '♨ 대욕장 있음' : status === 'unknown' ? '대욕장 확인 필요' : '대욕장 없음';
-    return `<article class="hotel"><details class="hotel-info"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small class="review-note"><span>후기 참고</span> ${escapeHTML(h.reviewNote || h.roomType)}</small></span><span class="size"><strong>${h.minRoom2Pax}<small>㎡</small></strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>기본 객실 면적 ${h.minRoom2Pax}㎡ · 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p>${h.reviewSourceUrl ? `<p class="review-source">한줄 메모는 후기 일부를 참고해 정리했습니다. <a href="${escapeHTML(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 보기 ↗</a> · 확인 ${escapeHTML(h.reviewCheckedAt)}</p>` : ''}</div></details>${h.tripUrl ? `<div class="booking-row"><span>날짜별 요금과 예약 가능한 객실 확인</span><a class="booking-link" href="${escapeHTML(h.tripUrl)}" target="_blank" rel="sponsored noopener" aria-label="${escapeHTML(h.name)} 트립닷컴에서 가격 보기 · 새 탭">트립닷컴에서 가격 보기 <span aria-hidden="true">↗</span></a></div>` : ''}</article>`;
+    return `<article class="hotel"><details class="hotel-info"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small class="review-note">${h.reviewSourceUrl ? '<span>후기 참고</span> ' : ''}${escapeHTML(h.reviewNote || h.roomType)}</small></span><span class="size"><strong>${Number.isFinite(h.minRoom2Pax) ? `${h.minRoom2Pax}<small>㎡</small>` : '<span class="unknown-size">확인 중</span>'}</strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>${Number.isFinite(h.minRoom2Pax) ? `기본 객실 면적 ${h.minRoom2Pax}㎡` : '기본 객실 면적 확인 중'} · 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p>${h.officialSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.officialSourceUrl)}" target="_blank" rel="noopener">객실 확인 자료 ↗</a></p>` : ''}${h.bathSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.bathSourceUrl)}" target="_blank" rel="noopener">대욕장 공식 확인 자료 ↗</a></p>` : ''}${h.reviewSourceUrl ? `<p class="review-source">한줄 메모는 후기 일부를 참고해 정리했습니다. <a href="${escapeHTML(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 보기 ↗</a> · 확인 ${escapeHTML(h.reviewCheckedAt)}</p>` : ''}</div></details>${h.tripUrl ? `<div class="booking-row"><span>날짜별 요금과 예약 가능한 객실 확인</span><a class="booking-link" href="${escapeHTML(h.tripUrl)}" target="_blank" rel="sponsored noopener" aria-label="${escapeHTML(h.name)} 트립닷컴에서 가격 보기 · 새 탭">트립닷컴에서 가격 보기 <span aria-hidden="true">↗</span></a></div>` : ''}</article>`;
   }).join('') : '<div class="empty">조건에 맞는 호텔이 없습니다.<br>방 크기나 지역 조건을 조금 넓혀보세요.<button id="emptyReset">조건 초기화</button></div>';
   document.querySelector('#emptyReset')?.addEventListener('click', resetAll);
 }
