@@ -10,14 +10,14 @@
 nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400}.tokyo-map{min-height:360px}.tokyo-map .maparea{min-width:0;padding:5px 7px}.tokyo-map .maparea strong{font-size:10px}.tokyo-map .maparea small{font-size:9px}.tokyo-map svg{height:100%}.size .unknown-size{font-size:13px}.detail a.source-link{text-decoration:underline;color:var(--accent)}
 
 /* Tokyo needs a full-width geographical map; Fukuoka keeps its compact layout. */
-.tokyo-page .filterlayout{display:flex;flex-direction:column;gap:24px}
-.tokyo-page .filterlayout .filters{padding:16px 20px}
-.tokyo-region-map{order:0;padding:16px 0 0}
-.tokyo-region-map .maphead{margin-bottom:12px;align-items:center}
-.tokyo-region-map .maphead h2{font-size:16px}
-.tokyo-region-map .maphead p{font-size:12px;color:var(--muted);margin:4px 0 0}
-.tokyo-region-map .maphead button{padding:8px 12px;border:1px solid var(--line);background:#fff;border-radius:3px;white-space:nowrap}
-#tokyoMap{height:540px;width:100%;background:#f1f3f4;z-index:0;font-family:inherit}
+:is(.tokyo-page,.sapporo-page) .filterlayout{display:flex;flex-direction:column;gap:24px}
+:is(.tokyo-page,.sapporo-page) .filterlayout .filters{padding:16px 20px}
+:is(.tokyo-region-map,.sapporo-region-map){order:0;padding:16px 0 0}
+:is(.tokyo-region-map,.sapporo-region-map) .maphead{margin-bottom:12px;align-items:center}
+:is(.tokyo-region-map,.sapporo-region-map) .maphead h2{font-size:16px}
+:is(.tokyo-region-map,.sapporo-region-map) .maphead p{font-size:12px;color:var(--muted);margin:4px 0 0}
+:is(.tokyo-region-map,.sapporo-region-map) .maphead button{padding:8px 12px;border:1px solid var(--line);background:#fff;border-radius:3px;white-space:nowrap}
+:is(#tokyoMap,#sapporoMap){height:540px;width:100%;background:#f1f3f4;z-index:0;font-family:inherit}
 #mapLoadMessage{position:absolute;z-index:500;left:12px;bottom:35px;padding:8px 12px;background:#fff;max-width:85%;font-size:12px;box-shadow:0 1px 5px #0002}
 #mapLoadMessage[hidden]{display:none}
 .area-pin-wrap{background:none;border:0}
@@ -26,10 +26,10 @@ nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400
 .area-pin.selected>span{width:19px;height:19px;background:#202124;box-shadow:0 0 0 3px #ffffffa0,0 0 0 5px #202124}
 .area-map-label{font-family:inherit;color:#202124;font-size:12px;font-weight:650;border:1px solid #d4d7da;border-radius:3px;box-shadow:0 1px 3px #0002;padding:5px 8px}
 .area-map-label span{font-size:10px;color:#686b70;font-weight:400;margin-left:4px}
-.tokyo-region-map #mapSelection{font-size:12px;color:#202124;margin:12px 0 4px}
-.tokyo-region-map .map-basis{font-size:11px;margin:0 0 14px}
-#tokyoMap .leaflet-control-attribution{font-size:10px}
-@media(max-width:640px){.tokyo-page .filterlayout{gap:18px}.tokyo-page .filterlayout .filters{padding:13px 12px}.tokyo-region-map .maphead h2{font-size:14px}.tokyo-region-map .maphead p{font-size:11px}#tokyoMap{height:440px}.tokyo-region-map #mapSelection{font-size:11px}.tokyo-region-map .map-basis{font-size:10px}.area-map-label{font-size:11px;padding:4px 6px}}
+:is(.tokyo-region-map,.sapporo-region-map) #mapSelection{font-size:12px;color:#202124;margin:12px 0 4px}
+:is(.tokyo-region-map,.sapporo-region-map) .map-basis{font-size:11px;margin:0 0 14px}
+:is(#tokyoMap,#sapporoMap) .leaflet-control-attribution{font-size:10px}
+@media(max-width:640px){:is(.tokyo-page,.sapporo-page) .filterlayout{gap:18px}:is(.tokyo-page,.sapporo-page) .filterlayout .filters{padding:13px 12px}:is(.tokyo-region-map,.sapporo-region-map) .maphead h2{font-size:14px}:is(.tokyo-region-map,.sapporo-region-map) .maphead p{font-size:11px}:is(#tokyoMap,#sapporoMap){height:440px}:is(.tokyo-region-map,.sapporo-region-map) #mapSelection{font-size:11px}:is(.tokyo-region-map,.sapporo-region-map) .map-basis{font-size:10px}.area-map-label{font-size:11px;padding:4px 6px}}
 
 /* The home page introduces the comparison before choosing a city. */
 .home-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:64px;align-items:center;padding-top:62px;padding-bottom:62px}.home-copy h1{font-size:43px;line-height:1.25;letter-spacing:-1.8px;margin-top:13px;word-break:keep-all}.home-lead{font-size:17px;line-height:1.7;margin:24px 0 8px;letter-spacing:-.3px}.home-lead strong{font-weight:600}.home-description{font-size:14px;color:var(--muted);line-height:1.8;margin:0}.city-picker{margin-top:25px}.city-picker>label{display:block;font-size:12px;font-weight:650;margin-bottom:8px}.city-picker>div{display:flex;gap:8px;align-items:stretch}.city-picker select{flex:1;min-width:0;margin:0;padding:13px 28px 13px 13px;font-size:14px;border-color:#bcc1c5;max-width:none}.city-picker button{border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:3px;font-size:13px;font-weight:600;padding:12px 17px;white-space:nowrap}.city-picker button:hover{background:#3c4045}.home-facts{font-size:11px;color:var(--muted);margin:13px 0 0}.home-facts>span{margin-left:14px}.room-example{border:1px solid var(--line);border-radius:4px;padding:24px 24px 18px;background:#fff}.example-heading h2{font-size:16px;letter-spacing:-.4px;margin:0}.example-heading p{font-size:11px;color:var(--muted);margin:5px 0 0}.room-example svg{display:block;width:100%;max-height:285px;margin:12px auto 0}.example-caption{font-size:10px;color:var(--muted);line-height:1.6;border-top:1px solid var(--line);padding-top:12px;margin:12px 0 0}.home-cities{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fafbfc;padding:32px 0 25px;scroll-margin-top:20px}.section-heading h2,.home-method>h2{font-size:22px;letter-spacing:-.7px;margin:0}.section-heading p{font-size:12px;color:var(--muted);margin:5px 0 21px}.city-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.city-link{border:1px solid #d9dde0;border-radius:4px;padding:20px 22px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:15px;transition:border-color .15s}.city-link:hover{border-color:var(--ink)}.city-english{font-size:9px;letter-spacing:1.5px;color:var(--muted)}.city-link h3{font-size:21px;margin:3px 0}.city-link p{font-size:11px;color:var(--muted);margin:0}.city-link-end{text-align:right;white-space:nowrap}.city-link-end>span{display:block;font-size:11px;color:var(--muted);margin-bottom:10px}.city-link-end strong{font-size:12px;color:var(--accent)}.upcoming-cities{font-size:12px;color:var(--muted);margin:17px 0 0}.upcoming-cities>span:first-child{font-size:10px;margin-right:18px}.upcoming-cities small{font-size:10px;margin-left:5px}.upcoming-divider{margin:0 14px;color:#bcc1c5}.home-method{padding-top:36px;padding-bottom:34px}.home-method>h2{font-size:19px}.method-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:21px}.method-columns>div>span{font-size:10px;color:var(--accent)}.method-columns h3{font-size:14px;margin:5px 0}.method-columns p{font-size:12px;line-height:1.8;color:var(--muted);margin:0;word-break:keep-all}.home-footer{border-top:1px solid var(--line)}
@@ -42,4 +42,4 @@ nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400
 
 .inline-simulator{border-top:1px solid var(--line);padding:16px;background:#fafbfc}.inline-simulator[hidden]{display:none}.inline-sim-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;font-size:12px}.inline-sim-head>div{display:flex;align-items:center;gap:16px;white-space:nowrap}.inline-sim-full{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.inline-sim-close{background:#fff;border:1px solid var(--line);padding:6px 10px;border-radius:3px;font-size:11px}.inline-simulator iframe{display:block;width:100%;height:820px;border:0;background:#fff}.simulation-link[aria-expanded=true]{background:var(--soft);border-color:var(--ink)}@media(max-width:640px){.inline-simulator{padding:12px 0}.inline-sim-head{align-items:flex-start;flex-wrap:wrap;padding:0 4px}.inline-sim-head strong{width:100%}.inline-sim-head>div{width:100%;justify-content:space-between}}
 
-.sapporo-concept-map{min-height:290px}.sapporo-concept-map .station{left:44%;top:5%}.sapporo-concept-map .odori{left:16%;top:40%}.sapporo-concept-map .tanuki{right:12%;top:62%}.sapporo-concept-map .susukino{left:24%;bottom:3%}.home-cities .city-links{grid-template-columns:repeat(3,minmax(0,1fr))}.city-link{flex-wrap:wrap}.city-link-end{text-align:left}@media(max-width:640px){.home-cities .city-links{grid-template-columns:1fr}}
+.home-cities .city-links{grid-template-columns:repeat(3,minmax(0,1fr))}.city-link{flex-wrap:wrap}.city-link-end{text-align:left}@media(max-width:640px){.home-cities .city-links{grid-template-columns:1fr}}
