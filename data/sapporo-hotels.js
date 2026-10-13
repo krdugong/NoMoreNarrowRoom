@@ -15,7 +15,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 1,
     "tripHotelId": "111414778",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=111414778&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "기본 객실은 스파 미포함 · 이용 가능한 객실 확인"
+    "reviewNote": "기본 객실은 스파 미포함 · 이용 가능한 객실 확인",
+    "location": {
+      "lat": 43.05523,
+      "lng": 141.35233,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=111414778",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_02",
@@ -33,7 +39,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 2,
     "tripHotelId": "124300563",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=124300563&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.069228,
+      "lng": 141.35723,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=124300563",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_03",
@@ -51,7 +63,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 3,
     "tripHotelId": "9147711",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=9147711&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.05644,
+      "lng": 141.350351,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=9147711",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_04",
@@ -69,7 +87,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 4,
     "tripHotelId": "5253272",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=5253272&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.057798,
+      "lng": 141.350792,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=5253272",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_05",
@@ -87,7 +111,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 5,
     "tripHotelId": "703370",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703370&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.06404,
+      "lng": 141.353276,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703370",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_06",
@@ -105,7 +135,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 6,
     "tripHotelId": "993375",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=993375&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.062687,
+      "lng": 141.350947,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993375",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_07",
@@ -123,7 +159,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 7,
     "tripHotelId": "62987948",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=62987948&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.065454,
+      "lng": 141.348528,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=62987948",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_08",
@@ -141,7 +183,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 8,
     "tripHotelId": "52762809",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=52762809&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.065455,
+      "lng": 141.352676,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=52762809",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_09",
@@ -159,7 +207,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 9,
     "tripHotelId": "705159",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=705159&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.068131,
+      "lng": 141.352453,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705159",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_10",
@@ -177,7 +231,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 10,
     "tripHotelId": "31315741",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=31315741&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.054318,
+      "lng": 141.349242,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=31315741",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_11",
@@ -195,7 +255,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 11,
     "tripHotelId": "105135623",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=105135623&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.057433,
+      "lng": 141.355727,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=105135623",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_12",
@@ -213,7 +279,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 12,
     "tripHotelId": "129923417",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=129923417&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.065118,
+      "lng": 141.351231,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=129923417",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_13",
@@ -231,7 +303,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 13,
     "tripHotelId": "72005271",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=72005271&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.058117,
+      "lng": 141.356144,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=72005271",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_14",
@@ -249,7 +327,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 14,
     "tripHotelId": "993399",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=993399&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.066299,
+      "lng": 141.349562,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993399",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_15",
@@ -267,7 +351,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 15,
     "tripHotelId": "112955989",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=112955989&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "더블 A 13㎡ · 더블 B와 트윈은 면적이 다름"
+    "reviewNote": "더블 A 13㎡ · 더블 B와 트윈은 면적이 다름",
+    "location": {
+      "lat": 43.07111,
+      "lng": 141.354037,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=112955989",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_16",
@@ -285,7 +375,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 16,
     "tripHotelId": "993365",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=993365&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.066177,
+      "lng": 141.345199,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993365",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_17",
@@ -303,7 +399,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 17,
     "tripHotelId": "846368",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=846368&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.057499,
+      "lng": 141.351985,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=846368",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_18",
@@ -321,7 +423,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 18,
     "tripHotelId": "77274627",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=77274627&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.055003,
+      "lng": 141.35654,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=77274627",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_19",
@@ -339,7 +447,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 19,
     "tripHotelId": "134224926",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=134224926&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.06404,
+      "lng": 141.353864,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=134224926",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_20",
@@ -357,7 +471,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 20,
     "tripHotelId": "49334869",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=49334869&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.066383,
+      "lng": 141.346664,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49334869",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_21",
@@ -375,7 +495,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 21,
     "tripHotelId": "1454486",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=1454486&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.064469,
+      "lng": 141.355616,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1454486",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_22",
@@ -393,7 +519,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 22,
     "tripHotelId": "75464509",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=75464509&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.060472,
+      "lng": 141.356031,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=75464509",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_23",
@@ -411,7 +543,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 23,
     "tripHotelId": "72213523",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=72213523&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔"
+    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.056104,
+      "lng": 141.345769,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=72213523",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_24",
@@ -429,7 +567,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 24,
     "tripHotelId": "31315743",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=31315743&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔"
+    "reviewNote": "삿포로역 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.070249,
+      "lng": 141.34823,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=31315743",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_25",
@@ -447,7 +591,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 25,
     "tripHotelId": "705841",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=705841&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.058842,
+      "lng": 141.344598,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705841",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_26",
@@ -465,7 +615,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 26,
     "tripHotelId": "62657810",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=62657810&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.052952,
+      "lng": 141.353383,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=62657810",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_27",
@@ -483,7 +639,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 27,
     "tripHotelId": "12829051",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=12829051&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.059187,
+      "lng": 141.356653,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12829051",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_28",
@@ -501,7 +663,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 28,
     "tripHotelId": "1647806",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=1647806&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.05582,
+      "lng": 141.355766,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1647806",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_29",
@@ -519,7 +687,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 29,
     "tripHotelId": "703364",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703364&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "2026년 리뉴얼 객실 기준"
+    "reviewNote": "2026년 리뉴얼 객실 기준",
+    "location": {
+      "lat": 43.066523,
+      "lng": 141.347013,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703364",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_30",
@@ -537,7 +711,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 30,
     "tripHotelId": "114435820",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=114435820&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.061355,
+      "lng": 141.351217,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=114435820",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_31",
@@ -555,7 +735,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 31,
     "tripHotelId": "12591944",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=12591944&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.056547,
+      "lng": 141.357508,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12591944",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_32",
@@ -573,7 +759,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 32,
     "tripHotelId": "57831126",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=57831126&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.062361,
+      "lng": 141.345636,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=57831126",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_33",
@@ -591,7 +783,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 33,
     "tripHotelId": "703483",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703483&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "개보수 후 컴팩트 트윈 22㎡ 기준"
+    "reviewNote": "개보수 후 컴팩트 트윈 22㎡ 기준",
+    "location": {
+      "lat": 43.057968,
+      "lng": 141.350257,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703483",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_34",
@@ -609,7 +807,13 @@ window.NMNR_HOTELS = [
     "popularityRank": 34,
     "tripHotelId": "703372",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703372&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "오도리 일정 중심으로 비교할 호텔"
+    "reviewNote": "오도리 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.059622,
+      "lng": 141.350217,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703372",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "sapporo_35",
@@ -627,6 +831,12 @@ window.NMNR_HOTELS = [
     "popularityRank": 35,
     "tripHotelId": "96613617",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=96613617&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "스스키노 일정 중심으로 비교할 호텔"
+    "reviewNote": "스스키노 일정 중심으로 비교할 호텔",
+    "location": {
+      "lat": 43.055248,
+      "lng": 141.356322,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=96613617",
+      "verifiedAt": "2026-10-13"
+    }
   }
 ];
