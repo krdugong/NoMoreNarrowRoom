@@ -17,7 +17,13 @@ window.NMNR_HOTELS = [
     "bathSourceUrl": "https://www.gardenhotels.co.jp/gotanda/bath/",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-14094895/mitsui-garden-hotel-gotanda/review.html",
     "reviewCheckedAt": "2026-10-13",
-    "popularityRank": 13
+    "popularityRank": 13,
+    "location": {
+      "lat": 35.62529,
+      "lng": 139.725475,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=14094895",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_02",
@@ -34,7 +40,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴시초 일정 중심으로 비교할 호텔",
     "tripHotelId": "36831581",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=36831581&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.697485,
+      "lng": 139.815448,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=36831581",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_03",
@@ -51,7 +63,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴시초 일정 중심으로 비교할 호텔",
     "tripHotelId": "686270",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=686270&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 7
+    "popularityRank": 7,
+    "location": {
+      "lat": 35.697213,
+      "lng": 139.810939,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686270",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_04",
@@ -68,7 +86,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "3095695",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=3095695&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.673353,
+      "lng": 139.769177,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3095695",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_05",
@@ -86,7 +110,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "21434381",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=21434381&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.the-squarehotel.com/sgi/",
-    "popularityRank": 8
+    "popularityRank": 8,
+    "location": {
+      "lat": 35.672258,
+      "lng": 139.769136,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=21434381",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_06",
@@ -103,7 +133,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "76284241",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=76284241&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.673215,
+      "lng": 139.765751,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=76284241",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_07",
@@ -121,7 +157,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "32621197",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=32621197&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.gardenhotels.co.jp/ginza-gochome/facility/",
-    "popularityRank": 5
+    "popularityRank": 5,
+    "location": {
+      "lat": 35.668882,
+      "lng": 139.766754,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=32621197",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_08",
@@ -138,7 +180,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "1683161",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1683161&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.669876,
+      "lng": 139.766126,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1683161",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_09",
@@ -156,7 +204,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "23207244",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=23207244&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/ginza/gallery.html",
-    "popularityRank": 10
+    "popularityRank": 10,
+    "location": {
+      "lat": 35.670749,
+      "lng": 139.768446,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=23207244",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_10",
@@ -173,7 +227,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "68486207",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=68486207&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.674136,
+      "lng": 139.769229,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=68486207",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_11",
@@ -190,7 +250,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "688252",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688252&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 7
+    "popularityRank": 7,
+    "location": {
+      "lat": 35.668851,
+      "lng": 139.763681,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688252",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_12",
@@ -207,7 +273,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "1438372",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1438372&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 8
+    "popularityRank": 8,
+    "location": {
+      "lat": 35.672746,
+      "lng": 139.768931,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1438372",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_13",
@@ -227,7 +299,13 @@ window.NMNR_HOTELS = [
     "bathSourceUrl": "https://www.almont.jp/nippori/faq.html",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-71942669/almont-hotel-nippori/review.html",
     "reviewCheckedAt": "2026-10-13",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.72839,
+      "lng": 139.773849,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=71942669",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_14",
@@ -244,7 +322,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔",
     "tripHotelId": "688434",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688434&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 10
+    "popularityRank": 10,
+    "location": {
+      "lat": 35.683357,
+      "lng": 139.766589,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688434",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_15",
@@ -262,7 +346,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "2695279",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=2695279&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/yaesu/gallery.html",
-    "popularityRank": 10
+    "popularityRank": 10,
+    "location": {
+      "lat": 35.679289,
+      "lng": 139.769837,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=2695279",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_16",
@@ -279,7 +369,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "23747912",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=23747912&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.682049,
+      "lng": 139.770983,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=23747912",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_17",
@@ -296,7 +392,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔",
     "tripHotelId": "102628594",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=102628594&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.679096,
+      "lng": 139.772617,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=102628594",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_18",
@@ -315,7 +417,13 @@ window.NMNR_HOTELS = [
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=6347584&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-6347584/remm-roppongi/review.html",
     "reviewCheckedAt": "2026-10-13",
-    "popularityRank": 2
+    "popularityRank": 2,
+    "location": {
+      "lat": 35.663745,
+      "lng": 139.731269,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=6347584",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_19",
@@ -335,7 +443,13 @@ window.NMNR_HOTELS = [
     "bathSourceUrl": "https://www.candeohotels.com/en/tokyo-roppongi/skyspa/",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-9148139/candeo-hotels-tokyo-roppongi/review.html",
     "reviewCheckedAt": "2026-10-13",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.662042,
+      "lng": 139.732598,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=9148139",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_20",
@@ -352,7 +466,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시나가와 일정 중심으로 비교할 호텔",
     "tripHotelId": "994895",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994895&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.62796,
+      "lng": 139.73639,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994895",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_21",
@@ -369,7 +489,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시바·다이몬 일정 중심으로 비교할 호텔",
     "tripHotelId": "1837756",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1837756&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.656931,
+      "lng": 139.75234,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1837756",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_22",
@@ -386,7 +512,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시바공원 일정 중심으로 비교할 호텔",
     "tripHotelId": "688271",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688271&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.658962,
+      "lng": 139.748139,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688271",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_23",
@@ -403,7 +535,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시부야 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "759797",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=759797&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 10
+    "popularityRank": 10,
+    "location": {
+      "lat": 35.660223,
+      "lng": 139.701988,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759797",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_24",
@@ -422,7 +560,13 @@ window.NMNR_HOTELS = [
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=22564082&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-22564082/shibuya-stream-excel-hotel-tokyu/review.html",
     "reviewCheckedAt": "2026-10-13",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.657273,
+      "lng": 139.703198,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=22564082",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_25",
@@ -439,7 +583,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시부야 일정 중심으로 비교할 호텔",
     "tripHotelId": "994472",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994472&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 5
+    "popularityRank": 5,
+    "location": {
+      "lat": 35.658577,
+      "lng": 139.699821,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994472",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_26",
@@ -456,7 +606,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시부야 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "686310",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=686310&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.663161,
+      "lng": 139.698756,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686310",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_27",
@@ -473,7 +629,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시오도메 일정 중심으로 비교할 호텔",
     "tripHotelId": "688618",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688618&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.664241,
+      "lng": 139.760536,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688618",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_28",
@@ -490,7 +652,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시오도메 일정 중심으로 비교할 호텔",
     "tripHotelId": "737054",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=737054&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.662233,
+      "lng": 139.760214,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=737054",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_29",
@@ -507,7 +675,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "시오미 일정 중심으로 비교할 호텔",
     "tripHotelId": "49140310",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=49140310&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.658864,
+      "lng": 139.817996,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49140310",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_30",
@@ -524,7 +698,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신바시 일정 중심으로 비교할 호텔",
     "tripHotelId": "688586",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688586&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 8
+    "popularityRank": 8,
+    "location": {
+      "lat": 35.668816,
+      "lng": 139.757387,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688586",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_31",
@@ -542,7 +722,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "12162801",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=12162801&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.candeohotels.com/en/tokyo-shimbashi/skyspa/",
-    "popularityRank": 4
+    "popularityRank": 4,
+    "location": {
+      "lat": 35.665859,
+      "lng": 139.755218,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12162801",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_32",
@@ -559,7 +745,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "994914",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994914&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 3
+    "popularityRank": 3,
+    "location": {
+      "lat": 35.686835,
+      "lng": 139.69325,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994914",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_33",
@@ -576,7 +768,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "994923",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994923&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.694477,
+      "lng": 139.700134,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994923",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_34",
@@ -593,7 +791,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "994911",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994911&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.686384,
+      "lng": 139.700434,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994911",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_35",
@@ -610,7 +814,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "1841600",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1841600&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 8
+    "popularityRank": 8,
+    "location": {
+      "lat": 35.695306,
+      "lng": 139.702054,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1841600",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_36",
@@ -627,7 +837,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "688313",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688313&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.687028,
+      "lng": 139.698842,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688313",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_37",
@@ -644,7 +860,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "아사쿠사 일정 중심으로 비교할 호텔",
     "tripHotelId": "686243",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=686243&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 5
+    "popularityRank": 5,
+    "location": {
+      "lat": 35.715464,
+      "lng": 139.791871,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686243",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_38",
@@ -661,7 +883,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "아사쿠사 일정 중심으로 비교할 호텔",
     "tripHotelId": "57099041",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=57099041&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.711385,
+      "lng": 139.797425,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=57099041",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_39",
@@ -678,7 +906,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "아키하바라 일정 중심으로 비교할 호텔",
     "tripHotelId": "54252179",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=54252179&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 6
+    "popularityRank": 6,
+    "location": {
+      "lat": 35.700829,
+      "lng": 139.77709,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=54252179",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_40",
@@ -696,7 +930,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "688177",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688177&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/akihabara/",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.702598,
+      "lng": 139.773288,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688177",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_41",
@@ -714,7 +954,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "44404791",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=44404791&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/p_akiba/gallery.html",
-    "popularityRank": 7
+    "popularityRank": 7,
+    "location": {
+      "lat": 35.696632,
+      "lng": 139.774488,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=44404791",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_42",
@@ -731,7 +977,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "아키하바라 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "994528",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994528&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 4
+    "popularityRank": 4,
+    "location": {
+      "lat": 35.697269,
+      "lng": 139.773744,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994528",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_43",
@@ -748,7 +1000,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "오시아게 일정 중심으로 비교할 호텔",
     "tripHotelId": "3103999",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=3103999&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.710234,
+      "lng": 139.813758,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3103999",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_44",
@@ -765,7 +1023,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "오이마치 일정 중심으로 비교할 호텔",
     "tripHotelId": "132802408",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=132802408&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 11
+    "popularityRank": 11,
+    "location": {
+      "lat": 35.608155,
+      "lng": 139.734012,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=132802408",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_45",
@@ -783,7 +1047,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "10748373",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=10748373&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://www.centurion-hotel.com/ueno-sta/facilities/",
-    "popularityRank": 9
+    "popularityRank": 9,
+    "location": {
+      "lat": 35.709844,
+      "lng": 139.775689,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=10748373",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_46",
@@ -801,7 +1071,13 @@ window.NMNR_HOTELS = [
     "tripHotelId": "110205979",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=110205979&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "bathSourceUrl": "https://andherehotels.jp/tokyoueno/",
-    "popularityRank": 12
+    "popularityRank": 12,
+    "location": {
+      "lat": 35.709325,
+      "lng": 139.77094,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=110205979",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_47",
@@ -818,7 +1094,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "우에노 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "759852",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=759852&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 10
+    "popularityRank": 10,
+    "location": {
+      "lat": 35.708716,
+      "lng": 139.776091,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759852",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_48",
@@ -835,7 +1117,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "이케부쿠로 일정 중심으로 비교할 호텔",
     "tripHotelId": "994584",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=994584&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 1
+    "popularityRank": 1,
+    "location": {
+      "lat": 35.729534,
+      "lng": 139.719546,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994584",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_49",
@@ -852,7 +1140,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "이케부쿠로 일정 중심으로 비교할 호텔",
     "tripHotelId": "1489108",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1489108&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 7
+    "popularityRank": 7,
+    "location": {
+      "lat": 35.728102,
+      "lng": 139.707829,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1489108",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_50",
@@ -869,7 +1163,13 @@ window.NMNR_HOTELS = [
     "reviewNote": "히비야 일정 중심으로 비교할 호텔",
     "tripHotelId": "34011678",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=34011678&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 14
+    "popularityRank": 14,
+    "location": {
+      "lat": 35.668961,
+      "lng": 139.756774,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=34011678",
+      "verifiedAt": "2026-10-13"
+    }
   },
   {
     "id": "tokyo_51",
@@ -886,6 +1186,12 @@ window.NMNR_HOTELS = [
     "reviewNote": "히비야 일정 중심으로 비교할 호텔",
     "tripHotelId": "1458596",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=1458596&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "popularityRank": 13
+    "popularityRank": 13,
+    "location": {
+      "lat": 35.672606,
+      "lng": 139.759671,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1458596",
+      "verifiedAt": "2026-10-13"
+    }
   }
 ];
