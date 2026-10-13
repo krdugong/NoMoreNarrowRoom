@@ -42,8 +42,10 @@
     const count = hotels.filter(h=>h.area===name).length;
     const icon = L.divIcon({className:'area-pin-wrap',html:`<button type="button" class="area-pin" aria-label="${escapeHTML(name)} 지역 호텔 ${count}곳 보기"><span></span></button>`,iconSize:[32,32],iconAnchor:[16,16]});
     const marker = L.marker([lat,lng],{icon,keyboard:false}).addTo(map);
-    marker.bindTooltip(`${escapeHTML(name)} <span>${count}곳</span>`,{permanent:Boolean(major),direction:direction||'top',className:'area-map-label',offset:[0,0]});
-    marker.on('click',()=>document.querySelector(`.filters [data-area="${name}"]`).click());
+    const selectArea=()=>document.querySelector(`.filters [data-area="${name}"]`).click();
+    marker.bindTooltip(`<button type="button" aria-label="${escapeHTML(name)} 지역 호텔 ${count}곳 보기">${escapeHTML(name)} <span>${count}곳</span></button>`,{interactive:true,permanent:Boolean(major),direction:direction||'top',className:'area-map-label',offset:[0,0]});
+    marker.on('click',selectArea);
+    marker.getTooltip().on('click',selectArea);
     markers.set(name,{marker,major,anchor,count});
   }
   function labels() {
@@ -61,7 +63,7 @@
       button?.setAttribute('aria-pressed',String(name===state.area));
     }
     const item=markers.get(state.area);
-    hint.textContent=item ? `${state.area} · ${item.anchor} 주변 / 현재 조건에 맞는 호텔 ${current().length}곳` : '지역 핀을 누르면 아래 호텔 목록이 바뀝니다. 확대하면 주변 역과 도로를 더 자세히 볼 수 있습니다.';
+    hint.textContent=item ? `${state.area} · ${item.anchor} 주변 / 현재 조건에 맞는 호텔 ${current().length}곳` : '지역 이름이나 핀을 누르면 아래 호텔 목록이 바뀝니다. 확대하면 주변 역과 도로를 더 자세히 볼 수 있습니다.';
     if(lastArea!==state.area) {
       if(item) map.setView(item.marker.getLatLng(),14,{animate:false}); else overview();
       lastArea=state.area;
