@@ -8,3 +8,5 @@
 .sim-settings .shopping-toggle{align-items:flex-start;margin:5px 0 5px;line-height:1.5}.shopping-toggle input{flex-shrink:0}.shopping-hint{font-size:10px;color:var(--muted);margin:0 0 16px 26px}
 
 .sim-embedded .top,.sim-embedded .skip,.sim-embedded .intro,.sim-embedded .sim-next,.sim-embedded footer,.sim-embedded .share-actions{display:none}.sim-embedded .sim-main{max-width:none;padding:8px}.sim-embedded .sim-layout{grid-template-columns:250px minmax(0,1fr);gap:18px}.sim-embedded .sim-settings{padding:14px}.sim-embedded #viewer{height:390px}.sim-embedded .viewer-help{flex-wrap:wrap}.sim-embedded .viewer-top{flex-wrap:wrap}@media(max-width:700px){.sim-embedded .sim-layout{grid-template-columns:1fr;gap:18px}.sim-embedded .sim-display{order:-1}.sim-embedded #viewer{height:320px}.sim-embedded .sim-result h2{font-size:18px}}
+
+.sim-settings .room-area-input{margin:10px 0 0;font-size:10px}.sim-settings .room-area-input input{padding:7px;margin-top:4px}
