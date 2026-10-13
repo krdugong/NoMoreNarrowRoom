@@ -46,8 +46,8 @@ nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400
 
 /* Keep the background quiet; Korean areas and hotel positions lead the map. */
 #sapporoMap{background:#f5f6f7}
-#sapporoMap .sapporo-base-tiles{filter:grayscale(1);opacity:.24}
-#sapporoMap.map-detailed .sapporo-base-tiles{filter:none;opacity:1}
+#sapporoMap .sapporo-base-tiles{filter:grayscale(1);opacity:.24!important}
+#sapporoMap.map-detailed .sapporo-base-tiles{filter:none;opacity:1!important}
 .sapporo-region-map .map-actions{display:flex;gap:6px}
 #sapporoMap .area-map-label{font-size:17px;border:1px solid #818a91;box-shadow:0 2px 6px #0002}
 #sapporoMap .area-map-label button{padding:10px 14px;min-height:46px}
