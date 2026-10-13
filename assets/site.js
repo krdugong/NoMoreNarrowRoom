@@ -80,7 +80,7 @@ document.querySelector('#results').addEventListener('click',event=>{
   if(!panel.hidden){closeInlineSimulator(panel);return;}
   document.querySelectorAll('.inline-simulator:not([hidden])').forEach(closeInlineSimulator);
   const url=`./simulator.html?area=${encodeURIComponent(button.dataset.simArea)}`;
-  panel.innerHTML=`<div class="inline-sim-head"><strong>${escapeHTML(button.dataset.simName)} · ${button.dataset.simArea}㎡</strong><div><a class="inline-sim-full" href="${url}">더 크게 보기 ↗</a><button type="button" class="inline-sim-close">접기</button></div></div><iframe src="${url}&embed=1" title="${escapeHTML(button.dataset.simName)} 객실 면적의 캐리어 시뮬레이션"></iframe>`;
+  panel.innerHTML=`<div class="inline-sim-head"><strong>${escapeHTML(button.dataset.simName)} · ${button.dataset.simArea}㎡</strong><div><a class="inline-sim-full" href="${url}">더 크게 보기 ↗</a><button type="button" class="inline-sim-close">접기</button></div></div><iframe src="${url}&embed=1&v=20261013area" title="${escapeHTML(button.dataset.simName)} 객실 면적의 캐리어 시뮬레이션"></iframe>`;
   panel.hidden=false;
   button.setAttribute('aria-expanded','true');
 });
