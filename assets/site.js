@@ -14,6 +14,7 @@ function current() {
   const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && (state.room === 0 || (Number.isFinite(h.minRoom2Pax) && h.minRoom2Pax >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
   const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
   list.sort((a, b) => {
+    if (state.sort === 'popular') return (a.popularityRank ?? Infinity) - (b.popularityRank ?? Infinity) || byName(a,b);
     if (['room', 'small', 'bath'].includes(state.sort) && (a.minRoom2Pax == null || b.minRoom2Pax == null)) {
       if (a.minRoom2Pax == null && b.minRoom2Pax == null) return byName(a,b);
       return a.minRoom2Pax == null ? 1 : -1;
