@@ -1,0 +1,11 @@
+{
+  "name": "nomorenarrowroom",
+  "private": true,
+  "description": "일본 호텔 방 크기·대욕장 비교 (nomorenarrowroom.com)",
+  "scripts": {
+    "build": "node scripts/build-seo.cjs"
+  },
+  "devDependencies": {
+    "sharp": "0.34.5"
+  }
+}
