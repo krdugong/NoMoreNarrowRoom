@@ -1,0 +1,55 @@
+/* Search landing pages, hotel pages, and the guide blocks added to city pages. */
+.seo-main{padding-bottom:40px}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--muted);margin:22px 0 0}
+.crumbs a{text-decoration:underline;text-underline-offset:2px}
+.seo-intro h1,.hotel-page h1{font-size:30px;line-height:1.3;letter-spacing:-1px;margin:8px 0 12px;word-break:keep-all}
+.seo-intro .lead{font-size:15px;line-height:1.75;max-width:760px;margin:0 0 8px;word-break:keep-all}
+.updated{font-size:12px;color:var(--muted);margin:0 0 18px}
+.seo-card{display:block;width:100%;max-width:600px;height:auto;border:1px solid var(--line);margin:18px 0}
+.seo-main h2,.seo-guide h2,.faq h2{font-size:18px;margin:34px 0 12px;padding-top:14px;border-top:2px solid var(--ink)}
+.rank-list{list-style:none;margin:0;padding:0}
+.rank-item{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.rank-no{font-size:20px;font-weight:800;color:var(--accent);text-align:center}
+.rank-body h3{font-size:16px;margin:0 0 4px}
+.rank-body h3 a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#c5c8cc}
+.rank-meta{margin:0;font-size:13px}.rank-meta b{font-size:15px}
+.rank-note{margin:3px 0 0;font-size:12px;color:var(--muted)}
+.rank-actions{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.detail-link,.simulation-link{display:inline-block;text-align:center;padding:9px 14px;border:1px solid var(--line);border-radius:3px;font-size:12px;background:#fff}
+.bath-yes{color:var(--accent);font-weight:650}.bath-no{color:var(--muted)}.bath-unknown{color:#8a6d1f}
+.seo-guide p{font-size:14px;line-height:1.75;max-width:760px;word-break:keep-all}
+.seo-guide a,.related a{color:var(--accent)}
+.guide-links,.related ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.guide-links a,.related ul a{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+.guide-links small,.related small{color:var(--muted);margin-left:4px}
+.hotel-index{columns:3;column-gap:24px;padding:0;margin:0;list-style:none;font-size:13px}
+.hotel-index li{padding:4px 0;break-inside:avoid}.hotel-index a{text-decoration:underline;text-underline-offset:2px;text-decoration-color:#c5c8cc}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{list-style:none}.faq summary::-webkit-details-marker{display:none}
+.faq summary h3{display:inline;font-size:14px;font-weight:650}
+.faq summary::after{content:'+';float:right;color:var(--muted)}.faq details[open] summary::after{content:'−'}
+.faq p{margin:8px 0 0;font-size:13px;line-height:1.7;color:#43464b}
+.hotel-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:18px 0}
+.hotel-facts>div{background:#fff;padding:16px;display:flex;flex-direction:column;gap:4px}
+.hotel-facts span{font-size:11px;color:var(--muted)}.hotel-facts strong{font-size:24px}.hotel-facts small{font-size:12px;color:var(--muted)}
+.hotel-text p{font-size:15px;line-height:1.8;max-width:760px;margin:0 0 10px;word-break:keep-all}
+.hotel-cta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.fact-table{margin:0;border-top:1px solid var(--line)}
+.fact-table>div{display:grid;grid-template-columns:150px 1fr;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}
+.fact-table dt{color:var(--muted)}.fact-table dd{margin:0}
+.sources{display:flex;flex-wrap:wrap;gap:14px;font-size:12px}.sources a{color:var(--accent);text-decoration:underline}
+.mini-list{list-style:none;padding:0;margin:0}.mini-list li{padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.mini-list a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-color:#c5c8cc}.mini-list span{color:var(--muted);margin-left:6px}
+.home-guide{padding-bottom:20px}.home-guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.home-guide h3{font-size:15px;margin:0 0 10px}.home-guide h3 a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.home-guide ul{list-style:none;padding:0;margin:0}.home-guide li{padding:4px 0;font-size:13px}
+@media(max-width:640px){
+  .seo-intro h1,.hotel-page h1{font-size:24px}
+  .rank-item{grid-template-columns:28px minmax(0,1fr);gap:10px}
+  .rank-actions{grid-column:2;flex-direction:row;flex-wrap:wrap}
+  .hotel-facts{grid-template-columns:1fr}
+  .fact-table>div{grid-template-columns:110px 1fr}
+  .hotel-index{columns:1}
+  .home-guide-grid{grid-template-columns:1fr}
+}
+.related ul.mini-list{display:block}.related .mini-list a{display:inline;padding:0;border:0;background:none}
