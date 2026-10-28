@@ -14,7 +14,7 @@ The hotel card shows **15㎡** as the main room-size metric. Larger room types r
 Use Korean traveler demand to decide which hotels deserve to be in the database first.
 
 Priority discovery sources:
-1. 네일동 and similar Korean Japan-travel communities: repeated mentions, recommendation questions, stay reviews
+1. 한국 여행자 커뮤니티 and similar Korean Japan-travel communities: repeated mentions, recommendation questions, stay reviews
 2. Naver Blog/Cafe search: repeated hotel names and recent interest
 3. Existing Passivelab hotel keyword/content data
 
