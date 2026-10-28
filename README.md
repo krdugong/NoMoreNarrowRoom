@@ -14,5 +14,6 @@ npm run build
 ```
 
 - 주소와 사이트 인증 코드는 `scripts/seo-config.json`에서 바꿉니다. 네이버 서치어드바이저 인증 코드는 `naverSiteVerification`에 넣고 다시 빌드하세요.
+- 구글 애널리틱스 측정 ID(`G-…`)는 `googleAnalyticsId`에 넣습니다. 빌드하면 모든 페이지와 `simulator.html`에 태그가 들어가고, 비워두면 빠집니다.
 - 같은 데이터로 여러 번 빌드해도 결과가 같아야 합니다. 생성된 HTML과 이미지도 함께 커밋합니다.
 - 서치어드바이저에는 `https://nomorenarrowroom.com/sitemap.xml`과 `https://nomorenarrowroom.com/rss.xml`을 제출합니다.

@@ -99,6 +99,9 @@ async function renderImages() {
 }
 
 // ---------- page shell ----------
+// Google Analytics 4 (gtag.js), on when seo-config.json has googleAnalyticsId.
+const gaTag = () => cfg.googleAnalyticsId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(cfg.googleAnalyticsId)}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(cfg.googleAnalyticsId)}');</script>` : '';
 function headTags({title, desc, url, image, updated, jsonld, type = 'website'}) {
   const v = [
     `<title>${esc(title)}</title>`,
@@ -107,6 +110,7 @@ function headTags({title, desc, url, image, updated, jsonld, type = 'website'}) 
     `<link rel="canonical" href="${abs(url)}">`,
     cfg.naverSiteVerification ? `<meta name="naver-site-verification" content="${esc(cfg.naverSiteVerification)}">` : '',
     cfg.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleSiteVerification)}">` : '',
+    gaTag(),
     `<meta property="og:locale" content="ko_KR">`,
     `<meta property="og:type" content="${type}">`,
     `<meta property="og:site_name" content="${esc(cfg.siteName)}">`,
@@ -362,6 +366,10 @@ function homePage() {
     }
   }
   homePage();
+  // The simulator page is hand-written, so only the analytics tag is added to it.
+  const simFile = path.join(root, 'simulator.html');
+  const sim = fs.readFileSync(simFile, 'utf8');
+  fs.writeFileSync(simFile, replaceBetween(sim, '<!-- ga:start -->', '<!-- ga:end -->', gaTag(), (h, block) => h.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + block)));
   for (const {c, hotels} of cityData) {
     cityPage(c, hotels);
     for (const l of landingLinks[c.slug]) landing({c, hotels: l.list, kind: l.kind, area: l.area});
