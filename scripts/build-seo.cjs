@@ -16,7 +16,7 @@ const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
     areas: {'하카타': 'hakata', '텐진': 'tenjin', '나카스': 'nakasu'}},
   {slug: 'tokyo', name: '도쿄', en: 'TOKYO', file: 'tokyo.html', data: 'data/tokyo-hotels.js',
-    areas: {'고탄다': 'gotanda', '긴시초': 'kinshicho', '긴자': 'ginza', '닛포리': 'nippori', '도쿄역': 'tokyo-station', '롯폰기': 'roppongi', '시나가와': 'shinagawa', '시바·다이몬': 'shiba-daimon', '시바공원': 'shibakoen', '시부야': 'shibuya', '시오도메': 'shiodome', '시오미': 'shiomi', '신바시': 'shimbashi', '신주쿠': 'shinjuku', '아사쿠사': 'asakusa', '아키하바라': 'akihabara', '오시아게': 'oshiage', '오이마치': 'oimachi', '우에노': 'ueno', '이케부쿠로': 'ikebukuro', '히비야': 'hibiya'}},
+    areas: {'간다': 'kanda', '고탄다': 'gotanda', '긴시초': 'kinshicho', '긴자': 'ginza', '니혼바시': 'nihonbashi', '닛포리': 'nippori', '도요스': 'toyosu', '도쿄역': 'tokyo-station', '롯폰기': 'roppongi', '센다가야': 'sendagaya', '시나가와': 'shinagawa', '시바·다이몬': 'shiba-daimon', '시바공원': 'shibakoen', '시부야': 'shibuya', '시오도메': 'shiodome', '시오미': 'shiomi', '신바시': 'shimbashi', '신주쿠': 'shinjuku', '아사쿠사': 'asakusa', '아카사카': 'akasaka', '아키하바라': 'akihabara', '오시아게': 'oshiage', '오이마치': 'oimachi', '우에노': 'ueno', '이케부쿠로': 'ikebukuro', '핫초보리': 'hatchobori', '히비야': 'hibiya'}},
   {slug: 'sapporo', name: '삿포로', en: 'SAPPORO', file: 'sapporo.html', data: 'data/sapporo-hotels.js',
     areas: {'삿포로역': 'sapporo-station', '오도리': 'odori', '타누키코지': 'tanukikoji', '스스키노': 'susukino'}},
 ];
@@ -308,6 +308,7 @@ function prerenderList(c, hotels, html) {
   vm.runInContext(renderer.slice(0, renderer.indexOf('function sync()')) + '\nrender();', ctx);
   html = replaceBetween(html, '<!-- hotel-list:start -->', '<!-- hotel-list:end -->', results.innerHTML, (h, block) => h.replace('<div id="results"></div>', `<div id="results">${block}</div>`));
   html = html.replace(/(<p id="count"[^>]*>)[^<]*(<\/p>)/, '$1' + count.textContent + '$2');
+  html = html.replace(/(<span id="total">)[^<]*(<\/span>)/, `$1${hotels.length}곳$2`);
   html = html.replace('<noscript><p>호텔 목록과 필터를 보려면 브라우저에서 JavaScript를 켜주세요.</p></noscript>', '<noscript><p>전체 호텔 정보는 목록에서 확인할 수 있습니다. 조건 필터와 시뮬레이션을 사용하려면 JavaScript를 켜주세요.</p></noscript>');
   return html;
 }

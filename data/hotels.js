@@ -8,8 +8,8 @@ window.NMNR_HOTELS = [
     "roomType": "이코노미 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "OTA 객실정보+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 호텔 FAQ",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705211&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진 쇼핑 동선이 편한 클래식한 호텔",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705211&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -20,7 +20,8 @@ window.NMNR_HOTELS = [
       "lng": 130.395636,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705211",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "officialSourceUrl": "https://www.jalan.net/yad336468/room/"
   },
   {
     "id": "croom_hakata",
@@ -32,7 +33,7 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "천연온천 대욕장·사우나",
     "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verification": "공식 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705327&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역·버스터미널 가까움, 기차 소음 후기는 확인",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705327&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -43,7 +44,8 @@ window.NMNR_HOTELS = [
       "lng": 130.419849,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705327",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad387970/"
   },
   {
     "id": "croom_gion",
@@ -53,9 +55,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15.4,
     "roomType": "스테이 타입/더블 계열",
     "bath": true,
-    "bathLabel": "대욕장",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "bathLabel": "대욕장·외탕",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=105845907&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "캐널시티 오가기 편하고 대욕장도 만족 후기",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=105845907&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -66,7 +68,9 @@ window.NMNR_HOTELS = [
       "lng": 130.412139,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=105845907",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad356362/",
+    "officialSourceUrl": "https://www.jalan.net/yad356362/room/"
   },
   {
     "id": "gate",
@@ -77,8 +81,8 @@ window.NMNR_HOTELS = [
     "roomType": "에센셜 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "OTA 객실정보+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=123756775&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "지하철 연결은 편리, 로비 경유 동선은 체크",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=123756775&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -89,7 +93,9 @@ window.NMNR_HOTELS = [
       "lng": 130.397577,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=123756775",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad348110/",
+    "officialSourceUrl": "https://www.gate-hotel.jp/fukuoka/rooms/"
   },
   {
     "id": "royalcanvas",
@@ -100,8 +106,8 @@ window.NMNR_HOTELS = [
     "roomType": "스탠다드 더블",
     "bath": true,
     "bathLabel": "대욕장·사우나",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=103101862&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "나카스 중심 동선과 대욕장을 함께 챙기기 좋음",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=103101862&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -112,7 +118,9 @@ window.NMNR_HOTELS = [
       "lng": 130.404347,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=103101862",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad366868/",
+    "officialSourceUrl": "https://www.royalparkhotels.co.jp/canvas/fukuokanakasu/stay/"
   },
   {
     "id": "basics",
@@ -120,11 +128,11 @@ window.NMNR_HOTELS = [
     "city": "후쿠오카",
     "area": "하카타",
     "minRoom2Pax": 20,
-    "roomType": "Chapter 1 더블",
+    "roomType": "스탠다드 트윈 (Chapter 1)",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47758200&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "서가 로비가 인상적, 역까지는 조금 걸어야 함",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=47758200&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -135,7 +143,9 @@ window.NMNR_HOTELS = [
       "lng": 130.426824,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=47758200",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad309628/",
+    "officialSourceUrl": "https://www.jalan.net/yad309628/room/"
   },
   {
     "id": "blossom",
@@ -145,9 +155,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 21,
     "roomType": "모더레이트 더블",
     "bath": true,
-    "bathLabel": "대욕장",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "bathLabel": "대욕장·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=38934428&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "캐널시티·하카타역 사이, 관광 후 대욕장으로",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=38934428&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -158,7 +168,9 @@ window.NMNR_HOTELS = [
       "lng": 130.414029,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=38934428",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad304089/",
+    "officialSourceUrl": "https://www.jrk-hotels.co.jp/Hakata_premier/rooms/"
   },
   {
     "id": "toyo",
@@ -168,9 +180,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15,
     "roomType": "더블",
     "bath": false,
-    "bathLabel": "공용 대욕장 확인 안 됨",
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "OTA 시설정보",
+    "verification": "OTA 시설정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705185&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "하카타역 가까이서 편하게 이동하기 좋은 편",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705185&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -181,7 +193,8 @@ window.NMNR_HOTELS = [
       "lng": 130.423019,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705185",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad327476/"
   },
   {
     "id": "rich_nishi",
@@ -193,7 +206,7 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verification": "공식+호텔업데이트 FAQ · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25797449&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진 쇼핑은 편리, 큰 캐리어 두 개는 빠듯",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25797449&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -204,7 +217,8 @@ window.NMNR_HOTELS = [
       "lng": 130.39657,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=25797449",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad391678/"
   },
   {
     "id": "rich_tenjin",
@@ -215,8 +229,8 @@ window.NMNR_HOTELS = [
     "roomType": "모더레이트",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705215&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진 지하상가 오가기 편해 중간 휴식에 좋음",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705215&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -227,7 +241,9 @@ window.NMNR_HOTELS = [
       "lng": 130.401904,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705215",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad315882/",
+    "officialSourceUrl": "https://www.jalan.net/yad315882/room/"
   },
   {
     "id": "mitsui_gion",
@@ -237,9 +253,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 18.7,
     "roomType": "모더레이트",
     "bath": true,
-    "bathLabel": "대욕장",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "bathLabel": "대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=29772917&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "캐널시티·조식이 장점, 청결 평가는 엇갈림",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=29772917&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -250,7 +266,9 @@ window.NMNR_HOTELS = [
       "lng": 130.41354,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=29772917",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad384068/",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-gion/room/"
   },
   {
     "id": "mitsui_nakasu",
@@ -261,8 +279,8 @@ window.NMNR_HOTELS = [
     "roomType": "스탠다드 더블",
     "bath": true,
     "bathLabel": "대욕장",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=56699615&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "나카스 동선과 대욕장이 장점, 청결 후기는 확인",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=56699615&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -273,7 +291,9 @@ window.NMNR_HOTELS = [
       "lng": 130.404286,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=56699615",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad392952/",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-nakasu/room/"
   },
   {
     "id": "miyako",
@@ -284,8 +304,8 @@ window.NMNR_HOTELS = [
     "roomType": "2인 기본 객실",
     "bath": true,
     "bathLabel": "천연온천 스파",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "하카타역 바로 앞, 넓은 객실을 찾을 때",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -296,7 +316,9 @@ window.NMNR_HOTELS = [
       "lng": 130.422843,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705197",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad391699/",
+    "officialSourceUrl": "https://www.miyakohotels.ne.jp/hakata/"
   },
   {
     "id": "sutton",
@@ -308,7 +330,7 @@ window.NMNR_HOTELS = [
     "bath": false,
     "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verification": "공식 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705180&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역·편의점 접근이 편하고 직원 응대도 호평",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705180&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -319,7 +341,8 @@ window.NMNR_HOTELS = [
       "lng": 130.416398,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705180",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad375658/"
   },
   {
     "id": "solaria",
@@ -330,8 +353,8 @@ window.NMNR_HOTELS = [
     "roomType": "더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705248&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "쇼핑하다 짐 두고 쉬러 오기 좋은 텐진 중심",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705248&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -342,7 +365,9 @@ window.NMNR_HOTELS = [
       "lng": 130.398821,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705248",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad333660/",
+    "officialSourceUrl": "https://www.jalan.net/yad333660/room/"
   },
   {
     "id": "yaoji",
@@ -353,8 +378,8 @@ window.NMNR_HOTELS = [
     "roomType": "스탠다드 더블",
     "bath": true,
     "bathLabel": "천연온천·사우나",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705508&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "하카타 이동과 온천을 함께 챙기기 좋은 편",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705508&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -365,19 +390,21 @@ window.NMNR_HOTELS = [
       "lng": 130.417619,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705508",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad330536/",
+    "officialSourceUrl": "https://www.yaoji.co.jp/room/"
   },
   {
     "id": "oriental_hakata",
     "name": "오리엔탈 호텔 후쿠오카 하카타 스테이션",
     "city": "후쿠오카",
     "area": "하카타",
-    "minRoom2Pax": 14.5,
-    "roomType": "더블 카테고리",
+    "minRoom2Pax": 15.5,
+    "roomType": "스탠다드 더블",
     "bath": false,
     "bathLabel": "대욕장/스파 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25098057&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역 바로 옆이라 이동 편리, 조식도 만족 후기",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=25098057&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -388,7 +415,9 @@ window.NMNR_HOTELS = [
       "lng": 130.422093,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=25098057",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad339135/",
+    "officialSourceUrl": "https://fukuoka-orientalhotel.com/stay/room01/"
   },
   {
     "id": "zonk_nakasu",
@@ -445,8 +474,8 @@ window.NMNR_HOTELS = [
     "roomType": "더블/퀸 계열",
     "bath": true,
     "bathLabel": "스카이스파·노천·사우나",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=2649556&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진 쇼핑과 대욕장, 시설 연식은 감안",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=2649556&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -457,7 +486,9 @@ window.NMNR_HOTELS = [
       "lng": 130.403218,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=2649556",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad393394/",
+    "officialSourceUrl": "https://www.candeohotels.com/ja/fukuoka-tenjin/rooms/"
   },
   {
     "id": "comfort",
@@ -468,8 +499,8 @@ window.NMNR_HOTELS = [
     "roomType": "이코노미 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=1921500&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역 앞 이동 편리, 조식 평가는 취향 따라",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=1921500&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -480,7 +511,9 @@ window.NMNR_HOTELS = [
       "lng": 130.418368,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1921500",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad308449/",
+    "officialSourceUrl": "https://www.choice-hotels.jp/hotel/hakata/rooms/"
   },
   {
     "id": "quintcomic",
@@ -491,8 +524,8 @@ window.NMNR_HOTELS = [
     "roomType": "스탠다드 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=67572095&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진역·쇼핑 접근은 좋고 둘이 쓰면 아담",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=67572095&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -503,7 +536,9 @@ window.NMNR_HOTELS = [
       "lng": 130.396721,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=67572095",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad380530/",
+    "officialSourceUrl": "https://quintessahotels.com/fukuoka-tenjin/stay/"
   },
   {
     "id": "cross_tenjin",
@@ -514,8 +549,8 @@ window.NMNR_HOTELS = [
     "roomType": "컴포트 더블",
     "bath": true,
     "bathLabel": "대욕장·사우나",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=96263095&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "조용한 골목과 대욕장에 만족한 후기",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=96263095&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -526,7 +561,9 @@ window.NMNR_HOTELS = [
       "lng": 130.406715,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=96263095",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad318215/",
+    "officialSourceUrl": "https://www.jalan.net/yad318215/room/"
   },
   {
     "id": "greenannex",
@@ -537,8 +574,8 @@ window.NMNR_HOTELS = [
     "roomType": "더블/할리우드 트윈",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705515&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역 주변 이동 편리, 편의점 이용도 수월",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705515&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -549,7 +586,9 @@ window.NMNR_HOTELS = [
       "lng": 130.42207,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705515",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad355796/",
+    "officialSourceUrl": "https://www.jalan.net/yad355796/room/"
   },
   {
     "id": "nikko",
@@ -559,9 +598,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 21.5,
     "roomType": "스탠다드 더블",
     "bath": false,
-    "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+OTA 보조",
+    "bathLabel": "대욕장 없음 · 회원제 피트니스 사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=993535&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "하카타역 가까움, 직원 응대·객실 관리에 호평",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=993535&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -572,7 +611,9 @@ window.NMNR_HOTELS = [
       "lng": 130.417228,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993535",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad325695/",
+    "officialSourceUrl": "https://www.hotelnikko-fukuoka.com/stay/room/"
   },
   {
     "id": "monte",
@@ -583,8 +624,8 @@ window.NMNR_HOTELS = [
     "roomType": "세미더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=6505478&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "근처 마트·편의점은 편리, 텐진 중심까지는 도보",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=6505478&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -595,19 +636,21 @@ window.NMNR_HOTELS = [
       "lng": 130.405144,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=6505478",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad361322/",
+    "officialSourceUrl": "https://www.monte-hermana.jp/fukuoka/room/2758984310a9627.html"
   },
   {
     "id": "lasoeur",
     "name": "호텔 몬토레 라 스루 후쿠오카",
     "city": "후쿠오카",
     "area": "텐진",
-    "minRoom2Pax": 15,
+    "minRoom2Pax": 16.2,
     "roomType": "스탠다드 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705244&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진 쇼핑·식사 동선이 편하고 응대도 호평",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705244&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -618,7 +661,9 @@ window.NMNR_HOTELS = [
       "lng": 130.395246,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705244",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad381642/",
+    "officialSourceUrl": "https://www.hotelmonterey.co.jp/lasoeur_fukuoka/stay/room/9.html"
   },
   {
     "id": "monterey",
@@ -629,8 +674,8 @@ window.NMNR_HOTELS = [
     "roomType": "모데레이트 트윈",
     "bath": true,
     "bathLabel": "사우나 포함 온욕시설",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=49507812&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "객실 여유와 대욕장을 함께 원한다면",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=49507812&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -641,7 +686,9 @@ window.NMNR_HOTELS = [
       "lng": 130.404497,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49507812",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad364185/",
+    "officialSourceUrl": "https://www.hotelmonterey.co.jp/fukuoka/stay/room/775e5b8f378f5e6.html"
   },
   {
     "id": "oriental_tenjin",
@@ -652,8 +699,8 @@ window.NMNR_HOTELS = [
     "roomType": "스탠다드 더블",
     "bath": false,
     "bathLabel": "대욕장 없음",
-    "verifiedAt": "2026-10-12",
-    "verification": "브랜드자료+호텔업데이트 FAQ",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=71965416&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "텐진역·쇼핑 접근은 편리, 욕실 평가는 엇갈림",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=71965416&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -664,7 +711,9 @@ window.NMNR_HOTELS = [
       "lng": 130.396808,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=71965416",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad398021/",
+    "officialSourceUrl": "https://www.jalan.net/yad398021/room/"
   },
   {
     "id": "hokke",
@@ -674,9 +723,9 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 13,
     "roomType": "아넥스 더블",
     "bath": true,
-    "bathLabel": "대욕장",
-    "verifiedAt": "2026-10-12",
-    "verification": "공식",
+    "bathLabel": "인공온천 대욕장",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705206&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
     "reviewNote": "역에서 조금 걷지만 조식과 응대에 만족 후기",
     "reviewSourceUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705206&adult=2&crn=1&curr=KRW&locale=ko-KR#outerReviewList",
@@ -687,6 +736,8 @@ window.NMNR_HOTELS = [
       "lng": 130.414903,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705206",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad315927/",
+    "officialSourceUrl": "https://www.hokke.co.jp/fukuoka/room.html"
   }
 ];

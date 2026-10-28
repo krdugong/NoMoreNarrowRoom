@@ -32,10 +32,10 @@ window.NMNR_HOTELS = [
     "area": "긴시초",
     "minRoom2Pax": 17.8,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://lottecityhotel.jp/tw/rooms/standard_double/",
     "reviewNote": "긴시초 일정 중심으로 비교할 호텔",
     "tripHotelId": "36831581",
@@ -46,7 +46,8 @@ window.NMNR_HOTELS = [
       "lng": 139.815448,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=36831581",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad389896/"
   },
   {
     "id": "tokyo_03",
@@ -55,10 +56,10 @@ window.NMNR_HOTELS = [
     "area": "긴시초",
     "minRoom2Pax": 18.9,
     "roomType": "더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tobuhotel.co.jp/levant/rooms/double/",
     "reviewNote": "긴시초 일정 중심으로 비교할 호텔",
     "tripHotelId": "686270",
@@ -69,7 +70,8 @@ window.NMNR_HOTELS = [
       "lng": 139.810939,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686270",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad374352/"
   },
   {
     "id": "tokyo_04",
@@ -78,10 +80,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 18,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.daiwaroynet.jp/ginza/room/",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "3095695",
@@ -92,7 +94,8 @@ window.NMNR_HOTELS = [
       "lng": 139.769177,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3095695",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad392020/"
   },
   {
     "id": "tokyo_05",
@@ -125,10 +128,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 14,
     "roomType": "TYPE A 세미더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 공식 시설 안내 확인(2026-10-28)",
     "officialSourceUrl": "https://hotel.muji.com/ginza/en/rooms/",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "76284241",
@@ -139,7 +142,8 @@ window.NMNR_HOTELS = [
       "lng": 139.765751,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=76284241",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://hotel.muji.com/ginza/ja/facilities/"
   },
   {
     "id": "tokyo_07",
@@ -172,10 +176,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 20,
     "roomType": "스탠다드 퀸",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.gardenhotels.co.jp/brochure/eng/millennium-tokyo/millennium-tokyo.pdf",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "1683161",
@@ -186,7 +190,8 @@ window.NMNR_HOTELS = [
       "lng": 139.766126,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1683161",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad303560/"
   },
   {
     "id": "tokyo_09",
@@ -219,10 +224,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 14,
     "roomType": "세미더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "예약 객실 자료 · 공식 면적 재확인 필요",
+    "verification": "예약 객실 자료 · 공식 면적 재확인 필요 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://yado.knt.co.jp/planlist/S130990/",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "68486207",
@@ -233,7 +238,8 @@ window.NMNR_HOTELS = [
       "lng": 139.769229,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=68486207",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad375544/"
   },
   {
     "id": "tokyo_11",
@@ -242,10 +248,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 15,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://gracery.com/ginza/room/",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "688252",
@@ -256,7 +262,8 @@ window.NMNR_HOTELS = [
       "lng": 139.763681,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688252",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad382425/"
   },
   {
     "id": "tokyo_12",
@@ -265,10 +272,10 @@ window.NMNR_HOTELS = [
     "area": "긴자",
     "minRoom2Pax": 15.8,
     "roomType": "세미더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hotelmonterey.co.jp/ginza/stay/room/7.html",
     "reviewNote": "긴자 일정 중심으로 비교할 호텔",
     "tripHotelId": "1438372",
@@ -279,7 +286,8 @@ window.NMNR_HOTELS = [
       "lng": 139.768931,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1438372",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad347902/"
   },
   {
     "id": "tokyo_13",
@@ -314,10 +322,10 @@ window.NMNR_HOTELS = [
     "area": "도쿄역",
     "minRoom2Pax": 24.8,
     "roomType": "모더레이트 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.marunouchi-hotel.co.jp/pdf/factsheet.pdf",
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔",
     "tripHotelId": "688434",
@@ -328,7 +336,8 @@ window.NMNR_HOTELS = [
       "lng": 139.766589,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688434",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad311347/"
   },
   {
     "id": "tokyo_15",
@@ -361,10 +370,10 @@ window.NMNR_HOTELS = [
     "area": "도쿄역",
     "minRoom2Pax": 13.6,
     "roomType": "컴팩트 트윈",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://karaksahotels.com/en/tokyostation/room/",
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "23747912",
@@ -375,7 +384,8 @@ window.NMNR_HOTELS = [
       "lng": 139.770983,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=23747912",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad340088/"
   },
   {
     "id": "tokyo_17",
@@ -384,10 +394,10 @@ window.NMNR_HOTELS = [
     "area": "도쿄역",
     "minRoom2Pax": 21.4,
     "roomType": "킹 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://karaksahotels.com/en/tokyoyaesu/room/room5/",
     "reviewNote": "도쿄역 일정 중심으로 비교할 호텔",
     "tripHotelId": "102628594",
@@ -398,7 +408,8 @@ window.NMNR_HOTELS = [
       "lng": 139.772617,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=102628594",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad333720/"
   },
   {
     "id": "tokyo_18",
@@ -407,10 +418,10 @@ window.NMNR_HOTELS = [
     "area": "롯폰기",
     "minRoom2Pax": 15,
     "roomType": "이코노미 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hankyu-hotel.com/en/hotel/remm/roppongi/accommodation/single/",
     "reviewNote": "롯폰기역 접근은 편하지만 짐 펼칠 공간은 타이트",
     "tripHotelId": "6347584",
@@ -423,7 +434,8 @@ window.NMNR_HOTELS = [
       "lng": 139.731269,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=6347584",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad382341/"
   },
   {
     "id": "tokyo_19",
@@ -458,10 +470,10 @@ window.NMNR_HOTELS = [
     "area": "시나가와",
     "minRoom2Pax": 20.4,
     "roomType": "더블 · 아넥스 타워",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.princehotels.com/shinagawa/guest-rooms/",
     "reviewNote": "시나가와 일정 중심으로 비교할 호텔",
     "tripHotelId": "994895",
@@ -472,7 +484,8 @@ window.NMNR_HOTELS = [
       "lng": 139.73639,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994895",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad340595/"
   },
   {
     "id": "tokyo_21",
@@ -481,10 +494,10 @@ window.NMNR_HOTELS = [
     "area": "시바·다이몬",
     "minRoom2Pax": 16,
     "roomType": "더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://richmondhotel.jp/tokyo-shiba/rooms/",
     "reviewNote": "시바·다이몬 일정 중심으로 비교할 호텔",
     "tripHotelId": "1837756",
@@ -495,7 +508,8 @@ window.NMNR_HOTELS = [
       "lng": 139.75234,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1837756",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad358206/"
   },
   {
     "id": "tokyo_22",
@@ -504,10 +518,10 @@ window.NMNR_HOTELS = [
     "area": "시바공원",
     "minRoom2Pax": 19.8,
     "roomType": "슈페리어 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.princehotels.com/tokyo/room/superior-double-room-4-8f/",
     "reviewNote": "시바공원 일정 중심으로 비교할 호텔",
     "tripHotelId": "688271",
@@ -518,7 +532,8 @@ window.NMNR_HOTELS = [
       "lng": 139.748139,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688271",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad300504/"
   },
   {
     "id": "tokyo_23",
@@ -527,10 +542,10 @@ window.NMNR_HOTELS = [
     "area": "시부야",
     "minRoom2Pax": 13.8,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tokyuhotels.co.jp/en/shibuya-r/rooms/index.html",
     "reviewNote": "시부야 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "759797",
@@ -541,7 +556,8 @@ window.NMNR_HOTELS = [
       "lng": 139.701988,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759797",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad311953/"
   },
   {
     "id": "tokyo_24",
@@ -550,10 +566,10 @@ window.NMNR_HOTELS = [
     "area": "시부야",
     "minRoom2Pax": 20,
     "roomType": "스탠다드 세미더블 · 샤워",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tokyuhotels.co.jp/en/shibuyastream/room/index.html",
     "reviewNote": "시부야 이동과 식사가 편리한 곳 · 객실별 욕실 형태 확인",
     "tripHotelId": "22564082",
@@ -566,7 +582,8 @@ window.NMNR_HOTELS = [
       "lng": 139.703198,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=22564082",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad321730/"
   },
   {
     "id": "tokyo_25",
@@ -575,10 +592,10 @@ window.NMNR_HOTELS = [
     "area": "시부야",
     "minRoom2Pax": 20.5,
     "roomType": "슈페리어 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tokyuhotels.co.jp/en/shibuya-e/room/index.html",
     "reviewNote": "시부야 일정 중심으로 비교할 호텔",
     "tripHotelId": "994472",
@@ -589,7 +606,8 @@ window.NMNR_HOTELS = [
       "lng": 139.699821,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994472",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad369102/"
   },
   {
     "id": "tokyo_26",
@@ -598,10 +616,10 @@ window.NMNR_HOTELS = [
     "area": "시부야",
     "minRoom2Pax": 15,
     "roomType": "세미더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tobuhotel.co.jp/shibuya/rooms/",
     "reviewNote": "시부야 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "686310",
@@ -612,7 +630,8 @@ window.NMNR_HOTELS = [
       "lng": 139.698756,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686310",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad316476/"
   },
   {
     "id": "tokyo_27",
@@ -621,10 +640,10 @@ window.NMNR_HOTELS = [
     "area": "시오도메",
     "minRoom2Pax": 20.3,
     "roomType": "이코노미 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.royalparkhotels.co.jp/ic/tokyoshiodome/stay/standard/index.html",
     "reviewNote": "시오도메 일정 중심으로 비교할 호텔",
     "tripHotelId": "688618",
@@ -635,7 +654,8 @@ window.NMNR_HOTELS = [
       "lng": 139.760536,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688618",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad364218/"
   },
   {
     "id": "tokyo_28",
@@ -644,10 +664,10 @@ window.NMNR_HOTELS = [
     "area": "시오도메",
     "minRoom2Pax": 18,
     "roomType": "모더레이트 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hvf.jp/shiodome/room/detail_124.html",
     "reviewNote": "시오도메 일정 중심으로 비교할 호텔",
     "tripHotelId": "737054",
@@ -658,7 +678,8 @@ window.NMNR_HOTELS = [
       "lng": 139.760214,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=737054",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad316296/"
   },
   {
     "id": "tokyo_29",
@@ -667,10 +688,10 @@ window.NMNR_HOTELS = [
     "area": "시오미",
     "minRoom2Pax": 20.8,
     "roomType": "더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hotelkaie.jp/datas/pamphlet/pdf/pamphlet.pdf",
     "reviewNote": "시오미 일정 중심으로 비교할 호텔",
     "tripHotelId": "49140310",
@@ -681,7 +702,8 @@ window.NMNR_HOTELS = [
       "lng": 139.817996,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49140310",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad394403/"
   },
   {
     "id": "tokyo_30",
@@ -690,10 +712,10 @@ window.NMNR_HOTELS = [
     "area": "신바시",
     "minRoom2Pax": 27,
     "roomType": "모더레이트 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hankyu-hotel.com/en/hotel/dh/dhtokyo/accommodation/Moderate_Double",
     "reviewNote": "신바시 일정 중심으로 비교할 호텔",
     "tripHotelId": "688586",
@@ -704,7 +726,8 @@ window.NMNR_HOTELS = [
       "lng": 139.757387,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688586",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad385527/"
   },
   {
     "id": "tokyo_31",
@@ -737,10 +760,10 @@ window.NMNR_HOTELS = [
     "area": "신주쿠",
     "minRoom2Pax": 13,
     "roomType": "세미더블 · 본관",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://washington-hotels.jp/shinjuku/room/",
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "994914",
@@ -751,7 +774,8 @@ window.NMNR_HOTELS = [
       "lng": 139.69325,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994914",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad336266/"
   },
   {
     "id": "tokyo_33",
@@ -760,10 +784,10 @@ window.NMNR_HOTELS = [
     "area": "신주쿠",
     "minRoom2Pax": 15.3,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.princehotels.com/shinjuku/guest-rooms/standard-double-room/",
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "994923",
@@ -774,7 +798,8 @@ window.NMNR_HOTELS = [
       "lng": 139.700134,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994923",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad374925/"
   },
   {
     "id": "tokyo_34",
@@ -783,10 +808,10 @@ window.NMNR_HOTELS = [
     "area": "신주쿠",
     "minRoom2Pax": 19,
     "roomType": "컴포트 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 공식 사이트 시설 안내 확인(2026-10-28)",
     "officialSourceUrl": "https://www.southerntower.co.jp/Portals/0/images/rooms/common/pdf_guidance_hotel_202401.pdf",
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "994911",
@@ -797,7 +822,8 @@ window.NMNR_HOTELS = [
       "lng": 139.700434,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994911",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.southerntower.co.jp/"
   },
   {
     "id": "tokyo_35",
@@ -806,10 +832,10 @@ window.NMNR_HOTELS = [
     "area": "신주쿠",
     "minRoom2Pax": 18,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://gracery.com/shinjuku/page/godzilla/index.html",
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "1841600",
@@ -820,7 +846,8 @@ window.NMNR_HOTELS = [
       "lng": 139.702054,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1841600",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad309286/"
   },
   {
     "id": "tokyo_36",
@@ -829,10 +856,10 @@ window.NMNR_HOTELS = [
     "area": "신주쿠",
     "minRoom2Pax": 15.7,
     "roomType": "이코노미 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://sotetsuhotel.sbs/sunroute/plazashinjuku/rooms/",
     "reviewNote": "신주쿠 일정 중심으로 비교할 호텔",
     "tripHotelId": "688313",
@@ -843,7 +870,8 @@ window.NMNR_HOTELS = [
       "lng": 139.698842,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688313",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad351204/"
   },
   {
     "id": "tokyo_37",
@@ -852,10 +880,10 @@ window.NMNR_HOTELS = [
     "area": "아사쿠사",
     "minRoom2Pax": 19.6,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음 · 회원제 피트니스 사우나",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.viewhotels.co.jp/asakusa/rooms/standard.html",
     "reviewNote": "아사쿠사 일정 중심으로 비교할 호텔",
     "tripHotelId": "686243",
@@ -866,7 +894,8 @@ window.NMNR_HOTELS = [
       "lng": 139.791871,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686243",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad316401/"
   },
   {
     "id": "tokyo_38",
@@ -875,10 +904,10 @@ window.NMNR_HOTELS = [
     "area": "아사쿠사",
     "minRoom2Pax": 16,
     "roomType": "더블 A",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tobuhotel.co.jp/asakusa/rooms/",
     "reviewNote": "아사쿠사 일정 중심으로 비교할 호텔",
     "tripHotelId": "57099041",
@@ -889,7 +918,8 @@ window.NMNR_HOTELS = [
       "lng": 139.797425,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=57099041",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad383360/"
   },
   {
     "id": "tokyo_39",
@@ -898,10 +928,10 @@ window.NMNR_HOTELS = [
     "area": "아키하바라",
     "minRoom2Pax": 17,
     "roomType": "트윈",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.tourist-hotel.com/akihabara/rooms/",
     "reviewNote": "아키하바라 일정 중심으로 비교할 호텔",
     "tripHotelId": "54252179",
@@ -912,7 +942,8 @@ window.NMNR_HOTELS = [
       "lng": 139.77709,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=54252179",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad397786/"
   },
   {
     "id": "tokyo_40",
@@ -969,10 +1000,10 @@ window.NMNR_HOTELS = [
     "area": "아키하바라",
     "minRoom2Pax": 15,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://en.washington-hotels.jp/akihabara/room/3819/",
     "reviewNote": "아키하바라 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "994528",
@@ -983,7 +1014,8 @@ window.NMNR_HOTELS = [
       "lng": 139.773744,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994528",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad332677/"
   },
   {
     "id": "tokyo_43",
@@ -992,10 +1024,10 @@ window.NMNR_HOTELS = [
     "area": "오시아게",
     "minRoom2Pax": 18.9,
     "roomType": "더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음 · 유료 사우나만",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://richmondhotel.jp/tokyo-oshiage/rooms/",
     "reviewNote": "오시아게 일정 중심으로 비교할 호텔",
     "tripHotelId": "3103999",
@@ -1006,7 +1038,8 @@ window.NMNR_HOTELS = [
       "lng": 139.813758,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3103999",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad337690/"
   },
   {
     "id": "tokyo_44",
@@ -1015,10 +1048,10 @@ window.NMNR_HOTELS = [
     "area": "오이마치",
     "minRoom2Pax": 20,
     "roomType": "컴포트 킹",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://oimachi-tracks.metropolitan.jp/stay/rooms/king.html",
     "reviewNote": "오이마치 일정 중심으로 비교할 호텔",
     "tripHotelId": "132802408",
@@ -1029,7 +1062,8 @@ window.NMNR_HOTELS = [
       "lng": 139.734012,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=132802408",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad329886/"
   },
   {
     "id": "tokyo_45",
@@ -1086,10 +1120,10 @@ window.NMNR_HOTELS = [
     "area": "우에노",
     "minRoom2Pax": 12.5,
     "roomType": "스탠다드 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hotel-sardonyx.com/ueno/cn/room/room_standard.php",
     "reviewNote": "우에노 일정 중심으로 비교할 호텔 · 짐 펼칠 공간은 확인",
     "tripHotelId": "759852",
@@ -1100,7 +1134,8 @@ window.NMNR_HOTELS = [
       "lng": 139.776091,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759852",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad378472/"
   },
   {
     "id": "tokyo_48",
@@ -1109,10 +1144,10 @@ window.NMNR_HOTELS = [
     "area": "이케부쿠로",
     "minRoom2Pax": 16.6,
     "roomType": "세미더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.princehotels.com/sunshine/rooms/",
     "reviewNote": "이케부쿠로 일정 중심으로 비교할 호텔",
     "tripHotelId": "994584",
@@ -1123,7 +1158,8 @@ window.NMNR_HOTELS = [
       "lng": 139.719546,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994584",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad371478/"
   },
   {
     "id": "tokyo_49",
@@ -1132,10 +1168,10 @@ window.NMNR_HOTELS = [
     "area": "이케부쿠로",
     "minRoom2Pax": 17,
     "roomType": "싱글 · 2인 투숙 가능",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://ikebukuro.metropolitan.jp/stay/rooms/",
     "reviewNote": "이케부쿠로 일정 중심으로 비교할 호텔",
     "tripHotelId": "1489108",
@@ -1146,7 +1182,8 @@ window.NMNR_HOTELS = [
       "lng": 139.707829,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1489108",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad306290/"
   },
   {
     "id": "tokyo_50",
@@ -1155,10 +1192,10 @@ window.NMNR_HOTELS = [
     "area": "히비야",
     "minRoom2Pax": 22,
     "roomType": "슈페리어 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.jrk-hotels.co.jp/hotels/pdf/hibiya.pdf",
     "reviewNote": "히비야 일정 중심으로 비교할 호텔",
     "tripHotelId": "34011678",
@@ -1169,7 +1206,8 @@ window.NMNR_HOTELS = [
       "lng": 139.756774,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=34011678",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad390328/"
   },
   {
     "id": "tokyo_51",
@@ -1178,10 +1216,10 @@ window.NMNR_HOTELS = [
     "area": "히비야",
     "minRoom2Pax": 15.1,
     "roomType": "이코노미 더블",
-    "bath": null,
-    "bathLabel": "대욕장 확인 안 됨",
+    "bath": false,
+    "bathLabel": "대욕장 없음",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.hankyu-hotel.com/en/hotel/remm/hibiya/accommodation/single",
     "reviewNote": "히비야 일정 중심으로 비교할 호텔",
     "tripHotelId": "1458596",
@@ -1192,6 +1230,398 @@ window.NMNR_HOTELS = [
       "lng": 139.759671,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1458596",
       "verifiedAt": "2026-10-13"
+    },
+    "bathSourceUrl": "https://www.jalan.net/yad334400/"
+  },
+  {
+    "id": "tokyo_52",
+    "name": "도미인 프리미엄 시부야 진구마에",
+    "city": "도쿄",
+    "area": "시부야",
+    "minRoom2Pax": 14.7,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/shibuya/rooms/",
+    "reviewNote": "시부야 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "688128",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688128&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad395399/",
+    "location": {
+      "lat": 35.66569,
+      "lng": 139.702128,
+      "sourceUrl": "https://www.jalan.net/yad395399/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_53",
+    "name": "도미인 프리미엄 긴자",
+    "city": "도쿄",
+    "area": "긴자",
+    "minRoom2Pax": 15.7,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/ginza/rooms/",
+    "reviewNote": "긴자 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "76219489",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=76219489&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad380644/",
+    "location": {
+      "lat": 35.667679,
+      "lng": 139.765792,
+      "sourceUrl": "https://www.jalan.net/yad380644/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_54",
+    "name": "도미인 프리미엄 도쿄 고덴마초",
+    "city": "도쿄",
+    "area": "니혼바시",
+    "minRoom2Pax": 13.4,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/tokyokodenmacho/rooms/",
+    "reviewNote": "니혼바시 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "5969165",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=5969165&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad348123/",
+    "location": {
+      "lat": 35.690299,
+      "lng": 139.77808,
+      "sourceUrl": "https://www.jalan.net/yad348123/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_55",
+    "name": "도미인 프리미엄 간다",
+    "city": "도쿄",
+    "area": "간다",
+    "minRoom2Pax": 15,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/kanda/rooms/",
+    "reviewNote": "간다 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "6654236",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=6654236&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad377788/",
+    "location": {
+      "lat": 35.695496,
+      "lng": 139.77069,
+      "sourceUrl": "https://www.jalan.net/yad377788/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_56",
+    "name": "도미인 우에노 오카치마치",
+    "city": "도쿄",
+    "area": "우에노",
+    "minRoom2Pax": 13.8,
+    "roomType": "세미더블",
+    "bath": true,
+    "bathLabel": "대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/ueno/rooms/",
+    "reviewNote": "우에노 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "2124497",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=2124497&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad373656/",
+    "location": {
+      "lat": 35.708996,
+      "lng": 139.776135,
+      "sourceUrl": "https://www.jalan.net/yad373656/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_57",
+    "name": "도미인 익스프레스 아사쿠사",
+    "city": "도쿄",
+    "area": "아사쿠사",
+    "minRoom2Pax": 16,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "전망 대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asakusa/rooms/",
+    "reviewNote": "아사쿠사 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "686843",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=686843&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad320300/",
+    "location": {
+      "lat": 35.711919,
+      "lng": 139.798981,
+      "sourceUrl": "https://www.jalan.net/yad320300/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_58",
+    "name": "도미인 도쿄 핫초보리",
+    "city": "도쿄",
+    "area": "핫초보리",
+    "minRoom2Pax": 13.5,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/tokyohatchobori/rooms/",
+    "reviewNote": "핫초보리 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "688176",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688176&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad312600/",
+    "location": {
+      "lat": 35.674446,
+      "lng": 139.780852,
+      "sourceUrl": "https://www.jalan.net/yad312600/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_59",
+    "name": "도미인 이케부쿠로",
+    "city": "도쿄",
+    "area": "이케부쿠로",
+    "minRoom2Pax": 13.9,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/ikebukuro/rooms/",
+    "reviewNote": "이케부쿠로 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "60161497",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=60161497&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad316836/",
+    "location": {
+      "lat": 35.731891,
+      "lng": 139.719081,
+      "sourceUrl": "https://www.jalan.net/yad316836/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_60",
+    "name": "온야도 노노 아사쿠사",
+    "city": "도쿄",
+    "area": "아사쿠사",
+    "minRoom2Pax": 14.06,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/nono_asakusa/rooms/",
+    "reviewNote": "아사쿠사 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "37973913",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=37973913&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad334364/",
+    "location": {
+      "lat": 35.714977,
+      "lng": 139.794116,
+      "sourceUrl": "https://www.jalan.net/yad334364/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_61",
+    "name": "온야도 노노 아사쿠사 벳테이",
+    "city": "도쿄",
+    "area": "아사쿠사",
+    "minRoom2Pax": 17.13,
+    "roomType": "퀸",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/nono_asakusabettei/rooms/",
+    "reviewNote": "아사쿠사 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "111981165",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=111981165&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad330455/",
+    "location": {
+      "lat": 35.714886,
+      "lng": 139.79499,
+      "sourceUrl": "https://www.jalan.net/yad330455/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_62",
+    "name": "미츠이 가든 호텔 니혼바시 프리미어",
+    "city": "도쿄",
+    "area": "니혼바시",
+    "minRoom2Pax": 20,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/nihonbashi-premier/room/",
+    "reviewNote": "니혼바시 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "17015534",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=17015534&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad334982/",
+    "location": {
+      "lat": 35.688368,
+      "lng": 139.773339,
+      "sourceUrl": "https://www.jalan.net/yad334982/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_63",
+    "name": "미츠이 가든 호텔 시오도메 이탈리아가이",
+    "city": "도쿄",
+    "area": "시오도메",
+    "minRoom2Pax": 20.5,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/shiodome-italiagai/room/",
+    "reviewNote": "시오도메 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "688367",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688367&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad348770/",
+    "location": {
+      "lat": 35.660204,
+      "lng": 139.757031,
+      "sourceUrl": "https://www.jalan.net/yad348770/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_64",
+    "name": "미츠이 가든 호텔 진구가이엔노모리 프리미어",
+    "city": "도쿄",
+    "area": "센다가야",
+    "minRoom2Pax": 18.5,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/jingugaientokyo-premier/room/",
+    "reviewNote": "센다가야 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "35541585",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=35541585&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad331571/",
+    "location": {
+      "lat": 35.680065,
+      "lng": 139.715946,
+      "sourceUrl": "https://www.jalan.net/yad331571/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_65",
+    "name": "미츠이 가든 호텔 도요스 프리미어",
+    "city": "도쿄",
+    "area": "도요스",
+    "minRoom2Pax": 18.5,
+    "roomType": "스탠다드 더블(가든뷰)",
+    "bath": true,
+    "bathLabel": "대욕장·노천탕",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/toyosu-premier/room/",
+    "reviewNote": "도요스 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "52320512",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=52320512&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad304890/",
+    "location": {
+      "lat": 35.654895,
+      "lng": 139.794778,
+      "sourceUrl": "https://www.jalan.net/yad304890/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_66",
+    "name": "온센 료칸 유엔 신주쿠",
+    "city": "도쿄",
+    "area": "신주쿠",
+    "minRoom2Pax": 12,
+    "roomType": "세미더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·노천탕",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.uds-hotels.com/yuen/shinjuku/",
+    "reviewNote": "신주쿠 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "32579406",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=32579406&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad315830/",
+    "location": {
+      "lat": 35.693079,
+      "lng": 139.711126,
+      "sourceUrl": "https://www.jalan.net/yad315830/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_67",
+    "name": "비아 인 프라임 아카사카",
+    "city": "도쿄",
+    "area": "아카사카",
+    "minRoom2Pax": 15,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://www.jalan.net/yad359452/room/",
+    "reviewNote": "아카사카 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "91864618",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=91864618&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad359452/",
+    "location": {
+      "lat": 35.672587,
+      "lng": 139.738938,
+      "sourceUrl": "https://www.jalan.net/yad359452/",
+      "verifiedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_68",
+    "name": "라비스타 도쿄베이",
+    "city": "도쿄",
+    "area": "도요스",
+    "minRoom2Pax": 23,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·노천탕·사우나",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "officialSourceUrl": "https://dormy-hotels.com/resort/hotels/la_tokyobay/rooms/",
+    "reviewNote": "도요스 일정 중심으로 비교할 대욕장 호텔",
+    "tripHotelId": "83067673",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=83067673&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "bathSourceUrl": "https://www.jalan.net/yad307416/",
+    "location": {
+      "lat": 35.64728,
+      "lng": 139.783752,
+      "sourceUrl": "https://www.jalan.net/yad307416/",
+      "verifiedAt": "2026-10-28"
     }
   }
 ];
