@@ -102,6 +102,19 @@ async function renderImages() {
 // Google Analytics 4 (gtag.js), on when seo-config.json has googleAnalyticsId.
 const gaTag = () => cfg.googleAnalyticsId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(cfg.googleAnalyticsId)}"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(cfg.googleAnalyticsId)}');</script>` : '';
+// Naver Analytics (wcslog.js), placed before </body> on every HTML page when seo-config.json has naverAnalyticsId.
+const naverTag = () => cfg.naverAnalyticsId ? `<script src="https://wcs.pstatic.net/wcslog.js"></script>
+<script>if(!wcs_add) var wcs_add = {};wcs_add["wa"] = "${esc(cfg.naverAnalyticsId)}";if(window.wcs) {wcs_do();}</script>` : '';
+function addNaverAnalytics(dir) {
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) { if (!['node_modules', 'assets', 'data', 'scripts', 'tests', '.git'].includes(entry.name)) addNaverAnalytics(file); continue; }
+    if (!entry.name.endsWith('.html')) continue;
+    const html = fs.readFileSync(file, 'utf8');
+    const next = replaceBetween(html, '<!-- naver-wa:start -->', '<!-- naver-wa:end -->', naverTag(), (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
+    if (next !== html) fs.writeFileSync(file, next);
+  }
+}
 function headTags({title, desc, url, image, updated, jsonld, type = 'website'}) {
   const v = [
     `<title>${esc(title)}</title>`,
@@ -381,6 +394,7 @@ function homePage() {
   write(path.join(BASE.slice(1), 'rss.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${esc(cfg.siteName)} - 일본 호텔 방 크기·대욕장 비교</title><link>${abs(BASE + '/')}</link><description>일본 호텔의 2인 기본 객실 면적과 대욕장 비교</description><language>ko</language><lastBuildDate>${rfc(maxDate(all))}</lastBuildDate>\n${pages.map(p => `<item><title>${esc(p.title)}</title><link>${abs(p.url)}</link><guid>${abs(p.url)}</guid><description>${esc(p.desc)}</description><pubDate>${rfc(p.updated)}</pubDate></item>`).join('\n')}\n</channel></rss>\n`);
   const robots = path.join(repo, 'robots.txt');
   if (!fs.existsSync(robots)) fs.writeFileSync(robots, `User-agent: *\nAllow: /\n\nSitemap: ${abs(BASE + '/sitemap.xml')}\n`);
+  addNaverAnalytics(root);
   await renderImages();
   console.log(`Built ${pages.length} pages (${Object.values(landingLinks).flat().length} landing, ${all.length} hotel)`);
 })();
