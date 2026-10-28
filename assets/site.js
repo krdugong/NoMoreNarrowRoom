@@ -1,6 +1,11 @@
 'use strict';
 const hotels = window.NMNR_HOTELS || [];
-const state = {room: 0, area: 'all', bath: 'all', feature: 'all', sort: 'name', query: ''};
+const state = {room: 0, area: 'all', bath: 'all', feature: 'all', pax: 2, sort: 'name', query: ''};
+// 3인·4인 필터는 자란넷 성인 N명 검색에 플랜이 있는 호텔만 보여주고, 면적도 그 인원 객실 기준으로 바꿉니다.
+const sizeOf = h => state.pax === 3 ? h.minRoom3Pax : state.pax === 4 ? h.minRoom4Pax : h.minRoom2Pax;
+const roomOf = h => state.pax === 3 ? h.roomType3Pax : state.pax === 4 ? h.roomType4Pax : h.roomType;
+const paxOk = h => state.pax === 2 || (state.pax === 3 ? h.pax3 === true : h.pax4 === true);
+const paxCell = n => h => h[`pax${n}`] === undefined ? '확인 중' : h[`pax${n}`] ? `${escapeHTML(h[`roomType${n}Pax`] || `${n}인 객실`)}${Number.isFinite(h[`minRoom${n}Pax`]) ? ` ${h[`minRoom${n}Pax`]}㎡` : ''}` : `${n}인 플랜 없음`;
 const hasFeature = (h, key) => key === 'all' || Boolean(h.bath === true && h.bathFeatures && h.bathFeatures[key]);
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
 function roomFeel(m) {
@@ -12,34 +17,35 @@ function roomFeel(m) {
 }
 function bathStatus(h) { return h.bath ? 'yes' : /확인 안 됨/.test(h.bathLabel) ? 'unknown' : 'no'; }
 function current() {
-  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && (state.room === 0 || (Number.isFinite(h.minRoom2Pax) && h.minRoom2Pax >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && hasFeature(h, state.feature) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
+  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && paxOk(h) && (state.room === 0 || (Number.isFinite(sizeOf(h)) && sizeOf(h) >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && hasFeature(h, state.feature) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
   const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
   list.sort((a, b) => {
     if (state.sort === 'popular') return (a.popularityRank ?? Infinity) - (b.popularityRank ?? Infinity) || byName(a,b);
-    if (['room', 'small', 'bath'].includes(state.sort) && (a.minRoom2Pax == null || b.minRoom2Pax == null)) {
-      if (a.minRoom2Pax == null && b.minRoom2Pax == null) return byName(a,b);
-      return a.minRoom2Pax == null ? 1 : -1;
+    if (['room', 'small', 'bath'].includes(state.sort) && (sizeOf(a) == null || sizeOf(b) == null)) {
+      if (sizeOf(a) == null && sizeOf(b) == null) return byName(a,b);
+      return sizeOf(a) == null ? 1 : -1;
     }
-    if (state.sort === 'room') return b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
-    if (state.sort === 'small') return a.minRoom2Pax - b.minRoom2Pax || byName(a,b);
-    if (state.sort === 'bath') return Number(b.bath) - Number(a.bath) || b.minRoom2Pax - a.minRoom2Pax || byName(a,b);
+    if (state.sort === 'room') return sizeOf(b) - sizeOf(a) || byName(a,b);
+    if (state.sort === 'small') return sizeOf(a) - sizeOf(b) || byName(a,b);
+    if (state.sort === 'bath') return Number(b.bath) - Number(a.bath) || sizeOf(b) - sizeOf(a) || byName(a,b);
     return byName(a,b);
   });
   return list;
 }
 function render() {
   const list = current();
-  document.querySelector('#count').textContent = `${list.length}곳 / 전체 ${hotels.length}곳`;
+  document.querySelector('#count').textContent = `${list.length}곳 / 전체 ${hotels.length}곳${state.pax > 2 ? ` · ${state.pax}인 객실 기준` : ''}`;
   document.querySelector('#results').innerHTML = list.length ? list.map((h,index) => {
     const status = bathStatus(h);
+    const sz = sizeOf(h);
     const label = status === 'yes' ? '♨ 대욕장 있음' : status === 'unknown' ? '대욕장 확인 필요' : '대욕장 없음';
-    return `<article class="hotel"><details class="hotel-info"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small class="review-note">${h.reviewSourceUrl ? '<span>후기 참고</span> ' : ''}${escapeHTML(h.reviewNote || h.roomType)}</small></span><span class="size"><strong>${Number.isFinite(h.minRoom2Pax) ? `${h.minRoom2Pax}<small>㎡</small>` : '<span class="unknown-size">확인 중</span>'}</strong><span class="feel">${roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div></dl><p>${Number.isFinite(h.minRoom2Pax) ? `기본 객실 면적 ${h.minRoom2Pax}㎡` : '기본 객실 면적 확인 중'} · 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p>${h.officialSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.officialSourceUrl)}" target="_blank" rel="noopener">객실 확인 자료 ↗</a></p>` : ''}${h.bathSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.bathSourceUrl)}" target="_blank" rel="noopener">대욕장 공식 확인 자료 ↗</a></p>` : ''}${h.reviewSourceUrl ? `<p class="review-source">한줄 메모는 후기 일부를 참고해 정리했습니다. <a href="${escapeHTML(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 보기 ↗</a> · 확인 ${escapeHTML(h.reviewCheckedAt)}</p>` : ''}</div></details>${Number.isFinite(h.minRoom2Pax) || h.tripUrl ? `<div class="booking-row">${Number.isFinite(h.minRoom2Pax) ? `<button type="button" class="simulation-link" data-sim-area="${h.minRoom2Pax}" data-sim-name="${escapeHTML(h.name)}" aria-expanded="false" aria-controls="inline-sim-${index}" aria-label="${escapeHTML(h.name)} ${h.minRoom2Pax}㎡ 캐리어 시뮬레이션">캐리어 시뮬레이션</button>` : ''}${h.tripUrl ? `<span>날짜별 요금과 예약 가능한 객실 확인</span><a class="booking-link" href="${escapeHTML(h.tripUrl)}" target="_blank" rel="sponsored noopener" aria-label="${escapeHTML(h.name)} 트립닷컴에서 가격 보기 · 새 탭">트립닷컴에서 가격 보기 <span aria-hidden="true">↗</span></a>` : ''}</div>` : ''}${Number.isFinite(h.minRoom2Pax) ? `<section class="inline-simulator" id="inline-sim-${index}" aria-label="${escapeHTML(h.name)} 캐리어 시뮬레이션" hidden></section>` : ''}</article>`;
+    return `<article class="hotel"><details class="hotel-info"><summary><span class="hotelname"><strong>${escapeHTML(h.name)}</strong><small class="review-note">${h.reviewSourceUrl ? '<span>후기 참고</span> ' : ''}${escapeHTML(h.reviewNote || h.roomType)}</small></span><span class="size"><strong>${Number.isFinite(sz) ? `${sz}<small>㎡</small>` : '<span class="unknown-size">확인 중</span>'}</strong><span class="feel">${state.pax > 2 ? `${state.pax}인 · ${escapeHTML(roomOf(h) || '')}` : roomFeel(h.minRoom2Pax)}</span></span><span class="bath ${status}"><b>${label}</b>${status === 'yes' ? `<small>${escapeHTML(h.bathLabel)}</small>` : ''}</span><span class="area">${escapeHTML(h.area)}</span><span class="expand"><span class="sr-only">상세 정보</span></span></summary><div class="detail"><dl><div><dt>확인 객실 타입</dt><dd>${escapeHTML(h.roomType)}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${escapeHTML(h.bathLabel)}</dd></div><div><dt>확인 근거</dt><dd>${escapeHTML(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${escapeHTML(h.verifiedAt)}</dd></div><div><dt>3인 객실</dt><dd>${paxCell(3)(h)}</dd></div><div><dt>4인 객실</dt><dd>${paxCell(4)(h)}</dd></div></dl><p>${Number.isFinite(h.minRoom2Pax) ? `기본 객실 면적 ${h.minRoom2Pax}㎡` : '기본 객실 면적 확인 중'} · 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준. 예약 전 선택한 객실의 면적${h.bath ? '과 온욕시설 이용 조건' : ''}을 확인하세요.</p>${h.officialSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.officialSourceUrl)}" target="_blank" rel="noopener">객실 확인 자료 ↗</a></p>` : ''}${h.bathSourceUrl ? `<p><a class="source-link" href="${escapeHTML(h.bathSourceUrl)}" target="_blank" rel="noopener">대욕장 공식 확인 자료 ↗</a></p>` : ''}${h.reviewSourceUrl ? `<p class="review-source">한줄 메모는 후기 일부를 참고해 정리했습니다. <a href="${escapeHTML(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 보기 ↗</a> · 확인 ${escapeHTML(h.reviewCheckedAt)}</p>` : ''}</div></details>${Number.isFinite(h.minRoom2Pax) || h.tripUrl ? `<div class="booking-row">${Number.isFinite(h.minRoom2Pax) ? `<button type="button" class="simulation-link" data-sim-area="${h.minRoom2Pax}" data-sim-name="${escapeHTML(h.name)}" aria-expanded="false" aria-controls="inline-sim-${index}" aria-label="${escapeHTML(h.name)} ${h.minRoom2Pax}㎡ 캐리어 시뮬레이션">캐리어 시뮬레이션</button>` : ''}${h.tripUrl ? `<span>날짜별 요금과 예약 가능한 객실 확인</span><a class="booking-link" href="${escapeHTML(h.tripUrl)}" target="_blank" rel="sponsored noopener" aria-label="${escapeHTML(h.name)} 트립닷컴에서 가격 보기 · 새 탭">트립닷컴에서 가격 보기 <span aria-hidden="true">↗</span></a>` : ''}</div>` : ''}${Number.isFinite(h.minRoom2Pax) ? `<section class="inline-simulator" id="inline-sim-${index}" aria-label="${escapeHTML(h.name)} 캐리어 시뮬레이션" hidden></section>` : ''}</article>`;
   }).join('') : '<div class="empty">조건에 맞는 호텔이 없습니다.<br>방 크기나 지역 조건을 조금 넓혀보세요.<button id="emptyReset">조건 초기화</button></div>';
   document.querySelector('#emptyReset')?.addEventListener('click', resetAll);
   document.dispatchEvent(new Event('nmnr:filterschange')); 
 }
 function sync() {
-  for (const key of ['room', 'area', 'bath', 'feature']) {
+  for (const key of ['room', 'area', 'bath', 'feature', 'pax']) {
     document.querySelectorAll(`[data-${key}]`).forEach(button => {
       const active = String(state[key]) === button.dataset[key];
       button.classList.toggle('active', active);
@@ -50,12 +56,12 @@ function sync() {
   document.querySelector('#search').value = state.query;
 }
 function resetAll() {
-  Object.assign(state, {room: 0, area: 'all', bath: 'all', feature: 'all', sort: 'name', query: ''});
+  Object.assign(state, {room: 0, area: 'all', bath: 'all', feature: 'all', pax: 2, sort: 'name', query: ''});
   sync(); render();
 }
-for (const key of ['room', 'area', 'bath', 'feature']) {
+for (const key of ['room', 'area', 'bath', 'feature', 'pax']) {
   document.querySelectorAll(`[data-${key}]`).forEach(button => button.addEventListener('click', () => {
-    state[key] = key === 'room' ? Number(button.dataset[key]) : button.dataset[key];
+    state[key] = ['room', 'pax'].includes(key) ? Number(button.dataset[key]) : button.dataset[key];
     sync(); render();
   }));
 }

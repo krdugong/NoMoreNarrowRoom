@@ -27,7 +27,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=361490&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_02",
@@ -57,7 +65,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "더블",
+    "pax4": true,
+    "minRoom4Pax": 24,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=344941&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_03",
@@ -87,7 +103,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 21,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": 25,
+    "roomType4Pax": "일본식 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=397643&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_04",
@@ -117,7 +141,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 20,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 26,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=328940&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_05",
@@ -147,7 +179,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 28,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 35,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=302905&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_06",
@@ -171,7 +211,15 @@ window.NMNR_HOTELS = [
       "lng": 141.350947,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993375",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 27,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 44,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=321756&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_07",
@@ -201,7 +249,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 26,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333592&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_08",
@@ -225,7 +281,15 @@ window.NMNR_HOTELS = [
       "lng": 141.352676,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=52762809",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=359169&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_09",
@@ -255,7 +319,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=327602&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_10",
@@ -285,7 +357,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=332464&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_11",
@@ -315,7 +395,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 31,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 39.4,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387338&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_12",
@@ -345,7 +433,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "4베드룸",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=308189&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_13",
@@ -369,7 +465,15 @@ window.NMNR_HOTELS = [
       "lng": 141.356144,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=72005271",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 20,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=354751&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_14",
@@ -393,7 +497,15 @@ window.NMNR_HOTELS = [
       "lng": 141.349562,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993399",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 22,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=313177&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_15",
@@ -423,7 +535,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=338679&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_16",
@@ -447,7 +567,15 @@ window.NMNR_HOTELS = [
       "lng": 141.345199,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=993365",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 31.4,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 37.1,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=350240&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_17",
@@ -471,7 +599,15 @@ window.NMNR_HOTELS = [
       "lng": 141.351985,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=846368",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 26,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 35,
+    "roomType4Pax": "트리플",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=318756&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_18",
@@ -501,7 +637,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=372402&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_19",
@@ -525,7 +669,15 @@ window.NMNR_HOTELS = [
       "lng": 141.353864,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=134224926",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375695&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_20",
@@ -555,7 +707,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 26.8,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389804&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_21",
@@ -585,7 +745,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 40,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=328431&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_22",
@@ -609,7 +777,15 @@ window.NMNR_HOTELS = [
       "lng": 141.356031,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=75464509",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23.5,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387024&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_23",
@@ -639,7 +815,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 17.95,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 19.2,
+    "roomType4Pax": "트리플",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=341888&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_24",
@@ -669,7 +853,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=377605&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_25",
@@ -693,7 +885,15 @@ window.NMNR_HOTELS = [
       "lng": 141.344598,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705841",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 28,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": 28,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=324274&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_26",
@@ -717,7 +917,15 @@ window.NMNR_HOTELS = [
       "lng": 141.353383,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=62657810",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=360100&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_27",
@@ -741,7 +949,15 @@ window.NMNR_HOTELS = [
       "lng": 141.356653,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12829051",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 36,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304022&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_28",
@@ -765,7 +981,15 @@ window.NMNR_HOTELS = [
       "lng": 141.355766,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1647806",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 28,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=312072&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_29",
@@ -795,7 +1019,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 32,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=378516&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_30",
@@ -825,7 +1057,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "기타 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375045&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_31",
@@ -849,7 +1089,15 @@ window.NMNR_HOTELS = [
       "lng": 141.357508,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12591944",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 21.7,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374496&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_32",
@@ -879,7 +1127,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 33,
+    "roomType4Pax": "더블",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=396050&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_33",
@@ -903,7 +1159,15 @@ window.NMNR_HOTELS = [
       "lng": 141.350257,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703483",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 38,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340127&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_34",
@@ -933,7 +1197,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 22.7,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 46,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=388325&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sapporo_35",
@@ -957,6 +1229,14 @@ window.NMNR_HOTELS = [
       "lng": 141.356322,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=96613617",
       "verifiedAt": "2026-10-13"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=343484&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   }
 ];

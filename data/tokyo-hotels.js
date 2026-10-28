@@ -29,7 +29,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "스탠다드 트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336936&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_02",
@@ -53,7 +61,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=36831581",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad389896/"
+    "bathSourceUrl": "https://www.jalan.net/yad389896/",
+    "pax3": true,
+    "minRoom3Pax": 25.5,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 35.6,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389896&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_03",
@@ -77,7 +93,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686270",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad374352/"
+    "bathSourceUrl": "https://www.jalan.net/yad374352/",
+    "pax3": true,
+    "minRoom3Pax": 37.3,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "일본식 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374352&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_04",
@@ -101,7 +125,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3095695",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad392020/"
+    "bathSourceUrl": "https://www.jalan.net/yad392020/",
+    "pax3": true,
+    "minRoom3Pax": 56,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 72,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=392020&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_05",
@@ -131,7 +163,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 17,
+    "roomType3Pax": "로프트 트리플",
+    "pax4": true,
+    "minRoom4Pax": 26,
+    "roomType4Pax": "로프트 포스",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=310276&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_06",
@@ -185,7 +225,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.7,
+    "roomType3Pax": "슈페리어 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=381362&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_08",
@@ -209,7 +257,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1683161",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad303560/"
+    "bathSourceUrl": "https://www.jalan.net/yad303560/",
+    "pax3": true,
+    "minRoom3Pax": 37.7,
+    "roomType3Pax": "디럭스 코너 트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=303560&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_09",
@@ -239,7 +295,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389255&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_10",
@@ -263,7 +327,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=68486207",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad375544/"
+    "bathSourceUrl": "https://www.jalan.net/yad375544/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375544&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_11",
@@ -287,7 +359,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688252",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad382425/"
+    "bathSourceUrl": "https://www.jalan.net/yad382425/",
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=382425&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_12",
@@ -311,7 +391,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1438372",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad347902/"
+    "bathSourceUrl": "https://www.jalan.net/yad347902/",
+    "pax3": true,
+    "minRoom3Pax": 20,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=347902&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_13",
@@ -343,7 +431,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 21,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 21,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380132&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_14",
@@ -367,7 +463,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688434",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad311347/"
+    "bathSourceUrl": "https://www.jalan.net/yad311347/",
+    "pax3": true,
+    "minRoom3Pax": 42.6,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=311347&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_15",
@@ -397,7 +501,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "4베드룸",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=379411&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_16",
@@ -421,7 +533,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=23747912",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad340088/"
+    "bathSourceUrl": "https://www.jalan.net/yad340088/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "일본식 객실",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "일본식 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340088&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_17",
@@ -445,7 +565,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=102628594",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad333720/"
+    "bathSourceUrl": "https://www.jalan.net/yad333720/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333720&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_18",
@@ -471,7 +599,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=6347584",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad382341/"
+    "bathSourceUrl": "https://www.jalan.net/yad382341/",
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=382341&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_19",
@@ -503,7 +639,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=366039&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_20",
@@ -527,7 +671,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994895",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad340595/"
+    "bathSourceUrl": "https://www.jalan.net/yad340595/",
+    "pax3": true,
+    "minRoom3Pax": 26.2,
+    "roomType3Pax": "더블",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340595&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_21",
@@ -551,7 +703,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1837756",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad358206/"
+    "bathSourceUrl": "https://www.jalan.net/yad358206/",
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=358206&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_22",
@@ -575,7 +735,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688271",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad300504/"
+    "bathSourceUrl": "https://www.jalan.net/yad300504/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=300504&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_23",
@@ -599,7 +767,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759797",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad311953/"
+    "bathSourceUrl": "https://www.jalan.net/yad311953/",
+    "pax3": true,
+    "minRoom3Pax": 16.2,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=311953&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_24",
@@ -625,7 +801,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=22564082",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad321730/"
+    "bathSourceUrl": "https://www.jalan.net/yad321730/",
+    "pax3": true,
+    "minRoom3Pax": 43,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 43,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=321730&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_25",
@@ -649,7 +833,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994472",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad369102/"
+    "bathSourceUrl": "https://www.jalan.net/yad369102/",
+    "pax3": true,
+    "minRoom3Pax": 30,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 38.4,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=369102&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_26",
@@ -673,7 +865,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686310",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad316476/"
+    "bathSourceUrl": "https://www.jalan.net/yad316476/",
+    "pax3": true,
+    "minRoom3Pax": 20,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 26,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316476&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_27",
@@ -697,7 +897,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688618",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad364218/"
+    "bathSourceUrl": "https://www.jalan.net/yad364218/",
+    "pax3": true,
+    "minRoom3Pax": 38,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 56.8,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=364218&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_28",
@@ -721,7 +929,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=737054",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad316296/"
+    "bathSourceUrl": "https://www.jalan.net/yad316296/",
+    "pax3": true,
+    "minRoom3Pax": 20,
+    "roomType3Pax": "더블",
+    "pax4": true,
+    "minRoom4Pax": 30,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316296&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_29",
@@ -745,7 +961,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49140310",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad394403/"
+    "bathSourceUrl": "https://www.jalan.net/yad394403/",
+    "pax3": true,
+    "minRoom3Pax": 27,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 28,
+    "roomType4Pax": "기타 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=394403&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_30",
@@ -769,7 +993,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688586",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad385527/"
+    "bathSourceUrl": "https://www.jalan.net/yad385527/",
+    "pax3": true,
+    "minRoom3Pax": 29,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 44,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=385527&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_31",
@@ -799,7 +1031,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "더블",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=384083&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_32",
@@ -823,7 +1063,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994914",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad336266/"
+    "bathSourceUrl": "https://www.jalan.net/yad336266/",
+    "pax3": true,
+    "minRoom3Pax": 24.2,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336266&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_33",
@@ -847,7 +1095,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994923",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad374925/"
+    "bathSourceUrl": "https://www.jalan.net/yad374925/",
+    "pax3": true,
+    "minRoom3Pax": 30.6,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374925&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_34",
@@ -895,7 +1151,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1841600",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad309286/"
+    "bathSourceUrl": "https://www.jalan.net/yad309286/",
+    "pax3": true,
+    "minRoom3Pax": 28,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=309286&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_36",
@@ -919,7 +1183,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688313",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad351204/"
+    "bathSourceUrl": "https://www.jalan.net/yad351204/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=351204&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_37",
@@ -943,7 +1215,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=686243",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad316401/"
+    "bathSourceUrl": "https://www.jalan.net/yad316401/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316401&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_38",
@@ -967,7 +1247,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=57099041",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad383360/"
+    "bathSourceUrl": "https://www.jalan.net/yad383360/",
+    "pax3": true,
+    "minRoom3Pax": 25,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 36,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=383360&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_39",
@@ -991,7 +1279,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=54252179",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad397786/"
+    "bathSourceUrl": "https://www.jalan.net/yad397786/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=397786&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_40",
@@ -1021,7 +1317,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333285&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_41",
@@ -1051,7 +1355,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=317136&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_42",
@@ -1075,7 +1387,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994528",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad332677/"
+    "bathSourceUrl": "https://www.jalan.net/yad332677/",
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=332677&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_43",
@@ -1099,7 +1419,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=3103999",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad337690/"
+    "bathSourceUrl": "https://www.jalan.net/yad337690/",
+    "pax3": true,
+    "minRoom3Pax": 38,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 38,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=337690&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_44",
@@ -1123,7 +1451,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=132802408",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad329886/"
+    "bathSourceUrl": "https://www.jalan.net/yad329886/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=329886&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_45",
@@ -1153,7 +1489,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "싱글",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=338363&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_46",
@@ -1183,7 +1527,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=345375&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_47",
@@ -1207,7 +1559,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=759852",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad378472/"
+    "bathSourceUrl": "https://www.jalan.net/yad378472/",
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=378472&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_48",
@@ -1231,7 +1591,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=994584",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad371478/"
+    "bathSourceUrl": "https://www.jalan.net/yad371478/",
+    "pax3": true,
+    "minRoom3Pax": 29.3,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 60.8,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=371478&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_49",
@@ -1255,7 +1623,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1489108",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad306290/"
+    "bathSourceUrl": "https://www.jalan.net/yad306290/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "화양실",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=306290&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_50",
@@ -1279,7 +1655,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=34011678",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad390328/"
+    "bathSourceUrl": "https://www.jalan.net/yad390328/",
+    "pax3": true,
+    "minRoom3Pax": 34,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=390328&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_51",
@@ -1303,7 +1687,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1458596",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad334400/"
+    "bathSourceUrl": "https://www.jalan.net/yad334400/",
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334400&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_52",
@@ -1332,7 +1724,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.5,
+    "roomType3Pax": "코너 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=395399&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_53",
@@ -1361,7 +1761,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 33.3,
+    "roomType3Pax": "화풍 슈페리어(침대 3대)",
+    "pax4": true,
+    "minRoom4Pax": 37.7,
+    "roomType4Pax": "화풍 디럭스(침대 4대)",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380644&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_54",
@@ -1390,7 +1798,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 27.2,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348123&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_55",
@@ -1419,7 +1835,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 23.54,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 23.54,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=377788&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_56",
@@ -1448,7 +1872,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=373656&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_57",
@@ -1477,7 +1909,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 16,
+    "roomType3Pax": "벙크 트윈(2단 침대)",
+    "pax4": true,
+    "minRoom4Pax": 27,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=320300&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_58",
@@ -1506,7 +1946,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=312600&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_59",
@@ -1535,7 +1983,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.2,
+    "roomType3Pax": "패밀리 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316836&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_60",
@@ -1564,7 +2020,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334364&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_61",
@@ -1593,7 +2057,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 31.22,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 31.22,
+    "roomType4Pax": "트리플",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=330455&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_62",
@@ -1622,7 +2094,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 26.4,
+    "roomType3Pax": "슈페리어 트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334982&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_63",
@@ -1651,7 +2131,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 25.7,
+    "roomType3Pax": "슈페리어 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348770&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_64",
@@ -1680,7 +2168,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.7,
+    "roomType3Pax": "스탠다드 와이드 킹",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=331571&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_65",
@@ -1709,7 +2205,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 30.3,
+    "roomType3Pax": "슈페리어 트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304890&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_66",
@@ -1738,7 +2242,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 25,
+    "roomType3Pax": "더블",
+    "pax4": true,
+    "minRoom4Pax": 33,
+    "roomType4Pax": "프리미엄 더블",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315830&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_67",
@@ -1767,7 +2279,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=359452&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "tokyo_68",
@@ -1796,6 +2316,14 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 29,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 46,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=307416&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   }
 ];

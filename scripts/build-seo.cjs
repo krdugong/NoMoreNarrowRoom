@@ -65,6 +65,14 @@ const FEATURES = {
 };
 const hasFeature = (h, k) => h.bath === true && Boolean(h.bathFeatures && h.bathFeatures[k]);
 const featureUrl = (c, k) => `${BASE}/${c.slug}/${k}/`;
+// 3인·4인 pages: hotels with pax3/pax4 === true (a Jalan plan for that many adults), sorted by that room's size.
+const PAX = {3: {slug: 'triple', kw: '3인 호텔', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 호텔', sub: '4인 객실'}};
+const paxUrl = (c, n) => `${BASE}/${c.slug}/${PAX[n].slug}/`;
+const paxSize = (h, n) => n === 3 ? h.minRoom3Pax : n === 4 ? h.minRoom4Pax : h.minRoom2Pax;
+const paxRoom = (h, n) => n === 3 ? h.roomType3Pax : n === 4 ? h.roomType4Pax : h.roomType;
+const paxSizeText = (h, n) => num(paxSize(h, n)) ? `${paxSize(h, n)}㎡` : '면적 확인 중';
+const byPax = n => (a, b) => (num(paxSize(b, n)) ? paxSize(b, n) : -1) - (num(paxSize(a, n)) ? paxSize(a, n) : -1) || a.name.localeCompare(b.name, 'ko');
+const paxText = (h, n) => h[`pax${n}`] === undefined ? `${n}인 객실 확인 중` : h[`pax${n}`] ? `${n}인은 ${paxRoom(h, n) || `${n}인 객실`}${num(paxSize(h, n)) ? ` ${paxSize(h, n)}㎡` : ''}` : `${n}인 플랜은 없음`;
 const featureText = h => h.bathFeatures ? ['onsen', 'rotenburo', 'sauna'].map(k => `${FEATURES[k].ko} ${h.bathFeatures[k] ? '있음' : '없음'}`).join(' · ') : '';
 const areaUrl = (c, area) => `${BASE}/${c.slug}/${c.areas[area]}/`;
 const hotelSlug = h => h.citySlug === 'fukuoka' ? `fukuoka-${h.id}` : String(h.id).replace(/_/g, '-');
@@ -182,10 +190,10 @@ const webPageLd = (name, desc, url, updated) => ({'@context': 'https://schema.or
 const tripLink = h => h.tripUrl ? `<a class="booking-link" href="${esc(h.tripUrl)}" target="_blank" rel="sponsored noopener">트립닷컴에서 가격 보기 <span aria-hidden="true">↗</span></a>` : '';
 
 // Ranked hotel cards used on every landing page. Each name links to its own hotel page.
-function hotelCards(list) {
+function hotelCards(list, pax = 2) {
   return `<ol class="rank-list">${list.map((h, i) => {
     const s = bathStatus(h);
-    return `<li class="rank-item"><span class="rank-no">${i + 1}</span><div class="rank-body"><h3><a href="${hotelUrl(h)}">${esc(h.name)}</a></h3><p class="rank-meta"><b>${esc(sizeText(h))}</b> ${esc(roomFeel(h.minRoom2Pax))} · <span class="bath-${s}">${s === 'yes' ? '♨ ' : ''}${esc(s === 'yes' ? h.bathLabel : bathText(h))}</span> · ${esc(h.area)}</p><p class="rank-note">${esc(h.roomType)} 기준${isBoilerplate(h.reviewNote) ? '' : ` · ${esc(h.reviewNote)}`}</p></div><div class="rank-actions"><a class="detail-link" href="${hotelUrl(h)}">방 크기 자세히</a>${tripLink(h)}</div></li>`;
+    return `<li class="rank-item"><span class="rank-no">${i + 1}</span><div class="rank-body"><h3><a href="${hotelUrl(h)}">${esc(h.name)}</a></h3><p class="rank-meta"><b>${esc(pax === 2 ? sizeText(h) : paxSizeText(h, pax))}</b> ${esc(pax === 2 ? roomFeel(h.minRoom2Pax) : `${pax}인 객실 · 2인 기본 객실 ${sizeText(h)}`)} · <span class="bath-${s}">${s === 'yes' ? '♨ ' : ''}${esc(s === 'yes' ? h.bathLabel : bathText(h))}</span> · ${esc(h.area)}</p><p class="rank-note">${esc((pax === 2 ? h.roomType : paxRoom(h, pax)) || h.roomType)} 기준${isBoilerplate(h.reviewNote) ? '' : ` · ${esc(h.reviewNote)}`}</p></div><div class="rank-actions"><a class="detail-link" href="${hotelUrl(h)}">방 크기 자세히</a>${tripLink(h)}</div></li>`;
   }).join('')}</ol>`;
 }
 const itemListLd = (name, list) => ({'@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length, itemListElement: list.map((h, i) => ({'@type': 'ListItem', position: i + 1, name: h.name, url: abs(hotelUrl(h))}))});
@@ -197,7 +205,7 @@ const pages = [];  // for sitemap + rss: {url, title, desc, updated}
 const landingLinks = {};  // city slug -> [{url, label, count}]
 
 // ---------- landing pages ----------
-function landing({c, hotels, kind, area, feature}) {
+function landing({c, hotels, kind, area, feature, pax}) {
   const updated = maxDate(hotels);
   const month = monthLabel(updated);
   const n = hotels.length;
@@ -213,6 +221,11 @@ function landing({c, hotels, kind, area, feature}) {
     kw = `${c.name} 넓은 호텔`; url = largeUrl(c); sorted = [...hotels].sort(byRoom); imgName = `${c.slug}-large-room`;
     intro = `${c.name} 비교 호텔 중 2인 기본 객실이 ${LARGE}㎡ 이상인 ${n}곳입니다. 이 중 대욕장이 있는 곳은 ${baths}곳입니다. 일본 도심 비즈니스호텔의 기본 더블룸은 15㎡ 안팎인 경우가 많아, ${LARGE}㎡ 이상이면 캐리어 두 개를 펼쳐도 비교적 여유가 있습니다.`;
     guide = `같은 호텔이어도 객실 타입마다 면적이 다릅니다. 여기 적힌 면적은 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준이라, 예약 화면에서 고른 객실의 면적을 한 번 더 확인하세요.`;
+  } else if (kind === 'pax') {
+    const P = PAX[pax], pmed = median(hotels.map(h => paxSize(h, pax)));
+    kw = `${c.name} ${P.kw}`; url = paxUrl(c, pax); sorted = [...hotels].sort(byPax(pax)); imgName = `${c.slug}-${P.slug}`;
+    intro = `${c.name}에서 성인 ${pax}명이 한 방에 묵을 수 있는 호텔 ${n}곳을 ${pax}인 객실 면적이 넓은 순서로 정리했습니다. 이 중 대욕장이 있는 곳은 ${baths}곳이고, ${pax}인 객실 면적 중앙값은 ${pmed ?? '-'}㎡입니다.`;
+    guide = `${pax}인 가능 여부는 자란넷(じゃらん)에서 성인 ${pax}명으로 검색했을 때 예약 플랜이 있는지로 확인했고, 면적은 그 플랜에 나오는 객실 중 가장 작은 방 기준입니다. 트윈에 추가 침대나 소파베드를 넣는 객실도 포함되니, 침대 구성과 ${pax}인 요금은 예약 화면에서 다시 확인하세요. 트리플룸이 없는 호텔은 방 2개로 나누는 것이 낫습니다.`;
   } else if (kind === 'feature') {
     const F = FEATURES[feature];
     const others = ['onsen', 'rotenburo', 'sauna'].filter(k => k !== feature).map(k => `${FEATURES[k].ko} ${hotels.filter(h => hasFeature(h, k)).length}곳`).join(', ');
@@ -228,10 +241,18 @@ function landing({c, hotels, kind, area, feature}) {
     intro = `${c.name} ${area} 지역 호텔 ${n}곳의 기본 객실 면적과 대욕장 여부를 비교했습니다. 대욕장이 있는 곳은 ${baths}곳, 2인 기본 객실이 ${LARGE}㎡ 이상인 곳은 ${large}곳이며, 기본 객실 면적 중앙값은 ${med ?? '-'}㎡입니다.`;
     guide = `${area} 호텔은 목록 순서가 후보 선정 기준(인기순)입니다. 방이 넓은 곳을 먼저 보려면 ${c.name} 전체 비교 페이지에서 '방 넓은 순'으로 정렬해 보세요.`;
   }
-  const title = `${kw} 추천 ${n}곳 - 방 크기·대욕장 비교 (${month})`;
-  const desc = `${kw} ${n}곳의 2인 기본 객실 면적(㎡)과 대욕장 여부를 한눈에 비교하세요. ${month} 호텔 공식 자료 기준, 넓은 방 순위와 지역별 위치까지 정리했습니다.`;
+  const title = kind === 'pax' ? `${kw} 추천 ${n}곳 - ${PAX[pax].sub} 크기·대욕장 비교 (${month})` : `${kw} 추천 ${n}곳 - 방 크기·대욕장 비교 (${month})`;
+  const desc = kind === 'pax'
+    ? `${kw} ${n}곳의 ${pax}인 객실 면적(㎡)과 대욕장 여부를 한눈에 비교하세요. ${month} 기준 성인 ${pax}명이 한 방에 묵을 수 있는 호텔만 모았고, 2인 기본 객실 면적도 함께 보여줍니다.`
+    : `${kw} ${n}곳의 2인 기본 객실 면적(㎡)과 대욕장 여부를 한눈에 비교하세요. ${month} 호텔 공식 자료 기준, 넓은 방 순위와 지역별 위치까지 정리했습니다.`;
   const top = sorted.find(h => num(h.minRoom2Pax));
-  const faqs = [
+  const ptop = kind === 'pax' && sorted.find(h => num(paxSize(h, pax)));
+  const faqs = kind === 'pax' ? [
+    ptop && {q: `${kw} 중 ${pax}인 객실이 가장 넓은 곳은 어디인가요?`, a: `${ptop.name}의 ${paxRoom(ptop, pax) || `${pax}인 객실`} ${paxSize(ptop, pax)}㎡입니다. 2인 기본 객실은 ${sizeText(ptop)}입니다.`},
+    {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
+    {q: `${pax}인 객실 면적은 어떤 기준인가요?`, a: `자란넷에서 성인 ${pax}명으로 검색했을 때 나오는 객실 중 가장 작은 방의 면적입니다. 추가 침대나 소파베드를 쓰는 객실이 포함될 수 있습니다.`},
+    {q: `${c.name}에서 ${pax}명이 묵을 트리플룸이 없는 호텔은 어떻게 하나요?`, a: `${c.name} 비교 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 중 ${pax}인 플랜이 확인된 곳은 ${n}곳입니다. 나머지는 2인 객실 2개로 나누어 예약하는 것이 일반적이며, 이때는 2인 기본 객실 면적을 비교하세요.`},
+  ].filter(Boolean) : [
     top && {q: `${kw} 중 방이 가장 넓은 곳은 어디인가요?`, a: `이 목록에서 2인 기본 객실이 가장 넓은 곳은 ${top.name}(${top.minRoom2Pax}㎡, ${top.roomType})입니다. ${top.bath === true ? `대욕장도 있습니다(${top.bathLabel}).` : `대욕장 정보: ${bathText(top)}.`}`},
     {q: `${kw} 중 ${LARGE}㎡ 이상인 곳은 몇 곳인가요?`, a: `${n}곳 중 ${large}곳입니다${large ? `: ${sorted.filter(h => h.minRoom2Pax >= LARGE).slice(0, 6).map(h => `${h.name}(${h.minRoom2Pax}㎡)`).join(', ')}${large > 6 ? ' 등' : ''}.` : '.'}`},
     !['bath', 'feature'].includes(kind) && {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
@@ -249,7 +270,7 @@ function landing({c, hotels, kind, area, feature}) {
       <p class="updated">정보 확인 ${esc(updated)} · 호텔 공식 자료 우선</p>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(kw)} ${n}곳 방 크기·대욕장 비교">
     </section>
-    <section aria-labelledby="listTitle"><h2 id="listTitle">${esc(kw)} ${kind === 'area' ? '목록' : '방 넓은 순'}</h2>${hotelCards(sorted)}</section>
+    <section aria-labelledby="listTitle"><h2 id="listTitle">${esc(kw)} ${kind === 'area' ? '목록' : kind === 'pax' ? `${pax}인 객실 넓은 순` : '방 넓은 순'}</h2>${hotelCards(sorted, kind === 'pax' ? pax : 2)}</section>
     <section class="seo-guide"><h2>${esc(kw)} 고를 때 확인할 점</h2><p>${esc(guide)}</p><p><a href="${cityUrl(c)}">${esc(c.name)} 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 전체 비교 · 필터로 직접 찾기 →</a></p></section>
     ${faqHtml(faqs)}
     <section class="related"><h2>${esc(c.name)} 호텔 더 보기</h2><ul>${related.map(l => `<li><a href="${l.url}">${esc(l.label)} <small>${l.count}곳</small></a></li>`).join('')}</ul></section>`;
@@ -278,6 +299,7 @@ function hotelPage(h, c, cityHotels) {
   } else lines.push(`${h.name}의 기본 객실 면적은 아직 공식 자료로 확인 중입니다.`);
   if (s === 'yes' && h.bathFeatures) { const yes = ['onsen', 'rotenburo', 'sauna'].filter(k => h.bathFeatures[k]).map(k => FEATURES[k].ko), no = ['onsen', 'rotenburo', 'sauna'].filter(k => !h.bathFeatures[k]).map(k => FEATURES[k].ko); lines.push(!yes.length ? '대욕장은 실내탕만 있고, 천연온천·노천탕·사우나 시설은 없습니다.' : !no.length ? `대욕장에는 ${yes.join('·')} 시설이 모두 있습니다.` : `대욕장에는 ${yes.join('·')} 시설이 있고, ${no.join('·')} 시설은 없습니다.`); }
   lines.push(s === 'yes' ? `대욕장 정보는 '${h.bathLabel}'로 확인했습니다. 이용 시간과 객실별 이용 조건은 예약 전 호텔에서 다시 확인하세요.` : s === 'no' ? '대욕장은 없는 것으로 확인했습니다. 객실 욕실만 이용할 수 있습니다.' : '대욕장 여부는 아직 확인 중입니다.');
+  if (h.pax3 !== undefined || h.pax4 !== undefined) lines.push(`3·4인 투숙: ${paxText(h, 3)}, ${paxText(h, 4)}${h.paxVerifiedAt ? `(자란넷 ${h.paxVerifiedAt} 기준)` : ''}.`);
   if (!isBoilerplate(h.reviewNote)) lines.push(`한줄 메모: ${h.reviewNote}.`.replace('..', '.'));
   const similar = cityHotels.filter(x => x !== h && num(x.minRoom2Pax) && num(h.minRoom2Pax) && Math.abs(x.minRoom2Pax - h.minRoom2Pax) <= 2.5).sort(byRoom).slice(0, 6);
   const neighbours = areaHotels.filter(x => x !== h).sort(byRoom).slice(0, 6);
@@ -286,6 +308,7 @@ function hotelPage(h, c, cityHotels) {
     {q: `${h.name}에 대욕장이 있나요?`, a: s === 'yes' ? `네, 있습니다(${h.bathLabel}).` : s === 'no' ? '대욕장은 없습니다.' : '대욕장 여부는 확인 중입니다.'},
     s === 'yes' && h.bathFeatures && {q: `${h.name} 대욕장에 온천이나 노천탕, 사우나가 있나요?`, a: `${featureText(h)}입니다.`},
     {q: `${h.name}은 어느 지역에 있나요?`, a: `${c.name} ${h.area} 지역에 있습니다. 같은 지역 호텔 ${areaHotels.length}곳과 비교할 수 있습니다.`},
+    (h.pax3 !== undefined || h.pax4 !== undefined) && {q: `${h.name}에 3명이나 4명이 한 방에 묵을 수 있나요?`, a: `${paxText(h, 3)}, ${paxText(h, 4)}입니다. ${h.pax3 || h.pax4 ? '침대 구성과 인원별 요금은 예약 화면에서 확인하세요.' : '2인 객실 2개로 나누어 예약하는 것이 일반적입니다.'}`},
   ].filter(Boolean);
   const img = card(`hotel-${hotelSlug(h)}`, {title: h.name, sub: `${c.name} ${h.area} · ${h.roomType}`, big: sizeText(h), bath: s === 'yes' ? '♨ 대욕장 있음' : bathText(h), isHotel: true});
   const url = hotelUrl(h);
@@ -295,7 +318,7 @@ function hotelPage(h, c, cityHotels) {
     address: {'@type': 'PostalAddress', addressLocality: `${c.name} ${h.area}`, addressCountry: 'JP'},
     ...(h.location ? {geo: {'@type': 'GeoCoordinates', latitude: h.location.lat, longitude: h.location.lng}} : {}),
     ...(s !== 'unknown' ? {amenityFeature: [{'@type': 'LocationFeatureSpecification', name: '대욕장', value: s === 'yes'}, ...(s === 'yes' && h.bathFeatures ? ['onsen', 'rotenburo', 'sauna'].map(k => ({'@type': 'LocationFeatureSpecification', name: FEATURES[k].ko, value: Boolean(h.bathFeatures[k])})) : [])]} : {}),
-    ...(num(h.minRoom2Pax) ? {containsPlace: {'@type': 'HotelRoom', name: h.roomType, occupancy: {'@type': 'QuantitativeValue', value: 2}, floorSize: {'@type': 'QuantitativeValue', value: h.minRoom2Pax, unitCode: 'MTK'}}} : {})};
+    ...(num(h.minRoom2Pax) ? {containsPlace: [2, 3, 4].filter(n => num(paxSize(h, n)) && (n === 2 || h[`pax${n}`])).map(n => ({'@type': 'HotelRoom', name: paxRoom(h, n) || `${n}인 객실`, occupancy: {'@type': 'QuantitativeValue', value: n}, floorSize: {'@type': 'QuantitativeValue', value: paxSize(h, n), unitCode: 'MTK'}}))} : {})};
   const mini = list => `<ul class="mini-list">${list.map(x => `<li><a href="${hotelUrl(x)}">${esc(x.name)}</a> <span>${esc(sizeText(x))} · ${esc(bathText(x))}</span></li>`).join('')}</ul>`;
   const body = `    ${crumbs(trail)}
     <article class="hotel-page">
@@ -306,8 +329,8 @@ function hotelPage(h, c, cityHotels) {
       <div class="hotel-cta">${num(h.minRoom2Pax) ? `<a class="simulation-link" href="${BASE}/simulator.html?area=${h.minRoom2Pax}">${h.minRoom2Pax}㎡ 방에 캐리어 넣어보기</a>` : ''}${tripLink(h)}</div>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(h.name)} 방 크기 ${esc(sizeText(h))} ${esc(bathText(h))}">
       <h2>확인한 정보</h2>
-      <dl class="fact-table"><div><dt>확인 객실 타입</dt><dd>${esc(h.roomType)}</dd></div><div><dt>기본 객실 면적</dt><dd>${esc(sizeText(h))}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${esc(h.bathLabel)}</dd></div>${s === 'yes' && h.bathFeatures ? `<div><dt>온천·노천탕·사우나</dt><dd>${esc(featureText(h))}</dd></div>` : ''}<div><dt>확인 근거</dt><dd>${esc(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${esc(h.verifiedAt)}</dd></div></dl>
-      <p class="sources">${h.officialSourceUrl ? `<a href="${esc(h.officialSourceUrl)}" target="_blank" rel="noopener">객실 공식 자료 ↗</a>` : ''}${h.bathSourceUrl ? `<a href="${esc(h.bathSourceUrl)}" target="_blank" rel="noopener">대욕장 공식 자료 ↗</a>` : ''}${h.reviewSourceUrl ? `<a href="${esc(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 ↗</a>` : ''}</p>
+      <dl class="fact-table"><div><dt>확인 객실 타입</dt><dd>${esc(h.roomType)}</dd></div><div><dt>기본 객실 면적</dt><dd>${esc(sizeText(h))}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${esc(h.bathLabel)}</dd></div>${s === 'yes' && h.bathFeatures ? `<div><dt>온천·노천탕·사우나</dt><dd>${esc(featureText(h))}</dd></div>` : ''}${h.pax3 !== undefined || h.pax4 !== undefined ? `<div><dt>3인 객실</dt><dd>${esc(h.pax3 ? `${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}` : h.pax3 === false ? '3인 플랜 없음' : '확인 중')}</dd></div><div><dt>4인 객실</dt><dd>${esc(h.pax4 ? `${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</dd></div>` : ''}<div><dt>확인 근거</dt><dd>${esc(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${esc(h.verifiedAt)}</dd></div></dl>
+      <p class="sources">${h.officialSourceUrl ? `<a href="${esc(h.officialSourceUrl)}" target="_blank" rel="noopener">객실 공식 자료 ↗</a>` : ''}${h.bathSourceUrl ? `<a href="${esc(h.bathSourceUrl)}" target="_blank" rel="noopener">대욕장 공식 자료 ↗</a>` : ''}${h.paxSourceUrl ? `<a href="${esc(h.paxSourceUrl)}" target="_blank" rel="noopener">3·4인 플랜 확인 자료 ↗</a>` : ''}${h.reviewSourceUrl ? `<a href="${esc(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 ↗</a>` : ''}</p>
     </article>
     ${neighbours.length ? `<section class="related"><h2>${esc(h.area)} 다른 호텔과 방 크기 비교</h2>${mini(neighbours)}${hasArea ? `<p><a href="${areaUrl(c, h.area)}">${esc(h.area)} 호텔 ${areaHotels.length}곳 전체 보기 →</a></p>` : ''}</section>` : ''}
     ${similar.length ? `<section class="related"><h2>비슷한 크기의 ${esc(c.name)} 호텔</h2>${mini(similar)}</section>` : ''}
@@ -346,6 +369,7 @@ function cityPage(c, hotels) {
   const faqs = [
     {q: `${c.name}에서 방이 넓은 호텔은 어디인가요?`, a: `2인 기본 객실 기준으로 ${widest.map(h => `${h.name}(${sizeText(h)})`).join(', ')} 순으로 넓습니다.`},
     {q: `${c.name} 대욕장 호텔은 몇 곳인가요?`, a: `비교 중인 ${n}곳 중 ${baths.length}곳에서 대욕장(온천·스파 포함)을 확인했습니다.`},
+    {q: `${c.name}에서 3명이 한 방에 묵을 수 있는 호텔은?`, a: `${n}곳 중 ${hotels.filter(h => h.pax3).length}곳에 3인 플랜이 있습니다${hotels.some(h => h.pax3) ? `: ${[...hotels.filter(h => h.pax3)].sort(byPax(3)).slice(0, 5).map(h => `${h.name}(${paxSizeText(h, 3)})`).join(', ')} 등` : ''}. 자세한 목록은 '${c.name} 3인 호텔' 페이지에서 볼 수 있습니다.`},
     {q: `${c.name} 호텔은 어느 지역에 묵는 게 좋나요?`, a: `${Object.keys(c.areas).filter(a => hotels.some(h => h.area === a)).slice(0, 6).map(a => `${a} ${hotels.filter(h => h.area === a).length}곳`).join(', ')}을 비교하고 있습니다. 일정의 중심이 되는 역과 가까운 지역을 고르고, 같은 지역 안에서 방 크기와 대욕장을 비교해 보세요.`},
   ];
   const img = card(`${c.slug}`, {title: `${c.name} 호텔 ${n}곳`, sub: `방 크기·대욕장 비교 · ${month} 기준`});
@@ -357,7 +381,7 @@ function cityPage(c, hotels) {
   const content = `
     <section class="seo-guide city-guide" aria-labelledby="guideTitle">
       <h2 id="guideTitle">${esc(c.name)} 호텔, 조건별로 바로 보기</h2>
-      <p>${esc(c.name)} 호텔 ${n}곳 중 대욕장이 있는 곳은 ${baths.length}곳(천연온천 ${hotels.filter(h => hasFeature(h, 'onsen')).length}곳, 노천탕 ${hotels.filter(h => hasFeature(h, 'rotenburo')).length}곳, 사우나 ${hotels.filter(h => hasFeature(h, 'sauna')).length}곳), 2인 기본 객실이 ${LARGE}㎡ 이상인 곳은 ${large.length}곳입니다. 기본 객실 면적 중앙값은 ${median(hotels.map(h => h.minRoom2Pax))}㎡이며, 정보는 ${esc(updated)} 기준으로 확인했습니다.</p>
+      <p>${esc(c.name)} 호텔 ${n}곳 중 대욕장이 있는 곳은 ${baths.length}곳(천연온천 ${hotels.filter(h => hasFeature(h, 'onsen')).length}곳, 노천탕 ${hotels.filter(h => hasFeature(h, 'rotenburo')).length}곳, 사우나 ${hotels.filter(h => hasFeature(h, 'sauna')).length}곳), 2인 기본 객실이 ${LARGE}㎡ 이상인 곳은 ${large.length}곳, 3인이 한 방에 묵을 수 있는 곳은 ${hotels.filter(h => h.pax3).length}곳, 4인은 ${hotels.filter(h => h.pax4).length}곳입니다. 기본 객실 면적 중앙값은 ${median(hotels.map(h => h.minRoom2Pax))}㎡이며, 정보는 ${esc(updated)} 기준으로 확인했습니다.</p>
       <ul class="guide-links">${landingLinks[c.slug].map(l => `<li><a href="${l.url}">${esc(l.label)} <small>${l.count}곳</small></a></li>`).join('')}</ul>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(c.name)} 호텔 ${n}곳 방 크기·대욕장 비교" loading="lazy">
       <h2>${esc(c.name)} 호텔별 상세</h2>
@@ -400,6 +424,10 @@ function homePage() {
       const list = hotels.filter(h => hasFeature(h, k));
       if (list.length >= MIN_LIST) links.push({url: featureUrl(c, k), label: `${c.name} ${FEATURES[k].label} 호텔`, count: list.length, kind: 'feature', feature: k, list});
     }
+    for (const n of [3, 4]) {
+      const list = hotels.filter(h => h[`pax${n}`] === true);
+      if (list.length >= MIN_LIST) links.push({url: paxUrl(c, n), label: `${c.name} ${n}인 호텔`, count: list.length, kind: 'pax', pax: n, list});
+    }
     for (const area of Object.keys(c.areas)) {
       const list = hotels.filter(h => h.area === area);
       if (list.length >= MIN_LIST) links.push({url: areaUrl(c, area), label: `${area} 호텔`, count: list.length, kind: 'area', area, list});
@@ -412,7 +440,7 @@ function homePage() {
   fs.writeFileSync(simFile, replaceBetween(sim, '<!-- ga:start -->', '<!-- ga:end -->', gaTag(), (h, block) => h.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + block)));
   for (const {c, hotels} of cityData) {
     cityPage(c, hotels);
-    for (const l of landingLinks[c.slug]) landing({c, hotels: l.list, kind: l.kind, area: l.area, feature: l.feature});
+    for (const l of landingLinks[c.slug]) landing({c, hotels: l.list, kind: l.kind, area: l.area, feature: l.feature, pax: l.pax});
     for (const h of hotels) hotelPage(h, c, hotels);
   }
   // Sitemap, RSS (네이버 서치어드바이저 제출용), robots.txt at the domain root.

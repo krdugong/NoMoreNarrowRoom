@@ -21,7 +21,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705211",
       "verifiedAt": "2026-10-13"
     },
-    "officialSourceUrl": "https://www.jalan.net/yad336468/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad336468/room/",
+    "pax3": true,
+    "minRoom3Pax": 29,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 45,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336468&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "croom_hakata",
@@ -51,7 +59,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387970&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "croom_gion",
@@ -82,7 +98,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 25.8,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 30.4,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=356362&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "gate",
@@ -107,7 +131,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad348110/",
-    "officialSourceUrl": "https://www.gate-hotel.jp/fukuoka/rooms/"
+    "officialSourceUrl": "https://www.gate-hotel.jp/fukuoka/rooms/",
+    "pax3": true,
+    "minRoom3Pax": 26,
+    "roomType3Pax": "에센셜 트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348110&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "royalcanvas",
@@ -138,7 +170,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 37,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 37,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=366868&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "basics",
@@ -163,7 +203,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad309628/",
-    "officialSourceUrl": "https://www.jalan.net/yad309628/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad309628/room/",
+    "pax3": true,
+    "minRoom3Pax": 35,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 45,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=309628&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "blossom",
@@ -194,7 +242,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 30,
+    "roomType3Pax": "디럭스 트윈(3인)",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304089&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "toyo",
@@ -218,7 +274,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705185",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad327476/"
+    "bathSourceUrl": "https://www.jalan.net/yad327476/",
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=327476&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "rich_nishi",
@@ -242,7 +306,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=25797449",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad391678/"
+    "bathSourceUrl": "https://www.jalan.net/yad391678/",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "더블",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=391678&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "rich_tenjin",
@@ -267,7 +339,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad315882/",
-    "officialSourceUrl": "https://www.jalan.net/yad315882/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad315882/room/",
+    "pax3": true,
+    "minRoom3Pax": 26,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 48,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315882&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "mitsui_gion",
@@ -298,7 +378,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 26.6,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=384068&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "mitsui_nakasu",
@@ -329,7 +417,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.3,
+    "roomType3Pax": "스탠다드 트윈+소파베드",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=392952&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "miyako",
@@ -360,7 +456,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 34,
+    "roomType3Pax": "디럭스 트윈+엑스트라 베드",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=391699&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "sutton",
@@ -384,7 +488,15 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705180",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad375658/"
+    "bathSourceUrl": "https://www.jalan.net/yad375658/",
+    "pax3": true,
+    "minRoom3Pax": 36,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 36,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375658&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "solaria",
@@ -409,7 +521,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad333660/",
-    "officialSourceUrl": "https://www.jalan.net/yad333660/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad333660/room/",
+    "pax3": true,
+    "minRoom3Pax": 28.4,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 41.8,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333660&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "yaoji",
@@ -440,7 +560,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 57.4,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": 57.4,
+    "roomType4Pax": "기타 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=330536&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "oriental_hakata",
@@ -465,7 +593,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad339135/",
-    "officialSourceUrl": "https://fukuoka-orientalhotel.com/stay/room01/"
+    "officialSourceUrl": "https://fukuoka-orientalhotel.com/stay/room01/",
+    "pax3": true,
+    "minRoom3Pax": 21,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 32.6,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=339135&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "zonk_nakasu",
@@ -542,7 +678,15 @@ window.NMNR_HOTELS = [
       "rotenburo": true,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 18,
+    "roomType3Pax": "코너뷰 트윈+엑스트라 베드",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=393394&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "comfort",
@@ -567,7 +711,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad308449/",
-    "officialSourceUrl": "https://www.choice-hotels.jp/hotel/hakata/rooms/"
+    "officialSourceUrl": "https://www.choice-hotels.jp/hotel/hakata/rooms/",
+    "pax3": true,
+    "minRoom3Pax": 35,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 35,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=308449&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "quintcomic",
@@ -592,7 +744,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad380530/",
-    "officialSourceUrl": "https://quintessahotels.com/fukuoka-tenjin/stay/"
+    "officialSourceUrl": "https://quintessahotels.com/fukuoka-tenjin/stay/",
+    "pax3": true,
+    "minRoom3Pax": 31,
+    "roomType3Pax": "기타 객실",
+    "pax4": true,
+    "minRoom4Pax": 31,
+    "roomType4Pax": "기타 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380530&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "cross_tenjin",
@@ -623,7 +783,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 17.84,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "기타 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=318215&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "greenannex",
@@ -648,7 +816,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad355796/",
-    "officialSourceUrl": "https://www.jalan.net/yad355796/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad355796/room/",
+    "pax3": true,
+    "minRoom3Pax": 24.5,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 24.5,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=355796&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "nikko",
@@ -673,7 +849,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad325695/",
-    "officialSourceUrl": "https://www.hotelnikko-fukuoka.com/stay/room/"
+    "officialSourceUrl": "https://www.hotelnikko-fukuoka.com/stay/room/",
+    "pax3": true,
+    "minRoom3Pax": 35,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 70,
+    "roomType4Pax": "일본식 객실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=325695&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "monte",
@@ -698,7 +882,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad361322/",
-    "officialSourceUrl": "https://www.monte-hermana.jp/fukuoka/room/2758984310a9627.html"
+    "officialSourceUrl": "https://www.monte-hermana.jp/fukuoka/room/2758984310a9627.html",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=361322&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "lasoeur",
@@ -723,7 +915,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad381642/",
-    "officialSourceUrl": "https://www.hotelmonterey.co.jp/lasoeur_fukuoka/stay/room/9.html"
+    "officialSourceUrl": "https://www.hotelmonterey.co.jp/lasoeur_fukuoka/stay/room/9.html",
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=381642&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "monterey",
@@ -754,7 +954,15 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": true,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 24,
+    "roomType3Pax": "모데레이트 트윈",
+    "pax4": true,
+    "minRoom4Pax": 29,
+    "roomType4Pax": "슈페리어",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=364185&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "oriental_tenjin",
@@ -779,7 +987,15 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad398021/",
-    "officialSourceUrl": "https://www.jalan.net/yad398021/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad398021/room/",
+    "pax3": true,
+    "minRoom3Pax": 19,
+    "roomType3Pax": "트윈",
+    "pax4": true,
+    "minRoom4Pax": 23,
+    "roomType4Pax": "트윈",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=398021&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   },
   {
     "id": "hokke",
@@ -810,6 +1026,14 @@ window.NMNR_HOTELS = [
       "rotenburo": false,
       "sauna": false,
       "verifiedAt": "2026-10-28"
-    }
+    },
+    "pax3": true,
+    "minRoom3Pax": 22,
+    "roomType3Pax": "트리플",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315927&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28"
   }
 ];
