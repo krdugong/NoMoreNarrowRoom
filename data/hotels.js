@@ -45,7 +45,13 @@ window.NMNR_HOTELS = [
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705327",
       "verifiedAt": "2026-10-13"
     },
-    "bathSourceUrl": "https://www.jalan.net/yad387970/"
+    "bathSourceUrl": "https://www.jalan.net/yad387970/",
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "croom_gion",
@@ -55,7 +61,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15.4,
     "roomType": "스테이 타입/더블 계열",
     "bath": true,
-    "bathLabel": "대욕장·외탕",
+    "bathLabel": "대욕장·노천탕",
     "verifiedAt": "2026-10-28",
     "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=105845907&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -70,7 +76,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad356362/",
-    "officialSourceUrl": "https://www.jalan.net/yad356362/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad356362/room/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "gate",
@@ -120,7 +132,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad366868/",
-    "officialSourceUrl": "https://www.royalparkhotels.co.jp/canvas/fukuokanakasu/stay/"
+    "officialSourceUrl": "https://www.royalparkhotels.co.jp/canvas/fukuokanakasu/stay/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "basics",
@@ -170,7 +188,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad304089/",
-    "officialSourceUrl": "https://www.jrk-hotels.co.jp/Hakata_premier/rooms/"
+    "officialSourceUrl": "https://www.jrk-hotels.co.jp/Hakata_premier/rooms/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "toyo",
@@ -268,7 +292,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad384068/",
-    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-gion/room/"
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-gion/room/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "mitsui_nakasu",
@@ -293,7 +323,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad392952/",
-    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-nakasu/room/"
+    "officialSourceUrl": "https://www.gardenhotels.co.jp/fukuoka-nakasu/room/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "miyako",
@@ -303,7 +339,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 30,
     "roomType": "2인 기본 객실",
     "bath": true,
-    "bathLabel": "천연온천 스파",
+    "bathLabel": "천연온천 대욕장·사우나",
     "verifiedAt": "2026-10-28",
     "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705197&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -318,7 +354,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad391699/",
-    "officialSourceUrl": "https://www.miyakohotels.ne.jp/hakata/"
+    "officialSourceUrl": "https://www.miyakohotels.ne.jp/hakata/",
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "sutton",
@@ -377,7 +419,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 19,
     "roomType": "스탠다드 더블",
     "bath": true,
-    "bathLabel": "천연온천·사우나",
+    "bathLabel": "천연온천 대욕장·사우나",
     "verifiedAt": "2026-10-28",
     "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705508&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -392,7 +434,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad330536/",
-    "officialSourceUrl": "https://www.yaoji.co.jp/room/"
+    "officialSourceUrl": "https://www.yaoji.co.jp/room/",
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "oriental_hakata",
@@ -473,7 +521,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15,
     "roomType": "더블/퀸 계열",
     "bath": true,
-    "bathLabel": "스카이스파·노천·사우나",
+    "bathLabel": "대욕장·노천탕·사우나",
     "verifiedAt": "2026-10-28",
     "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=2649556&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -488,7 +536,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad393394/",
-    "officialSourceUrl": "https://www.candeohotels.com/ja/fukuoka-tenjin/rooms/"
+    "officialSourceUrl": "https://www.candeohotels.com/ja/fukuoka-tenjin/rooms/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "comfort",
@@ -563,7 +617,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad318215/",
-    "officialSourceUrl": "https://www.jalan.net/yad318215/room/"
+    "officialSourceUrl": "https://www.jalan.net/yad318215/room/",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "greenannex",
@@ -673,7 +733,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 24,
     "roomType": "모데레이트 트윈",
     "bath": true,
-    "bathLabel": "사우나 포함 온욕시설",
+    "bathLabel": "대욕장·사우나",
     "verifiedAt": "2026-10-28",
     "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=49507812&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -688,7 +748,13 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad364185/",
-    "officialSourceUrl": "https://www.hotelmonterey.co.jp/fukuoka/stay/room/775e5b8f378f5e6.html"
+    "officialSourceUrl": "https://www.hotelmonterey.co.jp/fukuoka/stay/room/775e5b8f378f5e6.html",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    }
   },
   {
     "id": "oriental_tenjin",
@@ -738,6 +804,12 @@ window.NMNR_HOTELS = [
       "verifiedAt": "2026-10-13"
     },
     "bathSourceUrl": "https://www.jalan.net/yad315927/",
-    "officialSourceUrl": "https://www.hokke.co.jp/fukuoka/room.html"
+    "officialSourceUrl": "https://www.hokke.co.jp/fukuoka/room.html",
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    }
   }
 ];

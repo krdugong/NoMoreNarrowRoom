@@ -7,11 +7,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 17.6,
     "roomType": "슈페리어 더블",
     "bath": true,
-    "bathLabel": "스파 있음 · 기본 객실 미포함",
+    "bathLabel": "대욕장·사우나 · 프리미엄 객실 전용",
     "officialSourceUrl": "https://www-new.tokyuhotels.co.jp/sapporostream/room/index.html",
     "bathSourceUrl": "https://www-new.tokyuhotels.co.jp/sapporostream/room/index.html",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 공식 시설 안내 확인(2026-10-28)",
     "popularityRank": 1,
     "tripHotelId": "111414778",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=111414778&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -21,6 +21,12 @@ window.NMNR_HOTELS = [
       "lng": 141.35233,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=111414778",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -31,11 +37,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 24,
     "roomType": "퀸",
     "bath": true,
-    "bathLabel": "천연온천 스파·사우나",
+    "bathLabel": "천연온천 대욕장·사우나",
     "officialSourceUrl": "https://granbellhotel.jp/sapporoby/rooms/",
-    "bathSourceUrl": "https://www.granbellhotel.jp/sapporoby/spa/",
+    "bathSourceUrl": "https://www.jalan.net/yad344941/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 2,
     "tripHotelId": "124300563",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=124300563&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -45,6 +51,12 @@ window.NMNR_HOTELS = [
       "lng": 141.35723,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=124300563",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -57,9 +69,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·노천탕",
     "officialSourceUrl": "https://karaksahotels.com/sapporo/room/",
-    "bathSourceUrl": "https://karaksahotels.com/sapporo/bath/",
+    "bathSourceUrl": "https://www.jalan.net/yad397643/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 3,
     "tripHotelId": "9147711",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=9147711&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -69,6 +81,12 @@ window.NMNR_HOTELS = [
       "lng": 141.350351,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=9147711",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -81,9 +99,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "천연온천 대욕장",
     "officialSourceUrl": "https://lagent.jp/sapporo-odori/ko/room/",
-    "bathSourceUrl": "https://lagent.jp/sapporo-odori/",
+    "bathSourceUrl": "https://www.jalan.net/yad328940/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 4,
     "tripHotelId": "5253272",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=5253272&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -93,6 +111,12 @@ window.NMNR_HOTELS = [
       "lng": 141.350792,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=5253272",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -103,11 +127,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 18,
     "roomType": "세미더블",
     "bath": true,
-    "bathLabel": "최상층 전망 대욕장",
+    "bathLabel": "대욕장·노천탕",
     "officialSourceUrl": "https://cross-sapporo.orixhotelsandresorts.com/contents/standard-single/",
-    "bathSourceUrl": "https://www.orixhotelsandresorts.com/worixp/concept/crosshotel_sapporo/",
+    "bathSourceUrl": "https://www.jalan.net/yad302905/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 5,
     "tripHotelId": "703370",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703370&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -117,6 +141,12 @@ window.NMNR_HOTELS = [
       "lng": 141.353276,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703370",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -153,9 +183,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "officialSourceUrl": "https://solaria-sapporo.nnr-h.com/stay/superior-double",
-    "bathSourceUrl": "https://www.sapporo.travel/hotel/detail/hotel_844/",
+    "bathSourceUrl": "https://www.jalan.net/yad333592/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 7,
     "tripHotelId": "62987948",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=62987948&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -165,6 +195,12 @@ window.NMNR_HOTELS = [
       "lng": 141.348528,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=62987948",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -199,11 +235,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 24,
     "roomType": "모더레이트 더블",
     "bath": true,
-    "bathLabel": "천연온천 스파",
+    "bathLabel": "천연온천 대욕장·사우나 · 유료 2,150엔 · 18세 이상",
     "officialSourceUrl": "https://www.jrhotels.co.jp/brochure/pdf/tower/price_info.pdf",
-    "bathSourceUrl": "https://jrhotels-lp.jp/",
+    "bathSourceUrl": "https://www.jalan.net/yad327602/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 PDF(2024년판) · 공식 스파 안내",
+    "verification": "공식 객실 PDF(2024년판) · 공식 스파 안내 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 9,
     "tripHotelId": "705159",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=705159&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -213,6 +249,12 @@ window.NMNR_HOTELS = [
       "lng": 141.352453,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705159",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -225,9 +267,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·사우나",
     "officialSourceUrl": "https://www.vessel-hotel.jp/campana/susukino/room/",
-    "bathSourceUrl": "https://www.vessel-hotel.jp/campana/susukino/bath/",
+    "bathSourceUrl": "https://www.jalan.net/yad332464/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 10,
     "tripHotelId": "31315741",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=31315741&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -237,6 +279,12 @@ window.NMNR_HOTELS = [
       "lng": 141.349242,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=31315741",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -247,11 +295,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 14,
     "roomType": "비아인 싱글/싱글 · 2인 이용 가능",
     "bath": true,
-    "bathLabel": "대욕장·외탕",
+    "bathLabel": "대욕장·노천탕",
     "officialSourceUrl": "https://www.viainn.com/sapporo-o/room/",
-    "bathSourceUrl": "https://www.viainn.com/sapporo-o/faq/",
+    "bathSourceUrl": "https://www.jalan.net/yad387338/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 11,
     "tripHotelId": "105135623",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=105135623&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -261,6 +309,12 @@ window.NMNR_HOTELS = [
       "lng": 141.355727,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=105135623",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -275,7 +329,7 @@ window.NMNR_HOTELS = [
     "officialSourceUrl": "https://www.gate-hotel.jp/sapporo/rooms/",
     "bathSourceUrl": "https://www.gate-hotel.jp/sapporo/rooms/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 공식 시설 안내 확인(2026-10-28)",
     "popularityRank": 12,
     "tripHotelId": "129923417",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=129923417&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -285,6 +339,12 @@ window.NMNR_HOTELS = [
       "lng": 141.351231,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=129923417",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -343,11 +403,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 13,
     "roomType": "더블 A",
     "bath": true,
-    "bathLabel": "대욕장",
+    "bathLabel": "대욕장·사우나 · 유료 1,300엔",
     "officialSourceUrl": "https://www.hotelemion-sapporo.jp/rooms/",
-    "bathSourceUrl": "https://www.hotelemion-sapporo.jp/faq/",
+    "bathSourceUrl": "https://www.jalan.net/yad338679/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 15,
     "tripHotelId": "112955989",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=112955989&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -357,6 +417,12 @@ window.NMNR_HOTELS = [
       "lng": 141.354037,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=112955989",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -415,11 +481,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 17.9,
     "roomType": "더블/트윈",
     "bath": true,
-    "bathLabel": "전망 대욕장·노천탕",
+    "bathLabel": "대욕장·노천탕",
     "officialSourceUrl": "https://www.granbellhotel.jp/susukino/room/",
-    "bathSourceUrl": "https://www.granbellhotel.jp/susukino/",
+    "bathSourceUrl": "https://www.jalan.net/yad372402/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 18,
     "tripHotelId": "77274627",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=77274627&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -429,6 +495,12 @@ window.NMNR_HOTELS = [
       "lng": 141.35654,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=77274627",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -465,9 +537,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "officialSourceUrl": "https://www.gardenhotels.co.jp/sapporo-west/room/",
-    "bathSourceUrl": "https://www.gardenhotels.co.jp/sapporo-west/",
+    "bathSourceUrl": "https://www.jalan.net/yad389804/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 20,
     "tripHotelId": "49334869",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=49334869&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -477,6 +549,12 @@ window.NMNR_HOTELS = [
       "lng": 141.346664,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=49334869",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -487,11 +565,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 19,
     "roomType": "스탠다드 싱글 · 2인 판매 확인",
     "bath": true,
-    "bathLabel": "천연온천 스파",
+    "bathLabel": "천연온천 대욕장·노천탕·사우나",
     "officialSourceUrl": "https://www.hotelmonterey.co.jp/edelhof/stay/room/31.html",
-    "bathSourceUrl": "https://www.hotelmonterey.co.jp/edelhof/",
+    "bathSourceUrl": "https://www.jalan.net/yad328431/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 21,
     "tripHotelId": "1454486",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=1454486&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -501,6 +579,12 @@ window.NMNR_HOTELS = [
       "lng": 141.355616,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1454486",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -537,9 +621,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·노천탕",
     "officialSourceUrl": "https://granbellhotel.jp/sapporo/room/",
-    "bathSourceUrl": "https://www.granbellhotel.jp/sapporo/spa/",
+    "bathSourceUrl": "https://www.jalan.net/yad341888/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 23,
     "tripHotelId": "72213523",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=72213523&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -549,6 +633,12 @@ window.NMNR_HOTELS = [
       "lng": 141.345769,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=72213523",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -561,9 +651,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "officialSourceUrl": "https://www.keioprelia.co.jp/sapporo/rooms/",
-    "bathSourceUrl": "https://www.keioprelia.co.jp/sapporo/",
+    "bathSourceUrl": "https://www.jalan.net/yad377605/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 24,
     "tripHotelId": "31315743",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=31315743&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -573,6 +663,12 @@ window.NMNR_HOTELS = [
       "lng": 141.34823,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=31315743",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -681,9 +777,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장",
     "officialSourceUrl": "https://www.gardenhotels.co.jp/sapporo/room/",
-    "bathSourceUrl": "https://www.gardenhotels.co.jp/sapporo/bath/",
+    "bathSourceUrl": "https://www.jalan.net/yad378516/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 29,
     "tripHotelId": "703364",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703364&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -693,6 +789,12 @@ window.NMNR_HOTELS = [
       "lng": 141.347013,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703364",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -705,9 +807,9 @@ window.NMNR_HOTELS = [
     "bath": true,
     "bathLabel": "대욕장·사우나",
     "officialSourceUrl": "https://sangranhotel.com/ko/room/",
-    "bathSourceUrl": "https://sangranhotel.com/",
+    "bathSourceUrl": "https://www.jalan.net/yad375045/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 30,
     "tripHotelId": "114435820",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=114435820&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -717,6 +819,12 @@ window.NMNR_HOTELS = [
       "lng": 141.351217,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=114435820",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -751,11 +859,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 20,
     "roomType": "더블",
     "bath": true,
-    "bathLabel": "온천 대욕장·노천탕",
+    "bathLabel": "천연온천 대욕장·노천탕·사우나",
     "officialSourceUrl": "https://www.uds-hotels.com/yuen/sapporo/",
-    "bathSourceUrl": "https://www.uds-hotels.com/yuen/sapporo/onsen/",
+    "bathSourceUrl": "https://www.jalan.net/yad396050/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 32,
     "tripHotelId": "57831126",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=57831126&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -765,6 +873,12 @@ window.NMNR_HOTELS = [
       "lng": 141.345636,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=57831126",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -799,11 +913,11 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15,
     "roomType": "모더레이트 · 2인 이용 가능",
     "bath": true,
-    "bathLabel": "전망 대욕장",
+    "bathLabel": "대욕장",
     "officialSourceUrl": "https://www.resol-hotel.jp/trinity-sapporo/rooms/",
-    "bathSourceUrl": "https://www.resol-hotel.jp/trinity-sapporo/spa/",
+    "bathSourceUrl": "https://www.jalan.net/yad388325/",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료 우선",
+    "verification": "공식 객실 자료 우선 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "popularityRank": 34,
     "tripHotelId": "703372",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=703372&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -813,6 +927,12 @@ window.NMNR_HOTELS = [
       "lng": 141.350217,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=703372",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {

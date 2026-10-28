@@ -1,6 +1,7 @@
 'use strict';
 const hotels = window.NMNR_HOTELS || [];
-const state = {room: 0, area: 'all', bath: 'all', sort: 'name', query: ''};
+const state = {room: 0, area: 'all', bath: 'all', feature: 'all', sort: 'name', query: ''};
+const hasFeature = (h, key) => key === 'all' || Boolean(h.bath === true && h.bathFeatures && h.bathFeatures[key]);
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
 function roomFeel(m) {
   if (!Number.isFinite(m)) return '공식 면적 확인 중';
@@ -11,7 +12,7 @@ function roomFeel(m) {
 }
 function bathStatus(h) { return h.bath ? 'yes' : /확인 안 됨/.test(h.bathLabel) ? 'unknown' : 'no'; }
 function current() {
-  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && (state.room === 0 || (Number.isFinite(h.minRoom2Pax) && h.minRoom2Pax >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
+  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && (state.room === 0 || (Number.isFinite(h.minRoom2Pax) && h.minRoom2Pax >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && hasFeature(h, state.feature) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
   const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
   list.sort((a, b) => {
     if (state.sort === 'popular') return (a.popularityRank ?? Infinity) - (b.popularityRank ?? Infinity) || byName(a,b);
@@ -38,7 +39,7 @@ function render() {
   document.dispatchEvent(new Event('nmnr:filterschange')); 
 }
 function sync() {
-  for (const key of ['room', 'area', 'bath']) {
+  for (const key of ['room', 'area', 'bath', 'feature']) {
     document.querySelectorAll(`[data-${key}]`).forEach(button => {
       const active = String(state[key]) === button.dataset[key];
       button.classList.toggle('active', active);
@@ -49,10 +50,10 @@ function sync() {
   document.querySelector('#search').value = state.query;
 }
 function resetAll() {
-  Object.assign(state, {room: 0, area: 'all', bath: 'all', sort: 'name', query: ''});
+  Object.assign(state, {room: 0, area: 'all', bath: 'all', feature: 'all', sort: 'name', query: ''});
   sync(); render();
 }
-for (const key of ['room', 'area', 'bath']) {
+for (const key of ['room', 'area', 'bath', 'feature']) {
   document.querySelectorAll(`[data-${key}]`).forEach(button => button.addEventListener('click', () => {
     state[key] = key === 'room' ? Number(button.dataset[key]) : button.dataset[key];
     sync(); render();

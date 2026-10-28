@@ -7,14 +7,14 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 18.2,
     "roomType": "스탠다드 더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·노천탕",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.gardenhotels.co.jp/gotanda/room/",
     "reviewNote": "야마노테선 이동과 대욕장을 함께 챙기기 좋은 곳",
     "tripHotelId": "14094895",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=14094895&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.gardenhotels.co.jp/gotanda/bath/",
+    "bathSourceUrl": "https://www.jalan.net/yad336936/",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-14094895/mitsui-garden-hotel-gotanda/review.html",
     "reviewCheckedAt": "2026-10-13",
     "popularityRank": 13,
@@ -23,6 +23,12 @@ window.NMNR_HOTELS = [
       "lng": 139.725475,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=14094895",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -105,20 +111,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15,
     "roomType": "모더레이트 더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.the-squarehotel.com/sgi/room/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "21434381",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=21434381&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.the-squarehotel.com/sgi/",
+    "bathSourceUrl": "https://www.jalan.net/yad310276/",
     "popularityRank": 8,
     "location": {
       "lat": 35.672258,
       "lng": 139.769136,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=21434381",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -153,20 +165,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 17.3,
     "roomType": "스탠다드 더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.gardenhotels.co.jp/ginza-gochome/eng/room/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보",
     "tripHotelId": "32621197",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=32621197&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.gardenhotels.co.jp/ginza-gochome/facility/",
+    "bathSourceUrl": "https://www.jalan.net/yad381362/",
     "popularityRank": 5,
     "location": {
       "lat": 35.668882,
       "lng": 139.766754,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=32621197",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -201,20 +219,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 12,
     "roomType": "스탠다드 · 시어터 객실 제외",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "천연온천 대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.superhotel.co.jp/s_hotels/ginza/gallery.html",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "23207244",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=23207244&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/ginza/gallery.html",
+    "bathSourceUrl": "https://www.jalan.net/yad389255/",
     "popularityRank": 10,
     "location": {
       "lat": 35.670749,
       "lng": 139.768446,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=23207244",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -297,14 +321,14 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 17,
     "roomType": "모더레이트 세미더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.almont.jp/nippori/room.html",
     "reviewNote": "조식 평가가 좋고, 짐이 많다면 역에서 도보 동선 확인",
     "tripHotelId": "71942669",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=71942669&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.almont.jp/nippori/faq.html",
+    "bathSourceUrl": "https://www.jalan.net/yad380132/",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-71942669/almont-hotel-nippori/review.html",
     "reviewCheckedAt": "2026-10-13",
     "popularityRank": 12,
@@ -313,6 +337,12 @@ window.NMNR_HOTELS = [
       "lng": 139.773849,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=71942669",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -347,20 +377,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 12,
     "roomType": "스탠다드",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.superhotel.co.jp/s_hotels/yaesu/gallery.html",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "2695279",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=2695279&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/yaesu/gallery.html",
+    "bathSourceUrl": "https://www.jalan.net/yad379411/",
     "popularityRank": 10,
     "location": {
       "lat": 35.679289,
       "lng": 139.769837,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=2695279",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -445,14 +481,14 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 16,
     "roomType": "이그제큐티브 퀸",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·노천탕·사우나",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.candeohotels.com/en/tokyo-roppongi/rooms/",
     "reviewNote": "역 주변 식사와 옥상 대욕장을 함께 이용하기 편한 곳",
     "tripHotelId": "9148139",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=9148139&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.candeohotels.com/en/tokyo-roppongi/skyspa/",
+    "bathSourceUrl": "https://www.jalan.net/yad366039/",
     "reviewSourceUrl": "https://www.trip.com/hotels/tokyo-hotel-detail-9148139/candeo-hotels-tokyo-roppongi/review.html",
     "reviewCheckedAt": "2026-10-13",
     "popularityRank": 9,
@@ -461,6 +497,12 @@ window.NMNR_HOTELS = [
       "lng": 139.732598,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=9148139",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -737,20 +779,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 15,
     "roomType": "더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·노천탕·사우나",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.candeohotels.com/en/tokyo-shimbashi/rooms/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "12162801",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=12162801&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.candeohotels.com/en/tokyo-shimbashi/skyspa/",
+    "bathSourceUrl": "https://www.jalan.net/yad384083/",
     "popularityRank": 4,
     "location": {
       "lat": 35.665859,
       "lng": 139.755218,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=12162801",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -953,20 +1001,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 14,
     "roomType": "세미더블",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·노천탕·사우나",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/akihabara/rooms/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "688177",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=688177&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/akihabara/",
+    "bathSourceUrl": "https://www.jalan.net/yad333285/",
     "popularityRank": 12,
     "location": {
       "lat": 35.702598,
       "lng": 139.773288,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=688177",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -977,20 +1031,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 12,
     "roomType": "스탠다드",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "천연온천 대욕장",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.superhotel.co.jp/s_hotels/p_akiba/gallery.html",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "44404791",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=44404791&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.superhotel.co.jp/s_hotels/p_akiba/gallery.html",
+    "bathSourceUrl": "https://www.jalan.net/yad317136/",
     "popularityRank": 7,
     "location": {
       "lat": 35.696632,
       "lng": 139.774488,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=44404791",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1073,20 +1133,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 10,
     "roomType": "별관 스탠다드 싱글 · 2인 가능",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·사우나",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://www.centurion-hotel.com/ueno-sta/rooms/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보 · 짐 펼칠 공간은 확인",
     "tripHotelId": "10748373",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=10748373&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://www.centurion-hotel.com/ueno-sta/facilities/",
+    "bathSourceUrl": "https://www.jalan.net/yad338363/",
     "popularityRank": 9,
     "location": {
       "lat": 35.709844,
       "lng": 139.775689,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=10748373",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1097,20 +1163,26 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 21,
     "roomType": "슈페리어 트윈",
     "bath": true,
-    "bathLabel": "대욕장 있음",
+    "bathLabel": "대욕장·노천탕",
     "verifiedAt": "2026-10-13",
-    "verification": "공식 객실 자료",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://andherehotels.jp/tokyoueno/en/rooms/",
     "reviewNote": "대욕장과 방 크기를 함께 비교하기 좋은 후보",
     "tripHotelId": "110205979",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=110205979&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "bathSourceUrl": "https://andherehotels.jp/tokyoueno/",
+    "bathSourceUrl": "https://www.jalan.net/yad345375/",
     "popularityRank": 12,
     "location": {
       "lat": 35.709325,
       "lng": 139.77094,
       "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=110205979",
       "verifiedAt": "2026-10-13"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1254,6 +1326,12 @@ window.NMNR_HOTELS = [
       "lng": 139.702128,
       "sourceUrl": "https://www.jalan.net/yad395399/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1276,6 +1354,12 @@ window.NMNR_HOTELS = [
       "lat": 35.667679,
       "lng": 139.765792,
       "sourceUrl": "https://www.jalan.net/yad380644/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1300,6 +1384,12 @@ window.NMNR_HOTELS = [
       "lng": 139.77808,
       "sourceUrl": "https://www.jalan.net/yad348123/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1322,6 +1412,12 @@ window.NMNR_HOTELS = [
       "lat": 35.695496,
       "lng": 139.77069,
       "sourceUrl": "https://www.jalan.net/yad377788/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1346,6 +1442,12 @@ window.NMNR_HOTELS = [
       "lng": 139.776135,
       "sourceUrl": "https://www.jalan.net/yad373656/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1356,7 +1458,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 16,
     "roomType": "더블",
     "bath": true,
-    "bathLabel": "전망 대욕장·노천탕·사우나",
+    "bathLabel": "대욕장·노천탕·사우나",
     "verifiedAt": "2026-10-28",
     "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asakusa/rooms/",
@@ -1368,6 +1470,12 @@ window.NMNR_HOTELS = [
       "lat": 35.711919,
       "lng": 139.798981,
       "sourceUrl": "https://www.jalan.net/yad320300/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1392,6 +1500,12 @@ window.NMNR_HOTELS = [
       "lng": 139.780852,
       "sourceUrl": "https://www.jalan.net/yad312600/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1414,6 +1528,12 @@ window.NMNR_HOTELS = [
       "lat": 35.731891,
       "lng": 139.719081,
       "sourceUrl": "https://www.jalan.net/yad316836/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1438,6 +1558,12 @@ window.NMNR_HOTELS = [
       "lng": 139.794116,
       "sourceUrl": "https://www.jalan.net/yad334364/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1460,6 +1586,12 @@ window.NMNR_HOTELS = [
       "lat": 35.714886,
       "lng": 139.79499,
       "sourceUrl": "https://www.jalan.net/yad330455/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1484,6 +1616,12 @@ window.NMNR_HOTELS = [
       "lng": 139.773339,
       "sourceUrl": "https://www.jalan.net/yad334982/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1506,6 +1644,12 @@ window.NMNR_HOTELS = [
       "lat": 35.660204,
       "lng": 139.757031,
       "sourceUrl": "https://www.jalan.net/yad348770/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1530,6 +1674,12 @@ window.NMNR_HOTELS = [
       "lng": 139.715946,
       "sourceUrl": "https://www.jalan.net/yad331571/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1552,6 +1702,12 @@ window.NMNR_HOTELS = [
       "lat": 35.654895,
       "lng": 139.794778,
       "sourceUrl": "https://www.jalan.net/yad304890/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
       "verifiedAt": "2026-10-28"
     }
   },
@@ -1576,6 +1732,12 @@ window.NMNR_HOTELS = [
       "lng": 139.711126,
       "sourceUrl": "https://www.jalan.net/yad315830/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1599,6 +1761,12 @@ window.NMNR_HOTELS = [
       "lng": 139.738938,
       "sourceUrl": "https://www.jalan.net/yad359452/",
       "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
     }
   },
   {
@@ -1621,6 +1789,12 @@ window.NMNR_HOTELS = [
       "lat": 35.64728,
       "lng": 139.783752,
       "sourceUrl": "https://www.jalan.net/yad307416/",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": true,
+      "sauna": true,
       "verifiedAt": "2026-10-28"
     }
   }
