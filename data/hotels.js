@@ -39,7 +39,7 @@ window.NMNR_HOTELS = [
     "minRoom2Pax": 14.6,
     "roomType": "더블",
     "bath": true,
-    "bathLabel": "천연온천 대욕장·사우나",
+    "bathLabel": "천연온천 대욕장·사우나 · 반노천 외탕",
     "verifiedAt": "2026-10-12",
     "verification": "공식 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705327&adult=2&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
@@ -67,7 +67,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387970&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 91,
+      "rank": 1,
+      "summary": "하카타역 가깝고 대욕장 포함 가성비 좋다는 평이 많음. 일부 객실 청결(화장실 냄새) 불만 후기도 있음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "croom_gion",
@@ -106,7 +114,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 30.4,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=356362&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 40,
+      "rank": 8,
+      "summary": "신축·넓은 객실·대욕장 대만족 후기. \"락스 물 냄새\"에 예민하면 비추라는 의견도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "gate",
@@ -250,7 +266,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304089&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 57,
+      "rank": 7,
+      "summary": "방이 넓고 깨끗하다는 평, 대욕장도 무난. 가격은 높은 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "toyo",
@@ -386,7 +410,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=384068&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 79,
+      "rank": 4,
+      "summary": "\"노천탕이 너무 좋아 하루 두 번\", 위치 좋음. 가격은 비싼 편, 방이 작다는 의견도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "mitsui_nakasu",
@@ -425,7 +457,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=392952&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 24,
+      "rank": 11,
+      "summary": "신축이라 깨끗하고 나카스 돈키호테·이치란 본점 앞 위치가 장점",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "miyako",
@@ -464,7 +504,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=391699&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 38,
+      "rank": 9,
+      "summary": "위치(역 바로 앞)·넓은 방이 장점. 가격이 높고, 대욕장 규모는 기대보다 작다는 의견도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sutton",
@@ -568,7 +616,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 57.4,
     "roomType4Pax": "기타 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=330536&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 71,
+      "rank": 6,
+      "summary": "하카타역 가깝고 방이 넓은 편, 대욕장·조식 만족. 건물 컨디션은 약간 올드하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "oriental_hakata",
@@ -686,7 +742,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=393394&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 78,
+      "rank": 5,
+      "summary": "노천탕·조식 만족 후기가 많지만 \"대욕장이 작다\", \"텐진 중심에서 약간 멀다\"는 평도 있음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "comfort",
@@ -791,7 +855,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "기타 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=318215&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 82,
+      "rank": 3,
+      "summary": "룸 컨디션·대욕장·주변 맛집은 좋지만 \"지하철역에서 멀다/위치 애매\"라는 의견이 반복됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "greenannex",
@@ -857,7 +929,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 70,
     "roomType4Pax": "일본식 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=325695&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 7,
+      "rank": 17,
+      "summary": "고급 호텔이지만 대욕장 이용 조건(유료 여부)을 확인하라는 글이 많음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "monte",
@@ -962,7 +1042,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 29,
     "roomType4Pax": "슈페리어",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=364185&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 86,
+      "rank": 2,
+      "summary": "가격 대비 넓은 객실·조식 뷔페, 텐진 접근성으로 가성비 대욕장 호텔로 자주 비교됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "oriental_tenjin",
@@ -1034,6 +1122,288 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315927&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 18,
+      "rank": 14,
+      "summary": "조식이 좋고 대욕장 있는 가성비 호텔로 자주 추천됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "dormy_gion",
+    "name": "도미인 하카타 기온",
+    "city": "후쿠오카",
+    "area": "하카타",
+    "minRoom2Pax": 14.4,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·사우나 · 반노천 외탕",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/hakata/rooms",
+    "bathSourceUrl": "https://www.jalan.net/yad396138/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 31,
+    "tripHotelId": "705534",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705534&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "2026년 4월 리뉴얼, 기온역 인근 · 대욕장은 작은 편이라는 후기",
+    "location": {
+      "lat": 33.593707,
+      "lng": 130.412905,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705534",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 27.5,
+    "roomType3Pax": "화양실",
+    "pax4": true,
+    "minRoom4Pax": 27.5,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=396138&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 30,
+      "rank": 10,
+      "summary": "가격 대비 대욕장이 좋다는 평, 하카타역·하카타항 접근 무난. 도미인 특유의 야식·아이스크림 언급",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "vista_nakasu",
+    "name": "호텔 비스타 후쿠오카 나카스카와바타",
+    "city": "후쿠오카",
+    "area": "나카스",
+    "minRoom2Pax": 17,
+    "roomType": "컴포트 더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "bathSourceUrl": "https://www.jalan.net/yad386713/",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 32,
+    "tripHotelId": "39481533",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=39481533&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "나카스카와바타 · 방 깔끔, 공항에서 한 번에 이동",
+    "location": {
+      "lat": 33.595374,
+      "lng": 130.408272,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=39481533",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 28,
+    "roomType3Pax": "슈페리어 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=386713&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 20,
+      "rank": 12,
+      "summary": "방은 깔끔·크기 보통, 공항에서 한 번에 이동 가능하고 나카스 야식 즐기기 좋다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "dormy_canal",
+    "name": "도미인 프리미엄 하카타 캐널시티마에",
+    "city": "후쿠오카",
+    "area": "하카타",
+    "minRoom2Pax": 15,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "천연온천 대욕장·사우나 · 외기욕 외탕",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/hakatacanal/rooms",
+    "bathSourceUrl": "https://www.jalan.net/yad335555/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 33,
+    "tripHotelId": "1779184",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=1779184&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "캐널시티 앞 · 온천·사우나 만족 후기, 가격은 높은 편",
+    "location": {
+      "lat": 33.590619,
+      "lng": 130.412306,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1779184",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": true,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 29,
+    "roomType3Pax": "화양실",
+    "pax4": true,
+    "minRoom4Pax": 29,
+    "roomType4Pax": "화양실",
+    "paxSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/hakatacanal/rooms",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 19,
+      "rank": 13,
+      "summary": "\"온천물·사우나 진짜 좋다\", 조식이 맛있다는 평. 가격은 높은 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "wbf_grande",
+    "name": "호텔 WBF 그란데 하카타",
+    "city": "후쿠오카",
+    "area": "하카타",
+    "minRoom2Pax": 12,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·노천탕 (14층)",
+    "officialSourceUrl": "https://www.ishinhotels.com/wbf/grande-hakata",
+    "bathSourceUrl": "https://www.jalan.net/yad376979/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 34,
+    "tripHotelId": "15155482",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=15155482&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타역 남쪽, 역에서 조금 멂 · 방이 좁다는 후기",
+    "location": {
+      "lat": 33.584919,
+      "lng": 130.425738,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=15155482",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 23,
+    "roomType3Pax": "이그제큐티브 패밀리",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=376979&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 17,
+      "rank": 15,
+      "summary": "하카타 가성비 대욕장 호텔 후보로 언급. 방이 좁고 역에서 멀다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "resol_hakata",
+    "name": "호텔 리솔 트리니티 하카타",
+    "city": "후쿠오카",
+    "area": "나카스",
+    "minRoom2Pax": 18,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "대욕장 (14층 전망)",
+    "officialSourceUrl": "https://www.resol-hotel.jp/trinity-hakata/rooms/",
+    "bathSourceUrl": "https://www.jalan.net/yad356316/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 35,
+    "tripHotelId": "705213",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705213&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "나카스 · 위치·룸 컨디션·가격 균형이 좋다는 후기",
+    "location": {
+      "lat": 33.592867,
+      "lng": 130.406,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705213",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 30,
+    "roomType3Pax": "트리플",
+    "pax4": true,
+    "minRoom4Pax": 30,
+    "roomType4Pax": "4베드룸",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=356316&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 13,
+      "rank": 16,
+      "summary": "위치(나카스)·룸 컨디션·대욕장·가격 균형이 좋다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "routeinn_minami",
+    "name": "호텔 루트인 하카타역남",
+    "city": "후쿠오카",
+    "area": "하카타",
+    "minRoom2Pax": 10,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장",
+    "bathSourceUrl": "https://www.jalan.net/yad376868/",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 36,
+    "tripHotelId": "705181",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=248&hotelId=705181&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "하카타역 남쪽 비즈니스호텔 · 더블 10㎡로 매우 좁음",
+    "location": {
+      "lat": 33.582211,
+      "lng": 130.423754,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=705181",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": false,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": false,
+    "minRoom3Pax": null,
+    "roomType3Pax": null,
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=376868&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 3,
+      "rank": 19,
+      "summary": "하카타역 근처 대욕장 비즈니스호텔 후보로 언급",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   }
 ];

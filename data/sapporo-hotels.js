@@ -35,7 +35,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=361490&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 51,
+      "rank": 4,
+      "summary": "위치가 매우 좋고 신축. 대욕장 이용에 추가요금이 붙는다는 점이 단점",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_02",
@@ -73,7 +81,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 24,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=344941&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 46,
+      "rank": 5,
+      "summary": "신축·무료 대욕장·넓은 객실이 장점, 위치는 애매하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_03",
@@ -111,7 +127,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 25,
     "roomType4Pax": "일본식 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=397643&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 52,
+      "rank": 3,
+      "summary": "위치 좋다는 평이 많고 대욕장 있는 중가 호텔로 비교됨. 일부 객실은 욕조 없이 샤워실만",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_04",
@@ -149,7 +173,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 26,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=328940&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 70,
+      "rank": 2,
+      "summary": "방이 넓고 깨끗, 한국인 직원. 대욕장 공사로 이용 시간 제한이 있었다는 후기",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_05",
@@ -187,7 +219,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 35,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=302905&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 40,
+      "rank": 6,
+      "summary": "삿포로역 가깝고 조식 좋다는 평, 대욕장으로 피로 풀기 좋음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_06",
@@ -257,7 +297,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333592&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 11,
+      "rank": 12,
+      "summary": "서비스·룸 크기는 좋다는 평과 \"대욕장이 별로/관리 부족\"이라는 평이 엇갈림",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_08",
@@ -327,7 +375,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=327602&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 16,
+      "rank": 8,
+      "summary": "삿포로역 직결·전망이 장점, 가격이 비쌈",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_10",
@@ -365,7 +421,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=332464&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 26,
+      "rank": 7,
+      "summary": "깨끗하고 조식이 잘 나온다는 평, 마루 바닥. \"대욕장이라 하기엔 작다\"는 후기도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_11",
@@ -645,7 +709,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=372402&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 78,
+      "rank": 1,
+      "summary": "노천탕이 최고, 신축·깨끗·스스키노 위치. 대욕장 규모는 작다는 의견도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_19",
@@ -715,7 +787,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389804&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 9,
+      "rank": 14,
+      "summary": "대욕장·조식 추천, 지하철 소리가 들린다는 후기",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_21",
@@ -753,7 +833,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 40,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=328431&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 16,
+      "rank": 8,
+      "summary": "넓은 객실·조식 무난, 위치가 약간 멀다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_22",
@@ -861,7 +949,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=377605&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 14,
+      "rank": 10,
+      "summary": "삿포로역 역세권, 3인에겐 좁다는 평. 대욕장 공사 여부 문의 있음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_25",
@@ -1027,7 +1123,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 32,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=378516&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 8,
+      "rank": 15,
+      "summary": "삿포로역 가깝고 대욕장 있는 호텔로 크로스호텔과 비교됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_30",
@@ -1135,7 +1239,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 33,
     "roomType4Pax": "더블",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=396050&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 6,
+      "rank": 18,
+      "summary": "아침 온천이 좋았다는 추천 후기, 역 접근성은 약간 불편하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_33",
@@ -1205,7 +1317,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 46,
     "roomType4Pax": "화양실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=388325&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 10,
+      "rank": 13,
+      "summary": "조식 맛있고 대욕장 괜찮고 조용하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "sapporo_35",
@@ -1238,5 +1358,142 @@ window.NMNR_HOTELS = [
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=343484&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
     "paxVerifiedAt": "2026-10-28"
+  },
+  {
+    "id": "sapporo_36",
+    "name": "도미인 삿포로 아넥스",
+    "city": "삿포로",
+    "area": "타누키코지",
+    "minRoom2Pax": 13.2,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·사우나 · 반노천 외탕",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/sapporo_ax/rooms",
+    "bathSourceUrl": "https://www.jalan.net/yad325800/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 36,
+    "tripHotelId": "706004",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=706004&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "도미인 프리미엄 삿포로 맞은편 · 여성 사우나는 아넥스에만",
+    "location": {
+      "lat": 43.05653,
+      "lng": 141.349022,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=706004",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 24.8,
+    "roomType3Pax": "디럭스 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=325800&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 13,
+      "rank": 11,
+      "summary": "프리미엄 삿포로와 대욕장을 비교하며 언급됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "sapporo_37",
+    "name": "도미인 프리미엄 삿포로",
+    "city": "삿포로",
+    "area": "타누키코지",
+    "minRoom2Pax": 16,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장·반노천탕·탄산천·사우나(남탕만)",
+    "officialSourceUrl": "https://dormy-hotels.com/dormyinn/hotels/premium_sapporo/rooms",
+    "bathSourceUrl": "https://www.jalan.net/yad310500/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 37,
+    "tripHotelId": "1061749",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=1061749&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "다누키코지 · 여성 대욕장에는 사우나·냉탕 없음",
+    "location": {
+      "lat": 43.057061,
+      "lng": 141.34884,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=1061749",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": true,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": 27.7,
+    "roomType3Pax": "디럭스 트윈",
+    "pax4": false,
+    "minRoom4Pax": null,
+    "roomType4Pax": null,
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=310500&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 4,
+      "rank": 20,
+      "summary": "대욕장·야식 라면·조식으로 선택했다는 후기",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "sapporo_38",
+    "name": "퀸테사 호텔 삿포로 스스키노 63",
+    "city": "삿포로",
+    "area": "스스키노",
+    "minRoom2Pax": 14,
+    "roomType": "스탠다드 더블",
+    "bath": true,
+    "bathLabel": "대욕장·사우나",
+    "bathSourceUrl": "https://www.jalan.net/yad389721/",
+    "verifiedAt": "2026-10-28",
+    "verification": "자란넷 객실 정보 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "popularityRank": 38,
+    "tripHotelId": "7607069",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=7607069&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "방은 좁지만 대욕장 있는 가성비 호텔이라는 후기",
+    "location": {
+      "lat": 43.052942,
+      "lng": 141.354424,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=7607069",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "모더레이트 트윈",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "슈페리어 패밀리",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389721&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 8,
+      "rank": 15,
+      "summary": "방은 좁지만 대욕장 있고 시설 괜찮다는 가성비 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   }
 ];

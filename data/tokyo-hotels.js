@@ -37,7 +37,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336936&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 31,
+      "rank": 4,
+      "summary": "대욕장 깨끗·룸 크기 적당·역 가까움. 관광지 기준으로는 위치가 구석이라는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_02",
@@ -171,7 +179,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 26,
     "roomType4Pax": "로프트 포스",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=310276&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 26,
+      "rank": 5,
+      "summary": "긴자 위치·대욕장·마루 바닥이 장점으로 자주 언급",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_06",
@@ -233,7 +249,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=381362&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 68,
+      "rank": 1,
+      "summary": "긴자 한복판 위치와 대욕장이 최대 장점, 가격은 비싼 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_08",
@@ -303,7 +327,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389255&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 35,
+      "rank": 3,
+      "summary": "조식 맛있고 술·음료 무제한, 히가시긴자역 바로 앞이라 가성비 좋다는 평. 방이 좁다는 의견 많음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_10",
@@ -439,7 +471,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 21,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380132&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 17,
+      "rank": 10,
+      "summary": "신축이라 깨끗하고 조용한 지역, 스카이라이너 이용 편리. 침대가 작다는 의견",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_14",
@@ -1039,7 +1079,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=384083&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 21,
+      "rank": 7,
+      "summary": "대욕장으로 피로 풀기 좋고 수건 넉넉히 제공. 방·사우나가 작다는 의견도",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_32",
@@ -1325,7 +1373,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333285&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 12,
+      "rank": 15,
+      "summary": "목욕탕·라면 무료, 아키하바라·아사쿠사 접근성. 객실 욕조 유무 문의 있음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_41",
@@ -1497,7 +1553,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=338363&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 7,
+      "rank": 20,
+      "summary": "우에노역 근처 대욕장 호텔로 언급, 방은 작은 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_46",
@@ -1732,7 +1796,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=395399&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 13,
+      "rank": 12,
+      "summary": "\"대중탕이 매력적\"이라는 평, 시부야 숙소 중 대욕장 있는 곳으로 비교됨",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_53",
@@ -1769,7 +1841,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 37.7,
     "roomType4Pax": "화풍 디럭스(침대 4대)",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380644&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 68,
+      "rank": 1,
+      "summary": "\"청결·서비스·조식·온천까지 완벽\", 무료 야식 라멘·아이스크림 호평. 가격은 높은 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_54",
@@ -1806,7 +1886,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348123&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 13,
+      "rank": 12,
+      "summary": "야식 라멘·생활복 제공·조식 퀄리티가 좋아 가족 만족도가 높다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_55",
@@ -1843,7 +1931,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 23.54,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=377788&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 8,
+      "rank": 19,
+      "summary": "많이 걷는 도쿄 여행 후 대욕장+아이스크림+라멘이 \"천국\"이라는 후기",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_56",
@@ -1880,7 +1976,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=373656&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 18,
+      "rank": 9,
+      "summary": "대욕장·노천탕으로 피로 풀기 좋다는 재방문 후기. 방은 좁은 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_57",
@@ -1991,7 +2095,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316836&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 15,
+      "rank": 11,
+      "summary": "대욕장·무료 라면/아이스크림이 장점. 객실에 욕조가 없다는 문의 있음",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_60",
@@ -2028,7 +2140,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334364&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 20,
+      "rank": 8,
+      "summary": "온천호텔 느낌·밤 무료 라멘·일식 조식이 장점, 가격은 비싼 편",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_61",
@@ -2139,7 +2259,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348770&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 9,
+      "rank": 17,
+      "summary": "방 넓고 조용한 거리, 대욕장 있어 좋다는 후기",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_64",
@@ -2250,7 +2378,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 33,
     "roomType4Pax": "프리미엄 더블",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315830&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 13,
+      "rank": 12,
+      "summary": "도심 속 료칸 분위기와 루프톱 노천탕이 장점, 역에서 약간 걸린다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_67",
@@ -2287,7 +2423,15 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=359452&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 23,
+      "rank": 6,
+      "summary": "신축이라 깨끗하고 대욕장 좋아 보인다는 평, 조용한 동네",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   },
   {
     "id": "tokyo_68",
@@ -2324,6 +2468,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 46,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=307416&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 9,
+      "rank": 17,
+      "summary": "야경이 보이는 옥상 대욕장과 해산물 조식이 호평, 교통은 불편하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
+  },
+  {
+    "id": "tokyo_69",
+    "name": "토세이 호텔 코코네 츠키지 긴자 프리미어",
+    "city": "도쿄",
+    "area": "츠키지",
+    "minRoom2Pax": 16,
+    "roomType": "더블",
+    "bath": true,
+    "bathLabel": "대욕장(탄산천)·사우나",
+    "officialSourceUrl": "https://tosei-hotel.co.jp/tsukijiginzapremier/bath/",
+    "bathSourceUrl": "https://www.jalan.net/yad343906/",
+    "verifiedAt": "2026-10-28",
+    "verification": "공식 객실 자료 · 대욕장 여부: 자란넷 온천·목욕 시설정보 확인(2026-10-28)",
+    "tripHotelId": "108104078",
+    "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=228&hotelId=108104078&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
+    "reviewNote": "츠키지 · 대욕장·조식은 좋지만 위치가 애매하다는 후기",
+    "location": {
+      "lat": 35.663914,
+      "lng": 139.771398,
+      "sourceUrl": "https://kr.trip.com/hotels/detail/?hotelId=108104078",
+      "verifiedAt": "2026-10-28"
+    },
+    "bathFeatures": {
+      "onsen": false,
+      "rotenburo": false,
+      "sauna": true,
+      "verifiedAt": "2026-10-28"
+    },
+    "pax3": true,
+    "minRoom3Pax": null,
+    "roomType3Pax": "슈페리어 트윈(화양실)",
+    "pax4": true,
+    "minRoom4Pax": null,
+    "roomType4Pax": "프리미엄 포스",
+    "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=343906&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
+    "paxVerifiedAt": "2026-10-28",
+    "community": {
+      "source": "네일동",
+      "mentions": 10,
+      "rank": 16,
+      "summary": "대욕장·조식·객실은 좋지만 위치가 애매하다는 평",
+      "period": "2023-01~2026-10",
+      "checkedAt": "2026-10-28"
+    }
   }
 ];
