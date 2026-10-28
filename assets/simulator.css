@@ -10,3 +10,22 @@
 .sim-embedded .top,.sim-embedded .skip,.sim-embedded .intro,.sim-embedded .sim-next,.sim-embedded footer,.sim-embedded .share-actions{display:none}.sim-embedded .sim-main{max-width:none;padding:8px}.sim-embedded .sim-layout{grid-template-columns:250px minmax(0,1fr);gap:18px}.sim-embedded .sim-settings{padding:14px}.sim-embedded #viewer{height:390px}.sim-embedded .viewer-help{flex-wrap:wrap}.sim-embedded .viewer-top{flex-wrap:wrap}@media(max-width:700px){.sim-embedded .sim-layout{grid-template-columns:1fr;gap:18px}.sim-embedded .sim-display{order:-1}.sim-embedded #viewer{height:320px}.sim-embedded .sim-result h2{font-size:18px}}
 
 .sim-settings .room-area-input{margin:10px 0 0;font-size:10px}.sim-settings .room-area-input input{padding:7px;margin-top:4px}
+
+/* 릴스 모드: 세로 9:16 화면만 남기고 입력 UI를 숨긴다. 자막·도장 크기는 화면 너비(cqw) 기준이라 폰 녹화와 데스크톱 미리보기에서 같은 비율로 보인다. */
+body.sim-reel{background:#000;overflow:hidden}
+.sim-reel .top,.sim-reel .skip,.sim-reel .intro,.sim-reel .sim-settings,.sim-reel .viewer-top,.sim-reel .viewer-help,.sim-reel .sim-result,.sim-reel .share-actions,.sim-reel .sim-next,.sim-reel footer{display:none}
+.sim-reel .sim-main{max-width:none;padding:0;margin:0}.sim-reel .sim-layout{display:block}
+.sim-reel .sim-display{position:fixed;inset:0;border:0;background:#000;display:flex;align-items:center;justify-content:center;z-index:50}
+.sim-reel #viewer{height:100dvh;width:calc(100dvh * 9 / 16);max-width:100vw;max-height:calc(100vw * 16 / 9);border-radius:0;container-type:inline-size}
+.reel-overlay{position:absolute;inset:0;pointer-events:none;z-index:3;color:#1c2429}.reel-overlay[hidden]{display:none}
+.reel-caption{position:absolute;top:7%;left:0;right:0;text-align:center}
+.reel-caption strong{display:block;font-size:17cqw;line-height:1;letter-spacing:-.04em;font-weight:800;text-shadow:0 2px 0 #fff,0 0 18px #fff}
+.reel-caption span{display:inline-block;margin-top:2.5cqw;font-size:4.6cqw;font-weight:700;background:#1c2429;color:#fff;padding:1.4cqw 3cqw;border-radius:999px}
+.reel-stamp{position:absolute;top:50%;left:50%;opacity:0;transform:translate(-50%,-50%) rotate(-9deg) scale(2.4);font-size:9.5cqw;font-weight:900;letter-spacing:-.03em;padding:2cqw 4cqw;border:1.1cqw solid currentColor;border-radius:2cqw;background:#fffc;white-space:nowrap;color:#c62f2f}
+.reel-stamp.show{animation:stampIn .38s cubic-bezier(.2,1.5,.45,1) forwards}
+.reel-stamp.clear{color:#1f8a4c}.reel-stamp.side{color:#c77d12}.reel-stamp.blocked,.reel-stamp.out{color:#c62f2f}
+@keyframes stampIn{from{opacity:0;transform:translate(-50%,-50%) rotate(-9deg) scale(2.4)}60%{opacity:1;transform:translate(-50%,-50%) rotate(-9deg) scale(.92)}to{opacity:1;transform:translate(-50%,-50%) rotate(-9deg) scale(1)}}
+.reel-dots{position:absolute;bottom:11%;left:0;right:0;display:flex;justify-content:center;gap:2cqw}
+.reel-dots span{font-size:3.4cqw;font-weight:700;opacity:.4;padding:1cqw 2.2cqw;border-radius:999px;background:#fff}.reel-dots span.on{opacity:1;background:#1c2429;color:#fff}
+.reel-brand{position:absolute;bottom:4%;left:0;right:0;text-align:center;font-size:4cqw;font-weight:800;letter-spacing:-.02em}.reel-brand small{display:block;font-size:2.6cqw;font-weight:600;opacity:.7}
+#reelExit{position:absolute;top:2.5%;right:4%;pointer-events:auto;border:0;background:#0003;color:#fff;width:9cqw;height:9cqw;border-radius:50%;font-size:4cqw;opacity:.5}
