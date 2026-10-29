@@ -11,6 +11,8 @@
 
 .sim-settings .room-area-input{margin:10px 0 0;font-size:10px}.sim-settings .room-area-input input{padding:7px;margin-top:4px}
 
+.face-fields legend small{font-weight:500;color:var(--muted);margin-left:4px}.face-pick input{display:block;width:100%;font-size:10px;margin-top:6px}.face-pick input::file-selector-button{border:1px solid #c4c9ce;background:#fff;border-radius:3px;padding:5px 8px;font-size:10px;margin-right:6px}
+
 /* 릴스 모드: 세로 9:16 화면만 남기고 입력 UI를 숨긴다. 자막·도장 크기는 화면 너비(cqw) 기준이라 폰 녹화와 데스크톱 미리보기에서 같은 비율로 보인다. */
 body.sim-reel{background:#000;overflow:hidden}
 .sim-reel .top,.sim-reel .skip,.sim-reel .intro,.sim-reel .sim-settings,.sim-reel .viewer-top,.sim-reel .viewer-help,.sim-reel .sim-result,.sim-reel .share-actions,.sim-reel .sim-next,.sim-reel footer{display:none}
