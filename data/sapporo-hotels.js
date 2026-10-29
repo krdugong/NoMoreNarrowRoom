@@ -111,7 +111,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 3,
     "tripHotelId": "9147711",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=9147711&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.05644,
       "lng": 141.350351,
@@ -160,7 +160,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 4,
     "tripHotelId": "5253272",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=5253272&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.057798,
       "lng": 141.350792,
@@ -466,7 +466,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 11,
     "tripHotelId": "105135623",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=105135623&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.057433,
       "lng": 141.355727,
@@ -542,7 +542,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 13,
     "tripHotelId": "72005271",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=72005271&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.058117,
       "lng": 141.356144,
@@ -676,7 +676,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 17,
     "tripHotelId": "846368",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=846368&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.057499,
       "lng": 141.351985,
@@ -905,7 +905,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "sapporo_23",
-    "name": "삿포로 그랑벨 호텔 타누키코지",
+    "name": "삿포로 그랑벨 호텔 다누키코지",
     "city": "삿포로",
     "area": "다누키코지",
     "minRoom2Pax": 17.2,
@@ -919,7 +919,7 @@ window.NMNR_HOTELS = [
     "popularityRank": 23,
     "tripHotelId": "72213523",
     "tripUrl": "https://kr.trip.com/hotels/detail/?cityId=641&hotelId=72213523&adult=2&children=0&crn=1&curr=KRW&locale=ko-KR&Allianceid=9983863&SID=328153393&trip_sub1=nmnr&trip_sub3=D20191775",
-    "reviewNote": "타누키코지 일정 중심으로 비교할 호텔",
+    "reviewNote": "다누키코지 일정 중심으로 비교할 호텔",
     "location": {
       "lat": 43.056104,
       "lng": 141.345769,
@@ -939,7 +939,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 19.2,
     "roomType4Pax": "트리플",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=341888&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "삿포로 그랑벨 호텔 타누키코지"
+    ]
   },
   {
     "id": "sapporo_24",
