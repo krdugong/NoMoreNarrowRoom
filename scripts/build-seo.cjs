@@ -69,6 +69,17 @@ const hasFeature = (h, k) => h.bath === true && Boolean(h.bathFeatures && h.bath
 const featureUrl = (c, k) => `${BASE}/${c.slug}/${k}/`;
 // 3인·4인 pages: hotels with pax3/pax4 === true (a Jalan plan for that many adults), sorted by that room's size.
 const PAX = {3: {slug: 'triple', kw: '3인 호텔·숙소', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 가족 숙소·호텔', sub: '4인 객실'}};
+// FAQ 재료: 검색창 자동완성·관련 질문(대욕장 이용방법·옷·문신·준비물·아기, 3인/4인, 숙박세, 객실 유형 차이)에 맞춘 공통 답변.
+const TAX = {
+  fukuoka: '후쿠오카시 숙박세는 1인 1박 200엔(숙박 요금이 2만 엔 이상이면 500엔)입니다. 예약 요금에 포함되지 않은 경우 체크인 때 호텔에서 따로 냅니다(2026년 10월 기준).',
+  tokyo: '도쿄도 숙박세는 1인 1박 요금이 1만 엔 이상 1만 5천 엔 미만이면 100엔, 1만 5천 엔 이상이면 200엔이고 1만 엔 미만은 없습니다(2026년 10월 기준, 인상이 논의되고 있으니 예약 화면의 세금 안내도 확인하세요).',
+  sapporo: '삿포로는 2026년부터 홋카이도 숙박세와 삿포로시 숙박세가 함께 붙어 1인 1박 수백 엔 수준이며, 금액은 숙박 요금 구간에 따라 다릅니다. 정확한 금액은 예약 화면의 세금 안내에서 확인하세요.',
+};
+const BATH_HOWTO = '객실에서 관내복이나 가운으로 갈아입고 객실 열쇠만 들고 내려가면 됩니다. 수영복은 입을 수 없고 알몸으로 입욕하며, 샴푸·바디워시·드라이어는 대욕장에 비치돼 있습니다. 수건도 대욕장에 두는 호텔이 많지만 객실 수건을 챙겨야 하는 곳도 있으니 안내문을 확인하세요. 문신이 있으면 입장을 제한하는 호텔이 많고 커버 스티커 허용 여부는 호텔마다 다릅니다. 이용 시간은 보통 15시부터 다음 날 10시 전후이고 심야 청소 시간에는 닫습니다.';
+const kidsBathText = list => { const lim = list.filter(h => h.bath === true && /세 이상|성인 전용/.test(h.bathLabel || '')); return `기저귀를 찬 아기는 입욕이 안 되는 곳이 대부분이고, 이성 아동 동반은 미취학이나 초등 저학년까지로 제한하는 호텔이 많습니다. 가족 객실을 고르면 객실 욕실도 같이 확인하세요.${lim.length ? ` 연령 제한이 확인된 곳: ${lim.map(h => `${h.name}(${h.bathLabel})`).join(', ')}.` : ''}`; };
+const roomTypeCat = t => !t ? '객실 유형 확인 중' : /화양실|패밀리|포스|4베드|쿼드|스위트/.test(t) ? '화양실·패밀리룸' : /트리플/.test(t) ? '트리플룸' : /트윈|더블|퀸|킹|세미/.test(t) ? '트윈·더블에 추가 침대' : '기타 객실';
+const catCounts = (list, n) => { const m = {}; list.forEach(h => { const k = roomTypeCat(paxRoom(h, n)); m[k] = (m[k] || 0) + 1; }); return Object.entries(m).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}곳`).join(', '); };
+const baseTypeCounts = list => ['더블', '트윈', '세미더블', '싱글', '퀸', '킹'].map(t => [t, list.filter(h => (h.roomType || '').includes(t)).length]).filter(x => x[1]).map(([t, n]) => `${t} ${n}곳`).join(', ');
 const paxUrl = (c, n) => `${BASE}/${c.slug}/${PAX[n].slug}/`;
 const paxSize = (h, n) => n === 3 ? h.minRoom3Pax : n === 4 ? h.minRoom4Pax : h.minRoom2Pax;
 const paxRoom = (h, n) => n === 3 ? h.roomType3Pax : n === 4 ? h.roomType4Pax : h.roomType;
@@ -253,6 +264,9 @@ function landing({c, hotels, kind, area, feature, pax}) {
     ptop && {q: `${kw} 중 ${pax}인 객실이 가장 넓은 곳은 어디인가요?`, a: `${ptop.name}의 ${paxRoom(ptop, pax) || `${pax}인 객실`} ${paxSize(ptop, pax)}㎡입니다. 2인 기본 객실은 ${sizeText(ptop)}입니다.`},
     {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
     {q: `${pax}인 객실 면적은 어떤 기준인가요?`, a: `일본 현지 예약 사이트에서 성인 ${pax}명으로 검색했을 때 나오는 객실 중 가장 작은 방의 면적입니다. 추가 침대나 소파베드를 쓰는 객실이 포함될 수 있습니다.`},
+    {q: `${c.name} ${pax}인 객실은 어떤 구조인가요?`, a: `${n}곳의 ${pax}인 객실은 ${catCounts(hotels, pax)}입니다. 트윈에 추가 침대를 넣는 방은 침대 폭이 100~110cm라 셋이 쓰면 좁게 느껴지고, 트리플룸·화양실은 처음부터 ${pax}명 기준이라 여유가 있습니다.`},
+    {q: `2인실에 ${pax}명이 묵을 수 있나요? '기준 2인·최대 ${pax}인' 표시는 무슨 뜻인가요?`, a: `일본 호텔은 객실마다 정원(定員)이 정해져 있어 정원이 2명인 방에 ${pax}명이 묵을 수 없습니다. '기준 2인·최대 ${pax}인'은 추가 침대나 소파베드로 ${pax}명까지 받는다는 뜻이고, 예약할 때 성인 ${pax}명으로 검색해야 그 플랜이 나옵니다. 미취학 아동은 침대를 같이 쓰면 무료인 호텔이 많지만 인원에는 넣어야 합니다.`},
+    {q: `아이와 함께 ${pax}명이 묵을 때 주의할 점은?`, a: `${kidsBathText(hotels)} 침대 폭이 좁은 트윈 추가 침대보다 화양실·패밀리룸이 아이와 쓰기 편합니다.`},
     {q: `${c.name}에서 ${pax}명이 묵을 트리플룸이 없는 호텔은 어떻게 하나요?`, a: `${c.name} 비교 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 중 ${pax}인 플랜이 확인된 곳은 ${n}곳입니다. 나머지는 2인 객실 2개로 나누어 예약하는 것이 일반적이며, 이때는 2인 기본 객실 면적을 비교하세요.`},
   ].filter(Boolean) : [
     top && {q: `${kw} 중 방이 가장 넓은 곳은 어디인가요?`, a: `이 목록에서 2인 기본 객실이 가장 넓은 곳은 ${top.name}(${top.minRoom2Pax}㎡, ${top.roomType})입니다. ${top.bath === true ? `대욕장도 있습니다(${top.bathLabel}).` : `대욕장 정보: ${bathText(top)}.`}`},
@@ -260,6 +274,10 @@ function landing({c, hotels, kind, area, feature, pax}) {
     !['bath', 'feature'].includes(kind) && {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
     kind === 'feature' && ['onsen', 'rotenburo', 'sauna'].filter(k => k !== feature).map(k => ({q: `${kw} 중 ${FEATURES[k].ko}도 있는 곳은?`, a: hotels.some(h => hasFeature(h, k)) ? `${sorted.filter(h => hasFeature(h, k)).map(h => h.name).join(', ')}입니다.` : `이 목록에는 ${FEATURES[k].ko}이 확인된 호텔이 없습니다.`})),
     {q: '기본 객실 면적은 어떤 기준인가요?', a: '2인이 투숙할 수 있는 기본 객실 중 호텔 공식 자료 등으로 확인된 가장 작은 방의 면적입니다. 상위 객실은 더 넓을 수 있습니다.'},
+    ['bath', 'feature'].includes(kind) && {q: `${kw} 중 3인·4인이 한 방에 묵을 수 있는 곳은?`, a: `${n}곳 중 3인 플랜이 있는 곳은 ${hotels.filter(h => h.pax3).length}곳, 4인은 ${hotels.filter(h => h.pax4).length}곳입니다${hotels.some(h => h.pax3) ? `. 3인 객실이 넓은 순으로 ${[...hotels].filter(h => h.pax3).sort(byPax(3)).slice(0, 5).map(h => `${h.name}(${paxSizeText(h, 3)})`).join(', ')}${hotels.filter(h => h.pax3).length > 5 ? ' 등' : ''}` : ''}.`},
+    ['bath', 'feature'].includes(kind) && {q: '대욕장은 어떻게 이용하나요? 옷·수건·문신은요?', a: BATH_HOWTO},
+    ['bath', 'feature'].includes(kind) && {q: '아기나 아이와 같이 대욕장에 들어갈 수 있나요?', a: kidsBathText(hotels)},
+    ['bath', 'feature'].includes(kind) && {q: `${kw} 중 대욕장이 유료이거나 일부 객실만 쓸 수 있는 곳은?`, a: hotels.some(h => /유료|전용|회원/.test(h.bathLabel || '')) ? `${hotels.filter(h => /유료|전용|회원/.test(h.bathLabel || '')).map(h => `${h.name}(${h.bathLabel})`).join(', ')}입니다. 나머지는 투숙객이 무료로 이용합니다.` : '이 목록의 대욕장은 모두 투숙객이 무료로 이용합니다.'},
   ].flat().filter(Boolean);
   const img = card(imgName, {title: `${kw} ${n}곳`, sub: `방 크기·대욕장 비교 · ${month} 기준`});
   const trail = [{name: '홈', url: `${BASE}/`}, {name: `${c.name} 호텔`, url: cityUrl(c)}, {name: kw, url}];
@@ -313,7 +331,9 @@ function hotelPage(h, c, cityHotels) {
     s === 'yes' && h.bathFeatures && {q: `${h.name} 대욕장에 온천이나 노천탕, 사우나가 있나요?`, a: `${featureText(h)}입니다.`},
     {q: `${h.name}은 어느 지역에 있나요?`, a: `${c.name} ${h.area} 지역에 있습니다. 같은 지역 호텔 ${areaHotels.length}곳과 비교할 수 있습니다.`},
     (h.pax3 !== undefined || h.pax4 !== undefined) && {q: `${h.name}에 3명이나 4명이 한 방에 묵을 수 있나요?`, a: `${paxText(h, 3)}, ${paxText(h, 4)}입니다. ${h.pax3 || h.pax4 ? '침대 구성과 인원별 요금은 예약 화면에서 확인하세요.' : '2인 객실 2개로 나누어 예약하는 것이 일반적입니다.'}`},
-    h.community && {q: `${h.name}은 한국 여행자가 많이 찾는 대욕장 호텔인가요?`, a: `한국 여행자 커뮤니티 게시글(2023년 1월~2026년 10월) ${h.community.mentions}건이 이 호텔의 대욕장을 언급해, ${c.name} 대욕장 호텔 중 ${h.community.rank}위입니다. 자주 나온 평가는 '${h.community.summary}'입니다.`},
+    {q: `${h.name} 객실 유형은 어떤 차이가 있나요?`, a: `2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다.${h.pax3 ? ` 3인은 ${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)},` : ' 3인 플랜은 없고,'}${h.pax4 ? ` 4인은 ${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}입니다.` : ' 4인 플랜은 없습니다.'} 상위 객실은 더 넓고, 요금 차이와 침대 구성은 예약 화면에서 확인하세요.`},
+    s === 'yes' && {q: `${h.name} 대욕장 이용 시간과 조건은?`, a: `${/유료|전용|회원|세 이상/.test(h.bathLabel || '') ? `이 호텔은 '${h.bathLabel}' 조건이 있습니다. ` : '투숙객은 무료로 이용합니다. '}일본 도심 호텔 대욕장은 보통 15시부터 다음 날 10시 전후까지 열고 심야 청소 시간에는 닫으며, 문신이 있으면 입장이 제한될 수 있습니다. 정확한 시간은 대욕장 공식 자료 링크에서 확인하세요.`},
+    h.community && {q: `${h.name} 대욕장, 한국 여행자 후기에서 많이 언급되나요?`, a: `한국 여행자 커뮤니티 게시글(2023년 1월~2026년 10월) ${h.community.mentions}건이 이 호텔의 대욕장을 언급해, ${c.name} 대욕장 호텔 중 ${h.community.rank}위입니다. 자주 나온 평가는 '${h.community.summary}'입니다.`},
   ].filter(Boolean);
   const img = card(`hotel-${hotelSlug(h)}`, {title: h.name, sub: `${c.name} ${h.area} · ${h.roomType}`, big: sizeText(h), bath: s === 'yes' ? '♨ 대욕장 있음' : bathText(h), isHotel: true});
   const url = hotelUrl(h);
@@ -375,7 +395,11 @@ function cityPage(c, hotels) {
     {q: `${c.name}에서 방이 넓은 호텔은 어디인가요?`, a: `2인 기본 객실 기준으로 ${widest.map(h => `${h.name}(${sizeText(h)})`).join(', ')} 순으로 넓습니다.`},
     {q: `${c.name} 대욕장 호텔은 몇 곳인가요?`, a: `비교 중인 ${n}곳 중 ${baths.length}곳에서 대욕장(온천·스파 포함)을 확인했습니다.`},
     ...(hotels.some(h => h.community) ? [{q: `${c.name}에서 한국 여행자가 많이 찾는 대욕장 호텔은?`, a: `한국 여행자 커뮤니티 게시글(2023년 1월~2026년 10월) 언급 수 기준으로 ${hotels.filter(h => h.community && h.bath === true).sort(byCommunity).slice(0, 5).map(h => `${h.name}(${h.community.mentions}건)`).join(', ')} 순입니다. 대욕장 호텔 페이지는 이 순서로 정렬되어 있습니다.`}] : []),
-    {q: `${c.name}에서 3명이 한 방에 묵을 수 있는 호텔은?`, a: `${n}곳 중 ${hotels.filter(h => h.pax3).length}곳에 3인 플랜이 있습니다${hotels.some(h => h.pax3) ? `: ${[...hotels.filter(h => h.pax3)].sort(byPax(3)).slice(0, 5).map(h => `${h.name}(${paxSizeText(h, 3)})`).join(', ')} 등` : ''}. 자세한 목록은 '${c.name} 3인 호텔' 페이지에서 볼 수 있습니다.`},
+    {q: `${c.name}에서 3명이 한 방에 묵을 수 있는 호텔은?`, a: `${n}곳 중 ${hotels.filter(h => h.pax3).length}곳에 3인 플랜이 있습니다${hotels.some(h => h.pax3) ? `: ${[...hotels.filter(h => h.pax3)].sort(byPax(3)).slice(0, 5).map(h => `${h.name}(${paxSizeText(h, 3)})`).join(', ')} 등` : ''}. 자세한 목록은 '${c.name} ${PAX[3].kw}' 페이지에서 볼 수 있습니다.`},
+    {q: `${c.name} 대욕장 호텔 중 3인·4인이 한 방에 묵을 수 있는 곳은?`, a: `대욕장 호텔 ${baths.length}곳 중 3인 플랜이 있는 곳은 ${baths.filter(h => h.pax3).length}곳, 4인은 ${baths.filter(h => h.pax4).length}곳입니다${baths.some(h => h.pax4) ? `. 4인까지 되는 곳: ${baths.filter(h => h.pax4).sort(byPax(4)).slice(0, 5).map(h => `${h.name}(${paxSizeText(h, 4)})`).join(', ')}${baths.filter(h => h.pax4).length > 5 ? ' 등' : ''}` : ''}. 도시 페이지에서 '투숙 인원'과 '대욕장' 필터를 같이 켜면 바로 추릴 수 있습니다.`},
+    {q: `${c.name} 호텔 대욕장은 어떻게 이용하나요? 준비물이 있나요?`, a: BATH_HOWTO},
+    {q: `${c.name} 호텔 숙박세는 얼마인가요?`, a: TAX[c.slug] || '숙박세는 예약 화면의 세금 안내에서 확인하세요.'},
+    {q: `${c.name} 호텔 객실 유형(더블·트윈·트리플·화양실)은 어떻게 다른가요?`, a: `2인 기본 객실은 더블(침대 1개, 140cm 전후)이 가장 작고 트윈(침대 2개)이 조금 더 넓습니다. 비교 중인 ${n}곳의 기본 객실은 ${baseTypeCounts(hotels) || '유형 확인 중'}입니다. 3인은 트윈에 엑스트라 베드나 소파베드를 넣는 방이 많고, 4인은 화양실(다다미+침대)이나 패밀리룸이어야 하는 경우가 대부분입니다. 호텔 상세 페이지에서 2인·3인·4인 객실 면적을 따로 볼 수 있습니다.`},
     {q: `${c.name} 호텔은 어느 지역에 묵는 게 좋나요?`, a: `${Object.keys(c.areas).filter(a => hotels.some(h => h.area === a)).slice(0, 6).map(a => `${a} ${hotels.filter(h => h.area === a).length}곳`).join(', ')}을 비교하고 있습니다. 일정의 중심이 되는 역과 가까운 지역을 고르고, 같은 지역 안에서 방 크기와 대욕장을 비교해 보세요.`},
   ];
   const img = card(`${c.slug}`, {title: `${c.name} 호텔 ${n}곳`, sub: `방 크기·대욕장 비교 · ${month} 기준`});
