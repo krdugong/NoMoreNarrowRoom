@@ -99,7 +99,7 @@ window.addEventListener('message',event=>{
   if(!frame)return;
   if(Number.isFinite(event.data.height))frame.style.height=Math.max(300,Math.min(3000,event.data.height))+'px';
   if(typeof event.data.params==='string'){
-    const allowed=['area','height','build','people','size','cases','opened','shopping','konbini','caseH','caseW','caseD'];
+    const allowed=['area','height','build','people','size','cases','opened','shopping','konbini','caseH','caseW','caseD','skin','hair','hairColor','top','bottom','mate'];
     const params=new URLSearchParams(event.data.params),clean=new URLSearchParams();
     allowed.forEach(key=>{if(params.has(key))clean.set(key,params.get(key));});
     frame.closest('.inline-simulator').querySelector('.inline-sim-full').href='./simulator.html?'+clean;
