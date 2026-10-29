@@ -19,6 +19,8 @@ const CITIES = [
     areas: {'칸다': 'kanda', '고탄다': 'gotanda', '긴시초': 'kinshicho', '긴자': 'ginza', '니혼바시': 'nihonbashi', '닛포리': 'nippori', '도요스': 'toyosu', '도쿄역': 'tokyo-station', '롯폰기': 'roppongi', '센다가야': 'sendagaya', '시나가와': 'shinagawa', '시바·다이몬': 'shiba-daimon', '시바공원': 'shibakoen', '시부야': 'shibuya', '시오도메': 'shiodome', '시오미': 'shiomi', '신바시': 'shimbashi', '신주쿠': 'shinjuku', '아사쿠사': 'asakusa', '아카사카': 'akasaka', '아키하바라': 'akihabara', '오시아게': 'oshiage', '오이마치': 'oimachi', '우에노': 'ueno', '이케부쿠로': 'ikebukuro', '츠키지': 'tsukiji', '핫초보리': 'hatchobori', '히비야': 'hibiya'}},
   {slug: 'sapporo', name: '삿포로', en: 'SAPPORO', file: 'sapporo.html', data: 'data/sapporo-hotels.js',
     areas: {'삿포로역': 'sapporo-station', '오도리': 'odori', '다누키코지': 'tanukikoji', '스스키노': 'susukino'}},
+  {slug: 'osaka', name: '오사카', en: 'OSAKA', file: 'osaka.html', data: 'data/osaka-hotels.js',
+    areas: {'난바': 'namba', '신사이바시': 'shinsaibashi', '우메다': 'umeda', '혼마치': 'honmachi', '요도야바시': 'yodoyabashi', '닛폰바시': 'nipponbashi', '신세카이': 'shinsekai', '유니버설시티': 'universal-city'}},
 ];
 const MIN_LIST = 3;   // landing pages with fewer hotels than this would be thin, so they are not built
 const LARGE = 20;     // ㎡ threshold for the "넓은 호텔" pages
@@ -74,6 +76,7 @@ const TAX = {
   fukuoka: '후쿠오카시 숙박세는 1인 1박 200엔(숙박 요금이 2만 엔 이상이면 500엔)입니다. 예약 요금에 포함되지 않은 경우 체크인 때 호텔에서 따로 냅니다(2026년 10월 기준).',
   tokyo: '도쿄도 숙박세는 1인 1박 요금이 1만 엔 이상 1만 5천 엔 미만이면 100엔, 1만 5천 엔 이상이면 200엔이고 1만 엔 미만은 없습니다(2026년 10월 기준, 인상이 논의되고 있으니 예약 화면의 세금 안내도 확인하세요).',
   sapporo: '삿포로는 2026년부터 홋카이도 숙박세와 삿포로시 숙박세가 함께 붙어 1인 1박 수백 엔 수준이며, 금액은 숙박 요금 구간에 따라 다릅니다. 정확한 금액은 예약 화면의 세금 안내에서 확인하세요.',
+  osaka: '오사카시 숙박세는 1인 1박 요금이 7천 엔 이상 1만 5천 엔 미만이면 100엔, 1만 5천 엔 이상 2만 엔 미만이면 200엔, 2만 엔 이상이면 300엔이고 7천 엔 미만은 없습니다(2026년 10월 기준, 예약 화면의 세금 안내도 확인하세요).',
 };
 const BATH_HOWTO = '객실에서 관내복이나 가운으로 갈아입고 객실 열쇠만 들고 내려가면 됩니다. 수영복은 입을 수 없고 알몸으로 입욕하며, 샴푸·바디워시·드라이어는 대욕장에 비치돼 있습니다. 수건도 대욕장에 두는 호텔이 많지만 객실 수건을 챙겨야 하는 곳도 있으니 안내문을 확인하세요. 문신이 있으면 입장을 제한하는 호텔이 많고 커버 스티커 허용 여부는 호텔마다 다릅니다. 이용 시간은 보통 15시부터 다음 날 10시 전후이고 심야 청소 시간에는 닫습니다.';
 const kidsBathText = list => { const lim = list.filter(h => h.bath === true && /세 이상|성인 전용/.test(h.bathLabel || '')); return `기저귀를 찬 아기는 입욕이 안 되는 곳이 대부분이고, 이성 아동 동반은 미취학이나 초등 저학년까지로 제한하는 호텔이 많습니다. 가족 객실을 고르면 객실 욕실도 같이 확인하세요.${lim.length ? ` 연령 제한이 확인된 곳: ${lim.map(h => `${h.name}(${h.bathLabel})`).join(', ')}.` : ''}`; };
@@ -429,9 +432,9 @@ function homePage() {
   const file = path.join(root, 'index.html');
   let html = fs.readFileSync(file, 'utf8');
   const updated = maxDate(all), url = `${BASE}/`;
-  const title = '일본 호텔 방 크기·대욕장 비교 - 후쿠오카·도쿄·삿포로 | NoMoreNarrowRoom';
-  const desc = `일본 호텔 ${all.length}곳의 2인 기본 객실 면적과 대욕장을 비교하세요. 후쿠오카·도쿄·삿포로 대욕장 호텔, 방 넓은 호텔, 지역별 호텔을 호텔 공식 자료 기준으로 정리했습니다.`;
-  const img = card('home', {title: '일본 호텔 방 크기·대욕장 비교', sub: `후쿠오카·도쿄·삿포로 ${all.length}곳`});
+  const title = '일본 호텔 방 크기·대욕장 비교 - 후쿠오카·도쿄·삿포로·오사카 | NoMoreNarrowRoom';
+  const desc = `일본 호텔 ${all.length}곳의 2인 기본 객실 면적과 대욕장을 비교하세요. 후쿠오카·도쿄·삿포로·오사카 대욕장 호텔, 방 넓은 호텔, 지역별 호텔을 호텔 공식 자료 기준으로 정리했습니다.`;
+  const img = card('home', {title: '일본 호텔 방 크기·대욕장 비교', sub: `후쿠오카·도쿄·삿포로·오사카 ${all.length}곳`});
   const site = {'@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: '노모어내로우룸', url: abs(url), inLanguage: 'ko-KR'};
   const head = headTags({title, desc, url, image: img, updated, jsonld: [site, webPageLd(title, desc, url, updated)]});
   html = replaceBetween(html, '<!-- seo-head:start -->', '<!-- seo-head:end -->', '\n' + head + '\n', (h, block) => h.replace(/<title>[\s\S]*?<\/title>\s*<meta name="description"[^>]*>/, block));
