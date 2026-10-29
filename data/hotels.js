@@ -75,7 +75,11 @@ window.NMNR_HOTELS = [
       "summary": "하카타역 가깝고 대욕장 포함 가성비 좋다는 평이 많음. 일부 객실 청결(화장실 냄새) 불만 후기도 있음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "크룸 하카타",
+      "크롬 하카타"
+    ]
   },
   {
     "id": "croom_gion",
@@ -122,7 +126,10 @@ window.NMNR_HOTELS = [
       "summary": "신축·넓은 객실·대욕장 대만족 후기. \"락스 물 냄새\"에 예민하면 비추라는 의견도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "크룸 하카타 기온"
+    ]
   },
   {
     "id": "gate",
@@ -274,7 +281,10 @@ window.NMNR_HOTELS = [
       "summary": "방이 넓고 깨끗하다는 평, 대욕장도 무난. 가격은 높은 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "블라썸 하카타"
+    ]
   },
   {
     "id": "toyo",
@@ -418,7 +428,10 @@ window.NMNR_HOTELS = [
       "summary": "\"노천탕이 너무 좋아 하루 두 번\", 위치 좋음. 가격은 비싼 편, 방이 작다는 의견도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 후쿠오카 기온"
+    ]
   },
   {
     "id": "mitsui_nakasu",
@@ -465,7 +478,10 @@ window.NMNR_HOTELS = [
       "summary": "신축이라 깨끗하고 나카스 돈키호테·이치란 본점 앞 위치가 장점",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 후쿠오카 나카스"
+    ]
   },
   {
     "id": "miyako",
@@ -707,7 +723,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "candeo",
-    "name": "칸데오 호텔스 후쿠오카 텐진",
+    "name": "칸데오 호텔 후쿠오카 텐진",
     "city": "후쿠오카",
     "area": "텐진",
     "minRoom2Pax": 15,
@@ -750,7 +766,11 @@ window.NMNR_HOTELS = [
       "summary": "노천탕·조식 만족 후기가 많지만 \"대욕장이 작다\", \"텐진 중심에서 약간 멀다\"는 평도 있음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "칸데오 호텔스 후쿠오카 텐진",
+      "칸데오 후쿠오카"
+    ]
   },
   {
     "id": "comfort",
@@ -820,7 +840,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "cross_tenjin",
-    "name": "크로스 라이프 하카타 텐진",
+    "name": "크로스라이프 하카타 텐진",
     "city": "후쿠오카",
     "area": "텐진",
     "minRoom2Pax": 17.8,
@@ -863,7 +883,10 @@ window.NMNR_HOTELS = [
       "summary": "룸 컨디션·대욕장·주변 맛집은 좋지만 \"지하철역에서 멀다/위치 애매\"라는 의견이 반복됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "크로스 라이프 하카타 텐진"
+    ]
   },
   {
     "id": "greenannex",
@@ -1050,7 +1073,10 @@ window.NMNR_HOTELS = [
       "summary": "가격 대비 넓은 객실·조식 뷔페, 텐진 접근성으로 가성비 대욕장 호텔로 자주 비교됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "몬토레 후쿠오카"
+    ]
   },
   {
     "id": "oriental_tenjin",
@@ -1087,7 +1113,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "hokke",
-    "name": "호텔 홋케 클럽 후쿠오카",
+    "name": "호텔 홋케클럽 후쿠오카",
     "city": "후쿠오카",
     "area": "하카타",
     "minRoom2Pax": 13,
@@ -1130,7 +1156,10 @@ window.NMNR_HOTELS = [
       "summary": "조식이 좋고 대욕장 있는 가성비 호텔로 자주 추천됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "홋케 클럽 후쿠오카"
+    ]
   },
   {
     "id": "dormy_gion",
@@ -1267,7 +1296,11 @@ window.NMNR_HOTELS = [
       "summary": "\"온천물·사우나 진짜 좋다\", 조식이 맛있다는 평. 가격은 높은 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 프리미엄 하카타",
+      "도미인 캐널시티"
+    ]
   },
   {
     "id": "wbf_grande",
@@ -1313,7 +1346,10 @@ window.NMNR_HOTELS = [
       "summary": "하카타 가성비 대욕장 호텔 후보로 언급. 방이 좁고 역에서 멀다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "WBF 하카타"
+    ]
   },
   {
     "id": "resol_hakata",

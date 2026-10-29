@@ -1,7 +1,7 @@
 window.NMNR_HOTELS = [
   {
     "id": "tokyo_01",
-    "name": "미츠이 가든 호텔 고탄다",
+    "name": "미쓰이 가든 호텔 고탄다",
     "city": "도쿄",
     "area": "고탄다",
     "minRoom2Pax": 18.2,
@@ -45,7 +45,10 @@ window.NMNR_HOTELS = [
       "summary": "대욕장 깨끗·룸 크기 적당·역 가까움. 관광지 기준으로는 위치가 구석이라는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 고탄다"
+    ]
   },
   {
     "id": "tokyo_02",
@@ -215,7 +218,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "tokyo_07",
-    "name": "미츠이 가든 호텔 긴자 고초메",
+    "name": "미쓰이 가든 호텔 긴자 고초메",
     "city": "도쿄",
     "area": "긴자",
     "minRoom2Pax": 17.3,
@@ -257,11 +260,15 @@ window.NMNR_HOTELS = [
       "summary": "긴자 한복판 위치와 대욕장이 최대 장점, 가격은 비싼 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 긴자 고초메",
+      "미쓰이 가든 긴자"
+    ]
   },
   {
     "id": "tokyo_08",
-    "name": "밀레니엄 미츠이 가든 호텔 도쿄",
+    "name": "밀레니엄 미쓰이 가든 호텔 도쿄",
     "city": "도쿄",
     "area": "긴자",
     "minRoom2Pax": 20,
@@ -289,11 +296,14 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=303560&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "밀레니엄 미츠이 가든 호텔 도쿄"
+    ]
   },
   {
     "id": "tokyo_09",
-    "name": "슈퍼 호텔 프리미어 긴자",
+    "name": "슈퍼호텔 프리미어 긴자",
     "city": "도쿄",
     "area": "긴자",
     "minRoom2Pax": 12,
@@ -335,7 +345,11 @@ window.NMNR_HOTELS = [
       "summary": "조식 맛있고 술·음료 무제한, 히가시긴자역 바로 앞이라 가성비 좋다는 평. 방이 좁다는 의견 많음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "슈퍼 호텔 프리미어 긴자",
+      "슈퍼호텔 긴자"
+    ]
   },
   {
     "id": "tokyo_10",
@@ -515,7 +529,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "tokyo_15",
-    "name": "슈퍼 호텔 프리미어 도쿄역 야에스",
+    "name": "슈퍼호텔 프리미어 도쿄역 야에스",
     "city": "도쿄",
     "area": "도쿄역",
     "minRoom2Pax": 12,
@@ -549,7 +563,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=379411&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "슈퍼 호텔 프리미어 도쿄역 야에스"
+    ]
   },
   {
     "id": "tokyo_16",
@@ -687,7 +704,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=366039&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "칸데오 롯폰기"
+    ]
   },
   {
     "id": "tokyo_20",
@@ -1087,7 +1107,10 @@ window.NMNR_HOTELS = [
       "summary": "대욕장으로 피로 풀기 좋고 수건 넉넉히 제공. 방·사우나가 작다는 의견도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "칸데오 신바시"
+    ]
   },
   {
     "id": "tokyo_32",
@@ -1385,7 +1408,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "tokyo_41",
-    "name": "슈퍼 호텔 프리미어 아키하바라",
+    "name": "슈퍼호텔 프리미어 아키하바라",
     "city": "도쿄",
     "area": "아키하바라",
     "minRoom2Pax": 12,
@@ -1419,7 +1442,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=317136&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "슈퍼 호텔 프리미어 아키하바라"
+    ]
   },
   {
     "id": "tokyo_42",
@@ -1519,7 +1545,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "tokyo_45",
-    "name": "센추리온 호텔 앤 스파 우에노 스테이션",
+    "name": "센츄리온 호텔 앤 스파 우에노 스테이션",
     "city": "도쿄",
     "area": "우에노",
     "minRoom2Pax": 10,
@@ -1561,7 +1587,11 @@ window.NMNR_HOTELS = [
       "summary": "우에노역 근처 대욕장 호텔로 언급, 방은 작은 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "센추리온 호텔 앤 스파 우에노 스테이션",
+      "센츄리온 우에노"
+    ]
   },
   {
     "id": "tokyo_46",
@@ -1804,7 +1834,10 @@ window.NMNR_HOTELS = [
       "summary": "\"대중탕이 매력적\"이라는 평, 시부야 숙소 중 대욕장 있는 곳으로 비교됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 시부야"
+    ]
   },
   {
     "id": "tokyo_53",
@@ -1894,13 +1927,16 @@ window.NMNR_HOTELS = [
       "summary": "야식 라멘·생활복 제공·조식 퀄리티가 좋아 가족 만족도가 높다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 고덴마초"
+    ]
   },
   {
     "id": "tokyo_55",
-    "name": "도미인 프리미엄 간다",
+    "name": "도미인 프리미엄 칸다",
     "city": "도쿄",
-    "area": "간다",
+    "area": "칸다",
     "minRoom2Pax": 15,
     "roomType": "더블",
     "bath": true,
@@ -1939,7 +1975,11 @@ window.NMNR_HOTELS = [
       "summary": "많이 걷는 도쿄 여행 후 대욕장+아이스크림+라멘이 \"천국\"이라는 후기",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 프리미엄 간다",
+      "도미인 칸다"
+    ]
   },
   {
     "id": "tokyo_56",
@@ -1984,7 +2024,10 @@ window.NMNR_HOTELS = [
       "summary": "대욕장·노천탕으로 피로 풀기 좋다는 재방문 후기. 방은 좁은 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 우에노"
+    ]
   },
   {
     "id": "tokyo_57",
@@ -2189,7 +2232,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "tokyo_62",
-    "name": "미츠이 가든 호텔 니혼바시 프리미어",
+    "name": "미쓰이 가든 호텔 니혼바시 프리미어",
     "city": "도쿄",
     "area": "니혼바시",
     "minRoom2Pax": 20,
@@ -2222,11 +2265,14 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334982&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "미츠이 가든 호텔 니혼바시 프리미어"
+    ]
   },
   {
     "id": "tokyo_63",
-    "name": "미츠이 가든 호텔 시오도메 이탈리아가이",
+    "name": "미쓰이 가든 호텔 시오도메 이탈리아가이",
     "city": "도쿄",
     "area": "시오도메",
     "minRoom2Pax": 20.5,
@@ -2267,11 +2313,15 @@ window.NMNR_HOTELS = [
       "summary": "방 넓고 조용한 거리, 대욕장 있어 좋다는 후기",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 시오도메 이탈리아가이",
+      "미쓰이 가든 시오도메"
+    ]
   },
   {
     "id": "tokyo_64",
-    "name": "미츠이 가든 호텔 진구가이엔노모리 프리미어",
+    "name": "미쓰이 가든 호텔 진구가이엔노모리 프리미어",
     "city": "도쿄",
     "area": "센다가야",
     "minRoom2Pax": 18.5,
@@ -2304,11 +2354,14 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=331571&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "미츠이 가든 호텔 진구가이엔노모리 프리미어"
+    ]
   },
   {
     "id": "tokyo_65",
-    "name": "미츠이 가든 호텔 도요스 프리미어",
+    "name": "미쓰이 가든 호텔 도요스 프리미어",
     "city": "도쿄",
     "area": "도요스",
     "minRoom2Pax": 18.5,
@@ -2341,7 +2394,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304890&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "미츠이 가든 호텔 도요스 프리미어"
+    ]
   },
   {
     "id": "tokyo_66",
@@ -2386,11 +2442,14 @@ window.NMNR_HOTELS = [
       "summary": "도심 속 료칸 분위기와 루프톱 노천탕이 장점, 역에서 약간 걸린다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "유엔 신주쿠"
+    ]
   },
   {
     "id": "tokyo_67",
-    "name": "비아 인 프라임 아카사카",
+    "name": "비아인 프라임 아카사카",
     "city": "도쿄",
     "area": "아카사카",
     "minRoom2Pax": 15,
@@ -2431,7 +2490,11 @@ window.NMNR_HOTELS = [
       "summary": "신축이라 깨끗하고 대욕장 좋아 보인다는 평, 조용한 동네",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "비아 인 프라임 아카사카",
+      "비아인 아카사카"
+    ]
   },
   {
     "id": "tokyo_68",

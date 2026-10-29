@@ -17,7 +17,7 @@ function roomFeel(m) {
 }
 function bathStatus(h) { return h.bath ? 'yes' : /확인 안 됨/.test(h.bathLabel) ? 'unknown' : 'no'; }
 function current() {
-  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && paxOk(h) && (state.room === 0 || (Number.isFinite(sizeOf(h)) && sizeOf(h) >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && hasFeature(h, state.feature) && h.name.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko')));
+  const list = hotels.filter(h => (state.area === 'all' || h.area === state.area) && paxOk(h) && (state.room === 0 || (Number.isFinite(sizeOf(h)) && sizeOf(h) >= state.room)) && (state.bath === 'all' || bathStatus(h) === state.bath) && hasFeature(h, state.feature) && [h.name, ...(h.aliases || [])].some(n => n.toLocaleLowerCase('ko').includes(state.query.trim().toLocaleLowerCase('ko'))));
   const byName = (a, b) => a.name.localeCompare(b.name, 'ko');
   list.sort((a, b) => {
     if (state.sort === 'community') return ((b.community && b.community.mentions) || 0) - ((a.community && a.community.mentions) || 0) || byName(a,b);

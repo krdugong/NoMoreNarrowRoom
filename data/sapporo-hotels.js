@@ -47,7 +47,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "sapporo_02",
-    "name": "삿포로 호텔 by 그랑벨",
+    "name": "삿포로 그랑벨 호텔",
     "city": "삿포로",
     "area": "삿포로역",
     "minRoom2Pax": 24,
@@ -89,13 +89,17 @@ window.NMNR_HOTELS = [
       "summary": "신축·무료 대욕장·넓은 객실이 장점, 위치는 애매하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "삿포로 호텔 by 그랑벨",
+      "삿포로 호텔 바이 그랑벨"
+    ]
   },
   {
     "id": "sapporo_03",
     "name": "카락사 호텔 삿포로",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 16,
     "roomType": "스탠다드 더블",
     "bath": true,
@@ -135,13 +139,16 @@ window.NMNR_HOTELS = [
       "summary": "위치 좋다는 평이 많고 대욕장 있는 중가 호텔로 비교됨. 일부 객실은 욕조 없이 샤워실만",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "카락사 삿포로"
+    ]
   },
   {
     "id": "sapporo_04",
     "name": "라젠트 스테이 삿포로 오도리",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 18,
     "roomType": "스탠다드 더블/트윈",
     "bath": true,
@@ -181,7 +188,10 @@ window.NMNR_HOTELS = [
       "summary": "방이 넓고 깨끗, 한국인 직원. 대욕장 공사로 이용 시간 제한이 있었다는 후기",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "라젠트 삿포로"
+    ]
   },
   {
     "id": "sapporo_05",
@@ -305,7 +315,10 @@ window.NMNR_HOTELS = [
       "summary": "서비스·룸 크기는 좋다는 평과 \"대욕장이 별로/관리 부족\"이라는 평이 엇갈림",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "솔라리아 삿포로"
+    ]
   },
   {
     "id": "sapporo_08",
@@ -383,7 +396,10 @@ window.NMNR_HOTELS = [
       "summary": "삿포로역 직결·전망이 장점, 가격이 비쌈",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "닛코 삿포로"
+    ]
   },
   {
     "id": "sapporo_10",
@@ -429,13 +445,16 @@ window.NMNR_HOTELS = [
       "summary": "깨끗하고 조식이 잘 나온다는 평, 마루 바닥. \"대욕장이라 하기엔 작다\"는 후기도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "베셀 호텔 스스키노"
+    ]
   },
   {
     "id": "sapporo_11",
     "name": "비아인 프라임 삿포로 오도리",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 14,
     "roomType": "비아인 싱글/싱글 · 2인 이용 가능",
     "bath": true,
@@ -511,7 +530,7 @@ window.NMNR_HOTELS = [
     "id": "sapporo_13",
     "name": "비스포크 호텔 삿포로",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 20,
     "roomType": "킹 더블/스탠다드 트윈",
     "bath": false,
@@ -645,7 +664,7 @@ window.NMNR_HOTELS = [
     "id": "sapporo_17",
     "name": "리치몬드 호텔 삿포로 오도리",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 16.5,
     "roomType": "스탠다드 더블",
     "bath": false,
@@ -717,7 +736,10 @@ window.NMNR_HOTELS = [
       "summary": "노천탕이 최고, 신축·깨끗·스스키노 위치. 대욕장 규모는 작다는 의견도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "그랑벨 스스키노"
+    ]
   },
   {
     "id": "sapporo_19",
@@ -753,7 +775,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "sapporo_20",
-    "name": "미츠이 가든 호텔 삿포로 웨스트",
+    "name": "미쓰이 가든 호텔 삿포로 웨스트",
     "city": "삿포로",
     "area": "삿포로역",
     "minRoom2Pax": 21.9,
@@ -795,7 +817,10 @@ window.NMNR_HOTELS = [
       "summary": "대욕장·조식 추천, 지하철 소리가 들린다는 후기",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 삿포로 웨스트"
+    ]
   },
   {
     "id": "sapporo_21",
@@ -841,7 +866,10 @@ window.NMNR_HOTELS = [
       "summary": "넓은 객실·조식 무난, 위치가 약간 멀다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "몬토레 에델호프"
+    ]
   },
   {
     "id": "sapporo_22",
@@ -879,7 +907,7 @@ window.NMNR_HOTELS = [
     "id": "sapporo_23",
     "name": "삿포로 그랑벨 호텔 타누키코지",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 17.2,
     "roomType": "더블",
     "bath": true,
@@ -957,7 +985,10 @@ window.NMNR_HOTELS = [
       "summary": "삿포로역 역세권, 3인에겐 좁다는 평. 대욕장 공사 여부 문의 있음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "게이오 프렐리아"
+    ]
   },
   {
     "id": "sapporo_25",
@@ -1021,7 +1052,10 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=360100&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "aliases": [
+      "퀸테사 삿포로"
+    ]
   },
   {
     "id": "sapporo_27",
@@ -1089,7 +1123,7 @@ window.NMNR_HOTELS = [
   },
   {
     "id": "sapporo_29",
-    "name": "미츠이 가든 호텔 삿포로",
+    "name": "미쓰이 가든 호텔 삿포로",
     "city": "삿포로",
     "area": "삿포로역",
     "minRoom2Pax": 16,
@@ -1131,7 +1165,10 @@ window.NMNR_HOTELS = [
       "summary": "삿포로역 가깝고 대욕장 있는 호텔로 크로스호텔과 비교됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "미츠이 가든 호텔 삿포로"
+    ]
   },
   {
     "id": "sapporo_30",
@@ -1247,7 +1284,10 @@ window.NMNR_HOTELS = [
       "summary": "아침 온천이 좋았다는 추천 후기, 역 접근성은 약간 불편하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "유엔 삿포로"
+    ]
   },
   {
     "id": "sapporo_33",
@@ -1363,7 +1403,7 @@ window.NMNR_HOTELS = [
     "id": "sapporo_36",
     "name": "도미인 삿포로 아넥스",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 13.2,
     "roomType": "더블",
     "bath": true,
@@ -1403,13 +1443,16 @@ window.NMNR_HOTELS = [
       "summary": "프리미엄 삿포로와 대욕장을 비교하며 언급됨",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "도미인 삿포로"
+    ]
   },
   {
     "id": "sapporo_37",
     "name": "도미인 프리미엄 삿포로",
     "city": "삿포로",
-    "area": "타누키코지",
+    "area": "다누키코지",
     "minRoom2Pax": 16,
     "roomType": "더블",
     "bath": true,
@@ -1494,6 +1537,9 @@ window.NMNR_HOTELS = [
       "summary": "방은 좁지만 대욕장 있고 시설 괜찮다는 가성비 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
-    }
+    },
+    "aliases": [
+      "퀸테사 삿포로 스스키노 63"
+    ]
   }
 ];

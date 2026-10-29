@@ -16,9 +16,9 @@ const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
     areas: {'하카타': 'hakata', '텐진': 'tenjin', '나카스': 'nakasu'}},
   {slug: 'tokyo', name: '도쿄', en: 'TOKYO', file: 'tokyo.html', data: 'data/tokyo-hotels.js',
-    areas: {'간다': 'kanda', '고탄다': 'gotanda', '긴시초': 'kinshicho', '긴자': 'ginza', '니혼바시': 'nihonbashi', '닛포리': 'nippori', '도요스': 'toyosu', '도쿄역': 'tokyo-station', '롯폰기': 'roppongi', '센다가야': 'sendagaya', '시나가와': 'shinagawa', '시바·다이몬': 'shiba-daimon', '시바공원': 'shibakoen', '시부야': 'shibuya', '시오도메': 'shiodome', '시오미': 'shiomi', '신바시': 'shimbashi', '신주쿠': 'shinjuku', '아사쿠사': 'asakusa', '아카사카': 'akasaka', '아키하바라': 'akihabara', '오시아게': 'oshiage', '오이마치': 'oimachi', '우에노': 'ueno', '이케부쿠로': 'ikebukuro', '츠키지': 'tsukiji', '핫초보리': 'hatchobori', '히비야': 'hibiya'}},
+    areas: {'칸다': 'kanda', '고탄다': 'gotanda', '긴시초': 'kinshicho', '긴자': 'ginza', '니혼바시': 'nihonbashi', '닛포리': 'nippori', '도요스': 'toyosu', '도쿄역': 'tokyo-station', '롯폰기': 'roppongi', '센다가야': 'sendagaya', '시나가와': 'shinagawa', '시바·다이몬': 'shiba-daimon', '시바공원': 'shibakoen', '시부야': 'shibuya', '시오도메': 'shiodome', '시오미': 'shiomi', '신바시': 'shimbashi', '신주쿠': 'shinjuku', '아사쿠사': 'asakusa', '아카사카': 'akasaka', '아키하바라': 'akihabara', '오시아게': 'oshiage', '오이마치': 'oimachi', '우에노': 'ueno', '이케부쿠로': 'ikebukuro', '츠키지': 'tsukiji', '핫초보리': 'hatchobori', '히비야': 'hibiya'}},
   {slug: 'sapporo', name: '삿포로', en: 'SAPPORO', file: 'sapporo.html', data: 'data/sapporo-hotels.js',
-    areas: {'삿포로역': 'sapporo-station', '오도리': 'odori', '타누키코지': 'tanukikoji', '스스키노': 'susukino'}},
+    areas: {'삿포로역': 'sapporo-station', '오도리': 'odori', '다누키코지': 'tanukikoji', '스스키노': 'susukino'}},
 ];
 const MIN_LIST = 3;   // landing pages with fewer hotels than this would be thin, so they are not built
 const LARGE = 20;     // ㎡ threshold for the "넓은 호텔" pages
@@ -61,14 +61,14 @@ const bathUrl = c => `${BASE}/${c.slug}/bath/`;
 const largeUrl = c => `${BASE}/${c.slug}/large-room/`;
 // Bath feature pages (천연온천·노천탕·사우나) come from h.bathFeatures on hotels with bath === true.
 const FEATURES = {
-  onsen: {kw: '천연온천 호텔', label: '천연온천', what: '천연온천 대욕장', ko: '천연온천'},
+  onsen: {kw: '온천 호텔', label: '천연온천', what: '천연온천 대욕장', ko: '천연온천'},
   rotenburo: {kw: '노천탕 호텔', label: '노천탕', what: '노천탕(露天風呂)', ko: '노천탕'},
   sauna: {kw: '사우나 호텔', label: '사우나', what: '사우나', ko: '사우나'},
 };
 const hasFeature = (h, k) => h.bath === true && Boolean(h.bathFeatures && h.bathFeatures[k]);
 const featureUrl = (c, k) => `${BASE}/${c.slug}/${k}/`;
 // 3인·4인 pages: hotels with pax3/pax4 === true (a Jalan plan for that many adults), sorted by that room's size.
-const PAX = {3: {slug: 'triple', kw: '3인 호텔', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 호텔', sub: '4인 객실'}};
+const PAX = {3: {slug: 'triple', kw: '3인 호텔·숙소', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 가족 숙소·호텔', sub: '4인 객실'}};
 const paxUrl = (c, n) => `${BASE}/${c.slug}/${PAX[n].slug}/`;
 const paxSize = (h, n) => n === 3 ? h.minRoom3Pax : n === 4 ? h.minRoom4Pax : h.minRoom2Pax;
 const paxRoom = (h, n) => n === 3 ? h.roomType3Pax : n === 4 ? h.roomType4Pax : h.roomType;
@@ -292,7 +292,7 @@ function hotelPage(h, c, cityHotels) {
   const areaRank = areaHotels.filter(x => num(x.minRoom2Pax)).sort(byRoom).indexOf(h) + 1;
   const kw = `${h.name} 방 크기`;
   const title = `${h.name} 방 크기 ${sizeText(h)} · ${bathText(h)} | ${c.name} ${h.area} 호텔`;
-  const desc = `${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}). ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.`;
+  const desc = `${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}). ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.${h.aliases && h.aliases.length ? ` (${h.aliases.join(', ')}로도 검색)` : ''}`;
   const lines = [];
   if (num(h.minRoom2Pax)) {
     lines.push(`${h.name}의 2인 기본 객실은 ${h.roomType} ${h.minRoom2Pax}㎡로, ${roomFeel(h.minRoom2Pax)} 수준입니다.`);
@@ -304,6 +304,7 @@ function hotelPage(h, c, cityHotels) {
   if (h.pax3 !== undefined || h.pax4 !== undefined) lines.push(`3·4인 투숙: ${paxText(h, 3)}, ${paxText(h, 4)}${h.paxVerifiedAt ? `(현지 예약 사이트 ${h.paxVerifiedAt} 기준)` : ''}.`);
   if (!isBoilerplate(h.reviewNote)) lines.push(`한줄 메모: ${h.reviewNote}.`.replace('..', '.'));
   if (h.community) lines.push(`한국 여행자 커뮤니티의 2023년 1월~2026년 10월 게시글 중 ${h.community.mentions}건이 이 호텔의 대욕장을 언급했습니다(${c.name} 대욕장 호텔 중 ${h.community.rank}위). 자주 나온 평가: ${h.community.summary}.`.replace('..', '.'));
+  if (h.aliases && h.aliases.length) lines.push(`다른 표기: ${h.aliases.join(', ')}.`);
   const similar = cityHotels.filter(x => x !== h && num(x.minRoom2Pax) && num(h.minRoom2Pax) && Math.abs(x.minRoom2Pax - h.minRoom2Pax) <= 2.5).sort(byRoom).slice(0, 6);
   const neighbours = areaHotels.filter(x => x !== h).sort(byRoom).slice(0, 6);
   const faqs = [
@@ -318,7 +319,7 @@ function hotelPage(h, c, cityHotels) {
   const url = hotelUrl(h);
   const hasArea = areaHotels.length >= MIN_LIST && c.areas[h.area];
   const trail = [{name: '홈', url: `${BASE}/`}, {name: `${c.name} 호텔`, url: cityUrl(c)}, ...(hasArea ? [{name: `${h.area} 호텔`, url: areaUrl(c, h.area)}] : []), {name: h.name, url}];
-  const hotelLd = {'@context': 'https://schema.org', '@type': 'Hotel', name: h.name, url: abs(url), image: abs(img),
+  const hotelLd = {'@context': 'https://schema.org', '@type': 'Hotel', name: h.name, ...(h.aliases && h.aliases.length ? {alternateName: h.aliases} : {}), url: abs(url), image: abs(img),
     address: {'@type': 'PostalAddress', addressLocality: `${c.name} ${h.area}`, addressCountry: 'JP'},
     ...(h.location ? {geo: {'@type': 'GeoCoordinates', latitude: h.location.lat, longitude: h.location.lng}} : {}),
     ...(s !== 'unknown' ? {amenityFeature: [{'@type': 'LocationFeatureSpecification', name: '대욕장', value: s === 'yes'}, ...(s === 'yes' && h.bathFeatures ? ['onsen', 'rotenburo', 'sauna'].map(k => ({'@type': 'LocationFeatureSpecification', name: FEATURES[k].ko, value: Boolean(h.bathFeatures[k])})) : [])]} : {}),
