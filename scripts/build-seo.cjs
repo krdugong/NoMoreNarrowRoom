@@ -154,6 +154,9 @@ function headTags({title, desc, url, image, updated, jsonld, type = 'website'}) 
     `<meta name="description" content="${esc(desc)}">`,
     `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">`,
     `<link rel="canonical" href="${abs(url)}">`,
+    `<link rel="icon" href="${BASE}/favicon.ico" sizes="48x48">`,
+    `<link rel="icon" type="image/svg+xml" href="${BASE}/favicon.svg">`,
+    `<link rel="apple-touch-icon" href="${BASE}/apple-touch-icon.png">`,
     cfg.naverSiteVerification ? `<meta name="naver-site-verification" content="${esc(cfg.naverSiteVerification)}">` : '',
     cfg.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleSiteVerification)}">` : '',
     gaTag(),
@@ -432,7 +435,7 @@ function homePage() {
   const file = path.join(root, 'index.html');
   let html = fs.readFileSync(file, 'utf8');
   const updated = maxDate(all), url = `${BASE}/`;
-  const title = '일본 호텔 방 크기·대욕장 비교 - 후쿠오카·도쿄·삿포로·오사카 | NoMoreNarrowRoom';
+  const title = 'NoMoreNarrowRoom - 일본 호텔 방 크기·대욕장 비교 (후쿠오카·도쿄·삿포로·오사카)';
   const desc = `일본 호텔 ${all.length}곳의 2인 기본 객실 면적과 대욕장을 비교하세요. 후쿠오카·도쿄·삿포로·오사카 대욕장 호텔, 방 넓은 호텔, 지역별 호텔을 호텔 공식 자료 기준으로 정리했습니다.`;
   const img = card('home', {title: '일본 호텔 방 크기·대욕장 비교', sub: `후쿠오카·도쿄·삿포로·오사카 ${all.length}곳`});
   const site = {'@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: '노모어내로우룸', url: abs(url), inLanguage: 'ko-KR'};
