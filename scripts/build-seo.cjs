@@ -10,7 +10,7 @@ const repo = cfg.basePath ? path.resolve(root, '..') : root;  // folder served a
 const BASE = cfg.basePath;                             // '' when the site is served at the domain root
 const ORIGIN = cfg.siteUrl;                            // e.g. https://nomorenarrowroom.com
 const abs = p => ORIGIN + p;
-const ASSET_V = '20261028seo';
+const ASSET_V = '20261109rooms';
 
 const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
@@ -314,9 +314,12 @@ function hotelPage(h, c, cityHotels) {
   const med = median(cityHotels.map(x => x.minRoom2Pax));
   const areaHotels = cityHotels.filter(x => x.area === h.area);
   const areaRank = areaHotels.filter(x => num(x.minRoom2Pax)).sort(byRoom).indexOf(h) + 1;
+  // 검색어에 붙는 객실 타입 단어(트윈·더블·트리플·화양실 등)를 제목·H1·설명에 넣는다. 호텔명+객실타입 검색이 목록 페이지 대신 이 페이지로 오게 하기 위함.
+  const roomWords = [...new Set([h.roomType, h.roomType3Pax, h.roomType4Pax].filter(Boolean).flatMap(t => t.match(/세미더블|더블|트윈|트리플|화양실|패밀리|스위트|싱글|퀸|킹|4베드|포스/g) || []))];
+  const roomWordText = roomWords.length ? roomWords.join('·') : '객실';
   const kw = `${h.name} 방 크기`;
-  const title = `${h.name} 방 크기 ${sizeText(h)} · ${bathText(h)} | ${c.name} ${h.area} 호텔`;
-  const desc = `${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}). ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.${h.aliases && h.aliases.length ? ` (${h.aliases.join(', ')}로도 검색)` : ''}`;
+  const title = `${h.name} ${roomWordText} 방 크기 ${sizeText(h)} · ${bathText(h)} | ${c.name} ${h.area} 호텔`;
+  const desc = `${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}).${h.pax3 ? ` 3인은 ${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}${h.pax4 ? `, 4인은 ${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : ''}.` : ''} ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.${h.aliases && h.aliases.length ? ` (${h.aliases.join(', ')}로도 검색)` : ''}`;
   const lines = [];
   if (num(h.minRoom2Pax)) {
     lines.push(`${h.name}의 2인 기본 객실은 ${h.roomType} ${h.minRoom2Pax}㎡로, ${roomFeel(h.minRoom2Pax)} 수준입니다.`);
@@ -354,9 +357,16 @@ function hotelPage(h, c, cityHotels) {
   const body = `    ${crumbs(trail)}
     <article class="hotel-page">
       <p class="eyebrow">${c.en} · ${esc(h.area)}</p>
-      <h1>${esc(kw)}·대욕장</h1>
+      <h1>${esc(h.name)} 방 크기 · ${esc(roomWordText)} · 대욕장</h1>
       <div class="hotel-facts"><div><span>2인 기본 객실</span><strong>${esc(sizeText(h))}</strong><small>${esc(roomFeel(h.minRoom2Pax))}</small></div><div><span>대욕장</span><strong class="bath-${s}">${s === 'yes' ? '♨ 있음' : s === 'no' ? '없음' : '확인 필요'}</strong><small>${esc(s === 'yes' ? h.bathLabel : '')}</small></div><div><span>지역</span><strong>${esc(h.area)}</strong><small>${esc(c.name)}</small></div></div>
       <div class="hotel-text">${lines.map(l => `<p>${esc(l)}</p>`).join('')}</div>
+      <h2>${esc(h.name)} 객실 타입별 크기</h2>
+      <table class="room-table"><thead><tr><th>투숙 인원</th><th>객실 타입</th><th>면적</th><th>메모</th></tr></thead><tbody>
+        <tr><td>2인</td><td>${esc(h.roomType)}</td><td>${esc(sizeText(h))}</td><td>${esc(roomFeel(h.minRoom2Pax))}</td></tr>
+        <tr><td>3인</td><td>${esc(h.pax3 ? paxRoom(h, 3) || '3인 객실' : h.pax3 === false ? '3인 플랜 없음' : '확인 중')}</td><td>${esc(h.pax3 ? paxSizeText(h, 3) : '-')}</td><td>${esc(h.pax3 ? (/트윈|더블|퀸|킹/.test(paxRoom(h, 3) || '') ? '기존 침대에 추가 침대·소파베드' : '처음부터 3인 기준 객실') : '2인 객실 2개로 나누어 예약')}</td></tr>
+        <tr><td>4인</td><td>${esc(h.pax4 ? paxRoom(h, 4) || '4인 객실' : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</td><td>${esc(h.pax4 ? paxSizeText(h, 4) : '-')}</td><td>${esc(h.pax4 ? (/화양실|패밀리|스위트/.test(paxRoom(h, 4) || '') ? '가족 단위에 맞는 넓은 객실' : '4인 기준 객실') : '2인 객실 2개로 나누어 예약')}</td></tr>
+      </tbody></table>
+      <p class="room-note">${esc(roomWords.length ? `${roomWords.join(', ')} 객실이 확인됐습니다. ` : '')}면적은 각 인원으로 예약할 수 있는 객실 중 가장 작은 방 기준이며, 같은 타입이라도 층·전망에 따라 면적이 다를 수 있습니다.</p>
       <div class="hotel-cta">${num(h.minRoom2Pax) ? `<a class="simulation-link" href="${BASE}/simulator.html?area=${h.minRoom2Pax}">${h.minRoom2Pax}㎡ 방에 캐리어 넣어보기</a>` : ''}${tripLink(h)}</div>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(h.name)} 방 크기 ${esc(sizeText(h))} ${esc(bathText(h))}">
       <h2>확인한 정보</h2>

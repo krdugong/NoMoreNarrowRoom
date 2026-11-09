@@ -53,3 +53,5 @@
   .home-guide-grid{grid-template-columns:1fr}
 }
 .related ul.mini-list{display:block}.related .mini-list a{display:inline;padding:0;border:0;background:none}
+
+.room-table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:13px}.room-table th,.room-table td{border-bottom:1px solid var(--line,#e3e6e9);padding:9px 8px;text-align:left;vertical-align:top}.room-table th{font-size:11px;color:var(--muted,#686b70);font-weight:600}.room-table td:nth-child(3){white-space:nowrap;font-weight:650}.room-note{font-size:11px;color:var(--muted,#686b70);line-height:1.7;margin:0 0 18px}
