@@ -138,13 +138,16 @@ const gaTag = () => cfg.googleAnalyticsId ? `<script async src="https://www.goog
 // Naver Analytics (wcslog.js), placed before </body> on every HTML page when seo-config.json has naverAnalyticsId.
 const naverTag = () => cfg.naverAnalyticsId ? `<script src="https://wcs.pstatic.net/wcslog.js"></script>
 <script>if(!wcs_add) var wcs_add = {};wcs_add["wa"] = "${esc(cfg.naverAnalyticsId)}";if(window.wcs) {wcs_do();}</script>` : '';
+// 자체 방문 통계(stats.nomorenarrowroom.com 워커, 소스는 _stats-worker/). 페이지 조회와 트립닷컴 예약 링크 클릭을 보낸다.
+const STATS_TAG = `<script>(function(){try{if(!/(^|\\.)nomorenarrowroom\\.com$/.test(location.hostname)||navigator.webdriver)return;var E='https://stats.nomorenarrowroom.com/c',s=function(o){var b=JSON.stringify(o);if(!(navigator.sendBeacon&&navigator.sendBeacon(E,b)))fetch(E,{method:'POST',body:b,keepalive:true,mode:'no-cors'})};s({p:location.pathname,r:document.referrer,q:location.search});document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="trip.com"]');if(!a)return;var l=(a.getAttribute('aria-label')||'').replace(/ 트립닷컴에서.*$/,'');if(!l){var c=a.closest('.rank-item,article');var h=c&&c.querySelector('h3,strong');l=h?h.textContent:((document.querySelector('h1')||{}).textContent||'').replace(/ 방 크기.*$/,'')}s({t:'click',p:location.pathname,l:l.trim()})},true)}catch(e){}})();</script>`;
 function addNaverAnalytics(dir) {
   for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
     const file = path.join(dir, entry.name);
-    if (entry.isDirectory()) { if (!['node_modules', 'assets', 'data', 'scripts', 'tests', '.git'].includes(entry.name)) addNaverAnalytics(file); continue; }
+    if (entry.isDirectory()) { if (!['node_modules', 'assets', 'data', 'scripts', 'tests', '.git', '_stats-worker'].includes(entry.name)) addNaverAnalytics(file); continue; }
     if (!entry.name.endsWith('.html')) continue;
     const html = fs.readFileSync(file, 'utf8');
-    const next = replaceBetween(html, '<!-- naver-wa:start -->', '<!-- naver-wa:end -->', naverTag(), (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
+    let next = replaceBetween(html, '<!-- naver-wa:start -->', '<!-- naver-wa:end -->', naverTag(), (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
+    next = replaceBetween(next, '<!-- nmnr-stats:start -->', '<!-- nmnr-stats:end -->', STATS_TAG, (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
     if (next !== html) fs.writeFileSync(file, next);
   }
 }

@@ -1,0 +1,80 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>노모어내로우룸 관리</title>
+<link rel="icon" href="https://nomorenarrowroom.com/favicon.svg" type="image/svg+xml">
+<style>
+:root{--ink:#202124;--muted:#5f6b72;--line:#d9dee2;--bg:#f3f5f7;--card:#fff;--accent:#315e70;--warm:#d9482b}
+body{font:15px/1.6 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;max-width:820px;margin:0 auto;padding:24px 16px 60px;color:var(--ink);background:var(--bg)}
+h1{font-size:22px;margin:4px 0 14px}h2{font-size:18px;margin:28px 0 8px}h3{margin:20px 0 6px;font-size:15px}
+input,button{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:#fff}button{background:var(--accent);color:#fff;border-color:var(--accent);cursor:pointer}
+form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}input[type=password]{flex:1;min-width:200px}
+small{color:var(--muted)}table{border-collapse:collapse;width:100%;background:#fff;border:1px solid var(--line);font-size:14px}th,td{padding:6px 10px;border-top:1px solid var(--line);text-align:left}th{color:var(--muted);font-weight:500}td:not(:first-child),th:not(:first-child){text-align:right}td:first-child{overflow-wrap:anywhere}
+.big{font-size:18px}.big b{font-size:28px;color:var(--warm)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}.cards div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px}.cards span{display:block;font-size:12px;color:var(--muted)}.cards b{font-size:24px}
+.viz{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 14px 12px;margin-top:8px}
+.lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;margin:0 0 10px}.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.hb{display:grid;grid-template-columns:minmax(84px,auto) 1fr auto;gap:6px 10px;align-items:center;font-size:14px}.hb .tr{height:14px;background:#eef1f3;border-radius:4px;overflow:hidden}.hb .tr i{display:block;height:100%;border-radius:0 4px 4px 0}.hb .v{font-variant-numeric:tabular-nums;white-space:nowrap}.hb .v small{margin-left:6px}
+.sc{display:flex;align-items:flex-end;gap:2px;height:170px;border-bottom:1px solid var(--line)}.sc .col{flex:1;min-width:0;display:flex;flex-direction:column-reverse;gap:2px;height:100%;justify-content:flex-start}.sc .col i{display:block;min-height:2px}.sc .col i:last-of-type{border-radius:4px 4px 0 0}.sc .col b{font-size:11px;font-weight:500;text-align:center}
+.sx{display:flex;gap:2px;font-size:10px;color:var(--muted);margin-top:4px}.sx span{flex:1;min-width:0;text-align:center;overflow:hidden;white-space:nowrap}
+.hr{display:flex;align-items:flex-end;gap:2px;height:90px;border-bottom:1px solid var(--line)}.hr i{flex:1;background:#2a78d6;border-radius:3px 3px 0 0;min-height:1px}.hr i.y{background:#c9d3ce}
+.lp{font-size:13px;margin:6px 0 0}.lp b{font-weight:600}.kw{display:flex;flex-wrap:wrap;gap:6px}.kw span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}.links a{font-size:13px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--accent);text-decoration:none}
+</style></head><body>
+<h1>노모어내로우룸 관리</h1>
+<form id="f"><input id="k" type="password" placeholder="관리자 키" autocomplete="current-password"><button>불러오기</button> <label style="font-size:13px;white-space:nowrap"><input type="checkbox" id="rem"> 이 기기에서 기억</label></form>
+<p id="s" class="note"></p>
+<div id="stats"><p class="note">관리자 키를 넣고 불러오기를 누르면 보입니다.</p></div>
+<h2>바로 가기</h2>
+<div class="links"><a href="https://nomorenarrowroom.com/" target="_blank">사이트</a><a href="https://searchadvisor.naver.com/console/board" target="_blank">네이버 서치어드바이저</a><a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Fnomorenarrowroom.com%2F" target="_blank">구글 서치 콘솔</a><a href="https://analytics.google.com/" target="_blank">GA4</a><a href="https://analytics.naver.com/" target="_blank">네이버 애널리틱스</a><a href="https://github.com/krdugong/NoMoreNarrowRoom" target="_blank">GitHub</a></div>
+<script>
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const key=()=>document.getElementById('k').value.trim();
+const SITE='https://nomorenarrowroom.com';
+const plink=p=>`<a href="${SITE}${esc(p)}" target="_blank" style="color:inherit">${esc(p)}</a>`;
+document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();await load()});
+async function load(){
+  const s=document.getElementById('s'),el=document.getElementById('stats');s.textContent='불러오는 중…';
+  try{
+    const r=await fetch('/api/stats',{headers:{authorization:'Bearer '+key()}});
+    if(r.status===429){s.textContent='키를 여러 번 틀려 10분 동안 잠겼습니다. 잠시 후 다시 시도하세요.';return}
+    if(r.status===401){s.textContent='관리자 키가 맞지 않습니다.';try{localStorage.removeItem('nmnr-admin')}catch(e){}return}
+    try{if(document.getElementById('rem').checked)localStorage.setItem('nmnr-admin',key());else localStorage.removeItem('nmnr-admin')}catch(e){}
+    const d=await r.json();s.textContent='';render(d,el);
+  }catch(err){s.textContent='불러오지 못했습니다. 잠시 후 다시 시도하세요.'}
+}
+function render(d,el){
+  const vis=Object.fromEntries(d.visitors.map(x=>[x.day,x.n])),vw=Object.fromEntries(d.views.map(x=>[x.day,x.n])),ck=Object.fromEntries(d.clicks14.map(x=>[x.day,x.n]));
+  const tbl=(head,rows)=>`<table><thead><tr>${head.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')||`<tr><td colspan="${head.length}">아직 기록이 없습니다.</td></tr>`}</tbody></table>`;
+  const CH=[['네이버','#1baf7a'],['구글','#eda100'],['스레드','#2a78d6'],['인스타그램','#eb6834'],['카카오톡','#e87ba4'],['AI 검색','#7b5bd6'],['직접·알 수 없음','#8b9993'],['기타','#c9d3ce']];
+  const grp=x=>x.startsWith('네이버')?'네이버':CH.some(c=>c[0]===x)?x:'기타',col=g=>CH.find(c=>c[0]===g)[1];
+  const days=[];for(let i=13;i>=0;i--)days.push(new Date(new Date(d.today+'T00:00:00Z').getTime()-i*864e5).toISOString().slice(0,10));
+  const by={};d.src14.forEach(r=>{const g=grp(r.src);(by[r.day]=by[r.day]||{})[g]=(by[r.day][g]||0)+r.n});
+  const tot=day=>CH.reduce((a,c)=>a+((by[day]||{})[c[0]]||0),0),mx=Math.max(1,...days.map(tot));
+  const last7=days.slice(7),sum7={},sumT=by[d.today]||{};last7.forEach(day=>CH.forEach(c=>{sum7[c[0]]=(sum7[c[0]]||0)+((by[day]||{})[c[0]]||0)}));
+  const all7=CH.reduce((a,c)=>a+(sum7[c[0]]||0),0),m7=Math.max(1,...CH.map(c=>sum7[c[0]]||0));
+  const legend='<p class="lg">'+CH.map(c=>`<span><i style="background:${c[1]}"></i>${c[0]}</span>`).join('')+'</p>';
+  const hbars=all7?'<div class="hb">'+CH.filter(c=>sum7[c[0]]).sort((a,b)=>sum7[b[0]]-sum7[a[0]]).map(c=>`<span>${c[0]}</span><span class="tr"><i style="width:${(sum7[c[0]]/m7*100).toFixed(1)}%;background:${c[1]}"></i></span><span class="v"><b>${sum7[c[0]]}</b> · ${Math.round(sum7[c[0]]/all7*100)}%<small>오늘 ${sumT[c[0]]||0}</small></span>`).join('')+'</div>':'<p class="note">아직 기록이 없습니다.</p>';
+  const stack='<div class="sc">'+days.map(day=>{const t=tot(day);return `<div class="col" title="${day} · 유입 ${t}회">${CH.map(c=>{const n=(by[day]||{})[c[0]]||0;return n?`<i style="height:${(n/mx*100).toFixed(1)}%;background:${c[1]}" title="${day} ${c[0]} ${n}회"></i>`:''}).join('')}${t?`<b>${t}</b>`:''}</div>`}).join('')+'</div><div class="sx">'+days.map(x=>`<span>${+x.slice(8)}일</span>`).join('')+'</div>';
+  const lpBy={};d.srcPages.forEach(r=>{const g=grp(r.src);(lpBy[g]=lpBy[g]||{})[r.path]=((lpBy[g]||{})[r.path]||0)+r.n});
+  const lps=CH.filter(c=>lpBy[c[0]]).map(c=>`<p class="lp"><b>${c[0]}</b> → ${Object.entries(lpBy[c[0]]).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([p,n])=>`${plink(p)} <small>${n}</small>`).join(' · ')}</p>`).join('')||'<p class="note">아직 기록이 없습니다.</p>';
+  const detail=Object.entries(d.src14.filter(r=>r.day>=last7[0]).reduce((a,r)=>(a[r.src]=(a[r.src]||0)+r.n,a),{})).sort((a,b)=>b[1]-a[1]).map(([k,n])=>[esc(k),n]);
+  const hT=Array(24).fill(0),hY=Array(24).fill(0);d.hours.forEach(r=>{(r.day===d.today?hT:hY)[r.h]=r.n});const hm=Math.max(1,...hT,...hY);
+  const hrs='<p class="lg"><span><i style="background:#2a78d6"></i>오늘</span><span><i style="background:#c9d3ce"></i>어제</span></p><div class="hr">'+hT.map((n,h)=>`<i class="y" style="height:${(hY[h]/hm*100).toFixed(1)}%" title="어제 ${h}시 ${hY[h]}회"></i><i style="height:${(n/hm*100).toFixed(1)}%" title="오늘 ${h}시 ${n}회"></i>`).join('')+'</div><div class="sx">'+[0,3,6,9,12,15,18,21].map(h=>`<span style="text-align:left">${h}시</span>`).join('')+'</div>';
+  const kws=d.kws.length?'<div class="kw">'+d.kws.map(k=>`<span>${esc(k.kw)} <small>${k.n}</small></span>`).join('')+'</div>':'<p class="note">아직 없습니다. 네이버·다음·빙에서 검색어를 함께 보내 줄 때만 잡힙니다. 구글은 검색어를 보내지 않으니 구글 서치 콘솔에서 보세요.</p>';
+  const ck7=d.clicks7.reduce((a,x)=>a+x.n,0),v7=last7.reduce((a,day)=>a+(vw[day]||0),0);
+  const devs=d.devs.reduce((a,x)=>a+x.n,0);
+  el.innerHTML=`<div class="cards"><div><span>오늘 방문자</span><b>${vis[d.today]||0}</b></div><div><span>오늘 조회</span><b>${vw[d.today]||0}</b></div><div><span>오늘 트립닷컴 클릭</span><b>${ck[d.today]||0}</b></div><div><span>7일 클릭률</span><b>${v7?(ck7/v7*100).toFixed(1):'0.0'}%</b></div></div><p class="note">${d.today} 한국 시간 기준 · 어제 방문자 ${vis[d.yday]||0}명 · 조회 ${vw[d.yday]||0}회 · 클릭 ${ck[d.yday]||0}회</p>`
+    +'<h3>어디서 들어왔나 (최근 7일)</h3><div class="viz">'+hbars+'</div>'
+    +'<h3>날짜별 유입 (최근 14일)</h3><div class="viz">'+legend+stack+'</div>'
+    +'<h3>검색어 (최근 7일)</h3>'+kws
+    +'<h3>경로별로 처음 도착한 페이지 (최근 7일)</h3><div class="viz">'+lps+'</div>'
+    +'<h3>트립닷컴 예약 링크 클릭 (최근 7일)</h3>'+tbl(['호텔 · 클릭한 페이지','클릭'],d.clicks7.map(x=>[`${esc(x.label)}<br><small>${esc(x.path)}</small>`,x.n]))
+    +'<h3>시간대별 조회 (오늘과 어제)</h3><div class="viz">'+hrs+'</div>'
+    +'<h3>기기 (최근 7일, 방문자 기준)</h3>'+tbl(['기기','방문자','비율'],d.devs.map(x=>[esc(x.dev),x.n,devs?Math.round(x.n/devs*100)+'%':'-']))
+    +'<h3>최근 7일 많이 본 페이지</h3>'+tbl(['페이지','조회수'],d.pages7.map(x=>[plink(x.path),x.n]))
+    +'<h3>오늘 많이 본 페이지</h3>'+tbl(['페이지','조회수'],d.pagesToday.map(x=>[plink(x.path),x.n]))
+    +'<h3>날짜별 (최근 14일)</h3>'+tbl(['날짜','방문자','조회수','클릭'],d.views.map(x=>[x.day,vis[x.day]||0,x.n,ck[x.day]||0]))
+    +'<h3>유입 경로 자세히 (최근 7일)</h3>'+tbl(['어디서 왔나','횟수'],detail)
+    +'<h3>리퍼러 주소 (최근 7일)</h3>'+tbl(['주소','횟수'],d.refs.map(x=>[esc(x.host),x.n]))
+    +'<p class="note">유입은 사이트 밖에서 들어온 첫 화면만 셉니다. 스레드·인스타그램·카카오톡은 앱 안 브라우저 표시로 가려내고, 글에 올리는 주소 끝에 ?utm_source=threads 처럼 붙이면 더 정확합니다. 주소 없이 들어온 접속은 하루에 방문자당 한 번만 "직접·알 수 없음"으로 셉니다. 검색 로봇은 스크립트를 실행하지 않아 여기 잡히지 않으니 서치어드바이저·서치 콘솔에서 보세요. IP는 저장하지 않습니다.</p>';
+}
+try{const sv=localStorage.getItem('nmnr-admin');if(sv){document.getElementById('k').value=sv;document.getElementById('rem').checked=true;load()}}catch(e){}
+</script>
+</body></html>

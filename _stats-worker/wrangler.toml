@@ -1,0 +1,15 @@
+name = "nmnr-stats"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+routes = [
+  { pattern = "stats.nomorenarrowroom.com", custom_domain = true },
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nmnr-stats"
+database_id = "c1b5d9e5-4048-4839-9996-c2302320948c"
+
+[observability]
+enabled = true
