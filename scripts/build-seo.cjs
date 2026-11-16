@@ -10,7 +10,7 @@ const repo = cfg.basePath ? path.resolve(root, '..') : root;  // folder served a
 const BASE = cfg.basePath;                             // '' when the site is served at the domain root
 const ORIGIN = cfg.siteUrl;                            // e.g. https://nomorenarrowroom.com
 const abs = p => ORIGIN + p;
-const ASSET_V = '20261109rooms';
+const ASSET_V = '20261116family';
 
 const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
@@ -70,7 +70,8 @@ const FEATURES = {
 const hasFeature = (h, k) => h.bath === true && Boolean(h.bathFeatures && h.bathFeatures[k]);
 const featureUrl = (c, k) => `${BASE}/${c.slug}/${k}/`;
 // 3인·4인 pages: hotels with pax3/pax4 === true (a Jalan plan for that many adults), sorted by that room's size.
-const PAX = {3: {slug: 'triple', kw: '3인 호텔·숙소', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 가족 숙소·호텔', sub: '4인 객실'}};
+const PAX = {3: {slug: 'triple', kw: '3인 숙소', sub: '트리플룸·3인 객실'}, 4: {slug: 'quad', kw: '4인 가족 숙소', sub: '4인 객실'}};
+const familyUrl = c => `${BASE}/${c.slug}/family/`;
 // FAQ 재료: 검색창 자동완성·관련 질문(대욕장 이용방법·옷·문신·준비물·아기, 3인/4인, 숙박세, 객실 유형 차이)에 맞춘 공통 답변.
 const TAX = {
   fukuoka: '후쿠오카시 숙박세는 1인 1박 200엔(숙박 요금이 2만 엔 이상이면 500엔)입니다. 예약 요금에 포함되지 않은 경우 체크인 때 호텔에서 따로 냅니다(2026년 10월 기준).',
@@ -83,6 +84,20 @@ const kidsBathText = list => { const lim = list.filter(h => h.bath === true && /
 const roomTypeCat = t => !t ? '객실 유형 확인 중' : /화양실|패밀리|포스|4베드|쿼드|스위트/.test(t) ? '화양실·패밀리룸' : /트리플/.test(t) ? '트리플룸' : /트윈|더블|퀸|킹|세미/.test(t) ? '트윈·더블에 추가 침대' : '기타 객실';
 const catCounts = (list, n) => { const m = {}; list.forEach(h => { const k = roomTypeCat(paxRoom(h, n)); m[k] = (m[k] || 0) + 1; }); return Object.entries(m).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}곳`).join(', '); };
 const baseTypeCounts = list => ['더블', '트윈', '세미더블', '싱글', '퀸', '킹'].map(t => [t, list.filter(h => (h.roomType || '').includes(t)).length]).filter(x => x[1]).map(([t, n]) => `${t} ${n}곳`).join(', ');
+// 3인·4인 객실을 검색 의도에 맞게 묶는다: 처음부터 N인용 객실(트리플·화양실·패밀리) → 트윈·더블+추가 침대 → 60㎡ 이상 넓은 객실.
+const SUITE = 60;
+const dedicated = (h, n) => (n === 3 ? /트리플|화양|패밀리|쿼드|포스|4베드|3베드|다다미|와실|일본식|코너|그룹|스위트/ : /쿼드|포스|4베드|화양|패밀리|다다미|와실|일본식|그룹|2베드룸|스위트/).test(paxRoom(h, n) || '');
+const paxGroup = (h, n) => num(paxSize(h, n)) && paxSize(h, n) >= SUITE ? 'suite' : dedicated(h, n) ? 'dedicated' : 'extra';
+const PAX_GROUPS = n => [
+  ['dedicated', n === 3 ? '트리플룸·화양실 (처음부터 3인용, 침대 3개)' : '4인용 객실 (침대 4개·화양실·패밀리룸)'],
+  ['extra', n === 3 ? '트윈·더블 + 엑스트라 베드·소파베드' : '트리플·트윈 + 추가 침대'],
+  ['suite', `넓은 객실 (${SUITE}㎡ 이상, 스위트·아파트형)`],
+];
+const GORDER = {dedicated: 0, extra: 1, suite: 2};
+const byPaxGroup = n => (a, b) => GORDER[paxGroup(a, n)] - GORDER[paxGroup(b, n)] || byPax(n)(a, b);
+const topAreas = (c, list, k = 2) => Object.keys(c.areas).map(a => [a, list.filter(h => h.area === a).length]).filter(x => x[1]).sort((a, b) => b[1] - a[1]).slice(0, k).map(x => x[0]);
+const groupedCards = (list, n) => PAX_GROUPS(n).map(([g, label]) => { const l = list.filter(h => paxGroup(h, n) === g); return l.length ? `<h3 class="group-title">${esc(label)} <small>${l.length}곳</small></h3>${hotelCards(l, n)}` : ''; }).join('');
+const areaSections = (c, list, n) => { const rows = Object.keys(c.areas).map(a => [a, list.filter(h => h.area === a).sort(byPaxGroup(n))]).filter(x => x[1].length >= 2); return rows.length ? `<section class="area-picks"><h2>지역별 ${n}인 숙소</h2>${rows.map(([a, l]) => `<h3>${esc(a)} ${n}인 숙소 <small>${l.length}곳</small></h3><ul class="mini-list">${l.slice(0, 3).map(h => `<li><a href="${hotelUrl(h)}">${esc(h.name)}</a> <span>${esc(paxRoom(h, n) || `${n}인 객실`)} ${esc(paxSizeText(h, n))} · ${esc(bathText(h))}</span></li>`).join('')}</ul>`).join('')}</section>` : ''; };
 const paxUrl = (c, n) => `${BASE}/${c.slug}/${PAX[n].slug}/`;
 const paxSize = (h, n) => n === 3 ? h.minRoom3Pax : n === 4 ? h.minRoom4Pax : h.minRoom2Pax;
 const paxRoom = (h, n) => n === 3 ? h.roomType3Pax : n === 4 ? h.roomType4Pax : h.roomType;
@@ -245,9 +260,16 @@ function landing({c, hotels, kind, area, feature, pax}) {
     guide = `같은 호텔이어도 객실 타입마다 면적이 다릅니다. 여기 적힌 면적은 2인 투숙 가능한 기본 객실 중 가장 작은 방 기준이라, 예약 화면에서 고른 객실의 면적을 한 번 더 확인하세요.`;
   } else if (kind === 'pax') {
     const P = PAX[pax], pmed = median(hotels.map(h => paxSize(h, pax)));
-    kw = `${c.name} ${P.kw}`; url = paxUrl(c, pax); sorted = [...hotels].sort(byPax(pax)); imgName = `${c.slug}-${P.slug}`;
-    intro = `${c.name}에서 성인 ${pax}명이 한 방에 묵을 수 있는 호텔 ${n}곳을 ${pax}인 객실 면적이 넓은 순서로 정리했습니다. 이 중 대욕장이 있는 곳은 ${baths}곳이고, ${pax}인 객실 면적 중앙값은 ${pmed ?? '-'}㎡입니다.`;
+    kw = `${c.name} ${P.kw}`; url = paxUrl(c, pax); sorted = [...hotels].sort(byPaxGroup(pax)); imgName = `${c.slug}-${P.slug}`;
+    const gc = g => hotels.filter(h => paxGroup(h, pax) === g).length;
+    intro = `${c.name}에서 성인 ${pax}명이 한 방에 묵을 수 있는 호텔·숙소 ${n}곳입니다. ${pax === 3 ? `처음부터 3인용인 트리플룸·화양실(침대 3개)이 있는 곳 ${gc('dedicated')}곳, 트윈·더블에 엑스트라 베드나 소파베드를 넣는 곳 ${gc('extra')}곳` : `침대 4개·화양실·패밀리룸처럼 처음부터 4인용 객실이 있는 곳 ${gc('dedicated')}곳, 트리플·트윈에 추가 침대를 넣는 곳 ${gc('extra')}곳`}${gc('suite') ? `, ${SUITE}㎡ 이상 넓은 객실 ${gc('suite')}곳` : ''}으로 나눠 ${pax}인 객실 면적이 넓은 순서로 정리했습니다. 대욕장이 있는 곳은 ${baths}곳이고, ${pax}인 객실 면적 중앙값은 ${pmed ?? '-'}㎡입니다.`;
     guide = `${pax}인 가능 여부는 일본 현지 예약 사이트에서 성인 ${pax}명으로 검색했을 때 예약 플랜이 있는지로 확인했고, 면적은 그 플랜에 나오는 객실 중 가장 작은 방 기준입니다. 트윈에 추가 침대나 소파베드를 넣는 객실도 포함되니, 침대 구성과 ${pax}인 요금은 예약 화면에서 다시 확인하세요. 트리플룸이 없는 호텔은 방 2개로 나누는 것이 낫습니다.`;
+  } else if (kind === 'family') {
+    kw = `${c.name} 가족 숙소`; url = familyUrl(c); imgName = `${c.slug}-family`;
+    sorted = [...hotels].sort((a, b) => Number(Boolean(b.pax4)) - Number(Boolean(a.pax4)) || (a.pax4 ? byPaxGroup(4)(a, b) : byPaxGroup(3)(a, b)));
+    const f4 = hotels.filter(h => h.pax4).length, fb = hotels.filter(h => h.pax4 && h.bath === true).length;
+    intro = `${c.name}에서 가족이 한 방에 묵을 수 있는 호텔·숙소 ${n}곳입니다. 4인 가족이 한 방에 묵을 수 있는 곳은 ${f4}곳(이 중 대욕장 있는 곳 ${fb}곳), 3인 가족까지 되는 곳은 ${n - f4}곳입니다. 객실 면적과 침대 구성, 대욕장 아이 동반 규칙을 함께 정리했습니다.`;
+    guide = `가족 여행은 침대 수와 욕실을 먼저 보세요. 화양실(다다미+침대)과 패밀리룸은 아이가 바닥에서 놀 수 있어 편하고, 트윈에 추가 침대를 넣는 방은 통로가 좁아집니다. 5인 이상은 이 목록에서 따로 확인하지 않았으니 4인 객실에 미취학 아동 침대 공유(添い寝)가 되는지, 아니면 방 2개로 나눌지 예약 화면에서 확인하세요. ${kidsBathText(hotels)}`;
   } else if (kind === 'feature') {
     const F = FEATURES[feature];
     const others = ['onsen', 'rotenburo', 'sauna'].filter(k => k !== feature).map(k => `${FEATURES[k].ko} ${hotels.filter(h => hasFeature(h, k)).length}곳`).join(', ');
@@ -263,21 +285,37 @@ function landing({c, hotels, kind, area, feature, pax}) {
     intro = `${c.name} ${area} 지역 호텔 ${n}곳의 기본 객실 면적과 대욕장 여부를 비교했습니다. 대욕장이 있는 곳은 ${baths}곳, 2인 기본 객실이 ${LARGE}㎡ 이상인 곳은 ${large}곳이며, 기본 객실 면적 중앙값은 ${med ?? '-'}㎡입니다.`;
     guide = `${area} 호텔은 목록 순서가 후보 선정 기준(인기순)입니다. 방이 넓은 곳을 먼저 보려면 ${c.name} 전체 비교 페이지에서 '방 넓은 순'으로 정렬해 보세요.`;
   }
-  const title = kind === 'pax' ? `${kw} 추천 ${n}곳 - ${PAX[pax].sub} 크기·대욕장 비교 (${month})` : `${kw} 추천 ${n}곳 - 방 크기·대욕장 비교 (${month})`;
+  const ta = topAreas(c, hotels).join('/');
+  const dcount = kind === 'pax' ? hotels.filter(h => paxGroup(h, pax) === 'dedicated').length : 0;
+  const title = kind === 'pax' ? (pax === 3 ? `${kw} 추천 ${n}곳 - 트리플룸 ${dcount}곳·대욕장·${ta} 비교 (${month})` : `${kw} 추천 ${n}곳 - 침대 4개·화양실 ${dcount}곳·대욕장·${ta} 비교 (${month})`)
+    : kind === 'family' ? `${kw}·호텔 추천 ${n}곳 - 3인·4인 객실·대욕장·아이 동반 비교 (${month})`
+    : `${kw} 추천 ${n}곳 - 방 크기·대욕장 비교 (${month})`;
   const desc = kind === 'pax'
-    ? `${kw} ${n}곳의 ${pax}인 객실 면적(㎡)과 대욕장 여부를 한눈에 비교하세요. ${month} 기준 성인 ${pax}명이 한 방에 묵을 수 있는 호텔만 모았고, 2인 기본 객실 면적도 함께 보여줍니다.`
+    ? `${c.name}에서 성인 ${pax}명이 한 방에 묵을 수 있는 숙소 ${n}곳. ${pax === 3 ? `트리플룸(침대 3개) ${dcount}곳과 트윈+엑스트라 베드` : `침대 4개·화양실 ${dcount}곳과 추가 침대 객실`}을 나눠 ${pax}인 객실 면적(㎡), 대욕장, ${ta.replace('/', '·')} 위치로 비교했습니다. ${month} 기준.`
+    : kind === 'family'
+    ? `${c.name} 가족 숙소·호텔 ${n}곳의 3인·4인 객실 면적, 침대 구성, 대욕장과 아이 동반 규칙을 비교하세요. 4인 가족이 한 방에 묵을 수 있는 곳 ${hotels.filter(h => h.pax4).length}곳 포함, ${month} 기준.`
     : `${kw} ${n}곳의 2인 기본 객실 면적(㎡)과 대욕장 여부를 한눈에 비교하세요. ${month} 호텔 공식 자료 기준, 넓은 방 순위와 지역별 위치까지 정리했습니다.`;
   const top = sorted.find(h => num(h.minRoom2Pax));
   const ptop = kind === 'pax' && sorted.find(h => num(paxSize(h, pax)));
+  const ded = kind === 'pax' ? sorted.filter(h => paxGroup(h, pax) === 'dedicated') : [];
+  const a0 = topAreas(c, hotels, 1)[0];
   const faqs = kind === 'pax' ? [
-    ptop && {q: `${kw} 중 ${pax}인 객실이 가장 넓은 곳은 어디인가요?`, a: `${ptop.name}의 ${paxRoom(ptop, pax) || `${pax}인 객실`} ${paxSize(ptop, pax)}㎡입니다. 2인 기본 객실은 ${sizeText(ptop)}입니다.`},
+    {q: pax === 3 ? `${c.name} 트리플룸(침대 3개)이 있는 숙소는 어디인가요?` : `${c.name}에서 침대 4개·화양실 객실이 있는 숙소는?`, a: ded.length ? `${ded.slice(0, 8).map(h => `${h.name}(${paxRoom(h, pax) || `${pax}인 객실`} ${paxSizeText(h, pax)})`).join(', ')}${ded.length > 8 ? ` 등 ${ded.length}곳` : ''}입니다.` : `이 목록에서 처음부터 ${pax}인용인 객실은 확인되지 않았고, 모두 기존 침대에 추가 침대를 넣는 방식입니다.`},
+    {q: pax === 3 ? `${c.name} 트리플룸은 어떤 구조로 되어 있나요?` : `${c.name} 4인 객실은 어떤 구조인가요?`, a: `${n}곳 중 ${PAX_GROUPS(pax).map(([g, label]) => [label.replace(/ \(.*\)$/, ''), hotels.filter(h => paxGroup(h, pax) === g).length]).filter(x => x[1]).map(([l, k]) => `${l} ${k}곳`).join(', ')}입니다. ${pax === 3 ? '트리플룸은 싱글 침대 3개이거나 더블+싱글 구성이 많고, 트윈에 엑스트라 베드나 소파베드를 넣는 방은 침대 폭이 100~110cm라 셋이 쓰면 통로가 좁아집니다.' : '4인용 객실은 침대 4개나 화양실(다다미+침대)이 많고, 트리플·트윈에 추가 침대를 넣는 방은 짐을 펼 공간이 거의 없습니다.'}`},
+    {q: `${c.name} ${pax}인 숙소에서 추가 인원은 어떻게 하나요? '기준 2인·최대 ${pax}인'은 무슨 뜻인가요?`, a: `일본 호텔은 객실마다 정원(定員)이 정해져 있어 정원이 2명인 방에 ${pax}명이 묵을 수 없습니다. '기준 2인·최대 ${pax}인'은 추가 침대나 소파베드로 ${pax}명까지 받는다는 뜻이고, 예약할 때 성인 ${pax}명으로 검색해야 그 플랜이 나옵니다. 미취학 아동은 침대를 같이 쓰면 무료인 호텔이 많지만 인원에는 넣어야 합니다.`},
+    {q: `${c.name} ${pax}인 숙소에 아이와 함께 묵을 때 확인할 점이 있나요?`, a: `${kidsBathText(hotels)} 침대 폭이 좁은 추가 침대 객실보다 화양실·패밀리룸이 아이와 쓰기 편합니다.`},
+    a0 && {q: `${c.name} ${a0} ${pax}인 숙소는 어디가 있나요?`, a: `${hotels.filter(h => h.area === a0).sort(byPaxGroup(pax)).slice(0, 5).map(h => `${h.name}(${paxRoom(h, pax) || `${pax}인 객실`} ${paxSizeText(h, pax)}, ${bathText(h)})`).join(', ')}입니다.`},
     {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
+    pax === 4 && {q: `${c.name} 4인 숙소 중 넓은 방(40㎡ 이상)이나 화장실이 따로 있는 곳은?`, a: `화장실 개수는 따로 확인하지 않았습니다. 4인 객실이 40㎡ 이상인 곳은 ${hotels.filter(h => paxSize(h, 4) >= 40).map(h => `${h.name}(${paxSizeText(h, 4)})`).join(', ') || '없습니다'}${hotels.some(h => paxSize(h, 4) >= 40) ? '이며, 스위트·아파트형은 욕실과 화장실이 분리된 경우가 많으니 객실 설명을 확인하세요' : ''}.`},
     {q: `${pax}인 객실 면적은 어떤 기준인가요?`, a: `일본 현지 예약 사이트에서 성인 ${pax}명으로 검색했을 때 나오는 객실 중 가장 작은 방의 면적입니다. 추가 침대나 소파베드를 쓰는 객실이 포함될 수 있습니다.`},
-    {q: `${c.name} ${pax}인 객실은 어떤 구조인가요?`, a: `${n}곳의 ${pax}인 객실은 ${catCounts(hotels, pax)}입니다. 트윈에 추가 침대를 넣는 방은 침대 폭이 100~110cm라 셋이 쓰면 좁게 느껴지고, 트리플룸·화양실은 처음부터 ${pax}명 기준이라 여유가 있습니다.`},
-    {q: `2인실에 ${pax}명이 묵을 수 있나요? '기준 2인·최대 ${pax}인' 표시는 무슨 뜻인가요?`, a: `일본 호텔은 객실마다 정원(定員)이 정해져 있어 정원이 2명인 방에 ${pax}명이 묵을 수 없습니다. '기준 2인·최대 ${pax}인'은 추가 침대나 소파베드로 ${pax}명까지 받는다는 뜻이고, 예약할 때 성인 ${pax}명으로 검색해야 그 플랜이 나옵니다. 미취학 아동은 침대를 같이 쓰면 무료인 호텔이 많지만 인원에는 넣어야 합니다.`},
-    {q: `아이와 함께 ${pax}명이 묵을 때 주의할 점은?`, a: `${kidsBathText(hotels)} 침대 폭이 좁은 트윈 추가 침대보다 화양실·패밀리룸이 아이와 쓰기 편합니다.`},
-    {q: `${c.name}에서 ${pax}명이 묵을 트리플룸이 없는 호텔은 어떻게 하나요?`, a: `${c.name} 비교 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 중 ${pax}인 플랜이 확인된 곳은 ${n}곳입니다. 나머지는 2인 객실 2개로 나누어 예약하는 것이 일반적이며, 이때는 2인 기본 객실 면적을 비교하세요.`},
-  ].filter(Boolean) : [
+    {q: `${c.name}에서 ${pax}인 객실이 없는 호텔은 어떻게 하나요?`, a: `${c.name} 비교 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 중 ${pax}인 플랜이 확인된 곳은 ${n}곳입니다. 나머지는 2인 객실 2개로 나누어 예약하는 것이 일반적이며, 이때는 2인 기본 객실 면적을 비교하세요.`},
+  ].filter(Boolean) : kind === 'family' ? [
+    {q: `${c.name}에서 4인 가족이 한 방에 묵을 수 있는 숙소는?`, a: hotels.some(h => h.pax4) ? `${sorted.filter(h => h.pax4).slice(0, 8).map(h => `${h.name}(${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)})`).join(', ')}${hotels.filter(h => h.pax4).length > 8 ? ` 등 ${hotels.filter(h => h.pax4).length}곳` : ''}입니다.` : '이 목록에는 4인 객실이 확인된 곳이 없습니다.'},
+    {q: `${c.name} 가족 숙소 중 대욕장이 있는 곳은?`, a: `${sorted.filter(h => h.bath === true).slice(0, 10).map(h => h.name).join(', ')}${hotels.filter(h => h.bath === true).length > 10 ? ' 등' : ''}입니다. ${kidsBathText(hotels)}`},
+    {q: `${c.name}에서 5인·6인 가족은 어떻게 묵나요?`, a: '이 목록은 성인 3명·4명 기준으로 확인했습니다. 5인 이상은 4인 객실에 미취학 아동 침대 공유(添い寝)가 되는지 확인하거나, 커넥팅룸 또는 방 2개로 나누는 경우가 많습니다. 아파트형 숙소는 5~6인 객실이 있는 곳도 있으니 예약 화면에서 정원을 확인하세요.'},
+    {q: '화양실(和洋室)은 어떤 방인가요?', a: '침대가 있는 양실 공간과 다다미가 깔린 화실 공간이 한 방에 있는 객실입니다. 아이가 다다미에서 자거나 놀 수 있어 가족 여행에 인기가 많고, 같은 인원이라도 트윈+추가 침대 방보다 바닥 공간이 넓습니다.'},
+    {q: `${c.name} 가족 숙소는 어느 지역이 좋나요?`, a: `${topAreas(c, hotels, 4).map(a => `${a} ${hotels.filter(h => h.area === a).length}곳`).join(', ')}을 비교하고 있습니다. 공항·역 이동이 잦으면 큰 역 근처, 아이와 저녁 산책을 하려면 번화가 근처가 편합니다. 지역별 3인·4인 숙소 목록도 함께 보세요.`},
+  ] : [
     top && {q: `${kw} 중 방이 가장 넓은 곳은 어디인가요?`, a: `이 목록에서 2인 기본 객실이 가장 넓은 곳은 ${top.name}(${top.minRoom2Pax}㎡, ${top.roomType})입니다. ${top.bath === true ? `대욕장도 있습니다(${top.bathLabel}).` : `대욕장 정보: ${bathText(top)}.`}`},
     {q: `${kw} 중 ${LARGE}㎡ 이상인 곳은 몇 곳인가요?`, a: `${n}곳 중 ${large}곳입니다${large ? `: ${sorted.filter(h => h.minRoom2Pax >= LARGE).slice(0, 6).map(h => `${h.name}(${h.minRoom2Pax}㎡)`).join(', ')}${large > 6 ? ' 등' : ''}.` : '.'}`},
     !['bath', 'feature'].includes(kind) && {q: `${kw} 중 대욕장이 있는 곳은?`, a: baths ? `${sorted.filter(h => h.bath === true).map(h => h.name).join(', ')}입니다.` : '이 목록에는 대욕장이 확인된 호텔이 없습니다.'},
@@ -299,7 +337,8 @@ function landing({c, hotels, kind, area, feature, pax}) {
       <p class="updated">정보 확인 ${esc(updated)} · 호텔 공식 자료 우선</p>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(kw)} ${n}곳 방 크기·대욕장 비교">
     </section>
-    <section aria-labelledby="listTitle"><h2 id="listTitle">${esc(kw)} ${kind === 'area' ? '목록' : kind === 'pax' ? `${pax}인 객실 넓은 순` : ['bath', 'feature'].includes(kind) ? '후기 언급 많은 순' : '방 넓은 순'}</h2>${hotelCards(sorted, kind === 'pax' ? pax : 2)}</section>
+    <section aria-labelledby="listTitle"><h2 id="listTitle">${esc(kw)} ${kind === 'area' ? '목록' : kind === 'pax' ? '객실 유형별 목록' : kind === 'family' ? '인원별 목록' : ['bath', 'feature'].includes(kind) ? '후기 언급 많은 순' : '방 넓은 순'}</h2>${kind === 'pax' ? groupedCards(sorted, pax) : kind === 'family' ? `${sorted.some(h => h.pax4) ? `<h3 class="group-title">4인 가족이 한 방에 <small>${sorted.filter(h => h.pax4).length}곳</small></h3>${hotelCards(sorted.filter(h => h.pax4), 4)}` : ''}${sorted.some(h => !h.pax4) ? `<h3 class="group-title">3인 가족까지 <small>${sorted.filter(h => !h.pax4).length}곳</small></h3>${hotelCards(sorted.filter(h => !h.pax4), 3)}` : ''}` : hotelCards(sorted, 2)}</section>
+    ${kind === 'pax' ? areaSections(c, sorted, pax) : kind === 'family' ? areaSections(c, sorted.filter(h => h.pax4), 4) : ''}
     <section class="seo-guide"><h2>${esc(kw)} 고를 때 확인할 점</h2><p>${esc(guide)}</p><p><a href="${cityUrl(c)}">${esc(c.name)} 호텔 ${cityData.find(d => d.c === c).hotels.length}곳 전체 비교 · 필터로 직접 찾기 →</a></p></section>
     ${faqHtml(faqs)}
     <section class="related"><h2>${esc(c.name)} 호텔 더 보기</h2><ul>${related.map(l => `<li><a href="${l.url}">${esc(l.label)} <small>${l.count}곳</small></a></li>`).join('')}</ul></section>`;
@@ -475,8 +514,10 @@ function homePage() {
     }
     for (const n of [3, 4]) {
       const list = hotels.filter(h => h[`pax${n}`] === true);
-      if (list.length >= MIN_LIST) links.push({url: paxUrl(c, n), label: `${c.name} ${n}인 호텔`, count: list.length, kind: 'pax', pax: n, list});
+      if (list.length >= MIN_LIST) links.push({url: paxUrl(c, n), label: `${c.name} ${PAX[n].kw}`, count: list.length, kind: 'pax', pax: n, list});
     }
+    const fam = hotels.filter(h => h.pax3 === true || h.pax4 === true);
+    if (fam.length >= MIN_LIST) links.push({url: familyUrl(c), label: `${c.name} 가족 숙소`, count: fam.length, kind: 'family', list: fam});
     for (const area of Object.keys(c.areas)) {
       const list = hotels.filter(h => h.area === area);
       if (list.length >= MIN_LIST) links.push({url: areaUrl(c, area), label: `${area} 호텔`, count: list.length, kind: 'area', area, list});
