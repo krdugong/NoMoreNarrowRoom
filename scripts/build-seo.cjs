@@ -10,7 +10,7 @@ const repo = cfg.basePath ? path.resolve(root, '..') : root;  // folder served a
 const BASE = cfg.basePath;                             // '' when the site is served at the domain root
 const ORIGIN = cfg.siteUrl;                            // e.g. https://nomorenarrowroom.com
 const abs = p => ORIGIN + p;
-const ASSET_V = '20261116family';
+const ASSET_V = '20261122app';
 
 const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
@@ -155,6 +155,30 @@ const naverTag = () => cfg.naverAnalyticsId ? `<script src="https://wcs.pstatic.
 <script>if(!wcs_add) var wcs_add = {};wcs_add["wa"] = "${esc(cfg.naverAnalyticsId)}";if(window.wcs) {wcs_do();}</script>` : '';
 // 자체 방문 통계(stats.nomorenarrowroom.com 워커, 소스는 _stats-worker/). 페이지 조회와 트립닷컴 예약 링크 클릭을 보낸다.
 const STATS_TAG = `<script>(function(){try{if(!/(^|\\.)nomorenarrowroom\\.com$/.test(location.hostname)||navigator.webdriver)return;var E='https://stats.nomorenarrowroom.com/c',s=function(o){var b=JSON.stringify(o);if(!(navigator.sendBeacon&&navigator.sendBeacon(E,b)))fetch(E,{method:'POST',body:b,keepalive:true,mode:'no-cors'})};s({p:location.pathname,r:document.referrer,q:location.search});document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="trip.com"],a[data-track]');if(!a)return;var l=a.getAttribute('data-track')||(a.getAttribute('aria-label')||'').replace(/ 트립닷컴에서.*$/,'');if(!l){var c=a.closest('.rank-item,article');var h=c&&c.querySelector('h3,strong');l=h?h.textContent:((document.querySelector('h1')||{}).textContent||'').replace(/ 방 크기.*$/,'')}s({t:'click',p:location.pathname,l:l.trim()})},true)}catch(e){}})();</script>`;
+// 모바일 앱처럼 보이는 하단 메뉴(자로자로닷컴과 같은 방식). 가운데 '3D 방' 버튼으로 짐 넣어보기 시뮬레이터를 강조한다.
+// 도시는 파일 경로로 정하고, 홈·시뮬레이터처럼 도시가 없는 페이지는 마지막으로 본 도시(localStorage)로 링크를 바꾼다.
+const TAB_ICONS = {
+  home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
+  city: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l5-3v15M9 21V4l6 3v14M15 21v-9l5 2v7M2 21h20"/></svg>',
+  sim: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"/></svg>',
+  bath: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6zM6 12V6a2 2 0 0 1 4 0M8 3c0 1 1 1 1 2M12 3c0 1 1 1 1 2"/></svg>',
+  family: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="6" r="2.5"/><circle cx="16" cy="6" r="2.5"/><circle cx="12" cy="12" r="2"/><path d="M4 21v-6a4 4 0 0 1 8 0v6M12 21v-4a4 4 0 0 1 8 0v4"/></svg>',
+};
+function tabbar(rel, html) {
+  rel = rel.split(path.sep).join('/');
+  const m = rel.match(/(?:^|\/|-)(fukuoka|tokyo|sapporo|osaka)(?=[/._-])/);
+  const city = m ? m[1] : 'fukuoka', known = !!m;
+  const area = (html.match(/href="\/simulator\.html\?area=([\d.]+)"/) || [])[1];
+  const on = /simulator\.html$/.test(rel) ? 'sim' : /\/(bath|onsen|rotenburo|sauna)\//.test(rel) ? 'bath' : /\/(triple|quad|family)\//.test(rel) ? 'family' : rel === 'index.html' ? 'home' : known ? 'city' : '';
+  const tabs = [
+    ['home', '/', '홈'],
+    ['city', known ? `/${city}.html` : '/#cities', '도시'],
+    ['sim', area ? `/simulator.html?area=${area}` : '/simulator.html', '3D 방'],
+    ['bath', `/${city}/bath/`, '대욕장'],
+    ['family', `/${city}/family/`, '가족·3인'],
+  ];
+  return `<nav class="tabbar" aria-label="바로가기"${known ? ` data-city="${city}"` : ''}>${tabs.map(([k, href, label]) => `<a class="tab-${k}${k === on ? ' on' : ''}" href="${href}"${k === on ? ' aria-current="page"' : ''}>${TAB_ICONS[k]}<span>${label}</span></a>`).join('')}</nav><script>(function(){try{var n=document.currentScript.previousElementSibling,c=n.getAttribute('data-city');if(c){localStorage.setItem('nmnr-city',c);return}c=localStorage.getItem('nmnr-city');if(!c||!/^(fukuoka|tokyo|sapporo|osaka)$/.test(c))return;n.querySelector('.tab-city').href='/'+c+'.html';n.querySelector('.tab-bath').href='/'+c+'/bath/';n.querySelector('.tab-family').href='/'+c+'/family/'}catch(e){}})();</script>`;
+}
 function addNaverAnalytics(dir) {
   for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
     const file = path.join(dir, entry.name);
@@ -163,6 +187,7 @@ function addNaverAnalytics(dir) {
     const html = fs.readFileSync(file, 'utf8');
     let next = replaceBetween(html, '<!-- naver-wa:start -->', '<!-- naver-wa:end -->', naverTag(), (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
     next = replaceBetween(next, '<!-- nmnr-stats:start -->', '<!-- nmnr-stats:end -->', STATS_TAG, (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
+    next = replaceBetween(next, '<!-- nmnr-tabbar:start -->', '<!-- nmnr-tabbar:end -->', tabbar(path.relative(root, file), next), (h, block) => h.replace(/<\/body>/, block + '\n</body>'));
     if (next !== html) fs.writeFileSync(file, next);
   }
 }
@@ -204,7 +229,7 @@ function shell({head, current, body}) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   ${head}
-  <link rel="stylesheet" href="${BASE}/assets/site.css?v=20261013hoteldots">
+  <link rel="stylesheet" href="${BASE}/assets/site.css?v=20261122app">
   <link rel="stylesheet" href="${BASE}/assets/seo.css?v=${ASSET_V}">
 </head>
 <body class="seo-page">
@@ -409,7 +434,7 @@ function hotelPage(h, c, cityHotels) {
         <tr><td>4인</td><td>${esc(h.pax4 ? paxRoom(h, 4) || '4인 객실' : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</td><td>${esc(h.pax4 ? paxSizeText(h, 4) : '-')}</td><td>${esc(h.pax4 ? (/화양실|패밀리|스위트/.test(paxRoom(h, 4) || '') ? '가족 단위에 맞는 넓은 객실' : '4인 기준 객실') : '2인 객실 2개로 나누어 예약')}</td></tr>
       </tbody></table>
       <p class="room-note">${esc(roomWords.length ? `${roomWords.join(', ')} 객실이 확인됐습니다. ` : '')}면적은 각 인원으로 예약할 수 있는 객실 중 가장 작은 방 기준이며, 같은 타입이라도 층·전망에 따라 면적이 다를 수 있습니다.</p>
-      <div class="hotel-cta">${num(h.minRoom2Pax) ? `<a class="simulation-link" href="${BASE}/simulator.html?area=${h.minRoom2Pax}">${h.minRoom2Pax}㎡ 방에 캐리어 넣어보기</a>` : ''}${tripLink(h)}</div>
+      <div class="hotel-cta">${num(h.minRoom2Pax) ? `<a class="simulation-link" href="${BASE}/simulator.html?area=${h.minRoom2Pax}">이 방(${h.minRoom2Pax}㎡)에 내 짐 3D로 넣어보기</a>` : ''}${tripLink(h)}</div>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(h.name)} 방 크기 ${esc(sizeText(h))} ${esc(bathText(h))}">
       <h2>확인한 정보</h2>
       <dl class="fact-table"><div><dt>확인 객실 타입</dt><dd>${esc(h.roomType)}</dd></div><div><dt>기본 객실 면적</dt><dd>${esc(sizeText(h))}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${esc(h.bathLabel)}</dd></div>${s === 'yes' && h.bathFeatures ? `<div><dt>온천·노천탕·사우나</dt><dd>${esc(featureText(h))}</dd></div>` : ''}${h.pax3 !== undefined || h.pax4 !== undefined ? `<div><dt>3인 객실</dt><dd>${esc(h.pax3 ? `${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}` : h.pax3 === false ? '3인 플랜 없음' : '확인 중')}</dd></div><div><dt>4인 객실</dt><dd>${esc(h.pax4 ? `${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</dd></div>` : ''}${h.community ? `<div><dt>후기 언급</dt><dd>${h.community.mentions}건 · ${esc(c.name)} 대욕장 호텔 중 ${h.community.rank}위 (2023~2026년 게시글, ${esc(h.community.checkedAt)} 집계)</dd></div>` : ''}<div><dt>확인 근거</dt><dd>${esc(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${esc(h.verifiedAt)}</dd></div></dl>
