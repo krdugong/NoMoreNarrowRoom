@@ -68,3 +68,5 @@ nav a:not([aria-current="page"]){border-bottom-color:transparent;font-weight:400
 .hotel-map-pin>span{width:13px;height:13px;background:#315e70;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #315e70,0 1px 4px #0003}
 .hotel-map-pin:hover,.hotel-map-pin:focus-visible{background:transparent;border-radius:50%;outline:2px solid #315e7055}
 .hotel-map-pin:hover>span,.hotel-map-pin:focus-visible>span{background:#141c21;width:16px;height:16px}
+
+.jaro-banner{background:#eef6f2;border-bottom:1px solid #cfe3d8}.jaro-banner a{display:flex;align-items:center;gap:12px;padding:11px 0;font-size:13px;color:#16312a}.jaro-banner a:hover .jaro-go{text-decoration:underline;text-underline-offset:3px}.jaro-q{font-weight:700;white-space:nowrap}.jaro-t{flex:1;min-width:0;color:#3d5a51}.jaro-t b{color:#16312a}.jaro-go{font-weight:700;color:#1b7a55;white-space:nowrap}@media(max-width:640px){.jaro-banner a{flex-wrap:wrap;gap:2px 10px;font-size:12px;padding:10px 0}.jaro-t{flex-basis:100%;order:3}}

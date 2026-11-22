@@ -60,12 +60,12 @@ function render(d,el){
   const kws=d.kws.length?'<div class="kw">'+d.kws.map(k=>`<span>${esc(k.kw)} <small>${k.n}</small></span>`).join('')+'</div>':'<p class="note">아직 없습니다. 네이버·다음·빙에서 검색어를 함께 보내 줄 때만 잡힙니다. 구글은 검색어를 보내지 않으니 구글 서치 콘솔에서 보세요.</p>';
   const ck7=d.clicks7.reduce((a,x)=>a+x.n,0),v7=last7.reduce((a,day)=>a+(vw[day]||0),0);
   const devs=d.devs.reduce((a,x)=>a+x.n,0);
-  el.innerHTML=`<div class="cards"><div><span>오늘 방문자</span><b>${vis[d.today]||0}</b></div><div><span>오늘 조회</span><b>${vw[d.today]||0}</b></div><div><span>오늘 트립닷컴 클릭</span><b>${ck[d.today]||0}</b></div><div><span>7일 클릭률</span><b>${v7?(ck7/v7*100).toFixed(1):'0.0'}%</b></div></div><p class="note">${d.today} 한국 시간 기준 · 어제 방문자 ${vis[d.yday]||0}명 · 조회 ${vw[d.yday]||0}회 · 클릭 ${ck[d.yday]||0}회</p>`
+  el.innerHTML=`<div class="cards"><div><span>오늘 방문자</span><b>${vis[d.today]||0}</b></div><div><span>오늘 조회</span><b>${vw[d.today]||0}</b></div><div><span>오늘 링크 클릭</span><b>${ck[d.today]||0}</b></div><div><span>7일 클릭률</span><b>${v7?(ck7/v7*100).toFixed(1):'0.0'}%</b></div></div><p class="note">${d.today} 한국 시간 기준 · 어제 방문자 ${vis[d.yday]||0}명 · 조회 ${vw[d.yday]||0}회 · 클릭 ${ck[d.yday]||0}회</p>`
     +'<h3>어디서 들어왔나 (최근 7일)</h3><div class="viz">'+hbars+'</div>'
     +'<h3>날짜별 유입 (최근 14일)</h3><div class="viz">'+legend+stack+'</div>'
     +'<h3>검색어 (최근 7일)</h3>'+kws
     +'<h3>경로별로 처음 도착한 페이지 (최근 7일)</h3><div class="viz">'+lps+'</div>'
-    +'<h3>트립닷컴 예약 링크 클릭 (최근 7일)</h3>'+tbl(['호텔 · 클릭한 페이지','클릭'],d.clicks7.map(x=>[`${esc(x.label)}<br><small>${esc(x.path)}</small>`,x.n]))
+    +'<h3>링크 클릭: 트립닷컴 예약·배너 (최근 7일)</h3>'+tbl(['호텔·배너 · 클릭한 페이지','클릭'],d.clicks7.map(x=>[`${esc(x.label)}<br><small>${esc(x.path)}</small>`,x.n]))
     +'<h3>시간대별 조회 (오늘과 어제)</h3><div class="viz">'+hrs+'</div>'
     +'<h3>기기 (최근 7일, 방문자 기준)</h3>'+tbl(['기기','방문자','비율'],d.devs.map(x=>[esc(x.dev),x.n,devs?Math.round(x.n/devs*100)+'%':'-']))
     +'<h3>최근 7일 많이 본 페이지</h3>'+tbl(['페이지','조회수'],d.pages7.map(x=>[plink(x.path),x.n]))
