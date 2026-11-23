@@ -29,7 +29,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 45,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336468&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 279,
+        "japaneseWestern": 3
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 97,
+          "size": "14~22"
+        },
+        {
+          "type": "더블",
+          "count": 38,
+          "size": "17~31"
+        },
+        {
+          "type": "트윈",
+          "count": 137,
+          "size": "22~45"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "croom_hakata",
@@ -79,7 +137,63 @@ window.NMNR_HOTELS = [
     "aliases": [
       "크룸 하카타",
       "크롬 하카타"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 503
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 439,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 40,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 24,
+          "size": "21"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "06:00~09:30"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "croom_gion",
@@ -129,7 +243,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "크룸 하카타 기온"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "구시다진자마에역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 275
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 201,
+          "size": "15~16"
+        },
+        {
+          "type": "트윈",
+          "count": 52,
+          "size": "19~21"
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "gate",
@@ -162,7 +327,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=348110&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 171
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 8,
+          "size": "23"
+        },
+        {
+          "type": "더블",
+          "count": 92,
+          "size": "26~43"
+        },
+        {
+          "type": "트윈",
+          "count": 59,
+          "size": "26~43"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "royalcanvas",
@@ -201,7 +424,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 37,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=366868&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "나카스카와바타역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 255
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 105,
+          "size": "18~29"
+        },
+        {
+          "type": "트윈",
+          "count": 145,
+          "size": "26~53"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "basics",
@@ -234,7 +509,50 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 45,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=309628&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 238
+      },
+      "roomMix": [
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "blossom",
@@ -284,7 +602,59 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "블라썸 하카타"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "구시다진자마에역",
+          "min": 1
+        },
+        {
+          "station": "하카타역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 238
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 115,
+          "size": "21~62"
+        },
+        {
+          "type": "트윈",
+          "count": 123,
+          "size": "30~61"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "toyo",
@@ -316,7 +686,58 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=327476&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 2
+        }
+      ],
+      "rooms": {
+        "total": 269
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 214,
+          "size": "13"
+        },
+        {
+          "type": "더블",
+          "count": 34,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 21,
+          "size": "18~28"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "유카타",
+          "빗",
+          "면봉",
+          "샤워캡"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "rich_nishi",
@@ -348,7 +769,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=391678&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 5
+        },
+        {
+          "station": "텐진미나미역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 220
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 157,
+          "size": "17~18"
+        },
+        {
+          "type": "더블",
+          "count": 20,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 43,
+          "size": "25~33"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "rich_tenjin",
@@ -381,7 +859,68 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 48,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=315882&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진미나미역",
+          "min": 1
+        },
+        {
+          "station": "텐진역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 231
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 149,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 34,
+          "size": "18~28"
+        },
+        {
+          "type": "트윈",
+          "count": 48,
+          "size": "26~30"
+        },
+        {
+          "type": "스위트",
+          "count": 4,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "mitsui_gion",
@@ -431,7 +970,65 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "미츠이 가든 호텔 후쿠오카 기온"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "기온역",
+          "min": 5
+        },
+        {
+          "station": "하카타역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 300
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 170,
+          "size": "18~25"
+        },
+        {
+          "type": "트윈",
+          "count": 112,
+          "size": "23~54"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "06:00~09:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "mitsui_nakasu",
@@ -481,7 +1078,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "미츠이 가든 호텔 후쿠오카 나카스"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "나카스카와바타역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 257
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 156,
+          "size": "17~20"
+        },
+        {
+          "type": "트윈",
+          "count": 100,
+          "size": "24~25"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "05:00~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "miyako",
@@ -528,6 +1176,61 @@ window.NMNR_HOTELS = [
       "summary": "위치(역 바로 앞)·넓은 방이 장점. 가격이 높고, 대욕장 규모는 기대보다 작다는 의견도",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 208
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 67,
+          "size": "30~50"
+        },
+        {
+          "type": "트윈",
+          "count": 139,
+          "size": "30~48"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "bathRules": [
+        "기저귀 찬 아이 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -560,7 +1263,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 36,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375658&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 162
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 69,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 19,
+          "size": "17~20"
+        },
+        {
+          "type": "트윈",
+          "count": 63,
+          "size": "20"
+        },
+        {
+          "type": "스위트",
+          "count": 11,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "면도기",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "solaria",
@@ -593,7 +1353,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 41.8,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333660&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "니시테쓰후쿠오카역",
+          "min": 0
+        },
+        {
+          "station": "텐진역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 160,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 55,
+          "size": "22"
+        },
+        {
+          "type": "트윈",
+          "count": 96,
+          "size": "28"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "yaoji",
@@ -640,6 +1457,62 @@ window.NMNR_HOTELS = [
       "summary": "하카타역 가깝고 방이 넓은 편, 대욕장·조식 만족. 건물 컨디션은 약간 올드하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 207,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 152,
+          "size": "17~19"
+        },
+        {
+          "type": "더블",
+          "count": 20,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 32,
+          "size": "25"
+        }
+      ],
+      "bathHours": [
+        "12:00~다음 날 00:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -673,7 +1546,54 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 32.6,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=339135&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 221
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 99,
+          "size": "14~26"
+        },
+        {
+          "type": "트윈",
+          "count": 122,
+          "size": "20~35"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "zonk_nakasu",
@@ -770,7 +1690,55 @@ window.NMNR_HOTELS = [
     "aliases": [
       "칸데오 호텔스 후쿠오카 텐진",
       "칸데오 후쿠오카"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 9
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 154
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 87,
+          "size": "15~19"
+        },
+        {
+          "type": "트윈",
+          "count": 67,
+          "size": "15~18"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "comfort",
@@ -803,7 +1771,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 35,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=308449&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 242,
+        "japanese": 3
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 157,
+          "size": "13"
+        },
+        {
+          "type": "트윈",
+          "count": 82,
+          "size": "18~35"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "quintcomic",
@@ -836,7 +1852,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 31,
     "roomType4Pax": "기타 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=380530&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 140
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 56,
+          "size": "16"
+        },
+        {
+          "type": "트윈",
+          "count": 80,
+          "size": "17"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "cross_tenjin",
@@ -886,7 +1950,54 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "크로스 라이프 하카타 텐진"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "텐진미나미역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 286
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 102,
+          "size": "18~21"
+        },
+        {
+          "type": "트윈",
+          "count": 162,
+          "size": "18~21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "greenannex",
@@ -919,7 +2030,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 24.5,
     "roomType4Pax": "화양실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=355796&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 180,
+        "japaneseWestern": 5
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 135,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 18,
+          "size": "17"
+        },
+        {
+          "type": "트윈",
+          "count": 21,
+          "size": "17~24"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "nikko",
@@ -960,6 +2124,64 @@ window.NMNR_HOTELS = [
       "summary": "고급 호텔이지만 대욕장 이용 조건(유료 여부)을 확인하라는 글이 많음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 360,
+        "japanese": 1
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 141,
+          "size": null
+        },
+        {
+          "type": "더블",
+          "count": 41,
+          "size": null
+        },
+        {
+          "type": "트윈",
+          "count": 170,
+          "size": null
+        },
+        {
+          "type": "스위트",
+          "count": 7,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -993,7 +2215,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=361322&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "와타나베도리역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 373
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 11,
+          "size": "12"
+        },
+        {
+          "type": "더블",
+          "count": 49,
+          "size": "21~22"
+        },
+        {
+          "type": "트윈",
+          "count": 313,
+          "size": "21~25"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "lasoeur",
@@ -1026,7 +2300,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=381642&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "conbini": true,
+      "rooms": {
+        "total": 191
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 84,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 9,
+          "size": "16~18"
+        },
+        {
+          "type": "트윈",
+          "count": 97,
+          "size": "22~29"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23",
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 3
+        }
+      ]
+    }
   },
   {
     "id": "monterey",
@@ -1076,7 +2407,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "몬토레 후쿠오카"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "와타나베도리역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 302,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 12,
+          "size": "26"
+        },
+        {
+          "type": "트윈",
+          "count": 259,
+          "size": "24~37"
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "oriental_tenjin",
@@ -1109,7 +2491,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 23,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=398021&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "텐진역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 263
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 232,
+          "size": null
+        },
+        {
+          "type": "트윈",
+          "count": 30,
+          "size": null
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "hokke",
@@ -1159,7 +2593,54 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "홋케 클럽 후쿠오카"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 225
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 194,
+          "size": "11~14"
+        },
+        {
+          "type": "트윈",
+          "count": 31,
+          "size": "19~22"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "dormy_gion",
@@ -1205,6 +2686,71 @@ window.NMNR_HOTELS = [
       "summary": "가격 대비 대욕장이 좋다는 평, 하카타역·하카타항 접근 무난. 도미인 특유의 야식·아이스크림 언급",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "기온역",
+          "min": 2
+        },
+        {
+          "station": "하카타역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 186,
+        "japaneseWestern": 10
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 4,
+          "size": "12"
+        },
+        {
+          "type": "더블",
+          "count": 141,
+          "size": "14~15"
+        },
+        {
+          "type": "트윈",
+          "count": 30,
+          "size": "21"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지",
+        "냉탕(水風呂) 있음"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1250,6 +2796,59 @@ window.NMNR_HOTELS = [
       "summary": "방은 깔끔·크기 보통, 공항에서 한 번에 이동 가능하고 나카스 야식 즐기기 좋다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "나카스카와바타역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 204
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 78,
+          "size": null
+        },
+        {
+          "type": "더블",
+          "count": 90,
+          "size": null
+        },
+        {
+          "type": "트윈",
+          "count": 36,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1300,7 +2899,67 @@ window.NMNR_HOTELS = [
     "aliases": [
       "도미인 프리미엄 하카타",
       "도미인 캐널시티"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "구시다진자마에역",
+          "min": 1
+        },
+        {
+          "station": "하카타역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 122,
+        "japanese": 1,
+        "japaneseWestern": 1
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 87,
+          "size": "15~17"
+        },
+        {
+          "type": "트윈",
+          "count": 32,
+          "size": "17~20"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "wbf_grande",
@@ -1349,7 +3008,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "WBF 하카타"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 275
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 123,
+          "size": "12~17"
+        },
+        {
+          "type": "트윈",
+          "count": 152,
+          "size": "15~17"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "05:00~09:30"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "resol_hakata",
@@ -1395,6 +3105,58 @@ window.NMNR_HOTELS = [
       "summary": "위치(나카스)·룸 컨디션·대욕장·가격 균형이 좋다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "나카스카와바타역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 288
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 102,
+          "size": "16"
+        },
+        {
+          "type": "더블",
+          "count": 47,
+          "size": "18"
+        },
+        {
+          "type": "트윈",
+          "count": 112,
+          "size": "19~24"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1440,6 +3202,61 @@ window.NMNR_HOTELS = [
       "summary": "하카타역 근처 대욕장 비즈니스호텔 후보로 언급",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "하카타역",
+          "min": 15
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 128
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 61,
+          "size": "10"
+        },
+        {
+          "type": "더블",
+          "count": 33,
+          "size": "10"
+        },
+        {
+          "type": "트윈",
+          "count": 34,
+          "size": "13"
+        }
+      ],
+      "bathRules": [
+        "여탕은 비밀번호·객실 키로 출입"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   }
 ];

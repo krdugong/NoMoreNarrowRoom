@@ -48,7 +48,64 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "미츠이 가든 호텔 고탄다"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "고탄다역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 370
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 64,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 201,
+          "size": "18"
+        },
+        {
+          "type": "트윈",
+          "count": 105,
+          "size": "24"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "05:00~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_02",
@@ -80,7 +137,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 35.6,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=389896&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴시초역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 189
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 20,
+          "size": "17"
+        },
+        {
+          "type": "더블",
+          "count": 87,
+          "size": "17"
+        },
+        {
+          "type": "트윈",
+          "count": 79,
+          "size": "17~51"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_03",
@@ -112,7 +221,66 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "일본식 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374352&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴시초역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 383,
+        "japanese": 1
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 16,
+          "size": "17~19"
+        },
+        {
+          "type": "더블",
+          "count": 33,
+          "size": "19"
+        },
+        {
+          "type": "트윈",
+          "count": 284,
+          "size": "19~39"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "면도기",
+          "빗",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_04",
@@ -144,7 +312,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 72,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=392020&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴자잇초메역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 266
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 157,
+          "size": "18~23"
+        },
+        {
+          "type": "트윈",
+          "count": 99,
+          "size": "23"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "면도기",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_05",
@@ -190,6 +406,66 @@ window.NMNR_HOTELS = [
       "summary": "긴자 위치·대욕장·마루 바닥이 장점으로 자주 언급",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "긴자잇초메역",
+          "min": 1
+        },
+        {
+          "station": "히가시긴자역",
+          "min": 5
+        },
+        {
+          "station": "유라쿠초역",
+          "min": 8
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 182
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 84,
+          "size": "15~16"
+        },
+        {
+          "type": "트윈",
+          "count": 97,
+          "size": "17~26"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 02:00",
+        "06:00~10:00"
+      ],
+      "amenities": {
+        "yes": [
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "잠옷",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -264,7 +540,64 @@ window.NMNR_HOTELS = [
     "aliases": [
       "미츠이 가든 호텔 긴자 고초메",
       "미쓰이 가든 긴자"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "히가시긴자역",
+          "min": 1
+        },
+        {
+          "station": "긴자역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 338
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 104,
+          "size": "17"
+        },
+        {
+          "type": "더블",
+          "count": 91,
+          "size": "18"
+        },
+        {
+          "type": "트윈",
+          "count": 116,
+          "size": "24~34"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_08",
@@ -299,7 +632,63 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "밀레니엄 미츠이 가든 호텔 도쿄"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "히가시긴자역",
+          "min": 1
+        },
+        {
+          "station": "긴자역",
+          "min": 2
+        },
+        {
+          "station": "유라쿠초역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 329
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 225,
+          "size": "20~22"
+        },
+        {
+          "type": "트윈",
+          "count": 97,
+          "size": "26~37"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_09",
@@ -349,7 +738,62 @@ window.NMNR_HOTELS = [
     "aliases": [
       "슈퍼 호텔 프리미어 긴자",
       "슈퍼호텔 긴자"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "히가시긴자역",
+          "min": 1
+        },
+        {
+          "station": "긴자역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 116
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 74,
+          "size": "11~12"
+        },
+        {
+          "type": "트윈",
+          "count": 19,
+          "size": "17~21"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_10",
@@ -381,7 +825,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375544&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴자잇초메역",
+          "min": 1
+        },
+        {
+          "station": "교바시역",
+          "min": 3
+        },
+        {
+          "station": "다카라초역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 305
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 252,
+          "size": "14"
+        },
+        {
+          "type": "트윈",
+          "count": 53,
+          "size": "14~26"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_11",
@@ -413,7 +913,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=382425&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴자역",
+          "min": 3
+        },
+        {
+          "station": "신바시역",
+          "min": 8
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 270
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 34,
+          "size": "15~18"
+        },
+        {
+          "type": "더블",
+          "count": 156,
+          "size": "15~18"
+        },
+        {
+          "type": "트윈",
+          "count": 57,
+          "size": "23"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "세면 수건",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_12",
@@ -445,7 +1001,62 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=347902&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "긴자잇초메역",
+          "min": 1
+        },
+        {
+          "station": "유라쿠초역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 224
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 76,
+          "size": "14~20"
+        },
+        {
+          "type": "더블",
+          "count": 40,
+          "size": "19~22"
+        },
+        {
+          "type": "트윈",
+          "count": 108,
+          "size": "19~40"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_13",
@@ -493,6 +1104,59 @@ window.NMNR_HOTELS = [
       "summary": "신축이라 깨끗하고 조용한 지역, 스카이라이너 이용 편리. 침대가 작다는 의견",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "닛포리역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 138
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 96,
+          "size": "15~17"
+        },
+        {
+          "type": "더블",
+          "count": 7,
+          "size": "23"
+        },
+        {
+          "type": "트윈",
+          "count": 32,
+          "size": "21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -525,7 +1189,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=311347&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오테마치역",
+          "min": 0
+        },
+        {
+          "station": "도쿄역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 201
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 113,
+          "size": "24~41"
+        },
+        {
+          "type": "트윈",
+          "count": 87,
+          "size": "27~43"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_15",
@@ -566,7 +1286,67 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "슈퍼 호텔 프리미어 도쿄역 야에스"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "도쿄역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 325
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 271,
+          "size": "12~13"
+        },
+        {
+          "type": "더블",
+          "count": 30,
+          "size": "12~13"
+        },
+        {
+          "type": "트윈",
+          "count": 23,
+          "size": "18"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_16",
@@ -598,7 +1378,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "일본식 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340088&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "도쿄역",
+          "min": 5
+        },
+        {
+          "station": "니혼바시역",
+          "min": 6
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 151,
+        "japanese": 3
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 17,
+          "size": "22"
+        },
+        {
+          "type": "트윈",
+          "count": 131,
+          "size": "14~29"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_17",
@@ -630,7 +1463,46 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=333720&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "니혼바시역",
+          "min": 4
+        },
+        {
+          "station": "도쿄역",
+          "min": 6
+        }
+      ],
+      "parking": false,
+      "rooms": {
+        "total": 95
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_18",
@@ -664,7 +1536,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=382341&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "롯폰기역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 399
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 319,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 80,
+          "size": "24"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_19",
@@ -707,7 +1627,55 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "칸데오 롯폰기"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "롯폰기역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 149
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 85,
+          "size": "16~18"
+        },
+        {
+          "type": "트윈",
+          "count": 66,
+          "size": "19~22"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_20",
@@ -739,7 +1707,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340595&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시나가와역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 2371
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 805,
+          "size": "20"
+        },
+        {
+          "type": "트윈",
+          "count": 1521,
+          "size": "21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_21",
@@ -771,7 +1787,58 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=358206&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "다이몬역",
+          "min": 2
+        },
+        {
+          "station": "하마마쓰초역",
+          "min": 6
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 105
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 98,
+          "size": "16~25"
+        },
+        {
+          "type": "트윈",
+          "count": 7,
+          "size": "23~32"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_22",
@@ -803,7 +1870,68 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=300504&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오나리몬역",
+          "min": 1
+        },
+        {
+          "station": "다이몬역",
+          "min": 7
+        },
+        {
+          "station": "아카바네바시역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 462
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 156,
+          "size": "19~29"
+        },
+        {
+          "type": "트윈",
+          "count": 289,
+          "size": "19~29"
+        },
+        {
+          "type": "스위트",
+          "count": 17,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_23",
@@ -835,7 +1963,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=311953&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시부야역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 225
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 4,
+          "size": "13"
+        },
+        {
+          "type": "더블",
+          "count": 132,
+          "size": "13"
+        },
+        {
+          "type": "트윈",
+          "count": 87,
+          "size": "16"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_24",
@@ -869,7 +2049,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 43,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=321730&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시부야역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 177
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 25,
+          "size": "20"
+        },
+        {
+          "type": "더블",
+          "count": 102,
+          "size": "23~49"
+        },
+        {
+          "type": "트윈",
+          "count": 50,
+          "size": "30~46"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "잠옷",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_25",
@@ -901,7 +2134,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 38.4,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=369102&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시부야역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 408
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 164,
+          "size": "20"
+        },
+        {
+          "type": "더블",
+          "count": 58,
+          "size": "21~24"
+        },
+        {
+          "type": "트윈",
+          "count": 149,
+          "size": "24~30"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_26",
@@ -933,7 +2224,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 26,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316476&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시부야역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 205
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 70,
+          "size": "11"
+        },
+        {
+          "type": "더블",
+          "count": 75,
+          "size": "15~20"
+        },
+        {
+          "type": "트윈",
+          "count": 59,
+          "size": "17~26"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_27",
@@ -965,7 +2308,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 56.8,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=364218&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시오도메역",
+          "min": 1
+        },
+        {
+          "station": "신바시역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 480
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 381,
+          "size": "25~56"
+        },
+        {
+          "type": "트윈",
+          "count": 97,
+          "size": "25~56"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_28",
@@ -997,7 +2396,58 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 30,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316296&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시오도메역",
+          "min": 0
+        },
+        {
+          "station": "신바시역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 492
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 372,
+          "size": "18~30"
+        },
+        {
+          "type": "트윈",
+          "count": 120,
+          "size": "20~60"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_29",
@@ -1029,7 +2479,62 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 28,
     "roomType4Pax": "기타 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=394403&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "시오미역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 226,
+        "japanese": 12,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 14,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 184,
+          "size": "27"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_30",
@@ -1061,7 +2566,47 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 44,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=385527&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "신바시역",
+          "min": 2
+        },
+        {
+          "station": "시오도메역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 279
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_31",
@@ -1110,7 +2655,55 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "칸데오 신바시"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "신바시역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 126
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 90,
+          "size": "15~17"
+        },
+        {
+          "type": "트윈",
+          "count": 36,
+          "size": "18~22"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_32",
@@ -1142,7 +2735,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=336266&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "신주쿠역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 1281
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 412,
+          "size": "13~15"
+        },
+        {
+          "type": "더블",
+          "count": 328,
+          "size": "14~20"
+        },
+        {
+          "type": "트윈",
+          "count": 444,
+          "size": "16~20"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_33",
@@ -1174,7 +2819,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374925&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "세이부신주쿠역",
+          "min": 0
+        },
+        {
+          "station": "신주쿠역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 561
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 335,
+          "size": "15~30"
+        },
+        {
+          "type": "트윈",
+          "count": 225,
+          "size": "15~30"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_34",
@@ -1230,7 +2932,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=309286&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "세이부신주쿠역",
+          "min": 2
+        },
+        {
+          "station": "신주쿠역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 970
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 64,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 599,
+          "size": "18~22"
+        },
+        {
+          "type": "트윈",
+          "count": 289,
+          "size": "24~32"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_36",
@@ -1262,7 +3020,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=351204&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "신주쿠역",
+          "min": 1
+        },
+        {
+          "station": "요요기역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 624
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 444,
+          "size": "16~28"
+        },
+        {
+          "type": "더블",
+          "count": 57,
+          "size": "19~28"
+        },
+        {
+          "type": "트윈",
+          "count": 123,
+          "size": "23~28"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_37",
@@ -1294,7 +3109,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=316401&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아사쿠사역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 326,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 67,
+          "size": "19~37"
+        },
+        {
+          "type": "트윈",
+          "count": 256,
+          "size": "26~37"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_38",
@@ -1326,7 +3194,54 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 36,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=383360&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아사쿠사역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 253
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 42,
+          "size": "16~33"
+        },
+        {
+          "type": "트윈",
+          "count": 178,
+          "size": "20~28"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_39",
@@ -1358,7 +3273,44 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=397786&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아키하바라역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 143,
+        "japaneseWestern": 143
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_40",
@@ -1404,6 +3356,66 @@ window.NMNR_HOTELS = [
       "summary": "목욕탕·라면 무료, 아키하바라·아사쿠사 접근성. 객실 욕조 유무 문의 있음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "스에히로초역",
+          "min": 1
+        },
+        {
+          "station": "오카치마치역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 97,
+        "japaneseWestern": 20
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 27,
+          "size": "10~14"
+        },
+        {
+          "type": "더블",
+          "count": 55,
+          "size": "16"
+        },
+        {
+          "type": "트윈",
+          "count": 7,
+          "size": "17"
+        }
+      ],
+      "bathRules": [
+        "냉탕(水風呂) 있음"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1445,7 +3457,66 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "슈퍼 호텔 프리미어 아키하바라"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "아키하바라역",
+          "min": 2
+        },
+        {
+          "station": "이와모토초역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 136
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 63,
+          "size": "12"
+        },
+        {
+          "type": "더블",
+          "count": 60,
+          "size": "12"
+        },
+        {
+          "type": "트윈",
+          "count": 13,
+          "size": "12"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 09:30"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_42",
@@ -1477,7 +3548,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=332677&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아키하바라역",
+          "min": 1
+        },
+        {
+          "station": "이와모토초역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 366
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 314,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 36,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 15,
+          "size": "21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_43",
@@ -1509,7 +3636,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 38,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=337690&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오시아게역",
+          "min": 1
+        },
+        {
+          "station": "도쿄스카이트리역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 252,
+        "japaneseWestern": 1
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 160,
+          "size": "18~26"
+        },
+        {
+          "type": "트윈",
+          "count": 91,
+          "size": "38~54"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_44",
@@ -1541,7 +3721,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=329886&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "conbini": true,
+      "rooms": {
+        "total": 285
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 141,
+          "size": "20~21"
+        },
+        {
+          "type": "트윈",
+          "count": 143,
+          "size": "21~43"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23",
+      "access": [
+        {
+          "station": "오이마치역",
+          "min": 0
+        }
+      ]
+    }
   },
   {
     "id": "tokyo_45",
@@ -1591,7 +3823,54 @@ window.NMNR_HOTELS = [
     "aliases": [
       "센추리온 호텔 앤 스파 우에노 스테이션",
       "센츄리온 우에노"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "우에노역",
+          "min": 2
+        },
+        {
+          "station": "우에노히로코지역",
+          "min": 3
+        },
+        {
+          "station": "게이세이우에노역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 93
+      },
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_46",
@@ -1629,7 +3908,56 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "화양실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=345375&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "유시마역",
+          "min": 2
+        },
+        {
+          "station": "게이세이우에노역",
+          "min": 3
+        },
+        {
+          "station": "우에노역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 145,
+        "japanese": 2,
+        "japaneseWestern": 59
+      },
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "음주·만취 시 이용 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_47",
@@ -1661,7 +3989,54 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=378472&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "나카오카치마치역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 181
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 169,
+          "size": "12~13"
+        },
+        {
+          "type": "트윈",
+          "count": 11,
+          "size": "18"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_48",
@@ -1693,7 +4068,70 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 60.8,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=371478&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "이케부쿠로역",
+          "min": 0
+        },
+        {
+          "station": "히가시이케부쿠로역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 1085,
+        "japanese": 4,
+        "japaneseWestern": 5
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 276,
+          "size": "16"
+        },
+        {
+          "type": "더블",
+          "count": 36,
+          "size": "20"
+        },
+        {
+          "type": "트윈",
+          "count": 754,
+          "size": "16~37"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "빗",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "면도기",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_49",
@@ -1725,7 +4163,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "화양실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=306290&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "이케부쿠로역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 805,
+        "japaneseWestern": 3
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 231,
+          "size": "17"
+        },
+        {
+          "type": "더블",
+          "count": 172,
+          "size": "20~35"
+        },
+        {
+          "type": "트윈",
+          "count": 396,
+          "size": "23~35"
+        },
+        {
+          "type": "스위트",
+          "count": 3,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_50",
@@ -1757,7 +4253,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=390328&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "우치사이와이초역",
+          "min": 2
+        },
+        {
+          "station": "신바시역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 255
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 4,
+          "size": "22"
+        },
+        {
+          "type": "더블",
+          "count": 112,
+          "size": "22~53"
+        },
+        {
+          "type": "트윈",
+          "count": 139,
+          "size": "25~61"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_51",
@@ -1789,7 +4342,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=334400&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "유라쿠초역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 255
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 223,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 32,
+          "size": "23"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_52",
@@ -1837,7 +4438,65 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "도미인 시부야"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "하라주쿠역",
+          "min": 6
+        },
+        {
+          "station": "시부야역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 136
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 111,
+          "size": "14~15"
+        },
+        {
+          "type": "트윈",
+          "count": 21,
+          "size": "19~24"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_53",
@@ -1882,6 +4541,65 @@ window.NMNR_HOTELS = [
       "summary": "\"청결·서비스·조식·온천까지 완벽\", 무료 야식 라멘·아이스크림 호평. 가격은 높은 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "히가시긴자역",
+          "min": 4
+        },
+        {
+          "station": "신바시역",
+          "min": 11
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 154,
+        "japanese": 9
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 127,
+          "size": "15~18"
+        },
+        {
+          "type": "트윈",
+          "count": 18,
+          "size": "19"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1930,7 +4648,68 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "도미인 고덴마초"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "신니혼바시역",
+          "min": 5
+        },
+        {
+          "station": "고덴마초역",
+          "min": 20
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 134,
+        "japaneseWestern": 9
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 100,
+          "size": "14~15"
+        },
+        {
+          "type": "트윈",
+          "count": 25,
+          "size": "19~27"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지",
+        "냉탕(水風呂) 있음"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_55",
@@ -1979,7 +4758,69 @@ window.NMNR_HOTELS = [
     "aliases": [
       "도미인 프리미엄 간다",
       "도미인 칸다"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "칸다역",
+          "min": 1
+        },
+        {
+          "station": "아키하바라역",
+          "min": 6
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 137
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 10,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 99,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 18,
+          "size": "24~30"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_56",
@@ -2027,7 +4868,71 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "도미인 우에노"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "우에노오카치마치역",
+          "min": 1
+        },
+        {
+          "station": "우에노역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 106
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 42,
+          "size": "13~15"
+        },
+        {
+          "type": "더블",
+          "count": 63,
+          "size": "13~14"
+        },
+        {
+          "type": "트윈",
+          "count": 1,
+          "size": "26"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_57",
@@ -2064,7 +4969,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 27,
     "roomType4Pax": "화양실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=320300&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아사쿠사역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 74,
+        "japaneseWestern": 4
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 67,
+          "size": "16"
+        },
+        {
+          "type": "스위트",
+          "count": 4,
+          "size": null
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00",
+        "15:00~20:00",
+        "20:30~다음 날 10:00"
+      ],
+      "bathRules": [
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "잠옷",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_58",
@@ -2101,7 +5063,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=312600&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "핫초보리역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 142
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 20,
+          "size": "13"
+        },
+        {
+          "type": "더블",
+          "count": 113,
+          "size": "13"
+        },
+        {
+          "type": "트윈",
+          "count": 7,
+          "size": "16"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "심야 일부 시간 사우나 휴지"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_59",
@@ -2146,6 +5166,67 @@ window.NMNR_HOTELS = [
       "summary": "대욕장·무료 라면/아이스크림이 장점. 객실에 욕조가 없다는 문의 있음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "이케부쿠로역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 190
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 23,
+          "size": "12~15"
+        },
+        {
+          "type": "더블",
+          "count": 119,
+          "size": "13~20"
+        },
+        {
+          "type": "트윈",
+          "count": 42,
+          "size": "20~24"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지",
+        "냉탕(水風呂) 있음",
+        "여탕은 비밀번호·객실 키로 출입"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -2191,6 +5272,61 @@ window.NMNR_HOTELS = [
       "summary": "온천호텔 느낌·밤 무료 라멘·일식 조식이 장점, 가격은 비싼 편",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "아사쿠사역",
+          "min": 8
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 152
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 19,
+          "size": "14~15"
+        },
+        {
+          "type": "더블",
+          "count": 75,
+          "size": "14~17"
+        },
+        {
+          "type": "트윈",
+          "count": 22,
+          "size": "19~20"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -2228,7 +5364,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 31.22,
     "roomType4Pax": "트리플",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=330455&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "아사쿠사역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 117
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 32,
+          "size": "18~21"
+        },
+        {
+          "type": "트윈",
+          "count": 14,
+          "size": "21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_62",
@@ -2268,7 +5452,68 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "미츠이 가든 호텔 니혼바시 프리미어"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "미쓰코시마에역",
+          "min": 0
+        },
+        {
+          "station": "신니혼바시역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 264
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 64,
+          "size": "20"
+        },
+        {
+          "type": "더블",
+          "count": 102,
+          "size": "23"
+        },
+        {
+          "type": "트윈",
+          "count": 88,
+          "size": "26~29"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "06:00~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_63",
@@ -2317,7 +5562,66 @@ window.NMNR_HOTELS = [
     "aliases": [
       "미츠이 가든 호텔 시오도메 이탈리아가이",
       "미쓰이 가든 시오도메"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "시오도메역",
+          "min": 7
+        },
+        {
+          "station": "하마마쓰초역",
+          "min": 8
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 370
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 65,
+          "size": "20"
+        },
+        {
+          "type": "더블",
+          "count": 161,
+          "size": "20"
+        },
+        {
+          "type": "트윈",
+          "count": 117,
+          "size": "20"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_64",
@@ -2357,7 +5661,67 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "미츠이 가든 호텔 진구가이엔노모리 프리미어"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "고쿠리쓰쿄기조역",
+          "min": 1
+        },
+        {
+          "station": "센다가야역",
+          "min": 5
+        }
+      ],
+      "rooms": {
+        "total": 362
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 40,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 90,
+          "size": "22"
+        },
+        {
+          "type": "트윈",
+          "count": 230,
+          "size": "24~50"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_65",
@@ -2397,7 +5761,59 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "미츠이 가든 호텔 도요스 프리미어"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "도요스역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 225
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 159,
+          "size": "18~39"
+        },
+        {
+          "type": "트윈",
+          "count": 62,
+          "size": "26~44"
+        }
+      ],
+      "bathHours": [
+        "06:00~09:00",
+        "15:00~다음 날 01:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "세면 수건",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_66",
@@ -2445,7 +5861,68 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "유엔 신주쿠"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "신주쿠교엔마에역",
+          "min": 7
+        },
+        {
+          "station": "신주쿠산초메역",
+          "min": 8
+        },
+        {
+          "station": "신주쿠역",
+          "min": 20
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 193
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 118,
+          "size": "12~33"
+        },
+        {
+          "type": "트윈",
+          "count": 73,
+          "size": "15~20"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "잠옷",
+          "면도기",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_67",
@@ -2494,7 +5971,64 @@ window.NMNR_HOTELS = [
     "aliases": [
       "비아 인 프라임 아카사카",
       "비아인 아카사카"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "아카사카역",
+          "min": 2
+        },
+        {
+          "station": "다메이케산노역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 345
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 274,
+          "size": "12~17"
+        },
+        {
+          "type": "더블",
+          "count": 45,
+          "size": "15~19"
+        },
+        {
+          "type": "트윈",
+          "count": 26,
+          "size": "19"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "tokyo_68",
@@ -2539,6 +6073,58 @@ window.NMNR_HOTELS = [
       "summary": "야경이 보이는 옥상 대욕장과 해산물 조식이 호평, 교통은 불편하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "시조마에역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 555
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 50,
+          "size": null
+        },
+        {
+          "type": "더블",
+          "count": 89,
+          "size": "23"
+        },
+        {
+          "type": "트윈",
+          "count": 383,
+          "size": "23~36"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -2584,6 +6170,74 @@ window.NMNR_HOTELS = [
       "summary": "대욕장·조식·객실은 좋지만 위치가 애매하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "츠키지시조역",
+          "min": 5
+        },
+        {
+          "station": "츠키지역",
+          "min": 7
+        },
+        {
+          "station": "히가시긴자역",
+          "min": 9
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 203,
+        "japaneseWestern": 74
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 24,
+          "size": "16"
+        },
+        {
+          "type": "트윈",
+          "count": 83,
+          "size": "16~21"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "촬영 가능한 기기 반입 금지",
+        "기저귀 찬 아이 입욕 불가",
+        "7세 이상 아이는 같은 성별 보호자와"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   }
 ];

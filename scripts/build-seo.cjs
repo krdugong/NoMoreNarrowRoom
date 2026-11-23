@@ -10,7 +10,7 @@ const repo = cfg.basePath ? path.resolve(root, '..') : root;  // folder served a
 const BASE = cfg.basePath;                             // '' when the site is served at the domain root
 const ORIGIN = cfg.siteUrl;                            // e.g. https://nomorenarrowroom.com
 const abs = p => ORIGIN + p;
-const ASSET_V = '20261122app';
+const ASSET_V = '20261123detail';
 
 const CITIES = [
   {slug: 'fukuoka', name: '후쿠오카', en: 'FUKUOKA', file: 'fukuoka.html', data: 'data/hotels.js',
@@ -373,6 +373,24 @@ function landing({c, hotels, kind, area, feature, pax}) {
 }
 
 // ---------- hotel pages ----------
+// 호텔 상세 보강(현지 예약 사이트 시설 정보 기반): 역 도보 시간, 객실 구성, 대욕장 시간·규칙, 비품, 가까운 호텔 거리.
+const accessText = d => (d && d.access || []).map(a => `${a.station} ${a.min === 0 ? '직결' : `도보 ${a.min}분`}`).join(' · ');
+const distM = (a, b) => { if (!a.location || !b.location) return Infinity; const R = 6371000, rad = x => x * Math.PI / 180; const dLat = rad(b.location.lat - a.location.lat), dLng = rad(b.location.lng - a.location.lng); const q = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.location.lat)) * Math.cos(rad(b.location.lat)) * Math.sin(dLng / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(q)); };
+const distText = m => m < 1000 ? `약 ${Math.max(50, Math.round(m / 50) * 50)}m` : `약 ${(m / 1000).toFixed(1)}km`;
+function detailHtml(h, c, cityHotels) {
+  const d = h.details; if (!d) return '';
+  const rows = [];
+  if (d.access && d.access.length) rows.push(['가까운 역', accessText(d)]);
+  if (d.rooms && d.rooms.total) rows.push(['전체 객실 수', `${d.rooms.total}실${d.rooms.japanese ? ` (화실 ${d.rooms.japanese}실 포함)` : ''}${d.rooms.japaneseWestern ? ` (화양실 ${d.rooms.japaneseWestern}실 포함)` : ''}`]);
+  if (d.conbini) rows.push(['편의점', '도보 5분 이내']);
+  if (d.parking !== undefined) rows.push(['주차장', d.parking ? '있음(조건은 호텔에 확인)' : '없음']);
+  const mix = d.roomMix && d.roomMix.length ? `<h3>${esc(h.name)} 객실 구성</h3><table class="room-table"><thead><tr><th>객실 타입</th><th>객실 수</th><th>면적</th></tr></thead><tbody>${d.roomMix.map(r => `<tr><td>${esc(r.type)}</td><td>${r.count}실</td><td>${r.size ? esc(r.size) + '㎡' : '-'}</td></tr>`).join('')}</tbody></table><p class="room-note">호텔 전체 객실을 타입별로 나눈 수입니다. ${(() => { const top = [...d.roomMix].sort((a, b) => b.count - a.count)[0]; return top ? `가장 많은 타입은 ${top.type}(${top.count}실)이라, 이 타입이 기본 객실로 배정되는 경우가 많습니다.` : ''; })()}</p>` : '';
+  const bath = h.bath === true && (d.bathHours || d.bathRules) ? `<h2>${esc(h.name)} 대욕장 이용 시간과 규칙</h2>${d.bathHours ? `<p><b>이용 시간</b> ${d.bathHours.map(esc).join(', ')}</p>` : ''}${d.bathRules && d.bathRules.length ? `<ul class="rule-list">${d.bathRules.map(r => `<li>${esc(r)}</li>`).join('')}</ul>` : ''}<p class="room-note">${esc(h.bathLabel)} · 시간과 규칙은 계절·공사로 바뀔 수 있으니 체크인 때 안내문을 확인하세요.</p>` : '';
+  const am = d.amenities && (d.amenities.yes.length || d.amenities.no.length) ? `<h2>${esc(h.name)} 객실 비품</h2>${d.amenities.yes.length ? `<p><b>있음</b> ${d.amenities.yes.map(esc).join(', ')}</p>` : ''}${d.amenities.no.length ? `<p><b>없음</b> ${d.amenities.no.map(esc).join(', ')}${d.amenities.no.includes('잠옷') ? ' · 잠옷은 챙기세요' : ''}</p>` : ''}` : '';
+  const near = cityHotels.filter(x => x !== h).map(x => [x, distM(h, x)]).filter(x => x[1] < 2500).sort((a, b) => a[1] - b[1]).slice(0, 5);
+  const nearHtml = near.length ? `<section class="related"><h2>${esc(h.name)} 근처 비교 호텔</h2><ul class="mini-list">${near.map(([x, m]) => `<li><a href="${hotelUrl(x)}">${esc(x.name)}</a> <span>${distText(m)} · ${esc(sizeText(x))} · ${esc(bathText(x))}</span></li>`).join('')}</ul></section>` : '';
+  return { facts: rows.length ? `<h2>${esc(h.name)} 위치와 객실 정보</h2><dl class="fact-table">${rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>${mix}` : mix, bath, am, nearHtml };
+}
 function hotelPage(h, c, cityHotels) {
   const updated = h.verifiedAt || maxDate(cityHotels);
   const s = bathStatus(h);
@@ -386,7 +404,7 @@ function hotelPage(h, c, cityHotels) {
   const roomWordText = roomWords.length ? roomWords.join('·') : '객실';
   const kw = `${h.name} 방 크기`;
   const title = `${h.name} ${roomWordText} 방 크기 ${sizeText(h)} · ${bathText(h)} | ${c.name} ${h.area} 호텔`;
-  const desc = `${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}).${h.pax3 ? ` 3인은 ${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}${h.pax4 ? `, 4인은 ${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : ''}.` : ''} ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.${h.aliases && h.aliases.length ? ` (${h.aliases.join(', ')}로도 검색)` : ''}`;
+  const desc = `${h.details && h.details.access && h.details.access.length ? `${accessText(h.details).split(' · ')[0]}. ` : ''}${h.name}의 2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다(${roomFeel(h.minRoom2Pax)}).${h.pax3 ? ` 3인은 ${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}${h.pax4 ? `, 4인은 ${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : ''}.` : ''} ${s === 'yes' ? `대욕장: ${h.bathLabel}.` : `${bathText(h)}.`} ${c.name} ${h.area} 호텔 ${areaHotels.length}곳과 방 크기를 비교해 보세요.${h.aliases && h.aliases.length ? ` (${h.aliases.join(', ')}로도 검색)` : ''}`;
   const lines = [];
   if (num(h.minRoom2Pax)) {
     lines.push(`${h.name}의 2인 기본 객실은 ${h.roomType} ${h.minRoom2Pax}㎡로, ${roomFeel(h.minRoom2Pax)} 수준입니다.`);
@@ -399,6 +417,7 @@ function hotelPage(h, c, cityHotels) {
   if (!isBoilerplate(h.reviewNote)) lines.push(`한줄 메모: ${h.reviewNote}.`.replace('..', '.'));
   if (h.community) lines.push(`한국 여행자 커뮤니티의 2023년 1월~2026년 10월 게시글 중 ${h.community.mentions}건이 이 호텔의 대욕장을 언급했습니다(${c.name} 대욕장 호텔 중 ${h.community.rank}위). 자주 나온 평가: ${h.community.summary}.`.replace('..', '.'));
   if (h.aliases && h.aliases.length) lines.push(`다른 표기: ${h.aliases.join(', ')}.`);
+  const dx = detailHtml(h, c, cityHotels) || {};
   const similar = cityHotels.filter(x => x !== h && num(x.minRoom2Pax) && num(h.minRoom2Pax) && Math.abs(x.minRoom2Pax - h.minRoom2Pax) <= 2.5).sort(byRoom).slice(0, 6);
   const neighbours = areaHotels.filter(x => x !== h).sort(byRoom).slice(0, 6);
   const faqs = [
@@ -408,7 +427,10 @@ function hotelPage(h, c, cityHotels) {
     {q: `${h.name}은 어느 지역에 있나요?`, a: `${c.name} ${h.area} 지역에 있습니다. 같은 지역 호텔 ${areaHotels.length}곳과 비교할 수 있습니다.`},
     (h.pax3 !== undefined || h.pax4 !== undefined) && {q: `${h.name}에 3명이나 4명이 한 방에 묵을 수 있나요?`, a: `${paxText(h, 3)}, ${paxText(h, 4)}입니다. ${h.pax3 || h.pax4 ? '침대 구성과 인원별 요금은 예약 화면에서 확인하세요.' : '2인 객실 2개로 나누어 예약하는 것이 일반적입니다.'}`},
     {q: `${h.name} 객실 유형은 어떤 차이가 있나요?`, a: `2인 기본 객실은 ${h.roomType} ${sizeText(h)}입니다.${h.pax3 ? ` 3인은 ${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)},` : ' 3인 플랜은 없고,'}${h.pax4 ? ` 4인은 ${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}입니다.` : ' 4인 플랜은 없습니다.'} 상위 객실은 더 넓고, 요금 차이와 침대 구성은 예약 화면에서 확인하세요.`},
-    s === 'yes' && {q: `${h.name} 대욕장 이용 시간과 조건은?`, a: `${/유료|전용|회원|세 이상/.test(h.bathLabel || '') ? `이 호텔은 '${h.bathLabel}' 조건이 있습니다. ` : '투숙객은 무료로 이용합니다. '}일본 도심 호텔 대욕장은 보통 15시부터 다음 날 10시 전후까지 열고 심야 청소 시간에는 닫으며, 문신이 있으면 입장이 제한될 수 있습니다. 정확한 시간은 호텔 공식 안내에서 확인하세요.`},
+    h.details && h.details.access && h.details.access.length && {q: `${h.name}에서 가장 가까운 역은 어디인가요?`, a: `${accessText(h.details)}입니다.${h.details.conbini ? ' 도보 5분 안에 편의점도 있습니다.' : ''}`},
+    h.details && h.details.amenities && h.details.amenities.yes.length && {q: `${h.name}에 잠옷이나 칫솔 같은 비품이 있나요?`, a: `객실 비품으로 ${h.details.amenities.yes.slice(0, 8).join(', ')}${h.details.amenities.yes.length > 8 ? ' 등' : ''}이 있습니다.${h.details.amenities.no.length ? ` ${h.details.amenities.no.join(', ')}은 없습니다.` : ''}`},
+    h.details && h.details.rooms && h.details.rooms.total && {q: `${h.name}은 객실이 몇 개인가요?`, a: `전체 ${h.details.rooms.total}실입니다${h.details.roomMix && h.details.roomMix.length ? `: ${h.details.roomMix.map(r => `${r.type} ${r.count}실${r.size ? `(${r.size}㎡)` : ''}`).join(', ')}` : ''}.`},
+    s === 'yes' && {q: `${h.name} 대욕장 이용 시간과 조건은?`, a: `${/유료|전용|회원|세 이상/.test(h.bathLabel || '') ? `이 호텔은 '${h.bathLabel}' 조건이 있습니다. ` : '투숙객은 무료로 이용합니다. '}${h.details && h.details.bathHours ? `이용 시간은 ${h.details.bathHours.join(', ')}입니다.${h.details.bathRules && h.details.bathRules.length ? ` ${h.details.bathRules.join(', ')}.` : ''}` : '일본 도심 호텔 대욕장은 보통 15시부터 다음 날 10시 전후까지 열고 심야 청소 시간에는 닫으며, 문신이 있으면 입장이 제한될 수 있습니다.'} 시간은 바뀔 수 있으니 체크인 때 안내문을 확인하세요.`},
     h.community && {q: `${h.name} 대욕장, 한국 여행자 후기에서 많이 언급되나요?`, a: `한국 여행자 커뮤니티 게시글(2023년 1월~2026년 10월) ${h.community.mentions}건이 이 호텔의 대욕장을 언급해, ${c.name} 대욕장 호텔 중 ${h.community.rank}위입니다. 자주 나온 평가는 '${h.community.summary}'입니다.`},
   ].filter(Boolean);
   const img = card(`hotel-${hotelSlug(h)}`, {title: h.name, sub: `${c.name} ${h.area} · ${h.roomType}`, big: sizeText(h), bath: s === 'yes' ? '♨ 대욕장 있음' : bathText(h), isHotel: true});
@@ -434,12 +456,16 @@ function hotelPage(h, c, cityHotels) {
         <tr><td>4인</td><td>${esc(h.pax4 ? paxRoom(h, 4) || '4인 객실' : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</td><td>${esc(h.pax4 ? paxSizeText(h, 4) : '-')}</td><td>${esc(h.pax4 ? (/화양실|패밀리|스위트/.test(paxRoom(h, 4) || '') ? '가족 단위에 맞는 넓은 객실' : '4인 기준 객실') : '2인 객실 2개로 나누어 예약')}</td></tr>
       </tbody></table>
       <p class="room-note">${esc(roomWords.length ? `${roomWords.join(', ')} 객실이 확인됐습니다. ` : '')}면적은 각 인원으로 예약할 수 있는 객실 중 가장 작은 방 기준이며, 같은 타입이라도 층·전망에 따라 면적이 다를 수 있습니다.</p>
+      ${dx.facts || ''}
+      ${dx.bath || ''}
+      ${dx.am || ''}
       <div class="hotel-cta">${num(h.minRoom2Pax) ? `<a class="simulation-link" href="${BASE}/simulator.html?area=${h.minRoom2Pax}">이 방(${h.minRoom2Pax}㎡)에 내 짐 3D로 넣어보기</a>` : ''}${tripLink(h)}</div>
       <img class="seo-card" src="${img}" width="1200" height="630" alt="${esc(h.name)} 방 크기 ${esc(sizeText(h))} ${esc(bathText(h))}">
       <h2>확인한 정보</h2>
       <dl class="fact-table"><div><dt>확인 객실 타입</dt><dd>${esc(h.roomType)}</dd></div><div><dt>기본 객실 면적</dt><dd>${esc(sizeText(h))}</dd></div><div><dt>대욕장 / 온욕시설</dt><dd>${esc(h.bathLabel)}</dd></div>${s === 'yes' && h.bathFeatures ? `<div><dt>온천·노천탕·사우나</dt><dd>${esc(featureText(h))}</dd></div>` : ''}${h.pax3 !== undefined || h.pax4 !== undefined ? `<div><dt>3인 객실</dt><dd>${esc(h.pax3 ? `${paxRoom(h, 3) || '3인 객실'} ${paxSizeText(h, 3)}` : h.pax3 === false ? '3인 플랜 없음' : '확인 중')}</dd></div><div><dt>4인 객실</dt><dd>${esc(h.pax4 ? `${paxRoom(h, 4) || '4인 객실'} ${paxSizeText(h, 4)}` : h.pax4 === false ? '4인 플랜 없음' : '확인 중')}</dd></div>` : ''}${h.community ? `<div><dt>후기 언급</dt><dd>${h.community.mentions}건 · ${esc(c.name)} 대욕장 호텔 중 ${h.community.rank}위 (2023~2026년 게시글, ${esc(h.community.checkedAt)} 집계)</dd></div>` : ''}<div><dt>확인 근거</dt><dd>${esc(h.verification)}</dd></div><div><dt>정보 확인일</dt><dd>${esc(h.verifiedAt)}</dd></div></dl>
       ${h.reviewSourceUrl ? `<p class="sources"><a href="${esc(h.reviewSourceUrl)}" target="_blank" rel="noopener">트립닷컴 후기 ↗</a></p>` : ''}
     </article>
+    ${dx.nearHtml || ''}
     ${neighbours.length ? `<section class="related"><h2>${esc(h.area)} 다른 호텔과 방 크기 비교</h2>${mini(neighbours)}${hasArea ? `<p><a href="${areaUrl(c, h.area)}">${esc(h.area)} 호텔 ${areaHotels.length}곳 전체 보기 →</a></p>` : ''}</section>` : ''}
     ${similar.length ? `<section class="related"><h2>비슷한 크기의 ${esc(c.name)} 호텔</h2>${mini(similar)}</section>` : ''}
     ${faqHtml(faqs)}

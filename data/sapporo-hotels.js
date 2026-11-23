@@ -93,7 +93,59 @@ window.NMNR_HOTELS = [
     "aliases": [
       "삿포로 호텔 by 그랑벨",
       "삿포로 호텔 바이 그랑벨"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 605
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 175,
+          "size": "24~26"
+        },
+        {
+          "type": "트윈",
+          "count": 329,
+          "size": "25~26"
+        },
+        {
+          "type": "스위트",
+          "count": 95,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_03",
@@ -142,7 +194,64 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "카락사 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 4
+        },
+        {
+          "station": "오도리역",
+          "min": 7
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 177,
+        "japanese": 11
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 22,
+          "size": "16~21"
+        },
+        {
+          "type": "트윈",
+          "count": 143,
+          "size": "21~25"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 02:00",
+        "04:00~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_04",
@@ -191,7 +300,59 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "라젠트 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 13
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 219
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 36,
+          "size": "18~23"
+        },
+        {
+          "type": "트윈",
+          "count": 155,
+          "size": "18~27"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "06:00~09:30"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_05",
@@ -237,6 +398,66 @@ window.NMNR_HOTELS = [
       "summary": "삿포로역 가깝고 조식 좋다는 평, 대욕장으로 피로 풀기 좋음",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 3
+        },
+        {
+          "station": "삿포로역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 181
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 28,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 43,
+          "size": "23~44"
+        },
+        {
+          "type": "트윈",
+          "count": 110,
+          "size": "23~44"
+        }
+      ],
+      "bathHours": [
+        "16:00~다음 날 01:00",
+        "06:00~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -269,7 +490,69 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 44,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=321756&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 5
+        },
+        {
+          "station": "삿포로역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 494,
+        "japaneseWestern": 3
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 30,
+          "size": "19~21"
+        },
+        {
+          "type": "더블",
+          "count": 117,
+          "size": "21~50"
+        },
+        {
+          "type": "트윈",
+          "count": 330,
+          "size": "21~62"
+        },
+        {
+          "type": "스위트",
+          "count": 6,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_07",
@@ -318,7 +601,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "솔라리아 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 318
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 190,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 112,
+          "size": "26~56"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "05:30~09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_08",
@@ -350,7 +684,55 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=359169&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 304
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 161,
+          "size": "18~20"
+        },
+        {
+          "type": "트윈",
+          "count": 111,
+          "size": "25~27"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_09",
@@ -399,7 +781,65 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "닛코 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 330
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 43,
+          "size": "18~20"
+        },
+        {
+          "type": "더블",
+          "count": 72,
+          "size": "24~40"
+        },
+        {
+          "type": "트윈",
+          "count": 215,
+          "size": "30~40"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_10",
@@ -448,7 +888,66 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "베셀 호텔 스스키노"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 296
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 51,
+          "size": "16"
+        },
+        {
+          "type": "더블",
+          "count": 66,
+          "size": "17~18"
+        },
+        {
+          "type": "트윈",
+          "count": 178,
+          "size": "20~24"
+        }
+      ],
+      "bathHours": [
+        "06:00~09:30",
+        "15:00~다음 날 00:30"
+      ],
+      "bathRules": [
+        "냉탕(水風呂) 있음"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_11",
@@ -486,7 +985,58 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 39.4,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387338&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 3
+        }
+      ],
+      "rooms": {
+        "total": 255
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 173,
+          "size": "14"
+        },
+        {
+          "type": "더블",
+          "count": 11,
+          "size": "16"
+        },
+        {
+          "type": "트윈",
+          "count": 71,
+          "size": "20~39"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_12",
@@ -524,7 +1074,65 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=308189&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 172
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 6,
+          "size": "17"
+        },
+        {
+          "type": "더블",
+          "count": 77,
+          "size": "25~40"
+        },
+        {
+          "type": "트윈",
+          "count": 72,
+          "size": "26~40"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_13",
@@ -556,7 +1164,46 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=354751&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "호스이스스키노역",
+          "min": 1
+        },
+        {
+          "station": "오도리역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 125
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_14",
@@ -588,7 +1235,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=313177&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 407
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 33,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 202,
+          "size": "15"
+        },
+        {
+          "type": "트윈",
+          "count": 172,
+          "size": "18~22"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_15",
@@ -626,7 +1325,72 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=338679&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "신삿포로역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 512,
+        "japanese": 4,
+        "japaneseWestern": 8
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 71,
+          "size": "18"
+        },
+        {
+          "type": "더블",
+          "count": 40,
+          "size": "24~37"
+        },
+        {
+          "type": "트윈",
+          "count": 362,
+          "size": "24~37"
+        },
+        {
+          "type": "스위트",
+          "count": 3,
+          "size": null
+        }
+      ],
+      "bathHours": [
+        "12:00~다음 날 00:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_16",
@@ -658,7 +1422,60 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 37.1,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=350240&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 482
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 165,
+          "size": "18~31"
+        },
+        {
+          "type": "트윈",
+          "count": 241,
+          "size": "24~38"
+        },
+        {
+          "type": "스위트",
+          "count": 11,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_17",
@@ -690,7 +1507,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 35,
     "roomType4Pax": "트리플",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=318756&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 0
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 187
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 100,
+          "size": "16"
+        },
+        {
+          "type": "더블",
+          "count": 130,
+          "size": "16~18"
+        },
+        {
+          "type": "트윈",
+          "count": 57,
+          "size": "26"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_18",
@@ -739,7 +1608,47 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "그랑벨 스스키노"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "호스이스스키노역",
+          "min": 1
+        },
+        {
+          "station": "스스키노역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 300
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_19",
@@ -771,7 +1680,43 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375695&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 175
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_20",
@@ -820,7 +1765,58 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "미츠이 가든 호텔 삿포로 웨스트"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "parking": true,
+      "rooms": {
+        "total": 169
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 31,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 138,
+          "size": "24~60"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_21",
@@ -869,7 +1865,62 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "몬토레 에델호프"
-    ]
+    ],
+    "details": {
+      "conbini": true,
+      "rooms": {
+        "total": 300
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 51,
+          "size": "19"
+        },
+        {
+          "type": "트윈",
+          "count": 243,
+          "size": "21~40"
+        },
+        {
+          "type": "스위트",
+          "count": 6,
+          "size": null
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23",
+      "access": [
+        {
+          "station": "삿포로역(지하철)",
+          "min": 4
+        }
+      ]
+    }
   },
   {
     "id": "sapporo_22",
@@ -901,7 +1952,64 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=387024&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 1
+        },
+        {
+          "station": "삿포로역",
+          "min": 15
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 134
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 51,
+          "size": null
+        },
+        {
+          "type": "트윈",
+          "count": 82,
+          "size": null
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_23",
@@ -942,7 +2050,58 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "삿포로 그랑벨 호텔 타누키코지"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 8
+        },
+        {
+          "station": "니시주잇초메역",
+          "min": 9
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 218
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 112,
+          "size": "17~19"
+        },
+        {
+          "type": "트윈",
+          "count": 85,
+          "size": "17~19"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_24",
@@ -991,7 +2150,54 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "게이오 프렐리아"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 337
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 66,
+          "size": "20~22"
+        },
+        {
+          "type": "트윈",
+          "count": 270,
+          "size": "20~23"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_25",
@@ -1023,7 +2229,66 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 28,
     "roomType4Pax": "4베드룸",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=324274&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 347,
+        "japanese": 2,
+        "japaneseWestern": 4
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 80,
+          "size": "11~18"
+        },
+        {
+          "type": "더블",
+          "count": 24,
+          "size": "15~26"
+        },
+        {
+          "type": "트윈",
+          "count": 231,
+          "size": "19~45"
+        },
+        {
+          "type": "스위트",
+          "count": 2,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_26",
@@ -1058,7 +2323,58 @@ window.NMNR_HOTELS = [
     "paxVerifiedAt": "2026-10-28",
     "aliases": [
       "퀸테사 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 4
+        },
+        {
+          "station": "호스이스스키노역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 155
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 46,
+          "size": "14"
+        },
+        {
+          "type": "트윈",
+          "count": 96,
+          "size": "17~24"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "잠옷",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_27",
@@ -1090,7 +2406,53 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 36,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=304022&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 1
+        }
+      ],
+      "rooms": {
+        "total": 185
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 89,
+          "size": "17~19"
+        },
+        {
+          "type": "트윈",
+          "count": 91,
+          "size": "19~25"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데"
+        ],
+        "no": [
+          "유카타",
+          "가운",
+          "오리털 이불"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_28",
@@ -1122,7 +2484,63 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=312072&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 3
+        },
+        {
+          "station": "오도리역",
+          "min": 9
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 285
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 99,
+          "size": "21"
+        },
+        {
+          "type": "트윈",
+          "count": 166,
+          "size": "25~42"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_29",
@@ -1171,7 +2589,57 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "미츠이 가든 호텔 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 177
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 21,
+          "size": "16~18"
+        },
+        {
+          "type": "트윈",
+          "count": 156,
+          "size": "18~42"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 09:00"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_30",
@@ -1209,7 +2677,59 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": "기타 객실",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=375045&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "삿포로역",
+          "min": 1
+        },
+        {
+          "station": "오도리역",
+          "min": 2
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 57,
+        "japanese": 3,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "트윈",
+          "count": 37,
+          "size": "19~35"
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_31",
@@ -1241,7 +2761,54 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=374496&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "호스이스스키노역",
+          "min": 1
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 284
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 142,
+          "size": "14~16"
+        },
+        {
+          "type": "트윈",
+          "count": 142,
+          "size": "18~21"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_32",
@@ -1290,7 +2857,67 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "유엔 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 8
+        },
+        {
+          "station": "삿포로역",
+          "min": 13
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 182
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 87,
+          "size": "20~33"
+        },
+        {
+          "type": "트윈",
+          "count": 90,
+          "size": "24~27"
+        },
+        {
+          "type": "스위트",
+          "count": 5,
+          "size": null
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 01:00",
+        "06:00~10:00"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "유카타",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_33",
@@ -1322,7 +2949,43 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": 38,
     "roomType4Pax": "트윈",
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=340127&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 3
+        }
+      ],
+      "conbini": true,
+      "parking": false,
+      "rooms": {
+        "total": 123
+      },
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_34",
@@ -1368,6 +3031,66 @@ window.NMNR_HOTELS = [
       "summary": "조식 맛있고 대욕장 괜찮고 조용하다는 평",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 1
+        },
+        {
+          "station": "삿포로역",
+          "min": 15
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 305,
+        "japaneseWestern": 2
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 84,
+          "size": "14~15"
+        },
+        {
+          "type": "더블",
+          "count": 127,
+          "size": "15~19"
+        },
+        {
+          "type": "트윈",
+          "count": 64,
+          "size": "18~26"
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1400,7 +3123,54 @@ window.NMNR_HOTELS = [
     "minRoom4Pax": null,
     "roomType4Pax": null,
     "paxSourceUrl": "https://www.jalan.net/uw/uwp3100/uww3101.do?yadNo=343484&adultNum=3&roomCount=1&dateUndecided=1&distCd=01&screenId=UWW3101",
-    "paxVerifiedAt": "2026-10-28"
+    "paxVerifiedAt": "2026-10-28",
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 4
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 200
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 102,
+          "size": "11~16"
+        },
+        {
+          "type": "트윈",
+          "count": 98,
+          "size": "17~25"
+        }
+      ],
+      "amenities": {
+        "yes": [
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "칫솔·치약",
+          "유카타",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_36",
@@ -1449,7 +3219,62 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "도미인 삿포로"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 134
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 110,
+          "size": "14"
+        },
+        {
+          "type": "트윈",
+          "count": 24,
+          "size": "18~25"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지",
+        "여탕은 비밀번호·객실 키로 출입"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   },
   {
     "id": "sapporo_37",
@@ -1495,6 +3320,66 @@ window.NMNR_HOTELS = [
       "summary": "대욕장·야식 라면·조식으로 선택했다는 후기",
       "period": "2023-01~2026-10",
       "checkedAt": "2026-10-28"
+    },
+    "details": {
+      "access": [
+        {
+          "station": "오도리역",
+          "min": 10
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 168
+      },
+      "roomMix": [
+        {
+          "type": "싱글",
+          "count": 14,
+          "size": "15"
+        },
+        {
+          "type": "더블",
+          "count": 121,
+          "size": "16"
+        },
+        {
+          "type": "트윈",
+          "count": 10,
+          "size": "17"
+        }
+      ],
+      "bathHours": [
+        "15:00~다음 날 10:00"
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "심야 일부 시간 사우나 휴지",
+        "냉탕(水風呂) 있음"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "잠옷",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "샤워캡",
+          "비데",
+          "오리털 이불"
+        ],
+        "no": [
+          "유카타",
+          "가운"
+        ]
+      },
+      "checkedAt": "2026-11-23"
     }
   },
   {
@@ -1543,6 +3428,62 @@ window.NMNR_HOTELS = [
     },
     "aliases": [
       "퀸테사 삿포로 스스키노 63"
-    ]
+    ],
+    "details": {
+      "access": [
+        {
+          "station": "스스키노역",
+          "min": 5
+        }
+      ],
+      "conbini": true,
+      "rooms": {
+        "total": 103
+      },
+      "roomMix": [
+        {
+          "type": "더블",
+          "count": 86,
+          "size": "14~16"
+        },
+        {
+          "type": "트윈",
+          "count": 16,
+          "size": "20~24"
+        },
+        {
+          "type": "스위트",
+          "count": 1,
+          "size": null
+        }
+      ],
+      "bathRules": [
+        "문신이 있으면 입욕 불가",
+        "음주·만취 시 이용 불가"
+      ],
+      "amenities": {
+        "yes": [
+          "칫솔·치약",
+          "드라이어",
+          "샴푸",
+          "린스",
+          "바디워시",
+          "목욕 수건",
+          "세면 수건",
+          "면도기",
+          "빗",
+          "면봉",
+          "비데",
+          "가운",
+          "오리털 이불"
+        ],
+        "no": [
+          "잠옷",
+          "유카타",
+          "샤워캡"
+        ]
+      },
+      "checkedAt": "2026-11-23"
+    }
   }
 ];
